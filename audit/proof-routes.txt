@@ -1,0 +1,128 @@
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp: 2680 reachable project declarations in types and bodies
+Historical multiplier data, 25/16 energy, 8/25 density and large theorem absent.
+SpringerLean.AnalyticRevision.actualHarmonicPhase_energy_le_seven_thirds: 917 reachable project declarations in types and bodies
+Historical multiplier data, 25/16 energy, 8/25 density and large theorem absent.
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_signed_phase_data
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_singleRamp_integral
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_exists_singleRamp_signed_bound
+  -> SpringerLean.AnalyticRevision.actualHarmonicPhase_energy_le_seven_thirds
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_signed_phase_data
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_singleRamp_integral
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_exists_singleRamp_signed_bound
+  -> SpringerLean.AnalyticRevision.actualHarmonicPhase_energy_le_seven_thirds
+  -> SpringerLean.AnalyticRevision.ramp_pointwise_disk_ae
+  -> SpringerLean.AnalyticRevision.ramp_pointwise_regular
+  -> SpringerLean.AnalyticRevision.ramp_homogeneous
+  -> SingleRamp.clippedLinearFlux
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_signed_phase_data
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_singleRamp_integral
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_exists_singleRamp_signed_bound
+  -> SpringerLean.AnalyticRevision.actualHarmonicPhase_energy_le_seven_thirds
+  -> SpringerLean.AnalyticRevision.rampFlux
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_signed_phase_data
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_singleRamp_integral
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_exists_singleRamp_signed_bound
+  -> SpringerLean.AnalyticRevision.actualHarmonicPhase_energy_le_seven_thirds
+  -> SpringerLean.AnalyticRevision.cutFlux_integral_le
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.singleRampSignedDensity
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_signed_phase_data
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_singleRamp_integral
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_exists_singleRamp_signed_bound
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_lt_two_reference
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_tiny_first_strict
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_lt_two_reference
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_endpoint_phase_budget
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_endpointTests_le
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_endpointTests_global
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_endpointTests_outer
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_le_endpointPhaseTest
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_aligned_le_twoPower
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_lt_two_reference
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_endpoint_phase_budget
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_endpointTests_le
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_endpointTests_global
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_endpointTests_outer
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_le_endpointPhaseTest
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_trueAxis_lt_lower_power
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_lt_two_reference
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_endpoint_phase_budget
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_endpointTests_le
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_endpointTests_global
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_endpointTests_outer
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_le_endpointPhaseTest
+  -> SpringerLean.AnalyticRevision.actualSignedPhaseDensity_trueAxis_lt_lower_power
+  -> SpringerLean.AnalyticRevision.trueAxis_signed_power_lt_lower
+  -> SingleRamp.trueAxisSign
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_nonslit_false
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_candidate_exists_signed_phase_data
+  -> SpringerLean.exteriorInverseCoeff_candidate_phase_endpoints_nonempty
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_two_tilted_twoPower_savings
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_two_tilted_disk_savings
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_two_fine_widths
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_both_log_deficits_lt_3_2
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_each_J_lt_058
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_joint_J
+  -> SpringerLean.exteriorInverseCoeff_candidate_selected_two_moving_saving_budget
+  -> SpringerLean.refinedAffine_two_moving_chords_budget
+  -> SpringerLean.refinedAffineChord_moving_saving_0067
+  -> SpringerLean.refinedAffineChord_moving_saving_explicit
+  -> SpringerLean.refinedAffineChord_moving_saving_variance
+  -> SpringerLean.refinedAffineSmoothPower_moving_Jensen
+
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp
+  -> SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_catalan_and_eq_iff_slit_singleRamp
+  -> SpringerLean.exteriorInverseCoeff_sharp_of_eqOn_slit_all_orders

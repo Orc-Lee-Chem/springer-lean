@@ -1,0 +1,201 @@
+SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    ∀ (k : ℕ),
+      751 ≤ k →
+        ‖SpringerLean.exteriorInverseCoeff F (2 * k - 1)‖ ≤ ↑(catalan (k - 1)) ∧
+          (‖SpringerLean.exteriorInverseCoeff F (2 * k - 1)‖ = ↑(catalan (k - 1)) ↔
+            ∃ a, ‖a‖ = 1 ∧ Set.EqOn F (SpringerLean.slitMap a) SpringerLean.exteriorDisk)
+'SpringerLean.PaperStatementsAudit.theorem_1_1_large_751_singleRamp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.lemma_9_2_connected_lemniscate_exterior_identity : ∀ (Q : Polynomial ℂ),
+  Q.Monic →
+    0 < Q.natDegree →
+      Q.roots.sum = 0 →
+        IsConnected {z | ‖Polynomial.eval z Q‖ ≤ 1} →
+          ∃ F,
+            SpringerLean.CenteredExteriorUnivalent F ∧
+              ∀ w ∈ SpringerLean.exteriorDisk, Polynomial.eval (F w) Q = w ^ Q.natDegree
+'SpringerLean.PaperStatementsAudit.lemma_9_2_connected_lemniscate_exterior_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.proposition_9_2_strict_derivative_zero_moment : ∀ (P : Polynomial ℂ),
+  2 ≤ P.natDegree →
+    ∀ (t : ℝ),
+      0 < t →
+        IsConnected {w | ‖Polynomial.eval w P‖ ≤ t} →
+          ∀ j < P.natDegree,
+            ∀ (p : ℝ),
+              4 ≤ p →
+                p ≤ 8 →
+                  (Multiset.map
+                          (fun w =>
+                            ‖(w - SpringerLean.polynomialZeroCentroid P) /
+                                  ↑(SpringerLean.polynomialLemniscateRadius P t)‖ ^
+                              p)
+                          ((⇑Polynomial.derivative)^[j] P).roots).sum /
+                      ↑(P.natDegree - j) <
+                    SpringerLean.slitRadialMomentConstant p
+'SpringerLean.PaperStatementsAudit.proposition_9_2_strict_derivative_zero_moment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.proposition_9_2_exact_supremum_and_nonattainment : ∀ (j : ℕ) (p : ℝ),
+  4 ≤ p →
+    p ≤ 8 →
+      sSup (SpringerLean.connectedPolynomialDerivativeMoments j p) = SpringerLean.slitRadialMomentConstant p ∧
+        SpringerLean.slitRadialMomentConstant p ∉ SpringerLean.connectedPolynomialDerivativeMoments j p
+'SpringerLean.PaperStatementsAudit.proposition_9_2_exact_supremum_and_nonattainment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.lemma_10_1_actual_radial_probability_is_equilibrium : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    MeasureTheory.IsProbabilityMeasure (SpringerLean.actualExteriorBoundaryProbability F) ∧
+      SpringerLean.exteriorOmitted F ∈ MeasureTheory.ae (SpringerLean.actualExteriorBoundaryProbability F) ∧
+        SpringerLean.twiceShiftedLogEnergy (SpringerLean.actualExteriorBoundaryProbability F)
+              (SpringerLean.actualExteriorBoundaryProbability F) =
+            ENNReal.ofReal (2 * Real.log 5) ∧
+          ∀ (ν : MeasureTheory.Measure ℂ) [MeasureTheory.IsProbabilityMeasure ν],
+            SpringerLean.exteriorOmitted F ∈ MeasureTheory.ae ν →
+              ENNReal.ofReal (2 * Real.log 5) ≤ SpringerLean.twiceShiftedLogEnergy ν ν ∧
+                (SpringerLean.twiceShiftedLogEnergy ν ν = ENNReal.ofReal (2 * Real.log 5) ↔
+                  ν = SpringerLean.actualExteriorBoundaryProbability F)
+'SpringerLean.PaperStatementsAudit.lemma_10_1_actual_radial_probability_is_equilibrium' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.lemma_10_1_actual_factor_constant_formula : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    ∀ (u v : ℂ),
+      u ∈ SpringerLean.exteriorOmitted F →
+        v ∈ SpringerLean.exteriorOmitted F →
+          u ≠ v →
+            SpringerLean.factorConstant (SpringerLean.exteriorOmitted F) =
+              Real.exp
+                (∫ (z : ℂ),
+                  Real.log
+                    (SpringerLean.continuumFarthestDistance (SpringerLean.exteriorOmitted F)
+                      z) ∂SpringerLean.actualExteriorBoundaryProbability F)
+'SpringerLean.PaperStatementsAudit.lemma_10_1_actual_factor_constant_formula' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_10_1_even_normalized_exterior : ∀ (K : Set ℂ),
+  IsCompact K →
+    IsConnected K →
+      ∀ (k : ℕ),
+        0 < k →
+          SpringerLean.EvenGeneratorInvariant K k →
+            ∀ (u v : ℂ),
+              u ∈ K →
+                v ∈ K →
+                  u ≠ v →
+                    ∀ (F : ℂ → ℂ),
+                      SpringerLean.CenteredExteriorUnivalent F →
+                        F '' SpringerLean.exteriorDisk = (SpringerLean.continuumFill K)ᶜ →
+                          have S := SpringerLean.regularStarRaySet (2 * k);
+                          SpringerLean.factorConstant K ≤ SpringerLean.factorConstant S ∧
+                            (1 - ↑k ^ 2 * ‖SpringerLean.exteriorForwardCoeff F (2 * k - 1)‖ ^ 2) / (96 * ↑k ^ 2) ≤
+                                Real.log (SpringerLean.factorConstant S / SpringerLean.factorConstant K) ∧
+                              (SpringerLean.factorConstant K = SpringerLean.factorConstant S ↔
+                                ∃ b, ‖b‖ = 1 ∧ K = (fun z => b * z) '' S)
+'SpringerLean.PaperStatementsAudit.theorem_10_1_even_normalized_exterior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_10_1_even_regular_star : ∀ (K : Set ℂ),
+  IsCompact K →
+    IsConnected K →
+      ∀ (k : ℕ),
+        0 < k →
+          ∀ (c : ℂ),
+            SpringerLean.ContinuumRotationInvariant K (2 * k) c →
+              ∀ (u v : ℂ),
+                u ∈ K →
+                  v ∈ K →
+                    u ≠ v →
+                      have S := SpringerLean.regularStarRaySet (2 * k);
+                      ∃ r F,
+                        0 < r ∧
+                          SpringerLean.CenteredExteriorUnivalent F ∧
+                            F '' SpringerLean.exteriorDisk =
+                                (SpringerLean.continuumScale
+                                    (SpringerLean.continuumFill (SpringerLean.continuumTranslate K (-c))) ↑r)ᶜ ∧
+                              SpringerLean.factorConstant K ≤ SpringerLean.factorConstant S ∧
+                                (1 - ↑k ^ 2 * ‖SpringerLean.exteriorForwardCoeff F (2 * k - 1)‖ ^ 2) / (96 * ↑k ^ 2) ≤
+                                    Real.log (SpringerLean.factorConstant S / SpringerLean.factorConstant K) ∧
+                                  (SpringerLean.factorConstant K = SpringerLean.factorConstant S ↔
+                                    ∃ b d,
+                                      b ≠ 0 ∧ K = SpringerLean.continuumTranslate (SpringerLean.continuumScale S b) d)
+'SpringerLean.PaperStatementsAudit.theorem_10_1_even_regular_star' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_10_1_regularity_parity : ∀ (m : ℕ),
+  2 ≤ m →
+    ((∀ (K : Set ℂ),
+        IsCompact K →
+          IsConnected K →
+            (∃ u v, u ∈ K ∧ v ∈ K ∧ u ≠ v) →
+              ∀ (c : ℂ),
+                SpringerLean.ContinuumRotationInvariant K m c →
+                  SpringerLean.factorConstant K ≤ SpringerLean.factorConstant (SpringerLean.regularStarRaySet m)) ↔
+      Even m)
+'SpringerLean.PaperStatementsAudit.theorem_10_1_regularity_parity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_10_1_odd_regular_star_counterexample : ∀ (m : ℕ),
+  3 ≤ m →
+    Odd m →
+      ∃ K,
+        IsCompact K ∧
+          IsConnected K ∧
+            (∃ u v, u ∈ K ∧ v ∈ K ∧ u ≠ v) ∧
+              (∀ (η z : ℂ), η ^ m = 1 → (η * z ∈ K ↔ z ∈ K)) ∧
+                SpringerLean.factorConstant (SpringerLean.regularStarRaySet m) < SpringerLean.factorConstant K
+'SpringerLean.PaperStatementsAudit.theorem_10_1_odd_regular_star_counterexample' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_9_1_p2_actual_radial : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    SpringerLean.actualBoundaryRadialMoment F 2 ≤
+        SpringerLean.slitRadialMomentConstant 2 * (1 - (1 - ‖SpringerLean.exteriorForwardCoeff F 1‖ ^ 2) / 4) ∧
+      (SpringerLean.actualBoundaryRadialMoment F 2 = SpringerLean.slitRadialMomentConstant 2 ↔
+        ∃ a, ‖a‖ = 1 ∧ Set.EqOn F (SpringerLean.slitMap a) SpringerLean.exteriorDisk)
+'SpringerLean.PaperStatementsAudit.theorem_9_1_p2_actual_radial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_9_1_p4_actual_radial : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    SpringerLean.actualBoundaryRadialMoment F 4 ≤
+        SpringerLean.slitRadialMomentConstant 4 * (1 - (1 - ‖SpringerLean.exteriorForwardCoeff F 1‖ ^ 2) / 2) ∧
+      (SpringerLean.actualBoundaryRadialMoment F 4 = SpringerLean.slitRadialMomentConstant 4 ↔
+        ∃ a, ‖a‖ = 1 ∧ Set.EqOn F (SpringerLean.slitMap a) SpringerLean.exteriorDisk)
+'SpringerLean.PaperStatementsAudit.theorem_9_1_p4_actual_radial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_9_1_p6_actual_radial_strong : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    SpringerLean.actualBoundaryRadialMoment F 6 ≤
+        20 - 7 * (1 - ‖SpringerLean.exteriorForwardCoeff F 1‖ ^ 2) -
+          9 / 2 * (1 - ‖SpringerLean.exteriorForwardCoeff F 1‖ ^ 2) ^ 2 ∧
+      (SpringerLean.actualBoundaryRadialMoment F 6 = SpringerLean.slitRadialMomentConstant 6 ↔
+        ∃ a, ‖a‖ = 1 ∧ Set.EqOn F (SpringerLean.slitMap a) SpringerLean.exteriorDisk)
+'SpringerLean.PaperStatementsAudit.theorem_9_1_p6_actual_radial_strong' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_9_1_p8_actual_radial_strong : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    SpringerLean.actualBoundaryRadialMoment F 8 ≤ 70 - 51 / 5 * (1 - ‖SpringerLean.exteriorForwardCoeff F 1‖ ^ 2) ∧
+      (SpringerLean.actualBoundaryRadialMoment F 8 = SpringerLean.slitRadialMomentConstant 8 ↔
+        ∃ a, ‖a‖ = 1 ∧ Set.EqOn F (SpringerLean.slitMap a) SpringerLean.exteriorDisk)
+'SpringerLean.PaperStatementsAudit.theorem_9_1_p8_actual_radial_strong' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+SpringerLean.PaperStatementsAudit.theorem_9_1_p4_to_p8_actual_radial : ∀ (F : ℂ → ℂ),
+  SpringerLean.CenteredExteriorUnivalent F →
+    ∀ {p : ℝ},
+      4 ≤ p →
+        p ≤ 8 →
+          SpringerLean.actualBoundaryRadialMoment F p ≤
+              SpringerLean.slitRadialMomentConstant p * (1 - (1 - ‖SpringerLean.exteriorForwardCoeff F 1‖ ^ 2) / 80) ∧
+            (SpringerLean.actualBoundaryRadialMoment F p = SpringerLean.slitRadialMomentConstant p ↔
+              ∃ a, ‖a‖ = 1 ∧ Set.EqOn F (SpringerLean.slitMap a) SpringerLean.exteriorDisk)
+'SpringerLean.PaperStatementsAudit.theorem_9_1_p4_to_p8_actual_radial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

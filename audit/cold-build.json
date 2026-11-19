@@ -1,0 +1,34 @@
+{
+    "initial_project_oleans":  0,
+    "compiled_import_closure_including_root":  1495,
+    "module_exit_code_attempt_counts":  {
+                                            "0":  1495
+                                        },
+    "final_exit_codes":  {
+                             "root":  0,
+                             "paper_module":  0,
+                             "audit":  0,
+                             "types":  0,
+                             "paper":  0
+                         },
+    "proof_dependency_export_exit":  0,
+    "proof_dependency_check_exit":  0,
+    "public_declarations_matching_frozen_types_and_axioms":  15,
+    "separate_axiom_checks":  17,
+    "transitive_axioms":  [
+                              "Classical.choice",
+                              "Quot.sound",
+                              "propext"
+                          ],
+    "lean":  "Lean (version 4.34.1, x86_64-w64-windows-gnu, commit 5045d0056413266e57c625dcd7c365b10e377c52, Release)",
+    "mathlib_lock":  "d13f23b723b8a846827a245b89c10fc7d3f11612",
+    "source_manifest_sha256":  "e600ed9891e5bcbaa224285bd6e3d2a7348f5a4d8f8fb76715cc6c0de60a61c8",
+    "audit_wrapper_rollforward":  {
+                                      "initial_source_manifest_sha256":  "4751614e3f55c0d71561225dfa462c78b5c257849ad50b5d36a4019511c9381b",
+                                      "final_source_manifest_sha256":  "e600ed9891e5bcbaa224285bd6e3d2a7348f5a4d8f8fb76715cc6c0de60a61c8",
+                                      "unchanged_project_modules_built_from_zero":  1495,
+                                      "only_changed_build_input":  "lean/CompleteTypes.lean",
+                                      "change":  "Added the 17 transitive-axiom print commands expected by the replay gate.",
+                                      "reason":  "The first gate had all Lean exits zero but expected axiom prints in the types log."
+                                  }
+}

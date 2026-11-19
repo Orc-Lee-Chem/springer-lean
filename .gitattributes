@@ -1,0 +1,3 @@
+# Keep published SHA-256 values stable across Git checkouts.
+* -text
+*.pdf binary

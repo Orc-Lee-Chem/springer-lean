@@ -1,0 +1,5055 @@
+{
+  "SpringerLean.SingleRamp": [],
+  "SpringerLean.ReviewChecks": [],
+  "SpringerLean.Round1682LevelSetDerivative": [],
+  "SpringerLean.Round1684LocalLevelSetDerivative": [
+    "SpringerLean.Round1682LevelSetDerivative"
+  ],
+  "SpringerLean.Round1686ProductLevelSetWithDerivative": [
+    "SpringerLean.Round1684LocalLevelSetDerivative"
+  ],
+  "SpringerLean.Round1410MediumChordScalar": [],
+  "SpringerLean.Round1335CoarseTwoPointScalar": [],
+  "SpringerLean.Slit": [],
+  "SpringerLean.Catalan": [
+    "SpringerLean.Slit"
+  ],
+  "SpringerLean.Analytic": [
+    "SpringerLean.Slit"
+  ],
+  "SpringerLean.Series": [
+    "SpringerLean.Catalan",
+    "SpringerLean.Analytic"
+  ],
+  "SpringerLean.ActualExpansion": [
+    "SpringerLean.Series"
+  ],
+  "SpringerLean.Germ": [
+    "SpringerLean.ActualExpansion"
+  ],
+  "SpringerLean.Coefficients": [
+    "SpringerLean.Germ"
+  ],
+  "SpringerLean.GeneralFirst": [
+    "SpringerLean.Coefficients"
+  ],
+  "SpringerLean.ExteriorClass": [
+    "SpringerLean.GeneralFirst"
+  ],
+  "SpringerLean.GeneralInverse": [
+    "SpringerLean.ExteriorClass"
+  ],
+  "SpringerLean.FormalResidue": [
+    "SpringerLean.GeneralInverse"
+  ],
+  "SpringerLean.FormalReversion": [
+    "SpringerLean.FormalResidue"
+  ],
+  "SpringerLean.TaylorBridge": [
+    "SpringerLean.FormalReversion"
+  ],
+  "SpringerLean.AnalyticReversion": [
+    "SpringerLean.TaylorBridge"
+  ],
+  "SpringerLean.LowOrder": [
+    "SpringerLean.AnalyticReversion"
+  ],
+  "SpringerLean.AreaConsequences": [
+    "SpringerLean.LowOrder"
+  ],
+  "SpringerLean.DiskExpansion": [
+    "SpringerLean.AreaConsequences"
+  ],
+  "SpringerLean.Round450DiskSquareRoot": [
+    "SpringerLean.DiskExpansion"
+  ],
+  "SpringerLean.Rigidity": [
+    "SpringerLean.DiskExpansion"
+  ],
+  "SpringerLean.SecondTail": [
+    "SpringerLean.Rigidity"
+  ],
+  "SpringerLean.OuterCircle": [
+    "SpringerLean.SecondTail"
+  ],
+  "SpringerLean.AnnulusArea": [
+    "SpringerLean.OuterCircle"
+  ],
+  "SpringerLean.CircleEnergy": [
+    "SpringerLean.AnnulusArea"
+  ],
+  "SpringerLean.CircleFinite": [
+    "SpringerLean.CircleEnergy"
+  ],
+  "SpringerLean.CircleDerivative": [
+    "SpringerLean.CircleFinite"
+  ],
+  "SpringerLean.UniformDerivative": [
+    "SpringerLean.CircleDerivative"
+  ],
+  "SpringerLean.CircleModeBridge": [
+    "SpringerLean.UniformDerivative"
+  ],
+  "SpringerLean.CircleConvergence": [
+    "SpringerLean.CircleModeBridge"
+  ],
+  "SpringerLean.CircleLower": [
+    "SpringerLean.CircleConvergence"
+  ],
+  "SpringerLean.OuterSimplified": [
+    "SpringerLean.CircleLower"
+  ],
+  "SpringerLean.RadialFinite": [
+    "SpringerLean.OuterSimplified"
+  ],
+  "SpringerLean.RadialLower": [
+    "SpringerLean.RadialFinite"
+  ],
+  "SpringerLean.AnnulusBoundaries": [
+    "SpringerLean.RadialLower"
+  ],
+  "SpringerLean.AnnulusFrontier": [
+    "SpringerLean.AnnulusBoundaries"
+  ],
+  "SpringerLean.AnnulusMax": [
+    "SpringerLean.AnnulusFrontier"
+  ],
+  "SpringerLean.AreaLinear": [
+    "SpringerLean.AnnulusMax"
+  ],
+  "SpringerLean.AreaUpper": [
+    "SpringerLean.AreaLinear"
+  ],
+  "SpringerLean.PolarAnnulus": [
+    "SpringerLean.AreaUpper"
+  ],
+  "SpringerLean.PolarArea": [
+    "SpringerLean.PolarAnnulus"
+  ],
+  "SpringerLean.AngularENN": [
+    "SpringerLean.PolarArea"
+  ],
+  "SpringerLean.AreaLower": [
+    "SpringerLean.AngularENN"
+  ],
+  "SpringerLean.AreaComparison": [
+    "SpringerLean.AreaLower"
+  ],
+  "SpringerLean.AreaLimit": [
+    "SpringerLean.AreaComparison"
+  ],
+  "SpringerLean.AreaFinite": [
+    "SpringerLean.AreaLimit"
+  ],
+  "SpringerLean.GeneralArea": [
+    "SpringerLean.AreaFinite"
+  ],
+  "SpringerLean.Lemma31Prelude": [
+    "SpringerLean.GeneralArea"
+  ],
+  "SpringerLean.Rescale": [
+    "SpringerLean.Analytic"
+  ],
+  "SpringerLean.RescaleGerm": [
+    "SpringerLean.Lemma31Prelude",
+    "SpringerLean.Rescale"
+  ],
+  "SpringerLean.DiskPolar": [
+    "SpringerLean.RescaleGerm",
+    "SpringerLean.PolarArea"
+  ],
+  "SpringerLean.DiskMoments": [
+    "SpringerLean.DiskPolar",
+    "SpringerLean.CircleEnergy"
+  ],
+  "SpringerLean.DiskCoeff": [
+    "SpringerLean.DiskMoments",
+    "SpringerLean.TaylorBridge"
+  ],
+  "SpringerLean.RegularResidue": [
+    "SpringerLean.DiskCoeff"
+  ],
+  "SpringerLean.RegularFirst": [
+    "SpringerLean.RegularResidue"
+  ],
+  "SpringerLean.ForwardBound": [
+    "SpringerLean.RegularFirst"
+  ],
+  "SpringerLean.RegularLimit": [
+    "SpringerLean.ForwardBound"
+  ],
+  "SpringerLean.DiskEnergy": [
+    "SpringerLean.RegularLimit"
+  ],
+  "SpringerLean.RegularEnergyLimit": [
+    "SpringerLean.DiskEnergy"
+  ],
+  "SpringerLean.Round08Finite": [
+    "SpringerLean.RegularEnergyLimit"
+  ],
+  "SpringerLean.Round08Fatou": [
+    "SpringerLean.Round08Finite"
+  ],
+  "SpringerLean.Round08Actual": [
+    "SpringerLean.Round08Fatou"
+  ],
+  "SpringerLean.Round08Lp": [
+    "SpringerLean.Round08Actual"
+  ],
+  "SpringerLean.Round08General": [
+    "SpringerLean.Round08Lp"
+  ],
+  "SpringerLean.Round08Omitted": [
+    "SpringerLean.Round08General"
+  ],
+  "SpringerLean.Round456OmittedRootRadicand": [
+    "SpringerLean.Round450DiskSquareRoot",
+    "SpringerLean.Round08Omitted"
+  ],
+  "SpringerLean.Round457OmittedSquareRootLift": [
+    "SpringerLean.Round456OmittedRootRadicand",
+    "SpringerLean.TaylorBridge"
+  ],
+  "SpringerLean.Round480OmittedRadius": [
+    "SpringerLean.Round457OmittedSquareRootLift",
+    "SpringerLean.GeneralArea"
+  ],
+  "SpringerLean.Round481OmittedRadiusRigidity": [
+    "SpringerLean.Round480OmittedRadius"
+  ],
+  "SpringerLean.Round12CompareMoments": [
+    "SpringerLean.DiskMoments"
+  ],
+  "SpringerLean.Round08Jacobian": [
+    "SpringerLean.Round08Omitted"
+  ],
+  "SpringerLean.Round09WeightedImage": [
+    "SpringerLean.Round08Jacobian"
+  ],
+  "SpringerLean.Round09Rectangle": [
+    "SpringerLean.Round09WeightedImage"
+  ],
+  "SpringerLean.Round09Outer": [
+    "SpringerLean.Round09Rectangle"
+  ],
+  "SpringerLean.Round09Cutoff": [
+    "SpringerLean.Round09Outer"
+  ],
+  "SpringerLean.Round09Reduction": [
+    "SpringerLean.Round09Cutoff"
+  ],
+  "SpringerLean.Round10Primitive": [
+    "SpringerLean.Round09Reduction"
+  ],
+  "SpringerLean.Round10Period": [
+    "SpringerLean.Round10Primitive"
+  ],
+  "SpringerLean.Round10Boundary": [
+    "SpringerLean.Round10Period"
+  ],
+  "SpringerLean.Round11Flux": [
+    "SpringerLean.Round10Boundary"
+  ],
+  "SpringerLean.Round11Rectangle": [
+    "SpringerLean.Round11Flux"
+  ],
+  "SpringerLean.Round11Green": [
+    "SpringerLean.Round11Rectangle"
+  ],
+  "SpringerLean.Round11Outer": [
+    "SpringerLean.Round11Green"
+  ],
+  "SpringerLean.Round11Polar": [
+    "SpringerLean.Round11Outer",
+    "SpringerLean.DiskPolar"
+  ],
+  "SpringerLean.Round11Jacobian": [
+    "SpringerLean.Round11Polar"
+  ],
+  "SpringerLean.Round11Partition": [
+    "SpringerLean.Round11Jacobian"
+  ],
+  "SpringerLean.Round11PolarArea": [
+    "SpringerLean.Round11Partition"
+  ],
+  "SpringerLean.Round11FinalGreen": [
+    "SpringerLean.Round11PolarArea"
+  ],
+  "SpringerLean.Round11L2": [
+    "SpringerLean.Round11FinalGreen"
+  ],
+  "SpringerLean.Round09OmittedScale": [
+    "SpringerLean.Round09WeightedImage"
+  ],
+  "SpringerLean.Round09OmittedLimit": [
+    "SpringerLean.Round09OmittedScale"
+  ],
+  "SpringerLean.Round11GeneralSecond": [
+    "SpringerLean.Round11L2",
+    "SpringerLean.Round09OmittedLimit",
+    "SpringerLean.Round11FinalGreen"
+  ],
+  "SpringerLean.Round11CS": [
+    "SpringerLean.Round11GeneralSecond",
+    "SpringerLean.Round08General"
+  ],
+  "SpringerLean.Round11Energy": [
+    "SpringerLean.Round11CS"
+  ],
+  "SpringerLean.Round12Compact": [
+    "SpringerLean.Round11Energy",
+    "SpringerLean.Round09OmittedLimit"
+  ],
+  "SpringerLean.Round12Projection": [
+    "SpringerLean.Round12Compact"
+  ],
+  "SpringerLean.Round12ProjectionLimit": [
+    "SpringerLean.Round12Projection"
+  ],
+  "SpringerLean.Round12ClosedHull": [
+    "SpringerLean.Round12ProjectionLimit"
+  ],
+  "SpringerLean.Round12Caratheodory": [
+    "SpringerLean.Round12ClosedHull"
+  ],
+  "SpringerLean.Round12HullParameter": [
+    "SpringerLean.Round12Caratheodory"
+  ],
+  "SpringerLean.Round13Mean": [
+    "SpringerLean.Round12CompareMoments",
+    "SpringerLean.Round12HullParameter"
+  ],
+  "SpringerLean.Round13Potential": [
+    "SpringerLean.Round13Mean"
+  ],
+  "SpringerLean.Round13Poisson": [
+    "SpringerLean.Round13Potential"
+  ],
+  "SpringerLean.Round13PoissonFill": [
+    "SpringerLean.Round13Poisson"
+  ],
+  "SpringerLean.Round13JensenPrelude": [
+    "SpringerLean.Round13PoissonFill"
+  ],
+  "SpringerLean.Round13DensityPrelude": [
+    "SpringerLean.Round13JensenPrelude"
+  ],
+  "SpringerLean.Round13Density": [
+    "SpringerLean.Round13DensityPrelude"
+  ],
+  "SpringerLean.Round13DensityScale": [
+    "SpringerLean.Round13Density"
+  ],
+  "SpringerLean.Round13Semicircle": [
+    "SpringerLean.Round13DensityScale"
+  ],
+  "SpringerLean.Round14QuadraticPrelude": [
+    "SpringerLean.Round13Semicircle"
+  ],
+  "SpringerLean.Round14CircleParseval": [
+    "SpringerLean.Round14QuadraticPrelude",
+    "SpringerLean.CircleFinite"
+  ],
+  "SpringerLean.Round14CircleLimit": [
+    "SpringerLean.Round14CircleParseval"
+  ],
+  "SpringerLean.Round14ActualParseval": [
+    "SpringerLean.Round14CircleLimit"
+  ],
+  "SpringerLean.Round14AreaCircle": [
+    "SpringerLean.Round14ActualParseval",
+    "SpringerLean.AreaFinite"
+  ],
+  "SpringerLean.Round14Quadratic": [
+    "SpringerLean.Round14AreaCircle"
+  ],
+  "SpringerLean.Round14Potential": [
+    "SpringerLean.Round14QuadraticPrelude"
+  ],
+  "SpringerLean.Round14JensenBoundary": [
+    "SpringerLean.Round14Potential"
+  ],
+  "SpringerLean.Round14PotentialBoundary": [
+    "SpringerLean.Round14JensenBoundary"
+  ],
+  "SpringerLean.Round14JensenSimple": [
+    "SpringerLean.Round14PotentialBoundary"
+  ],
+  "SpringerLean.Round15Derivative": [
+    "SpringerLean.Round14JensenSimple"
+  ],
+  "SpringerLean.Round16LocalRoot": [
+    "SpringerLean.Round15Derivative"
+  ],
+  "SpringerLean.Round16Coordinate": [
+    "SpringerLean.Round16LocalRoot"
+  ],
+  "SpringerLean.Round16OrderExclusion": [
+    "SpringerLean.Round16Coordinate"
+  ],
+  "SpringerLean.Round16Univalent": [
+    "SpringerLean.Round16OrderExclusion"
+  ],
+  "SpringerLean.Round16Potential": [
+    "SpringerLean.Round16Univalent",
+    "SpringerLean.Round15Derivative"
+  ],
+  "SpringerLean.Round16VerticalPrelude": [
+    "SpringerLean.Round16Potential"
+  ],
+  "SpringerLean.Round17CauchyKernel": [
+    "SpringerLean.Round16VerticalPrelude"
+  ],
+  "SpringerLean.Round17LogRadial": [
+    "SpringerLean.Round17CauchyKernel"
+  ],
+  "SpringerLean.Round17KernelProduct": [
+    "SpringerLean.Round17LogRadial"
+  ],
+  "SpringerLean.Round17LogDifference": [
+    "SpringerLean.Round17KernelProduct"
+  ],
+  "SpringerLean.Round17ShiftDerivative": [
+    "SpringerLean.Round17LogDifference"
+  ],
+  "SpringerLean.Round17ShiftRemainder": [
+    "SpringerLean.Round17ShiftDerivative"
+  ],
+  "SpringerLean.Round17ShiftIntegral": [
+    "SpringerLean.Round17ShiftRemainder"
+  ],
+  "SpringerLean.Round17PointKernel": [
+    "SpringerLean.Round17ShiftIntegral",
+    "SpringerLean.Round16VerticalPrelude"
+  ],
+  "SpringerLean.Round17CurveKernel": [
+    "SpringerLean.Round17PointKernel"
+  ],
+  "SpringerLean.Round17CurveDifference": [
+    "SpringerLean.Round17CurveKernel"
+  ],
+  "SpringerLean.Round14BoundaryMean": [
+    "SpringerLean.Round14JensenSimple",
+    "SpringerLean.Round14CircleParseval"
+  ],
+  "SpringerLean.Round15PositivePart": [
+    "SpringerLean.Round15Derivative",
+    "SpringerLean.Round14BoundaryMean"
+  ],
+  "SpringerLean.Round17ActualCurve": [
+    "SpringerLean.Round17CurveDifference",
+    "SpringerLean.Round15PositivePart"
+  ],
+  "SpringerLean.Round17LogAngles": [
+    "SpringerLean.Round17ActualCurve"
+  ],
+  "SpringerLean.Round17RawPotential": [
+    "SpringerLean.Round17LogAngles"
+  ],
+  "SpringerLean.Round17ImagMean": [
+    "SpringerLean.Round17RawPotential"
+  ],
+  "SpringerLean.Round17ActualRaw": [
+    "SpringerLean.Round17ImagMean"
+  ],
+  "SpringerLean.Round17VerticalActual": [
+    "SpringerLean.Round17ActualRaw"
+  ],
+  "SpringerLean.Round18SignReduction": [
+    "SpringerLean.Round17VerticalActual"
+  ],
+  "SpringerLean.Round18Tail": [
+    "SpringerLean.Round18SignReduction",
+    "SpringerLean.Round17ActualCurve"
+  ],
+  "SpringerLean.Round20ProjectionRange": [
+    "SpringerLean.Round18Tail"
+  ],
+  "SpringerLean.Round18CompactSupport": [
+    "SpringerLean.Round18Tail"
+  ],
+  "SpringerLean.Round20Contact": [
+    "SpringerLean.Round20ProjectionRange",
+    "SpringerLean.Round18CompactSupport",
+    "SpringerLean.Round14PotentialBoundary"
+  ],
+  "SpringerLean.Round20PotentialPos": [
+    "SpringerLean.Round20Contact",
+    "SpringerLean.Round16Potential"
+  ],
+  "SpringerLean.Round20JensenLower": [
+    "SpringerLean.Round20PotentialPos"
+  ],
+  "SpringerLean.Round20ComparisonPotential": [
+    "SpringerLean.Round20JensenLower"
+  ],
+  "SpringerLean.Round20Auxiliary": [
+    "SpringerLean.Round20ComparisonPotential"
+  ],
+  "SpringerLean.Round21LocalShift": [
+    "SpringerLean.Round20Auxiliary"
+  ],
+  "SpringerLean.Round22PotentialNear": [
+    "SpringerLean.Round21LocalShift"
+  ],
+  "SpringerLean.Round22BoundarySlope": [
+    "SpringerLean.Round22PotentialNear"
+  ],
+  "SpringerLean.Round22Costs": [
+    "SpringerLean.Round22BoundarySlope"
+  ],
+  "SpringerLean.Round23MeasureCut": [
+    "SpringerLean.Round22Costs"
+  ],
+  "SpringerLean.Round23Sublevel": [
+    "SpringerLean.Round23MeasureCut"
+  ],
+  "SpringerLean.Round23Threshold": [
+    "SpringerLean.Round23Sublevel"
+  ],
+  "SpringerLean.Round23Candidate": [
+    "SpringerLean.Round23Threshold"
+  ],
+  "SpringerLean.Round23Minimum": [
+    "SpringerLean.Round23Candidate"
+  ],
+  "SpringerLean.Round24SetSplit": [
+    "SpringerLean.Round23Minimum"
+  ],
+  "SpringerLean.Round24ShiftMass": [
+    "SpringerLean.Round24SetSplit"
+  ],
+  "SpringerLean.Round25Optimizer": [
+    "SpringerLean.Round24ShiftMass"
+  ],
+  "SpringerLean.Round26ShiftDirection": [
+    "SpringerLean.Round25Optimizer"
+  ],
+  "SpringerLean.Round26Differentiation": [
+    "SpringerLean.Round26ShiftDirection"
+  ],
+  "SpringerLean.Round26IntervalShift": [
+    "SpringerLean.Round26Differentiation"
+  ],
+  "SpringerLean.Round26IntervalBound": [
+    "SpringerLean.Round26IntervalShift"
+  ],
+  "SpringerLean.Round26TwoBoundaries": [
+    "SpringerLean.Round26IntervalBound"
+  ],
+  "SpringerLean.Round26GoodPoints": [
+    "SpringerLean.Round26TwoBoundaries"
+  ],
+  "SpringerLean.Round26NoInterval": [
+    "SpringerLean.Round26GoodPoints"
+  ],
+  "SpringerLean.Round26FilledInterval": [
+    "SpringerLean.Round26NoInterval"
+  ],
+  "SpringerLean.Round26Universal": [
+    "SpringerLean.Round26FilledInterval"
+  ],
+  "SpringerLean.Round27MultiplicityIntegral": [
+    "SpringerLean.Round26Universal"
+  ],
+  "SpringerLean.Round27ActualPair": [
+    "SpringerLean.Round27MultiplicityIntegral"
+  ],
+  "SpringerLean.Round27ShiftIntegral": [
+    "SpringerLean.Round27ActualPair"
+  ],
+  "SpringerLean.Round27CenteredIntervals": [
+    "SpringerLean.Round27ShiftIntegral"
+  ],
+  "SpringerLean.Round27CostComparison": [
+    "SpringerLean.Round27CenteredIntervals"
+  ],
+  "SpringerLean.Round27LogKernel": [
+    "SpringerLean.Round27CostComparison"
+  ],
+  "SpringerLean.Round27MaxHarmonic": [
+    "SpringerLean.Round27LogKernel"
+  ],
+  "SpringerLean.Round27PotentialHarmonic": [
+    "SpringerLean.Round27MaxHarmonic"
+  ],
+  "SpringerLean.Round27PotentialSubmean": [
+    "SpringerLean.Round27PotentialHarmonic"
+  ],
+  "SpringerLean.Round27MaxLogHarmonic": [
+    "SpringerLean.Round27PotentialSubmean"
+  ],
+  "SpringerLean.Round27RotatedHarmonic": [
+    "SpringerLean.Round27MaxLogHarmonic"
+  ],
+  "SpringerLean.Round27RotatedSubmean": [
+    "SpringerLean.Round27RotatedHarmonic"
+  ],
+  "SpringerLean.Round27DoubleCircle": [
+    "SpringerLean.Round27RotatedSubmean"
+  ],
+  "SpringerLean.Round27ComparisonMean": [
+    "SpringerLean.Round27DoubleCircle"
+  ],
+  "SpringerLean.Round27VerticalCircleSwap": [
+    "SpringerLean.Round27ComparisonMean"
+  ],
+  "SpringerLean.Round27VerticalCircleSwapMeasurable": [
+    "SpringerLean.Round27VerticalCircleSwap"
+  ],
+  "SpringerLean.Round27ActualCircleSwap": [
+    "SpringerLean.Round27VerticalCircleSwapMeasurable"
+  ],
+  "SpringerLean.Round27LogAbsBound": [
+    "SpringerLean.Round27ActualCircleSwap"
+  ],
+  "SpringerLean.Round27LogDoubleCircle": [
+    "SpringerLean.Round27LogAbsBound"
+  ],
+  "SpringerLean.Round27GlobalPotentialSubmean": [
+    "SpringerLean.Round27LogDoubleCircle"
+  ],
+  "SpringerLean.Round27GlobalRotatedSubmean": [
+    "SpringerLean.Round27GlobalPotentialSubmean"
+  ],
+  "SpringerLean.Round27IntegratedSubmean": [
+    "SpringerLean.Round27GlobalRotatedSubmean"
+  ],
+  "SpringerLean.Round27ActualIntegratedSubmean": [
+    "SpringerLean.Round27IntegratedSubmean"
+  ],
+  "SpringerLean.Round27CompensatedTruncation": [
+    "SpringerLean.Round27ActualIntegratedSubmean"
+  ],
+  "SpringerLean.Round27ActualTruncation": [
+    "SpringerLean.Round27CompensatedTruncation"
+  ],
+  "SpringerLean.Round27Tail": [
+    "SpringerLean.Round27ActualTruncation"
+  ],
+  "SpringerLean.Round27RadialL1": [
+    "SpringerLean.Round27Tail"
+  ],
+  "SpringerLean.Round27PointKernelL1": [
+    "SpringerLean.Round27RadialL1"
+  ],
+  "SpringerLean.Round27CurveL1": [
+    "SpringerLean.Round27PointKernelL1"
+  ],
+  "SpringerLean.Round27ActualL1": [
+    "SpringerLean.Round27CurveL1",
+    "SpringerLean.Round17VerticalActual"
+  ],
+  "SpringerLean.Round27TailL1": [
+    "SpringerLean.Round27ActualL1"
+  ],
+  "SpringerLean.Round27UniformTail": [
+    "SpringerLean.Round27TailL1",
+    "SpringerLean.Round27Tail"
+  ],
+  "SpringerLean.Round27AngularTail": [
+    "SpringerLean.Round27UniformTail"
+  ],
+  "SpringerLean.Round28PotentialOffCurve": [
+    "SpringerLean.Round27AngularTail"
+  ],
+  "SpringerLean.Round28ActualPotentialContinuous": [
+    "SpringerLean.Round28PotentialOffCurve"
+  ],
+  "SpringerLean.Round28UniformCoercive": [
+    "SpringerLean.Round28ActualPotentialContinuous"
+  ],
+  "SpringerLean.Round28WindowMeasure": [
+    "SpringerLean.Round28UniformCoercive"
+  ],
+  "SpringerLean.Round28UniformOptimizer": [
+    "SpringerLean.Round28WindowMeasure"
+  ],
+  "SpringerLean.Round28PotentialUniformStrip": [
+    "SpringerLean.Round28UniformOptimizer"
+  ],
+  "SpringerLean.Round28CostDifference": [
+    "SpringerLean.Round28PotentialUniformStrip"
+  ],
+  "SpringerLean.Round28CostHorizontal": [
+    "SpringerLean.Round28CostDifference"
+  ],
+  "SpringerLean.Round28CostHorizontalAt": [
+    "SpringerLean.Round28CostHorizontal"
+  ],
+  "SpringerLean.Round28ActualIntegralHorizontal": [
+    "SpringerLean.Round28CostHorizontalAt"
+  ],
+  "SpringerLean.Round18Continuity": [
+    "SpringerLean.Round18CompactSupport"
+  ],
+  "SpringerLean.Round28AuxHorizontal": [
+    "SpringerLean.Round28ActualIntegralHorizontal",
+    "SpringerLean.Round18Continuity"
+  ],
+  "SpringerLean.Round28MassAdjust": [
+    "SpringerLean.Round28AuxHorizontal"
+  ],
+  "SpringerLean.Round28CostHeight": [
+    "SpringerLean.Round28MassAdjust"
+  ],
+  "SpringerLean.Round28CostHeightAbs": [
+    "SpringerLean.Round28CostHeight"
+  ],
+  "SpringerLean.Round28CostJoint": [
+    "SpringerLean.Round28CostHeightAbs",
+    "SpringerLean.Round28CostHorizontal"
+  ],
+  "SpringerLean.Round28ComparisonHeight": [
+    "SpringerLean.Round28CostJoint",
+    "SpringerLean.Round28ActualPotentialContinuous",
+    "SpringerLean.Round28AuxHorizontal"
+  ],
+  "SpringerLean.Round28ComparisonHorizontalUniform": [
+    "SpringerLean.Round28ComparisonHeight",
+    "SpringerLean.Round28CostDifference",
+    "SpringerLean.Round27TailL1"
+  ],
+  "SpringerLean.Round28ComparisonJoint": [
+    "SpringerLean.Round28ComparisonHorizontalUniform"
+  ],
+  "SpringerLean.Round28AuxJoint": [
+    "SpringerLean.Round28ComparisonJoint",
+    "SpringerLean.Round28CostJoint",
+    "SpringerLean.Round18Continuity"
+  ],
+  "SpringerLean.Round28CostZeroBound": [
+    "SpringerLean.Round28AuxJoint"
+  ],
+  "SpringerLean.Round28ComparisonZero": [
+    "SpringerLean.Round28ComparisonHorizontalUniform"
+  ],
+  "SpringerLean.Round28AuxBoundary": [
+    "SpringerLean.Round28CostZeroBound",
+    "SpringerLean.Round28ComparisonZero",
+    "SpringerLean.Round28ComparisonHorizontalUniform",
+    "SpringerLean.Round18Continuity"
+  ],
+  "SpringerLean.Round28AuxClosed": [
+    "SpringerLean.Round28AuxBoundary"
+  ],
+  "SpringerLean.Round29ReferenceKernel": [
+    "SpringerLean.Round28AuxClosed",
+    "SpringerLean.Round23Minimum"
+  ],
+  "SpringerLean.Round29LogQuadratic": [
+    "SpringerLean.Round29ReferenceKernel"
+  ],
+  "SpringerLean.Round29MeanZeroLog": [
+    "SpringerLean.Round29LogQuadratic"
+  ],
+  "SpringerLean.Round29ActualFar": [
+    "SpringerLean.Round29MeanZeroLog",
+    "SpringerLean.Round14BoundaryMean",
+    "SpringerLean.Round22Costs"
+  ],
+  "SpringerLean.Round29ComparisonFar": [
+    "SpringerLean.Round29ActualFar",
+    "SpringerLean.Round13Mean"
+  ],
+  "SpringerLean.Round29PotentialDiffFar": [
+    "SpringerLean.Round29ComparisonFar"
+  ],
+  "SpringerLean.Round29ReferenceBridge": [
+    "SpringerLean.Round29PotentialDiffFar"
+  ],
+  "SpringerLean.Round29ActualReferenceFar": [
+    "SpringerLean.Round29ReferenceBridge"
+  ],
+  "SpringerLean.Round29ComparisonGlobalBound": [
+    "SpringerLean.Round29ActualReferenceFar"
+  ],
+  "SpringerLean.Round29ActualReferenceGlobal": [
+    "SpringerLean.Round29ComparisonGlobalBound"
+  ],
+  "SpringerLean.Round29ReferenceVertical": [
+    "SpringerLean.Round29ActualReferenceGlobal",
+    "SpringerLean.Round17CauchyKernel"
+  ],
+  "SpringerLean.Round29VerticalError": [
+    "SpringerLean.Round29ReferenceVertical",
+    "SpringerLean.Round28ActualPotentialContinuous",
+    "SpringerLean.Round17VerticalActual"
+  ],
+  "SpringerLean.Round29AuxErrorBound": [
+    "SpringerLean.Round29VerticalError",
+    "SpringerLean.Round29ReferenceKernel",
+    "SpringerLean.Round25Optimizer"
+  ],
+  "SpringerLean.Round29AuxHorizontalInfinity": [
+    "SpringerLean.Round29AuxErrorBound"
+  ],
+  "SpringerLean.Round29AuxClosedHorizontal": [
+    "SpringerLean.Round29AuxHorizontalInfinity"
+  ],
+  "SpringerLean.Round29AuxHorizontalLimsup": [
+    "SpringerLean.Round29AuxClosedHorizontal"
+  ],
+  "SpringerLean.Round29LargeCore": [
+    "SpringerLean.Round29AuxHorizontalLimsup",
+    "SpringerLean.Round23Candidate",
+    "SpringerLean.Round28UniformCoercive"
+  ],
+  "SpringerLean.Round29AuxComplement": [
+    "SpringerLean.Round29AuxErrorBound",
+    "SpringerLean.Round29ReferenceKernel",
+    "SpringerLean.Round25Optimizer"
+  ],
+  "SpringerLean.Round29ActualComplement": [
+    "SpringerLean.Round29AuxComplement"
+  ],
+  "SpringerLean.Round29LargeHeightTail": [
+    "SpringerLean.Round29LargeCore",
+    "SpringerLean.Round29ActualComplement"
+  ],
+  "SpringerLean.Round29AuxVerticalLimsup": [
+    "SpringerLean.Round29LargeHeightTail",
+    "SpringerLean.Round27Tail"
+  ],
+  "SpringerLean.Round29AuxInfinity": [
+    "SpringerLean.Round29AuxVerticalLimsup"
+  ],
+  "SpringerLean.Round30ComparisonClip": [
+    "SpringerLean.Round29AuxInfinity",
+    "SpringerLean.Round27VerticalCircleSwap"
+  ],
+  "SpringerLean.Round30ComparisonClipEq": [
+    "SpringerLean.Round30ComparisonClip"
+  ],
+  "SpringerLean.Round30ComparisonSwap": [
+    "SpringerLean.Round30ComparisonClipEq"
+  ],
+  "SpringerLean.Round30ComparisonOuterMean": [
+    "SpringerLean.Round30ComparisonSwap",
+    "SpringerLean.Round27ComparisonMean"
+  ],
+  "SpringerLean.Round30AuxPair": [
+    "SpringerLean.Round30ComparisonOuterMean",
+    "SpringerLean.Round27CostComparison",
+    "SpringerLean.Round28ComparisonHeight"
+  ],
+  "SpringerLean.Round30AnglePair": [
+    "SpringerLean.Round30AuxPair"
+  ],
+  "SpringerLean.Round30AuxAnglePair": [
+    "SpringerLean.Round30AnglePair",
+    "SpringerLean.Round28AuxClosed"
+  ],
+  "SpringerLean.Round30ActualPairSemicircle": [
+    "SpringerLean.Round30AuxAnglePair",
+    "SpringerLean.Round30AuxPair"
+  ],
+  "SpringerLean.Round30CompensatedShift": [
+    "SpringerLean.Round30ActualPairSemicircle"
+  ],
+  "SpringerLean.Round30CompensatedFiniteShift": [
+    "SpringerLean.Round30CompensatedShift",
+    "SpringerLean.Round27CompensatedTruncation"
+  ],
+  "SpringerLean.Round30ActualFiniteShift": [
+    "SpringerLean.Round30CompensatedFiniteShift",
+    "SpringerLean.Round28PotentialUniformStrip",
+    "SpringerLean.Round28ComparisonHeight"
+  ],
+  "SpringerLean.Round30CompensatedPair": [
+    "SpringerLean.Round30ActualFiniteShift"
+  ],
+  "SpringerLean.Round30ActualPairComplement": [
+    "SpringerLean.Round30CompensatedPair"
+  ],
+  "SpringerLean.Round30ActualSemicircleComplement": [
+    "SpringerLean.Round30ActualPairComplement"
+  ],
+  "SpringerLean.Round30ActualCenterComplement": [
+    "SpringerLean.Round30ActualSemicircleComplement",
+    "SpringerLean.Round27ActualTruncation"
+  ],
+  "SpringerLean.Round30VerticalSetCircleIntegrable": [
+    "SpringerLean.Round30ActualCenterComplement",
+    "SpringerLean.Round27VerticalCircleSwapMeasurable"
+  ],
+  "SpringerLean.Round30ActualCircleIntegrable": [
+    "SpringerLean.Round30VerticalSetCircleIntegrable",
+    "SpringerLean.Round28PotentialUniformStrip"
+  ],
+  "SpringerLean.Round30ComparisonCircleIntegrable": [
+    "SpringerLean.Round30ActualCircleIntegrable",
+    "SpringerLean.Round30ComparisonClipEq"
+  ],
+  "SpringerLean.Round30FiniteComplementMean": [
+    "SpringerLean.Round30ComparisonCircleIntegrable",
+    "SpringerLean.Round30ComparisonOuterMean",
+    "SpringerLean.Round27ActualIntegratedSubmean"
+  ],
+  "SpringerLean.Round30TailTranslate": [
+    "SpringerLean.Round30FiniteComplementMean"
+  ],
+  "SpringerLean.Round30TailDomination": [
+    "SpringerLean.Round30TailTranslate"
+  ],
+  "SpringerLean.Round30ShiftedTailUniform": [
+    "SpringerLean.Round30TailDomination",
+    "SpringerLean.Round27UniformTail"
+  ],
+  "SpringerLean.Round30OuterSplit": [
+    "SpringerLean.Round30ShiftedTailUniform"
+  ],
+  "SpringerLean.Round30ShiftedTailSigned": [
+    "SpringerLean.Round30OuterSplit"
+  ],
+  "SpringerLean.Round30ComplexVerticalBridge": [
+    "SpringerLean.Round30ShiftedTailSigned"
+  ],
+  "SpringerLean.Round30ComparisonOutsideIntegrable": [
+    "SpringerLean.Round30ComplexVerticalBridge",
+    "SpringerLean.Round30ComparisonClipEq"
+  ],
+  "SpringerLean.Round30AnnulusDifference": [
+    "SpringerLean.Round30ComparisonOutsideIntegrable"
+  ],
+  "SpringerLean.Round30AnnulusSubmean": [
+    "SpringerLean.Round30AnnulusDifference"
+  ],
+  "SpringerLean.Round31AnnulusCircleIntegrable": [
+    "SpringerLean.Round30AnnulusSubmean"
+  ],
+  "SpringerLean.Round31OuterSplit": [
+    "SpringerLean.Round31AnnulusCircleIntegrable",
+    "SpringerLean.Round30OuterSplit"
+  ],
+  "SpringerLean.Round31OuterFunctions": [
+    "SpringerLean.Round31OuterSplit"
+  ],
+  "SpringerLean.Round31OuterCircleUniform": [
+    "SpringerLean.Round31OuterFunctions",
+    "SpringerLean.Round30ShiftedTailSigned"
+  ],
+  "SpringerLean.Round31CircleUniformIntegrable": [
+    "SpringerLean.Round31OuterCircleUniform"
+  ],
+  "SpringerLean.Round31OuterCircleIntegrable": [
+    "SpringerLean.Round31CircleUniformIntegrable"
+  ],
+  "SpringerLean.Round31CircleUniformAverage": [
+    "SpringerLean.Round31OuterCircleIntegrable"
+  ],
+  "SpringerLean.Round31OuterCenterLimit": [
+    "SpringerLean.Round31CircleUniformAverage"
+  ],
+  "SpringerLean.Round31OuterAverageLimit": [
+    "SpringerLean.Round31OuterCenterLimit"
+  ],
+  "SpringerLean.Round31OuterSubmean": [
+    "SpringerLean.Round31OuterAverageLimit"
+  ],
+  "SpringerLean.Round31FiniteComplementBridge": [
+    "SpringerLean.Round31OuterSubmean",
+    "SpringerLean.Round30ActualCenterComplement",
+    "SpringerLean.Round30FiniteComplementMean"
+  ],
+  "SpringerLean.Round31FiniteComplementSubmean": [
+    "SpringerLean.Round31FiniteComplementBridge",
+    "SpringerLean.Round30ComparisonCircleIntegrable",
+    "SpringerLean.Round30ActualCircleIntegrable"
+  ],
+  "SpringerLean.Round31PairAverage": [
+    "SpringerLean.Round31FiniteComplementSubmean",
+    "SpringerLean.Round30AuxAnglePair"
+  ],
+  "SpringerLean.Round31FiniteComplementPair": [
+    "SpringerLean.Round31PairAverage"
+  ],
+  "SpringerLean.Round31AuxLocalSubmean": [
+    "SpringerLean.Round31FiniteComplementPair",
+    "SpringerLean.Round30AuxAnglePair",
+    "SpringerLean.Round28AuxClosed"
+  ],
+  "SpringerLean.Round32VerticalMoments": [
+    "SpringerLean.Round31AuxLocalSubmean"
+  ],
+  "SpringerLean.Round32StrictCircle": [
+    "SpringerLean.Round32VerticalMoments",
+    "SpringerLean.Round28AuxClosed"
+  ],
+  "SpringerLean.Round32VerticalSign": [
+    "SpringerLean.Round32StrictCircle",
+    "SpringerLean.Round29AuxInfinity",
+    "SpringerLean.Round22BoundarySlope"
+  ],
+  "SpringerLean.Round18FiniteConvex": [
+    "SpringerLean.Round18SignReduction"
+  ],
+  "SpringerLean.Round18ActualFiniteConvex": [
+    "SpringerLean.Round18FiniteConvex",
+    "SpringerLean.Round18CompactSupport"
+  ],
+  "SpringerLean.Round19ThresholdSet": [
+    "SpringerLean.Round18SignReduction"
+  ],
+  "SpringerLean.Round19UpperLevel": [
+    "SpringerLean.Round19ThresholdSet"
+  ],
+  "SpringerLean.Round19ActualThreshold": [
+    "SpringerLean.Round19ThresholdSet",
+    "SpringerLean.Round19UpperLevel",
+    "SpringerLean.Round17ActualCurve"
+  ],
+  "SpringerLean.Round32SignApplications": [
+    "SpringerLean.Round32VerticalSign",
+    "SpringerLean.Round18ActualFiniteConvex",
+    "SpringerLean.Round19ActualThreshold"
+  ],
+  "SpringerLean.Round33CenteredArc": [
+    "SpringerLean.Round32SignApplications"
+  ],
+  "SpringerLean.Round33ActualArcBound": [
+    "SpringerLean.Round33CenteredArc"
+  ],
+  "SpringerLean.Round34PoissonComparator": [
+    "SpringerLean.Round33ActualArcBound",
+    "SpringerLean.Round13PoissonFill"
+  ],
+  "SpringerLean.Round35SlitSharpness": [
+    "SpringerLean.Round34PoissonComparator"
+  ],
+  "SpringerLean.Round54SecondMoment": [
+    "SpringerLean.Round14AreaCircle",
+    "SpringerLean.Round14Quadratic",
+    "SpringerLean.Round35SlitSharpness"
+  ],
+  "SpringerLean.Round55DiskPolar": [
+    "SpringerLean.DiskPolar",
+    "SpringerLean.Round54SecondMoment"
+  ],
+  "SpringerLean.Round56SecondMoment": [
+    "SpringerLean.Round55DiskPolar",
+    "SpringerLean.Round11PolarArea"
+  ],
+  "SpringerLean.Round57EqualityPrelude": [
+    "SpringerLean.Round56SecondMoment"
+  ],
+  "SpringerLean.Round58CircleRigidity": [
+    "SpringerLean.Round57EqualityPrelude",
+    "SpringerLean.Round14AreaCircle"
+  ],
+  "SpringerLean.Round59ThirdCoeffRigidity": [
+    "SpringerLean.Round58CircleRigidity",
+    "SpringerLean.LowOrder",
+    "SpringerLean.GeneralArea"
+  ],
+  "SpringerLean.Round60FifthCoeff": [
+    "SpringerLean.Round59ThirdCoeffRigidity",
+    "SpringerLean.LowOrder"
+  ],
+  "SpringerLean.Round61FifthMomentBridge": [
+    "SpringerLean.Round60FifthCoeff",
+    "SpringerLean.Round12CompareMoments"
+  ],
+  "SpringerLean.Round62SchoberFinite": [
+    "SpringerLean.Round61FifthMomentBridge"
+  ],
+  "SpringerLean.Round63ActualReciprocal": [
+    "SpringerLean.Round62SchoberFinite"
+  ],
+  "SpringerLean.Round64SchoberAlgebra": [
+    "SpringerLean.Round63ActualReciprocal"
+  ],
+  "SpringerLean.Round65BivariateKernel": [
+    "SpringerLean.Round64SchoberAlgebra"
+  ],
+  "SpringerLean.Round66FiniteContraction": [
+    "SpringerLean.Round65BivariateKernel"
+  ],
+  "SpringerLean.Round67TensorContraction": [
+    "SpringerLean.Round66FiniteContraction"
+  ],
+  "SpringerLean.Round68TensorTerms": [
+    "SpringerLean.Round67TensorContraction"
+  ],
+  "SpringerLean.Round69WeightedArea": [
+    "SpringerLean.Round68TensorTerms"
+  ],
+  "SpringerLean.Round482OmittedRootEnergy": [
+    "SpringerLean.Round481OmittedRadiusRigidity",
+    "SpringerLean.Round69WeightedArea"
+  ],
+  "SpringerLean.Round601TwoOmittedRootMidpoint": [
+    "SpringerLean.Round482OmittedRootEnergy"
+  ],
+  "SpringerLean.Round70InverseRows": [
+    "SpringerLean.Round69WeightedArea"
+  ],
+  "SpringerLean.Round71PowerRows": [
+    "SpringerLean.Round70InverseRows"
+  ],
+  "SpringerLean.Round72ActualRows": [
+    "SpringerLean.Round71PowerRows"
+  ],
+  "SpringerLean.Round73KernelMatrix": [
+    "SpringerLean.Round72ActualRows"
+  ],
+  "SpringerLean.Round74FiniteSupport": [
+    "SpringerLean.Round73KernelMatrix"
+  ],
+  "SpringerLean.Round75DiagonalRows": [
+    "SpringerLean.Round74FiniteSupport"
+  ],
+  "SpringerLean.Round76FaberTwo": [
+    "SpringerLean.Round75DiagonalRows"
+  ],
+  "SpringerLean.Round77FaberThree": [
+    "SpringerLean.Round76FaberTwo"
+  ],
+  "SpringerLean.Round78RowOneArea": [
+    "SpringerLean.Round77FaberThree"
+  ],
+  "SpringerLean.Round79FaberArea": [
+    "SpringerLean.Round78RowOneArea",
+    "SpringerLean.AnnulusArea"
+  ],
+  "SpringerLean.Round80PolynomialCutoff": [
+    "SpringerLean.Round79FaberArea",
+    "SpringerLean.Round09Cutoff",
+    "SpringerLean.Round11Outer",
+    "SpringerLean.Round11FinalGreen"
+  ],
+  "SpringerLean.Round81BoundaryPrimitive": [
+    "SpringerLean.Round80PolynomialCutoff"
+  ],
+  "SpringerLean.Round82BoundaryFourierPrelude": [
+    "SpringerLean.Round81BoundaryPrimitive"
+  ],
+  "SpringerLean.Round82FourierPair": [
+    "SpringerLean.Round82BoundaryFourierPrelude",
+    "SpringerLean.CircleEnergy"
+  ],
+  "SpringerLean.Round83ComplexBoundary": [
+    "SpringerLean.Round82FourierPair"
+  ],
+  "SpringerLean.Round84FaberLaurent": [
+    "SpringerLean.Round83ComplexBoundary",
+    "SpringerLean.Round14QuadraticPrelude",
+    "SpringerLean.UniformDerivative"
+  ],
+  "SpringerLean.Round85AngularDerivative": [
+    "SpringerLean.Round84FaberLaurent"
+  ],
+  "SpringerLean.Round86BoundaryLimit": [
+    "SpringerLean.Round85AngularDerivative"
+  ],
+  "SpringerLean.Round87LaurentFourier": [
+    "SpringerLean.Round86BoundaryLimit"
+  ],
+  "SpringerLean.Round88FaberActual": [
+    "SpringerLean.Round87LaurentFourier"
+  ],
+  "SpringerLean.Round89FaberBoundaryDerivative": [
+    "SpringerLean.Round88FaberActual"
+  ],
+  "SpringerLean.Round90FaberCombination": [
+    "SpringerLean.Round89FaberBoundaryDerivative"
+  ],
+  "SpringerLean.Round602RootMidpointEnergy": [
+    "SpringerLean.Round601TwoOmittedRootMidpoint",
+    "SpringerLean.Round90FaberCombination"
+  ],
+  "SpringerLean.Round603TwoPointReciprocalBudget": [
+    "SpringerLean.Round602RootMidpointEnergy"
+  ],
+  "SpringerLean.Round604UnitDiskCoefficientEnergy": [
+    "SpringerLean.Round603TwoPointReciprocalBudget",
+    "SpringerLean.Round08Actual"
+  ],
+  "SpringerLean.Round605ReciprocalDirichletBudget": [
+    "SpringerLean.Round604UnitDiskCoefficientEnergy"
+  ],
+  "SpringerLean.Round606MidpointOmittedArea": [
+    "SpringerLean.Round605ReciprocalDirichletBudget",
+    "SpringerLean.Round11Energy"
+  ],
+  "SpringerLean.Round607MidpointPositiveArea": [
+    "SpringerLean.Round606MidpointOmittedArea"
+  ],
+  "SpringerLean.Round609InversionArea": [
+    "SpringerLean.AnnulusArea"
+  ],
+  "SpringerLean.Round612ReciprocalImage": [
+    "SpringerLean.Round607MidpointPositiveArea",
+    "SpringerLean.Round609InversionArea",
+    "SpringerLean.Round12Compact"
+  ],
+  "SpringerLean.Round608EqualAreaExchange": [],
+  "SpringerLean.Round610BallInversionIntegral": [
+    "SpringerLean.Round609InversionArea"
+  ],
+  "SpringerLean.Round611InverseAreaBathtub": [
+    "SpringerLean.Round608EqualAreaExchange",
+    "SpringerLean.Round610BallInversionIntegral"
+  ],
+  "SpringerLean.Round613ReciprocalAreaLower": [
+    "SpringerLean.Round612ReciprocalImage",
+    "SpringerLean.Round611InverseAreaBathtub"
+  ],
+  "SpringerLean.Round614TwoOmittedPoints": [
+    "SpringerLean.Round613ReciprocalAreaLower"
+  ],
+  "SpringerLean.Round615TwoPointConvexHull": [
+    "SpringerLean.Round614TwoOmittedPoints"
+  ],
+  "SpringerLean.Round1336CoarseActualGeometry": [
+    "SpringerLean.Round1335CoarseTwoPointScalar",
+    "SpringerLean.Round615TwoPointConvexHull"
+  ],
+  "SpringerLean.Round1411MediumOppositeFar": [
+    "SpringerLean.Round1410MediumChordScalar",
+    "SpringerLean.Round1336CoarseActualGeometry"
+  ],
+  "SpringerLean.Round1412MediumSecondNear": [
+    "SpringerLean.Round1411MediumOppositeFar"
+  ],
+  "SpringerLean.Round1413SecondAssignedProjection": [
+    "SpringerLean.Round1412MediumSecondNear"
+  ],
+  "SpringerLean.Round629SmallWidthScalar": [],
+  "SpringerLean.Round650WidthLogRemainder": [
+    "SpringerLean.Round629SmallWidthScalar"
+  ],
+  "SpringerLean.Round618OddLogSeries": [],
+  "SpringerLean.Round620StripLogKernel": [
+    "SpringerLean.Round618OddLogSeries"
+  ],
+  "SpringerLean.Round1403MediumWidthKernel": [
+    "SpringerLean.Round650WidthLogRemainder",
+    "SpringerLean.Round620StripLogKernel"
+  ],
+  "SpringerLean.Round621FiniteOddRootTail": [
+    "SpringerLean.Round69WeightedArea",
+    "SpringerLean.Round620StripLogKernel"
+  ],
+  "SpringerLean.Round624ActualOddTailSeries": [
+    "SpringerLean.Round482OmittedRootEnergy",
+    "SpringerLean.DiskExpansion"
+  ],
+  "SpringerLean.Round633ActualOddTailBound": [
+    "SpringerLean.Round621FiniteOddRootTail",
+    "SpringerLean.Round624ActualOddTailSeries"
+  ],
+  "SpringerLean.Round634RealRootCircleWidth": [
+    "SpringerLean.Round633ActualOddTailBound"
+  ],
+  "SpringerLean.Round1404MediumWidthEstimate": [
+    "SpringerLean.Round1403MediumWidthKernel",
+    "SpringerLean.Round634RealRootCircleWidth"
+  ],
+  "SpringerLean.Round1359ExactInverseProfileScalar": [],
+  "SpringerLean.Round1361ExactInverseConvex": [
+    "SpringerLean.Round1359ExactInverseProfileScalar"
+  ],
+  "SpringerLean.Round1372InverseProfileBranches": [
+    "SpringerLean.Round1361ExactInverseConvex"
+  ],
+  "SpringerLean.Round1340CoarseJacobianScalar": [],
+  "SpringerLean.Round1373JacobianIdentity": [
+    "SpringerLean.Round1372InverseProfileBranches",
+    "SpringerLean.Round1340CoarseJacobianScalar"
+  ],
+  "SpringerLean.Round1376AngleMapBasics": [
+    "SpringerLean.Round1373JacobianIdentity"
+  ],
+  "SpringerLean.Round1377AngleMapIdentity": [
+    "SpringerLean.Round1376AngleMapBasics"
+  ],
+  "SpringerLean.Round1378AngleDerivative": [
+    "SpringerLean.Round1377AngleMapIdentity"
+  ],
+  "SpringerLean.Round1379AngleSubstitution": [
+    "SpringerLean.Round1378AngleDerivative"
+  ],
+  "SpringerLean.Round1380EvenCircleIntegral": [
+    "SpringerLean.Round1379AngleSubstitution",
+    "SpringerLean.Round30AnglePair"
+  ],
+  "SpringerLean.Round1350SinMomentScalar": [],
+  "SpringerLean.Round1351CircleSinMoment": [
+    "SpringerLean.Round1350SinMomentScalar",
+    "SpringerLean.Round30AnglePair"
+  ],
+  "SpringerLean.Round1374HalfCosMoments": [
+    "SpringerLean.Round1351CircleSinMoment"
+  ],
+  "SpringerLean.Round1381ActiveCost": [
+    "SpringerLean.Round1380EvenCircleIntegral",
+    "SpringerLean.Round1374HalfCosMoments"
+  ],
+  "SpringerLean.Round1382ModelCost": [
+    "SpringerLean.Round1381ActiveCost"
+  ],
+  "SpringerLean.Round1364ConvexChordScalar": [
+    "SpringerLean.Round1361ExactInverseConvex"
+  ],
+  "SpringerLean.Round1365ConvexChordExtension": [
+    "SpringerLean.Round1364ConvexChordScalar"
+  ],
+  "SpringerLean.Round1366ExactChordProfile": [
+    "SpringerLean.Round1365ConvexChordExtension"
+  ],
+  "SpringerLean.Round1367ArcMeanScalar": [
+    "SpringerLean.Round1366ExactChordProfile"
+  ],
+  "SpringerLean.Round1383ChordArcIdentity": [
+    "SpringerLean.Round1382ModelCost",
+    "SpringerLean.Round1367ArcMeanScalar"
+  ],
+  "SpringerLean.Round1384ShortArcQuadratic": [
+    "SpringerLean.Round1383ChordArcIdentity"
+  ],
+  "SpringerLean.Round1385ArcVariance": [
+    "SpringerLean.Round1384ShortArcQuadratic"
+  ],
+  "SpringerLean.Round1386SmoothProfileDerivs": [
+    "SpringerLean.Round1385ArcVariance"
+  ],
+  "SpringerLean.Round1387PowerCurvatureFormula": [
+    "SpringerLean.Round1386SmoothProfileDerivs"
+  ],
+  "SpringerLean.Round1388ExpThreeHalves": [
+    "SpringerLean.Round1387PowerCurvatureFormula"
+  ],
+  "SpringerLean.Round1389PowerLower": [
+    "SpringerLean.Round1388ExpThreeHalves"
+  ],
+  "SpringerLean.Round1390ArcCurvature": [
+    "SpringerLean.Round1389PowerLower"
+  ],
+  "SpringerLean.Round1391ArcCurvatureLower": [
+    "SpringerLean.Round1390ArcCurvature"
+  ],
+  "SpringerLean.Round1392SmoothPowerC2": [
+    "SpringerLean.Round1391ArcCurvatureLower"
+  ],
+  "SpringerLean.Round1393StrongArcConvex": [
+    "SpringerLean.Round1392SmoothPowerC2"
+  ],
+  "SpringerLean.Round1394ArcJensen": [
+    "SpringerLean.Round1393StrongArcConvex"
+  ],
+  "SpringerLean.Round1395ActualArcJensen": [
+    "SpringerLean.Round1394ArcJensen"
+  ],
+  "SpringerLean.Round1396ProjectionVariance": [
+    "SpringerLean.Round1395ActualArcJensen"
+  ],
+  "SpringerLean.Round1397SavingNumeric": [
+    "SpringerLean.Round1396ProjectionVariance"
+  ],
+  "SpringerLean.Round1398SavingFactorIdentity": [
+    "SpringerLean.Round1397SavingNumeric"
+  ],
+  "SpringerLean.Round1375OddCosUpper": [
+    "SpringerLean.Round1374HalfCosMoments"
+  ],
+  "SpringerLean.Round1399StrictSavingScalar": [
+    "SpringerLean.Round1398SavingFactorIdentity",
+    "SpringerLean.Round1375OddCosUpper"
+  ],
+  "SpringerLean.Round1400StrictChordSaving": [
+    "SpringerLean.Round1399StrictSavingScalar"
+  ],
+  "SpringerLean.Round657TaylorCircleBound": [
+    "SpringerLean.DiskCoeff"
+  ],
+  "SpringerLean.Round658ActualBoundaryMoment": [
+    "SpringerLean.Round657TaylorCircleBound",
+    "SpringerLean.RescaleGerm"
+  ],
+  "SpringerLean.Round632OmittedSequentialLimit": [
+    "SpringerLean.Round12Compact"
+  ],
+  "SpringerLean.Round636OmittedCollarUniform": [
+    "SpringerLean.Round632OmittedSequentialLimit",
+    "SpringerLean.Round480OmittedRadius"
+  ],
+  "SpringerLean.Round639RegularBoundaryOmitted": [
+    "SpringerLean.Round636OmittedCollarUniform",
+    "SpringerLean.Rescale"
+  ],
+  "SpringerLean.Round401EndpointChoices": [
+    "SpringerLean.Round12HullParameter"
+  ],
+  "SpringerLean.Round659OmittedRadiusCoefficient": [
+    "SpringerLean.Round658ActualBoundaryMoment",
+    "SpringerLean.Round639RegularBoundaryOmitted",
+    "SpringerLean.Round401EndpointChoices"
+  ],
+  "SpringerLean.Round630ConvexGridAlgebra": [],
+  "SpringerLean.Round641ConvexGridCells": [
+    "SpringerLean.Round630ConvexGridAlgebra"
+  ],
+  "SpringerLean.Round642ConvexGridBounds": [
+    "SpringerLean.Round641ConvexGridCells"
+  ],
+  "SpringerLean.Round643ConvexUniformHinge": [
+    "SpringerLean.Round642ConvexGridBounds"
+  ],
+  "SpringerLean.Round644FullConvexCircle": [
+    "SpringerLean.Round643ConvexUniformHinge",
+    "SpringerLean.Round18FiniteConvex"
+  ],
+  "SpringerLean.Round645ActualBoundaryConvex": [
+    "SpringerLean.Round644FullConvexCircle",
+    "SpringerLean.Round32SignApplications",
+    "SpringerLean.Round639RegularBoundaryOmitted"
+  ],
+  "SpringerLean.Round663ActualConvexCaps": [
+    "SpringerLean.Round659OmittedRadiusCoefficient",
+    "SpringerLean.Round645ActualBoundaryConvex"
+  ],
+  "SpringerLean.Round1342ActualAffineCap": [
+    "SpringerLean.Round1336CoarseActualGeometry",
+    "SpringerLean.Round663ActualConvexCaps"
+  ],
+  "SpringerLean.Round1343GaussianPointwise": [
+    "SpringerLean.Round1342ActualAffineCap"
+  ],
+  "SpringerLean.Round1344GaussianIntegralBound": [
+    "SpringerLean.Round1343GaussianPointwise"
+  ],
+  "SpringerLean.Round1345AffineCircleCost": [
+    "SpringerLean.Round1344GaussianIntegralBound"
+  ],
+  "SpringerLean.Round1337PlatformScalar": [],
+  "SpringerLean.Round661CatalanRadiusScalar": [],
+  "SpringerLean.Round1318Catalan359Scalar": [
+    "SpringerLean.Round661CatalanRadiusScalar"
+  ],
+  "SpringerLean.Round1346GaussianCatalanScalar": [
+    "SpringerLean.Round1337PlatformScalar",
+    "SpringerLean.Round1318Catalan359Scalar"
+  ],
+  "SpringerLean.Round1347SecondRadius195": [
+    "SpringerLean.Round1345AffineCircleCost",
+    "SpringerLean.Round1346GaussianCatalanScalar"
+  ],
+  "SpringerLean.Round1320OddKernel25": [
+    "SpringerLean.Round620StripLogKernel"
+  ],
+  "SpringerLean.Round1321ImaginaryRootIdentity": [
+    "SpringerLean.Round1320OddKernel25",
+    "SpringerLean.Round457OmittedSquareRootLift",
+    "SpringerLean.Round08General"
+  ],
+  "SpringerLean.Round1322ImaginaryTail": [
+    "SpringerLean.Round1321ImaginaryRootIdentity",
+    "SpringerLean.Round633ActualOddTailBound"
+  ],
+  "SpringerLean.Round1323OppositeProjectionAlgebra": [
+    "SpringerLean.Round1322ImaginaryTail"
+  ],
+  "SpringerLean.Round484RootOmittedSet": [
+    "SpringerLean.Round482OmittedRootEnergy"
+  ],
+  "SpringerLean.Round1324RealOppositeWitness": [
+    "SpringerLean.Round1323OppositeProjectionAlgebra",
+    "SpringerLean.Round484RootOmittedSet",
+    "SpringerLean.Round12HullParameter"
+  ],
+  "SpringerLean.Round36WeightedLayer": [
+    "SpringerLean.Round35SlitSharpness"
+  ],
+  "SpringerLean.Round37KernelLevels": [
+    "SpringerLean.Round36WeightedLayer"
+  ],
+  "SpringerLean.Round38CenteredWeighted": [
+    "SpringerLean.Round37KernelLevels"
+  ],
+  "SpringerLean.Round39RotateExterior": [
+    "SpringerLean.Round38CenteredWeighted"
+  ],
+  "SpringerLean.Round550RotateExterior": [
+    "SpringerLean.Round484RootOmittedSet",
+    "SpringerLean.Round39RotateExterior"
+  ],
+  "SpringerLean.Round1325RotatedOppositeWitness": [
+    "SpringerLean.Round1324RealOppositeWitness",
+    "SpringerLean.Round39RotateExterior",
+    "SpringerLean.Round550RotateExterior"
+  ],
+  "SpringerLean.Round1319CandidateFirst359": [
+    "SpringerLean.Round1318Catalan359Scalar",
+    "SpringerLean.Round659OmittedRadiusCoefficient",
+    "SpringerLean.Round480OmittedRadius"
+  ],
+  "SpringerLean.Round616CuttingLine": [
+    "SpringerLean.Round615TwoPointConvexHull"
+  ],
+  "SpringerLean.Round617HalfMaximizerOmitted": [
+    "SpringerLean.Round401EndpointChoices"
+  ],
+  "SpringerLean.Round619ActualSecondEndpoint": [
+    "SpringerLean.Round616CuttingLine",
+    "SpringerLean.Round617HalfMaximizerOmitted"
+  ],
+  "SpringerLean.Round1326SecondEndpointRadius": [
+    "SpringerLean.Round1325RotatedOppositeWitness",
+    "SpringerLean.Round1319CandidateFirst359",
+    "SpringerLean.Round619ActualSecondEndpoint"
+  ],
+  "SpringerLean.Round1348TwoActualHighEnds": [
+    "SpringerLean.Round1347SecondRadius195",
+    "SpringerLean.Round1326SecondEndpointRadius"
+  ],
+  "SpringerLean.Round1338OppositeHalfGeometry": [
+    "SpringerLean.Round1336CoarseActualGeometry"
+  ],
+  "SpringerLean.Round1339SecondHighChord": [
+    "SpringerLean.Round1338OppositeHalfGeometry"
+  ],
+  "SpringerLean.Round1349SelectedHighProjection": [
+    "SpringerLean.Round1348TwoActualHighEnds",
+    "SpringerLean.Round1339SecondHighChord"
+  ],
+  "SpringerLean.Round1360ActualTwoInverseCaps": [
+    "SpringerLean.Round1359ExactInverseProfileScalar",
+    "SpringerLean.Round1349SelectedHighProjection"
+  ],
+  "SpringerLean.Round1368ActualFirstChordCost": [
+    "SpringerLean.Round1366ExactChordProfile",
+    "SpringerLean.Round1360ActualTwoInverseCaps",
+    "SpringerLean.Round663ActualConvexCaps"
+  ],
+  "SpringerLean.Round1369ActualSecondChordCost": [
+    "SpringerLean.Round1366ExactChordProfile",
+    "SpringerLean.Round1360ActualTwoInverseCaps",
+    "SpringerLean.Round663ActualConvexCaps"
+  ],
+  "SpringerLean.Round1370ActualBadEndArcCosts": [
+    "SpringerLean.Round1367ArcMeanScalar",
+    "SpringerLean.Round1368ActualFirstChordCost",
+    "SpringerLean.Round1369ActualSecondChordCost"
+  ],
+  "SpringerLean.Round1352CatalanCircleMoment": [
+    "SpringerLean.Round1351CircleSinMoment",
+    "SpringerLean.Round1318Catalan359Scalar"
+  ],
+  "SpringerLean.Round1353CirclePlatformLower": [
+    "SpringerLean.Round1352CatalanCircleMoment"
+  ],
+  "SpringerLean.Round1354ActualCandidateMoment": [
+    "SpringerLean.Round1353CirclePlatformLower",
+    "SpringerLean.Round1337PlatformScalar",
+    "SpringerLean.Round658ActualBoundaryMoment"
+  ],
+  "SpringerLean.Round1341CostContradictionScalar": [
+    "SpringerLean.Round1337PlatformScalar"
+  ],
+  "SpringerLean.Round1371DeficitIntegralReduction": [
+    "SpringerLean.Round1370ActualBadEndArcCosts",
+    "SpringerLean.Round1354ActualCandidateMoment",
+    "SpringerLean.Round1341CostContradictionScalar"
+  ],
+  "SpringerLean.Round1401ActualSelectedDeficits": [
+    "SpringerLean.Round1400StrictChordSaving",
+    "SpringerLean.Round1371DeficitIntegralReduction",
+    "SpringerLean.Round1326SecondEndpointRadius",
+    "SpringerLean.Round1347SecondRadius195"
+  ],
+  "SpringerLean.Round494ExteriorClosedImage": [
+    "SpringerLean.ForwardBound"
+  ],
+  "SpringerLean.Round498ExteriorCircleSupport": [
+    "SpringerLean.Round494ExteriorClosedImage",
+    "SpringerLean.Round12Compact"
+  ],
+  "SpringerLean.Round486StripConvexity": [
+    "SpringerLean.Round484RootOmittedSet"
+  ],
+  "SpringerLean.Round543RootCircleStrip": [
+    "SpringerLean.Round498ExteriorCircleSupport",
+    "SpringerLean.Round486StripConvexity"
+  ],
+  "SpringerLean.Round635ExplicitRootStrip": [
+    "SpringerLean.Round634RealRootCircleWidth",
+    "SpringerLean.Round543RootCircleStrip"
+  ],
+  "SpringerLean.Round637RotatedExplicitStrip": [
+    "SpringerLean.Round635ExplicitRootStrip",
+    "SpringerLean.Round550RotateExterior"
+  ],
+  "SpringerLean.Round1327ActualSecondStrip": [
+    "SpringerLean.Round1326SecondEndpointRadius",
+    "SpringerLean.Round637RotatedExplicitStrip"
+  ],
+  "SpringerLean.Round1405ActualLocalizedWidth": [
+    "SpringerLean.Round1404MediumWidthEstimate",
+    "SpringerLean.Round1401ActualSelectedDeficits",
+    "SpringerLean.Round1327ActualSecondStrip"
+  ],
+  "SpringerLean.Round1406SelectedTwoWidths": [
+    "SpringerLean.Round1405ActualLocalizedWidth"
+  ],
+  "SpringerLean.Round1407StripAffineScalar": [
+    "SpringerLean.Round1406SelectedTwoWidths"
+  ],
+  "SpringerLean.Round1408WidthSmallness": [
+    "SpringerLean.Round1404MediumWidthEstimate"
+  ],
+  "SpringerLean.Round1409ActualAffineCap": [
+    "SpringerLean.Round1407StripAffineScalar",
+    "SpringerLean.Round1408WidthSmallness",
+    "SpringerLean.Round1405ActualLocalizedWidth"
+  ],
+  "SpringerLean.Round1414TwoAssignedAffineCaps": [
+    "SpringerLean.Round1413SecondAssignedProjection",
+    "SpringerLean.Round1409ActualAffineCap"
+  ],
+  "SpringerLean.Round487EndpointRadius": [
+    "SpringerLean.Round401EndpointChoices",
+    "SpringerLean.Round481OmittedRadiusRigidity"
+  ],
+  "SpringerLean.Round1415CandidateTwoAffineCaps": [
+    "SpringerLean.Round1414TwoAssignedAffineCaps",
+    "SpringerLean.Round487EndpointRadius"
+  ],
+  "SpringerLean.Round1416RefinedAffineConvex": [
+    "SpringerLean.Round1415CandidateTwoAffineCaps"
+  ],
+  "SpringerLean.Round1419AffineActiveArc": [
+    "SpringerLean.Round1416RefinedAffineConvex"
+  ],
+  "SpringerLean.Round1420AffineWidthWindow": [
+    "SpringerLean.Round1419AffineActiveArc",
+    "SpringerLean.Round1408WidthSmallness"
+  ],
+  "SpringerLean.Round1421AffineJacobianScalar": [
+    "SpringerLean.Round1420AffineWidthWindow"
+  ],
+  "SpringerLean.Round1422JointScalarChecks": [
+    "SpringerLean.Round1421AffineJacobianScalar"
+  ],
+  "SpringerLean.Round1423AffineAmplification": [
+    "SpringerLean.Round1422JointScalarChecks"
+  ],
+  "SpringerLean.Round1424AffineAngleMap": [
+    "SpringerLean.Round1423AffineAmplification"
+  ],
+  "SpringerLean.Round1425AffineAngleDerivative": [
+    "SpringerLean.Round1424AffineAngleMap"
+  ],
+  "SpringerLean.Round1426AffineAngleSubstitution": [
+    "SpringerLean.Round1425AffineAngleDerivative"
+  ],
+  "SpringerLean.Round1427AffineActiveEndpoints": [
+    "SpringerLean.Round1426AffineAngleSubstitution"
+  ],
+  "SpringerLean.Round1428AffineActiveProfile": [
+    "SpringerLean.Round1427AffineActiveEndpoints"
+  ],
+  "SpringerLean.Round1429AffineCostIntegral": [
+    "SpringerLean.Round1428AffineActiveProfile",
+    "SpringerLean.Round1380EvenCircleIntegral",
+    "SpringerLean.Round1374HalfCosMoments"
+  ],
+  "SpringerLean.Round1417RefinedTwoCircleCost": [
+    "SpringerLean.Round1416RefinedAffineConvex",
+    "SpringerLean.Round663ActualConvexCaps"
+  ],
+  "SpringerLean.Round1418CandidateTwoCircleCost": [
+    "SpringerLean.Round1417RefinedTwoCircleCost",
+    "SpringerLean.Round1415CandidateTwoAffineCaps"
+  ],
+  "SpringerLean.Round1430ActualAffineModelCost": [
+    "SpringerLean.Round1429AffineCostIntegral",
+    "SpringerLean.Round1418CandidateTwoCircleCost"
+  ],
+  "SpringerLean.Round1431RefinedVariableChord": [
+    "SpringerLean.Round1430ActualAffineModelCost",
+    "SpringerLean.Round1365ConvexChordExtension",
+    "SpringerLean.Round1364ConvexChordScalar",
+    "SpringerLean.Round1380EvenCircleIntegral"
+  ],
+  "SpringerLean.Round1432MovingArcMean": [
+    "SpringerLean.Round1431RefinedVariableChord"
+  ],
+  "SpringerLean.Round1433MovingArcMoments": [
+    "SpringerLean.Round1432MovingArcMean",
+    "SpringerLean.Round1385ArcVariance"
+  ],
+  "SpringerLean.Round1434MovingArcThirdMoment": [
+    "SpringerLean.Round1433MovingArcMoments"
+  ],
+  "SpringerLean.Round1435CosineProduct": [
+    "SpringerLean.Round1434MovingArcThirdMoment",
+    "SpringerLean.Round1374HalfCosMoments"
+  ],
+  "SpringerLean.Round1436MovingArcThirdControl": [
+    "SpringerLean.Round1435CosineProduct"
+  ],
+  "SpringerLean.Round1437MovingPowerExponential": [
+    "SpringerLean.Round1436MovingArcThirdControl"
+  ],
+  "SpringerLean.Round1438AffineMovingCurvature": [
+    "SpringerLean.Round1437MovingPowerExponential"
+  ],
+  "SpringerLean.Round1439AffineCurvatureTangent": [
+    "SpringerLean.Round1438AffineMovingCurvature"
+  ],
+  "SpringerLean.Round1440MovingArcCubicCorrection": [
+    "SpringerLean.Round1439AffineCurvatureTangent"
+  ],
+  "SpringerLean.Round1441AffineCubicConvex": [
+    "SpringerLean.Round1440MovingArcCubicCorrection"
+  ],
+  "SpringerLean.Round1442CubicAverageGap": [
+    "SpringerLean.Round1441AffineCubicConvex"
+  ],
+  "SpringerLean.Round1443MovingQuantitativeJensen": [
+    "SpringerLean.Round1442CubicAverageGap"
+  ],
+  "SpringerLean.Round1444MovingActiveProfile": [
+    "SpringerLean.Round1443MovingQuantitativeJensen"
+  ],
+  "SpringerLean.Round1445MovingChordCurvature": [
+    "SpringerLean.Round1444MovingActiveProfile"
+  ],
+  "SpringerLean.Round1446MovingChordSaving": [
+    "SpringerLean.Round1445MovingChordCurvature"
+  ],
+  "SpringerLean.Round1447MovingSavingScalar": [
+    "SpringerLean.Round1446MovingChordSaving"
+  ],
+  "SpringerLean.Round1448MovingSavingExplicit": [
+    "SpringerLean.Round1447MovingSavingScalar"
+  ],
+  "SpringerLean.Round1449MovingRootAlgebra": [
+    "SpringerLean.Round1448MovingSavingExplicit"
+  ],
+  "SpringerLean.Round1450MovingSavingNormalization": [
+    "SpringerLean.Round1449MovingRootAlgebra"
+  ],
+  "SpringerLean.Round1451MovingSaving0067": [
+    "SpringerLean.Round1450MovingSavingNormalization"
+  ],
+  "SpringerLean.Round1452ChordNonnegative": [
+    "SpringerLean.Round1451MovingSaving0067"
+  ],
+  "SpringerLean.Round1453TwoChordCircleCost": [
+    "SpringerLean.Round1452ChordNonnegative",
+    "SpringerLean.Round1417RefinedTwoCircleCost"
+  ],
+  "SpringerLean.Round1487SelectedTwoChordCost": [
+    "SpringerLean.Round1453TwoChordCircleCost",
+    "SpringerLean.Round1415CandidateTwoAffineCaps"
+  ],
+  "SpringerLean.Round1454ActualTwoChordCost": [
+    "SpringerLean.Round1453TwoChordCircleCost",
+    "SpringerLean.Round1415CandidateTwoAffineCaps"
+  ],
+  "SpringerLean.Round1455TwoChordBudget": [
+    "SpringerLean.Round1454ActualTwoChordCost"
+  ],
+  "SpringerLean.Round1488SelectedTwoSavingBudget": [
+    "SpringerLean.Round1487SelectedTwoChordCost",
+    "SpringerLean.Round1455TwoChordBudget"
+  ],
+  "SpringerLean.Round1456ActualTwoSavingBudget": [
+    "SpringerLean.Round1455TwoChordBudget"
+  ],
+  "SpringerLean.Round1457CandidateRatioScalar": [
+    "SpringerLean.Round1456ActualTwoSavingBudget"
+  ],
+  "SpringerLean.Round1458RefinedCosRatio": [
+    "SpringerLean.Round1457CandidateRatioScalar"
+  ],
+  "SpringerLean.Round1459CandidateMoment0502": [
+    "SpringerLean.Round1458RefinedCosRatio"
+  ],
+  "SpringerLean.Round1460Platform0018Scalar": [
+    "SpringerLean.Round1459CandidateMoment0502"
+  ],
+  "SpringerLean.Round1461Platform0018Moment": [
+    "SpringerLean.Round1460Platform0018Scalar"
+  ],
+  "SpringerLean.Round1462JointBudgetScalar": [
+    "SpringerLean.Round1461Platform0018Moment"
+  ],
+  "SpringerLean.Round1463ActualJointJ": [
+    "SpringerLean.Round1462JointBudgetScalar"
+  ],
+  "SpringerLean.Round1489SelectedJointJ": [
+    "SpringerLean.Round1488SelectedTwoSavingBudget",
+    "SpringerLean.Round1463ActualJointJ"
+  ],
+  "SpringerLean.Round1464JFloorAuxiliary": [
+    "SpringerLean.Round1463ActualJointJ"
+  ],
+  "SpringerLean.Round1465LogCubeEnvelope": [
+    "SpringerLean.Round1464JFloorAuxiliary"
+  ],
+  "SpringerLean.Round1466Log3002Upper": [
+    "SpringerLean.Round1465LogCubeEnvelope"
+  ],
+  "SpringerLean.Round1467LogCubeInT": [
+    "SpringerLean.Round1466Log3002Upper"
+  ],
+  "SpringerLean.Round1468LogCubeInN": [
+    "SpringerLean.Round1467LogCubeInT"
+  ],
+  "SpringerLean.Round1469LogCubeCore": [
+    "SpringerLean.Round1468LogCubeInN"
+  ],
+  "SpringerLean.Round1470JFloor": [
+    "SpringerLean.Round1469LogCubeCore"
+  ],
+  "SpringerLean.Round1490SelectedIndividualJ": [
+    "SpringerLean.Round1489SelectedJointJ",
+    "SpringerLean.Round1470JFloor"
+  ],
+  "SpringerLean.Round1471ActualIndividualJ": [
+    "SpringerLean.Round1470JFloor"
+  ],
+  "SpringerLean.Round1472JBasePoint": [
+    "SpringerLean.Round1471ActualIndividualJ"
+  ],
+  "SpringerLean.Round1473PositiveTermInterval": [
+    "SpringerLean.Round1472JBasePoint"
+  ],
+  "SpringerLean.Round1474NormalizedLogBounds": [
+    "SpringerLean.Round1473PositiveTermInterval"
+  ],
+  "SpringerLean.Round1475JLargeDeficitExclusion": [
+    "SpringerLean.Round1474NormalizedLogBounds"
+  ],
+  "SpringerLean.Round1476ActualDeficitUnderThreeTwentieths": [
+    "SpringerLean.Round1475JLargeDeficitExclusion"
+  ],
+  "SpringerLean.Round1477SmallIntervalBaseLog": [
+    "SpringerLean.Round1476ActualDeficitUnderThreeTwentieths"
+  ],
+  "SpringerLean.Round1478SmallIntervalLogEnvelopes": [
+    "SpringerLean.Round1477SmallIntervalBaseLog"
+  ],
+  "SpringerLean.Round1479SmallIntervalCubicCore": [
+    "SpringerLean.Round1478SmallIntervalLogEnvelopes"
+  ],
+  "SpringerLean.Round1480SmallJExclusion": [
+    "SpringerLean.Round1479SmallIntervalCubicCore"
+  ],
+  "SpringerLean.Round1491SelectedLogDeficits": [
+    "SpringerLean.Round1490SelectedIndividualJ",
+    "SpringerLean.Round1480SmallJExclusion"
+  ],
+  "SpringerLean.Round1481ActualLogDeficits": [
+    "SpringerLean.Round1480SmallJExclusion"
+  ],
+  "SpringerLean.Round651SmallWidthKernel": [
+    "SpringerLean.Round650WidthLogRemainder",
+    "SpringerLean.Round620StripLogKernel"
+  ],
+  "SpringerLean.Round652SmallWidthEstimate": [
+    "SpringerLean.Round651SmallWidthKernel",
+    "SpringerLean.Round634RealRootCircleWidth"
+  ],
+  "SpringerLean.Round1482ActualFineWidth": [
+    "SpringerLean.Round1481ActualLogDeficits",
+    "SpringerLean.Round652SmallWidthEstimate",
+    "SpringerLean.Round1327ActualSecondStrip"
+  ],
+  "SpringerLean.Round1483FineWidthDiskScale": [
+    "SpringerLean.Round1482ActualFineWidth"
+  ],
+  "SpringerLean.Round1492SelectedFineWidths": [
+    "SpringerLean.Round1491SelectedLogDeficits",
+    "SpringerLean.Round1483FineWidthDiskScale"
+  ],
+  "SpringerLean.Round1493AssignedAxisCaps": [
+    "SpringerLean.Round1492SelectedFineWidths"
+  ],
+  "SpringerLean.Round1494OppositeAxisProjection": [
+    "SpringerLean.Round1493AssignedAxisCaps"
+  ],
+  "SpringerLean.Round1495SecondGlobalCap": [
+    "SpringerLean.Round1494OppositeAxisProjection"
+  ],
+  "SpringerLean.Round1496ActualSecondGlobalCap": [
+    "SpringerLean.Round1495SecondGlobalCap"
+  ],
+  "SpringerLean.Round1497ActualInnerCaps": [
+    "SpringerLean.Round1496ActualSecondGlobalCap",
+    "SpringerLean.Round632OmittedSequentialLimit",
+    "SpringerLean.Round639RegularBoundaryOmitted",
+    "SpringerLean.Round636OmittedCollarUniform"
+  ],
+  "SpringerLean.Round1498RegularizedCappedLevels": [
+    "SpringerLean.Round1497ActualInnerCaps",
+    "SpringerLean.Round38CenteredWeighted"
+  ],
+  "SpringerLean.Round1499SineArcRatio": [
+    "SpringerLean.Round1498RegularizedCappedLevels"
+  ],
+  "SpringerLean.Round1500FlattenedArcSmall": [
+    "SpringerLean.Round1499SineArcRatio",
+    "SpringerLean.Round33CenteredArc"
+  ],
+  "SpringerLean.Round1501FlattenedArcLarge": [
+    "SpringerLean.Round1500FlattenedArcSmall"
+  ],
+  "SpringerLean.Round1502FlattenedArcTop": [
+    "SpringerLean.Round1501FlattenedArcLarge"
+  ],
+  "SpringerLean.Round1503CappedPoissonLevels": [
+    "SpringerLean.Round1502FlattenedArcTop",
+    "SpringerLean.Round34PoissonComparator"
+  ],
+  "SpringerLean.Round1504PoissonLevelParameter": [
+    "SpringerLean.Round1503CappedPoissonLevels"
+  ],
+  "SpringerLean.Round1505FlattenedMean": [
+    "SpringerLean.Round1504PoissonLevelParameter"
+  ],
+  "SpringerLean.Round1506PoissonThresholdInverse": [
+    "SpringerLean.Round1505FlattenedMean"
+  ],
+  "SpringerLean.Round1507OneTurnRestriction": [
+    "SpringerLean.Round1506PoissonThresholdInverse",
+    "SpringerLean.Round38CenteredWeighted"
+  ],
+  "SpringerLean.Round1508AllPoissonLevels": [
+    "SpringerLean.Round1507OneTurnRestriction"
+  ],
+  "SpringerLean.Round1509CappedWeightedLayer": [
+    "SpringerLean.Round1508AllPoissonLevels"
+  ],
+  "SpringerLean.Round1510CappedWeightedSplit": [
+    "SpringerLean.Round1509CappedWeightedLayer"
+  ],
+  "SpringerLean.Round1511RegularFillingCap": [
+    "SpringerLean.Round1510CappedWeightedSplit"
+  ],
+  "SpringerLean.Round1512ActualFillingPointwiseCap": [
+    "SpringerLean.Round1511RegularFillingCap"
+  ],
+  "SpringerLean.Round1513SelectedPointwiseCaps": [
+    "SpringerLean.Round1512ActualFillingPointwiseCap"
+  ],
+  "SpringerLean.Round1514AngularPointwiseCaps": [
+    "SpringerLean.Round1513SelectedPointwiseCaps",
+    "SpringerLean.Round550RotateExterior"
+  ],
+  "SpringerLean.Round678AnalyticLevelNull": [],
+  "SpringerLean.Round679ActualAngularLevels": [
+    "SpringerLean.Round678AnalyticLevelNull",
+    "SpringerLean.Round14QuadraticPrelude"
+  ],
+  "SpringerLean.Round689PeriodicThreshold": [
+    "SpringerLean.Round19ThresholdSet",
+    "SpringerLean.Round679ActualAngularLevels"
+  ],
+  "SpringerLean.Round702PeriodicLevelMass": [
+    "SpringerLean.Round689PeriodicThreshold"
+  ],
+  "SpringerLean.Round703PeriodicGappedTop": [
+    "SpringerLean.Round702PeriodicLevelMass"
+  ],
+  "SpringerLean.Round682FiniteQuantile": [],
+  "SpringerLean.Round683FiniteTopSet": [
+    "SpringerLean.Round682FiniteQuantile",
+    "SpringerLean.Round19UpperLevel"
+  ],
+  "SpringerLean.Round686ActualAngularOptimizer": [
+    "SpringerLean.Round683FiniteTopSet",
+    "SpringerLean.Round679ActualAngularLevels",
+    "SpringerLean.Round39RotateExterior"
+  ],
+  "SpringerLean.Round690ActualAngularTopValue": [
+    "SpringerLean.Round686ActualAngularOptimizer"
+  ],
+  "SpringerLean.Round691AngularTopDual": [
+    "SpringerLean.Round690ActualAngularTopValue",
+    "SpringerLean.Round689PeriodicThreshold"
+  ],
+  "SpringerLean.Round704ActualGappedOptimizer": [
+    "SpringerLean.Round703PeriodicGappedTop",
+    "SpringerLean.Round691AngularTopDual"
+  ],
+  "SpringerLean.Round713AngularCandidateTurn": [
+    "SpringerLean.Round691AngularTopDual"
+  ],
+  "SpringerLean.Round714AngularPairedCandidates": [
+    "SpringerLean.Round704ActualGappedOptimizer",
+    "SpringerLean.Round713AngularCandidateTurn",
+    "SpringerLean.Round27ShiftIntegral"
+  ],
+  "SpringerLean.Round687LogarithmicProjection": [
+    "SpringerLean.Round679ActualAngularLevels",
+    "SpringerLean.Round39RotateExterior"
+  ],
+  "SpringerLean.Round707PositiveLogMean": [
+    "SpringerLean.Round687LogarithmicProjection",
+    "SpringerLean.Round13Mean"
+  ],
+  "SpringerLean.Round715AngularHarmonicSwap": [
+    "SpringerLean.Round707PositiveLogMean",
+    "SpringerLean.Round27VerticalCircleSwap"
+  ],
+  "SpringerLean.Round716AngularIntegratedCircle": [
+    "SpringerLean.Round715AngularHarmonicSwap"
+  ],
+  "SpringerLean.Round692AngularTopHeight": [
+    "SpringerLean.Round691AngularTopDual"
+  ],
+  "SpringerLean.Round693AngularTopUniform": [
+    "SpringerLean.Round690ActualAngularTopValue"
+  ],
+  "SpringerLean.Round697ActualDiskLipschitz": [
+    "SpringerLean.Round686ActualAngularOptimizer"
+  ],
+  "SpringerLean.Round698ActualTopJointContinuity": [
+    "SpringerLean.Round692AngularTopHeight",
+    "SpringerLean.Round693AngularTopUniform",
+    "SpringerLean.Round697ActualDiskLipschitz"
+  ],
+  "SpringerLean.Round699LogarithmicTopContinuity": [
+    "SpringerLean.Round698ActualTopJointContinuity"
+  ],
+  "SpringerLean.Round717ActualAngularLocalSubmean": [
+    "SpringerLean.Round714AngularPairedCandidates",
+    "SpringerLean.Round716AngularIntegratedCircle",
+    "SpringerLean.Round699LogarithmicTopContinuity",
+    "SpringerLean.Round31PairAverage"
+  ],
+  "SpringerLean.Round718CompactCircleMaximum": [
+    "SpringerLean.Round717ActualAngularLocalSubmean",
+    "SpringerLean.Round32VerticalMoments"
+  ],
+  "SpringerLean.Round719ActualAngularMajorant": [
+    "SpringerLean.Round717ActualAngularLocalSubmean",
+    "SpringerLean.Round718CompactCircleMaximum"
+  ],
+  "SpringerLean.Round721RegularRadialTrace": [
+    "SpringerLean.Round719ActualAngularMajorant",
+    "SpringerLean.Round697ActualDiskLipschitz",
+    "SpringerLean.RescaleGerm"
+  ],
+  "SpringerLean.Round722ActualTopRightTrace": [
+    "SpringerLean.Round721RegularRadialTrace",
+    "SpringerLean.Round690ActualAngularTopValue",
+    "SpringerLean.Round33ActualArcBound"
+  ],
+  "SpringerLean.Round723ComplexRectangle": [
+    "SpringerLean.Round722ActualTopRightTrace",
+    "SpringerLean.Round718CompactCircleMaximum"
+  ],
+  "SpringerLean.Round706AngularTopEndpointBounds": [
+    "SpringerLean.Round691AngularTopDual",
+    "SpringerLean.Round13Mean"
+  ],
+  "SpringerLean.Round724ActualAngularRectangle": [
+    "SpringerLean.Round719ActualAngularMajorant",
+    "SpringerLean.Round722ActualTopRightTrace",
+    "SpringerLean.Round723ComplexRectangle",
+    "SpringerLean.Round706AngularTopEndpointBounds"
+  ],
+  "SpringerLean.Round725RegularInnerTop": [
+    "SpringerLean.Round724ActualAngularRectangle"
+  ],
+  "SpringerLean.Round726ActualTopRegularization": [
+    "SpringerLean.Round725RegularInnerTop",
+    "SpringerLean.Round721RegularRadialTrace",
+    "SpringerLean.Round693AngularTopUniform"
+  ],
+  "SpringerLean.Round727ActualInnerTop": [
+    "SpringerLean.Round725RegularInnerTop",
+    "SpringerLean.Round726ActualTopRegularization"
+  ],
+  "SpringerLean.Round728ActualInnerMass": [
+    "SpringerLean.Round727ActualInnerTop",
+    "SpringerLean.Round33CenteredArc",
+    "SpringerLean.Round706AngularTopEndpointBounds"
+  ],
+  "SpringerLean.Round729ActualInnerPositivePart": [
+    "SpringerLean.Round728ActualInnerMass",
+    "SpringerLean.Round19UpperLevel",
+    "SpringerLean.Round27DoubleCircle"
+  ],
+  "SpringerLean.Round730ActualInnerConvex": [
+    "SpringerLean.Round729ActualInnerPositivePart",
+    "SpringerLean.Round644FullConvexCircle"
+  ],
+  "SpringerLean.Round1515InnerCircleCappedConvex": [
+    "SpringerLean.Round1514AngularPointwiseCaps",
+    "SpringerLean.Round730ActualInnerConvex"
+  ],
+  "SpringerLean.Round1516SelectedCirclePeakCaps": [
+    "SpringerLean.Round1515InnerCircleCappedConvex"
+  ],
+  "SpringerLean.Round1517PowerTangentGap": [
+    "SpringerLean.Round1516SelectedCirclePeakCaps"
+  ],
+  "SpringerLean.Round1518PositivePartPowerConvex": [
+    "SpringerLean.Round1517PowerTangentGap"
+  ],
+  "SpringerLean.Round1519ResidualAntitone": [
+    "SpringerLean.Round1518PositivePartPowerConvex"
+  ],
+  "SpringerLean.Round1520ClippedPowerConvex": [
+    "SpringerLean.Round1519ResidualAntitone"
+  ],
+  "SpringerLean.Round1521ActualClippedCircleMoment": [
+    "SpringerLean.Round1520ClippedPowerConvex",
+    "SpringerLean.Round730ActualInnerConvex"
+  ],
+  "SpringerLean.Round1522FlatModelLevelNonneg": [
+    "SpringerLean.Round1521ActualClippedCircleMoment",
+    "SpringerLean.Round1508AllPoissonLevels"
+  ],
+  "SpringerLean.Round1523FlatModelPeakNonnegative": [
+    "SpringerLean.Round1522FlatModelLevelNonneg"
+  ],
+  "SpringerLean.Round1524ActualClippedMomentNoSignPremise": [
+    "SpringerLean.Round1523FlatModelPeakNonnegative"
+  ],
+  "SpringerLean.Round1525ClippedPowerPointwiseGap": [
+    "SpringerLean.Round1524ActualClippedMomentNoSignPremise"
+  ],
+  "SpringerLean.Round1526SmallCapAngle": [
+    "SpringerLean.Round1525ClippedPowerPointwiseGap"
+  ],
+  "SpringerLean.Round1527PoissonArcAlgebra": [
+    "SpringerLean.Round1526SmallCapAngle"
+  ],
+  "SpringerLean.Round1528PoissonArcDefectIntegral": [
+    "SpringerLean.Round1527PoissonArcAlgebra"
+  ],
+  "SpringerLean.Round1529PowerQuadraticGap": [
+    "SpringerLean.Round1528PoissonArcDefectIntegral"
+  ],
+  "SpringerLean.Round1530ShortPeakArcIntegral": [
+    "SpringerLean.Round1529PowerQuadraticGap"
+  ],
+  "SpringerLean.Round1531PeakArcPointwise": [
+    "SpringerLean.Round1530ShortPeakArcIntegral"
+  ],
+  "SpringerLean.Round1532CenteredArcSymmetry": [
+    "SpringerLean.Round1531PeakArcPointwise"
+  ],
+  "SpringerLean.Round1533PoissonPeakArcIdentity": [
+    "SpringerLean.Round1532CenteredArcSymmetry"
+  ],
+  "SpringerLean.Round1534PoissonPeakExactFormula": [
+    "SpringerLean.Round1533PoissonPeakArcIdentity"
+  ],
+  "SpringerLean.Round1535PoissonHalfMass": [
+    "SpringerLean.Round1534PoissonPeakExactFormula"
+  ],
+  "SpringerLean.Round1536CotangentTailIntegral": [
+    "SpringerLean.Round1535PoissonHalfMass"
+  ],
+  "SpringerLean.Round1537CotangentBound": [
+    "SpringerLean.Round1536CotangentTailIntegral"
+  ],
+  "SpringerLean.Round1538PoissonTailKernel": [
+    "SpringerLean.Round1537CotangentBound"
+  ],
+  "SpringerLean.Round1539PoissonTailMass": [
+    "SpringerLean.Round1538PoissonTailKernel"
+  ],
+  "SpringerLean.Round1540PeakDeficitThreeHalves": [
+    "SpringerLean.Round1539PoissonTailMass"
+  ],
+  "SpringerLean.Round1541PeakArcCircleLoss": [
+    "SpringerLean.Round1540PeakDeficitThreeHalves"
+  ],
+  "SpringerLean.Round1542PeakCircleAverageLoss": [
+    "SpringerLean.Round1541PeakArcCircleLoss"
+  ],
+  "SpringerLean.Round1543ActualCirclePeakSaving": [
+    "SpringerLean.Round1542PeakCircleAverageLoss"
+  ],
+  "SpringerLean.Round1544SelectedTwoCirclePeakSavings": [
+    "SpringerLean.Round1543ActualCirclePeakSaving"
+  ],
+  "SpringerLean.Round1545ThinAnnulusExponentialChord": [
+    "SpringerLean.Round1544SelectedTwoCirclePeakSavings"
+  ],
+  "SpringerLean.Round1546ThinAnnulusRadialMass": [
+    "SpringerLean.Round1545ThinAnnulusExponentialChord"
+  ],
+  "SpringerLean.Round1547ThinAnnulusPowerFactor": [
+    "SpringerLean.Round1546ThinAnnulusRadialMass"
+  ],
+  "SpringerLean.Round1548ThinAnnulusCircleLower": [
+    "SpringerLean.Round1547ThinAnnulusPowerFactor"
+  ],
+  "SpringerLean.Round1549ActualThinAnnulusCircleGain": [
+    "SpringerLean.Round1548ThinAnnulusCircleLower"
+  ],
+  "SpringerLean.Round1550ThinAnnulusRadialIntegral": [
+    "SpringerLean.Round1549ActualThinAnnulusCircleGain"
+  ],
+  "SpringerLean.Round321CertificateCore": [],
+  "SpringerLean.Round331SparseCoefficientCore": [
+    "SpringerLean.Round321CertificateCore"
+  ],
+  "SpringerLean.Round345CertificateListBody": [
+    "SpringerLean.Round331SparseCoefficientCore"
+  ],
+  "SpringerLean.Round346OrderedPolynomialCore": [
+    "SpringerLean.Round345CertificateListBody"
+  ],
+  "SpringerLean.Round557FastPolynomialCore": [
+    "SpringerLean.Round346OrderedPolynomialCore"
+  ],
+  "SpringerLean.Round694ClearedSumCore": [
+    "SpringerLean.Round557FastPolynomialCore"
+  ],
+  "SpringerLean.Round294RationalIdentityChecker": [
+    "SpringerLean.Round321CertificateCore"
+  ],
+  "SpringerLean.Round295CoefficientExpressions": [
+    "SpringerLean.Round294RationalIdentityChecker"
+  ],
+  "SpringerLean.Round332SparseTableLemmas": [
+    "SpringerLean.Round331SparseCoefficientCore"
+  ],
+  "SpringerLean.Round334SparseCoefficientSemantics": [
+    "SpringerLean.Round295CoefficientExpressions",
+    "SpringerLean.Round332SparseTableLemmas"
+  ],
+  "SpringerLean.Round348OrderedPolynomialSemantics": [
+    "SpringerLean.Round334SparseCoefficientSemantics",
+    "SpringerLean.Round346OrderedPolynomialCore"
+  ],
+  "SpringerLean.Round558FastPolynomialSoundness": [
+    "SpringerLean.Round557FastPolynomialCore",
+    "SpringerLean.Round348OrderedPolynomialSemantics"
+  ],
+  "SpringerLean.Round695ClearedSumSoundness": [
+    "SpringerLean.Round694ClearedSumCore",
+    "SpringerLean.Round558FastPolynomialSoundness"
+  ],
+  "SpringerLean.Round709ScaledAddSoundness": [
+    "SpringerLean.Round695ClearedSumSoundness"
+  ],
+  "SpringerLean.Round711OrderedScaledAdd": [
+    "SpringerLean.Round709ScaledAddSoundness"
+  ],
+  "SpringerLean.Round363SparseBivariateCore": [
+    "SpringerLean.Round331SparseCoefficientCore"
+  ],
+  "SpringerLean.Round299CertificateData": [
+    "SpringerLean.Round321CertificateCore"
+  ],
+  "SpringerLean.Round310CompactCertificateData": [
+    "SpringerLean.Round299CertificateData"
+  ],
+  "SpringerLean.Round356ListGramCore": [
+    "SpringerLean.Round346OrderedPolynomialCore",
+    "SpringerLean.Round310CompactCertificateData"
+  ],
+  "SpringerLean.Round365SparseGrunskyCore": [
+    "SpringerLean.Round363SparseBivariateCore",
+    "SpringerLean.Round356ListGramCore"
+  ],
+  "SpringerLean.Round361BlockGramCore": [
+    "SpringerLean.Round365SparseGrunskyCore"
+  ],
+  "SpringerLean.Round470GramTreeCore": [
+    "SpringerLean.Round361BlockGramCore"
+  ],
+  "SpringerLean.Round488ScaledGramTreeCore": [
+    "SpringerLean.Round470GramTreeCore"
+  ],
+  "SpringerLean.Round530CachedGramCore": [
+    "SpringerLean.Round488ScaledGramTreeCore"
+  ],
+  "SpringerLean.Round380HermitianBlockEncoding": [
+    "SpringerLean.Round361BlockGramCore"
+  ],
+  "SpringerLean.Round402EncodedGramDataCore": [
+    "SpringerLean.Round380HermitianBlockEncoding"
+  ],
+  "SpringerLean.Round407QuotedGramWitness": [
+    "SpringerLean.Round402EncodedGramDataCore"
+  ],
+  "SpringerLean.Round451CanonicalGramWitness": [
+    "SpringerLean.Round407QuotedGramWitness"
+  ],
+  "SpringerLean.Round532GrunskyCache16Data": [
+    "SpringerLean.Round530CachedGramCore",
+    "SpringerLean.Round451CanonicalGramWitness"
+  ],
+  "SpringerLean.Round570Order15RingData": [
+    "SpringerLean.Round530CachedGramCore",
+    "SpringerLean.Round532GrunskyCache16Data",
+    "SpringerLean.Round451CanonicalGramWitness"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L00": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L01": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L02": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L03": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L04": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L05": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L06": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L07": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L08": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L09": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06L10": [
+    "SpringerLean.Round570Order15RingData"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0411": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06L00",
+    "SpringerLean.Round570Order15RingDataG06L01"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0412": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06L02",
+    "SpringerLean.Round570Order15RingDataG06L03"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0413": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06L04",
+    "SpringerLean.Round570Order15RingDataG06L05"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0414": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06L06",
+    "SpringerLean.Round570Order15RingDataG06L07"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0415": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06L08",
+    "SpringerLean.Round570Order15RingDataG06L09"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0416": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06N0411",
+    "SpringerLean.Round570Order15RingDataG06N0412"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0417": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06N0413",
+    "SpringerLean.Round570Order15RingDataG06N0414"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0418": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06N0415",
+    "SpringerLean.Round570Order15RingDataG06L10"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0419": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06N0416",
+    "SpringerLean.Round570Order15RingDataG06N0417"
+  ],
+  "SpringerLean.Round570Order15RingDataG06N0420": [
+    "SpringerLean.Round570Order15RingData",
+    "SpringerLean.Round570Order15RingDataG06N0419",
+    "SpringerLean.Round570Order15RingDataG06N0418"
+  ],
+  "SpringerLean.Round735WholeOrderedScaled": [
+    "SpringerLean.Round709ScaledAddSoundness"
+  ],
+  "SpringerLean.Round622PureGramIdentity": [
+    "SpringerLean.Round530CachedGramCore",
+    "SpringerLean.Round348OrderedPolynomialSemantics"
+  ],
+  "SpringerLean.Round626HybridPolynomialCore": [
+    "SpringerLean.Round557FastPolynomialCore"
+  ],
+  "SpringerLean.Round627HybridPolynomialSoundness": [
+    "SpringerLean.Round626HybridPolynomialCore",
+    "SpringerLean.Round558FastPolynomialSoundness"
+  ],
+  "SpringerLean.Round701ClearedHybridSoundness": [
+    "SpringerLean.Round695ClearedSumSoundness",
+    "SpringerLean.Round627HybridPolynomialSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0000": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L00",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0001": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L01",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0000",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0002": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L02",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0001",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0003": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L03",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0002",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0004": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L04",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0003",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0005": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L05",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0004",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0006": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L06",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0005",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0007": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L07",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0006",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0008": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L08",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0007",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0009": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L09",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0008",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06Leaf0010": [
+    "SpringerLean.Round735WholeOrderedScaled",
+    "SpringerLean.Round570Order15RingDataG06L10",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0009",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round701ClearedHybridSoundness"
+  ],
+  "SpringerLean.Round571Order15RingCheckPureG06": [
+    "SpringerLean.Round711OrderedScaledAdd",
+    "SpringerLean.Round695ClearedSumSoundness",
+    "SpringerLean.Round570Order15RingDataG06L00",
+    "SpringerLean.Round570Order15RingDataG06L01",
+    "SpringerLean.Round570Order15RingDataG06L02",
+    "SpringerLean.Round570Order15RingDataG06L03",
+    "SpringerLean.Round570Order15RingDataG06L04",
+    "SpringerLean.Round570Order15RingDataG06L05",
+    "SpringerLean.Round570Order15RingDataG06L06",
+    "SpringerLean.Round570Order15RingDataG06L07",
+    "SpringerLean.Round570Order15RingDataG06L08",
+    "SpringerLean.Round570Order15RingDataG06L09",
+    "SpringerLean.Round570Order15RingDataG06L10",
+    "SpringerLean.Round570Order15RingDataG06N0411",
+    "SpringerLean.Round570Order15RingDataG06N0412",
+    "SpringerLean.Round570Order15RingDataG06N0413",
+    "SpringerLean.Round570Order15RingDataG06N0414",
+    "SpringerLean.Round570Order15RingDataG06N0415",
+    "SpringerLean.Round570Order15RingDataG06N0416",
+    "SpringerLean.Round570Order15RingDataG06N0417",
+    "SpringerLean.Round570Order15RingDataG06N0418",
+    "SpringerLean.Round570Order15RingDataG06N0419",
+    "SpringerLean.Round570Order15RingDataG06N0420",
+    "SpringerLean.Round571Order15RingCheckPureG06Leaf0010",
+    "SpringerLean.Round622PureGramIdentity",
+    "SpringerLean.Round558FastPolynomialSoundness"
+  ],
+  "SpringerLean.Round739CappedAngularBoundary": [
+    "SpringerLean.Round571Order15RingCheckPureG06",
+    "SpringerLean.Round33CenteredArc"
+  ],
+  "SpringerLean.Round740PoissonCauchyExtension": [
+    "SpringerLean.Round739CappedAngularBoundary"
+  ],
+  "SpringerLean.Round746AnnulusCircleOrder": [
+    "SpringerLean.Round740PoissonCauchyExtension",
+    "SpringerLean.Round11PolarArea",
+    "SpringerLean.Round27DoubleCircle"
+  ],
+  "SpringerLean.Round1551AnnulusCircleGainTransfer": [
+    "SpringerLean.Round1550ThinAnnulusRadialIntegral",
+    "SpringerLean.Round746AnnulusCircleOrder"
+  ],
+  "SpringerLean.Round1552ActualAnnulusPeakGain": [
+    "SpringerLean.Round1551AnnulusCircleGainTransfer"
+  ],
+  "SpringerLean.Round1553ThinAnnulusCubicScalar": [
+    "SpringerLean.Round1552ActualAnnulusPeakGain"
+  ],
+  "SpringerLean.Round1554TruncatedAnnulusMargin": [
+    "SpringerLean.Round1553ThinAnnulusCubicScalar"
+  ],
+  "SpringerLean.Round1555ActualAnnulusCubicGain": [
+    "SpringerLean.Round1554TruncatedAnnulusMargin"
+  ],
+  "SpringerLean.Round1556SelectedTwoAnnulusCubicGains": [
+    "SpringerLean.Round1555ActualAnnulusCubicGain",
+    "SpringerLean.Round1544SelectedTwoCirclePeakSavings"
+  ],
+  "SpringerLean.Round1557ActualPowerCircleOrder": [
+    "SpringerLean.Round1556SelectedTwoAnnulusCubicGains"
+  ],
+  "SpringerLean.Round1558PolarRegionSplit": [
+    "SpringerLean.Round1557ActualPowerCircleOrder"
+  ],
+  "SpringerLean.Round1559ActualInnerDiskGainNonneg": [
+    "SpringerLean.Round1558PolarRegionSplit"
+  ],
+  "SpringerLean.Round1560AnnulusToDiskGain": [
+    "SpringerLean.Round1559ActualInnerDiskGainNonneg"
+  ],
+  "SpringerLean.Round1561ActualInteriorDiskCubicGain": [
+    "SpringerLean.Round1560AnnulusToDiskGain"
+  ],
+  "SpringerLean.Round1562SelectedTwoInteriorDiskGains": [
+    "SpringerLean.Round1561ActualInteriorDiskCubicGain"
+  ],
+  "SpringerLean.Round747ActualAnnulusConvex": [
+    "SpringerLean.Round746AnnulusCircleOrder",
+    "SpringerLean.Round730ActualInnerConvex"
+  ],
+  "SpringerLean.Round1563ActualAnyAnnulusGainNonneg": [
+    "SpringerLean.Round1562SelectedTwoInteriorDiskGains",
+    "SpringerLean.Round747ActualAnnulusConvex"
+  ],
+  "SpringerLean.Round748UnitDiskLimit": [
+    "SpringerLean.Round747ActualAnnulusConvex",
+    "SpringerLean.Round09OmittedLimit"
+  ],
+  "SpringerLean.Round1564InnerBallGainLimit": [
+    "SpringerLean.Round1563ActualAnyAnnulusGainNonneg",
+    "SpringerLean.Round748UnitDiskLimit"
+  ],
+  "SpringerLean.Round1565ActualBallGainMonotone": [
+    "SpringerLean.Round1564InnerBallGainLimit"
+  ],
+  "SpringerLean.Round1566ActualPowerGainIntegrable": [
+    "SpringerLean.Round1565ActualBallGainMonotone"
+  ],
+  "SpringerLean.Round1567ActualUnitDiskCubicGain": [
+    "SpringerLean.Round1566ActualPowerGainIntegrable"
+  ],
+  "SpringerLean.Round1568SelectedTwoUnitDiskGains": [
+    "SpringerLean.Round1567ActualUnitDiskCubicGain"
+  ],
+  "SpringerLean.Round1569PhasePotentialBound": [
+    "SpringerLean.Round1568SelectedTwoUnitDiskGains"
+  ],
+  "SpringerLean.Round1570PhasePotentialIntegrable": [
+    "SpringerLean.Round1569PhasePotentialBound"
+  ],
+  "SpringerLean.Round1571PhaseGradientDriftBound": [
+    "SpringerLean.Round1570PhasePotentialIntegrable"
+  ],
+  "SpringerLean.Round1572PhaseGradientLinearBound": [
+    "SpringerLean.Round1571PhaseGradientDriftBound"
+  ],
+  "SpringerLean.Round1573FillingDerivativeNorm": [
+    "SpringerLean.Round1572PhaseGradientLinearBound"
+  ],
+  "SpringerLean.Round1574WeightedFillingDerivative": [
+    "SpringerLean.Round1573FillingDerivativeNorm"
+  ],
+  "SpringerLean.Round1575EnergyEndpointData": [
+    "SpringerLean.Round1574WeightedFillingDerivative"
+  ],
+  "SpringerLean.Round1484ActualTwoFineWidths": [
+    "SpringerLean.Round1483FineWidthDiskScale"
+  ],
+  "SpringerLean.Round1485PhaseCutoffBudget": [
+    "SpringerLean.Round1484ActualTwoFineWidths"
+  ],
+  "SpringerLean.Round1486EnergyQuadraticReduction": [
+    "SpringerLean.Round1485PhaseCutoffBudget"
+  ],
+  "SpringerLean.Round1576EnergyEndpointRealQuadratic": [
+    "SpringerLean.Round1575EnergyEndpointData",
+    "SpringerLean.Round1486EnergyQuadraticReduction"
+  ],
+  "SpringerLean.Round1577EnergyScaleEnvelope": [
+    "SpringerLean.Round1576EnergyEndpointRealQuadratic"
+  ],
+  "SpringerLean.Round1578EnergyKEnvelope": [
+    "SpringerLean.Round1577EnergyScaleEnvelope"
+  ],
+  "SpringerLean.Round1579EnergyRawNodeData": [
+    "SpringerLean.Round1578EnergyKEnvelope"
+  ],
+  "SpringerLean.Round1580EnergyDataFormulaBridge": [
+    "SpringerLean.Round1579EnergyRawNodeData"
+  ],
+  "SpringerLean.Round1581EnergyAllCasesKEnvelope": [
+    "SpringerLean.Round1580EnergyDataFormulaBridge"
+  ],
+  "SpringerLean.Round1582EnergyRealBaselineBridge": [
+    "SpringerLean.Round1581EnergyAllCasesKEnvelope"
+  ],
+  "SpringerLean.Round1583EnergyAllKEndpointQuadratic": [
+    "SpringerLean.Round1582EnergyRealBaselineBridge"
+  ],
+  "SpringerLean.Round1584EnergyConvexTransfer": [
+    "SpringerLean.Round1583EnergyAllKEndpointQuadratic"
+  ],
+  "SpringerLean.Round1585EnergySegmentConvex": [
+    "SpringerLean.Round1584EnergyConvexTransfer"
+  ],
+  "SpringerLean.Round1586EnergyCellEndpointBridge": [
+    "SpringerLean.Round1585EnergySegmentConvex"
+  ],
+  "SpringerLean.Round1587EnergyTimeCoverage": [
+    "SpringerLean.Round1586EnergyCellEndpointBridge"
+  ],
+  "SpringerLean.Round1588EnergyAllTimeQuadratic": [
+    "SpringerLean.Round1587EnergyTimeCoverage"
+  ],
+  "SpringerLean.Round1589PhaseDriftAlgebra": [
+    "SpringerLean.Round1588EnergyAllTimeQuadratic"
+  ],
+  "SpringerLean.Round1590ActualDriftReduction": [
+    "SpringerLean.Round1589PhaseDriftAlgebra"
+  ],
+  "SpringerLean.Round1591PhaseLaplacianAlgebra": [
+    "SpringerLean.Round1590ActualDriftReduction"
+  ],
+  "SpringerLean.Round1592ActualAntiholomorphicSecondDerivative": [
+    "SpringerLean.Round1591PhaseLaplacianAlgebra"
+  ],
+  "SpringerLean.Round1593PhasePowerDerivative": [
+    "SpringerLean.Round1592ActualAntiholomorphicSecondDerivative"
+  ],
+  "SpringerLean.Round1594PhaseProductSecondDerivative": [
+    "SpringerLean.Round1593PhasePowerDerivative"
+  ],
+  "SpringerLean.Round1595ActualPhaseLaplacian": [
+    "SpringerLean.Round1594PhaseProductSecondDerivative"
+  ],
+  "SpringerLean.Round1596ActualPhaseDriftPDE": [
+    "SpringerLean.Round1595ActualPhaseLaplacian"
+  ],
+  "SpringerLean.Round1597HomogeneousAllSlope": [
+    "SpringerLean.Round1596ActualPhaseDriftPDE"
+  ],
+  "SpringerLean.Round1598AllTimeHomogeneousMultiplier": [
+    "SpringerLean.Round1597HomogeneousAllSlope"
+  ],
+  "SpringerLean.Round1599PhaseFluxCancellation": [
+    "SpringerLean.Round1598AllTimeHomogeneousMultiplier"
+  ],
+  "SpringerLean.Round1600PhaseFluxProductRule": [
+    "SpringerLean.Round1599PhaseFluxCancellation"
+  ],
+  "SpringerLean.Round1601PhaseFluxSProductRule": [
+    "SpringerLean.Round1600PhaseFluxProductRule"
+  ],
+  "SpringerLean.Round1602InverseConjugateDivergenceAlgebra": [
+    "SpringerLean.Round1601PhaseFluxSProductRule"
+  ],
+  "SpringerLean.Round1603ActualInverseConjugateDerivative": [
+    "SpringerLean.Round1602InverseConjugateDivergenceAlgebra"
+  ],
+  "SpringerLean.Round1604ActualInverseConjugateDivergence": [
+    "SpringerLean.Round1603ActualInverseConjugateDerivative"
+  ],
+  "SpringerLean.Round1605ActualPhaseFluxS": [
+    "SpringerLean.Round1604ActualInverseConjugateDivergence"
+  ],
+  "SpringerLean.Round1606ActualPhaseGradientRegularity": [
+    "SpringerLean.Round1605ActualPhaseFluxS"
+  ],
+  "SpringerLean.Round1607ActualPhaseFluxP": [
+    "SpringerLean.Round1606ActualPhaseGradientRegularity"
+  ],
+  "SpringerLean.Round1608ActualMultiplierTimeRegularity": [
+    "SpringerLean.Round1607ActualPhaseFluxP"
+  ],
+  "SpringerLean.Round1687ActualMultiplierRegularSet": [
+    "SpringerLean.Round1608ActualMultiplierTimeRegularity"
+  ],
+  "SpringerLean.Round1688ActualKnotLevelMeasurable": [
+    "SpringerLean.Round1687ActualMultiplierRegularSet"
+  ],
+  "SpringerLean.Round1689ActualKnotBadSetMeasurable": [
+    "SpringerLean.Round1688ActualKnotLevelMeasurable"
+  ],
+  "SpringerLean.Round1690ComplexCoordinateSliceDerivative": [
+    "SpringerLean.Round1687ActualMultiplierRegularSet"
+  ],
+  "SpringerLean.Round1691ActualVerticalKnotFlatAE": [
+    "SpringerLean.Round1686ProductLevelSetWithDerivative",
+    "SpringerLean.Round1689ActualKnotBadSetMeasurable",
+    "SpringerLean.Round1690ComplexCoordinateSliceDerivative"
+  ],
+  "SpringerLean.Round1692ActualHorizontalSliceDerivative": [
+    "SpringerLean.Round1690ComplexCoordinateSliceDerivative"
+  ],
+  "SpringerLean.Round1693ActualHorizontalKnotFlatAE": [
+    "SpringerLean.Round1686ProductLevelSetWithDerivative",
+    "SpringerLean.Round1689ActualKnotBadSetMeasurable",
+    "SpringerLean.Round1692ActualHorizontalSliceDerivative"
+  ],
+  "SpringerLean.Round1694RealProdToComplexAE": [
+    "SpringerLean.Round1691ActualVerticalKnotFlatAE"
+  ],
+  "SpringerLean.Round1695ActualKnotTimeFderivFlatAE": [
+    "SpringerLean.Round1691ActualVerticalKnotFlatAE",
+    "SpringerLean.Round1693ActualHorizontalKnotFlatAE",
+    "SpringerLean.Round1694RealProdToComplexAE"
+  ],
+  "SpringerLean.Round1696LipschitzFlatComposition": [
+    "SpringerLean.Round1695ActualKnotTimeFderivFlatAE"
+  ],
+  "SpringerLean.Round1609MultiplierTimeDerivative": [
+    "SpringerLean.Round1608ActualMultiplierTimeRegularity"
+  ],
+  "SpringerLean.Round1610RadialFieldCoordinates": [
+    "SpringerLean.Round1609MultiplierTimeDerivative"
+  ],
+  "SpringerLean.Round1611RadialFluxProductRule": [
+    "SpringerLean.Round1610RadialFieldCoordinates"
+  ],
+  "SpringerLean.Round1612RadialFluxQuotient": [
+    "SpringerLean.Round1611RadialFluxProductRule"
+  ],
+  "SpringerLean.Round1613RadialFluxTimeFormula": [
+    "SpringerLean.Round1612RadialFluxQuotient"
+  ],
+  "SpringerLean.Round1614ActualPhaseFluxR": [
+    "SpringerLean.Round1613RadialFluxTimeFormula"
+  ],
+  "SpringerLean.Round1615ActualRadialMultiplierComposition": [
+    "SpringerLean.Round1614ActualPhaseFluxR"
+  ],
+  "SpringerLean.Round1616LocalAffineMultiplier": [
+    "SpringerLean.Round1615ActualRadialMultiplierComposition"
+  ],
+  "SpringerLean.Round1617ActualLocalAffineRadialFlux": [
+    "SpringerLean.Round1616LocalAffineMultiplier"
+  ],
+  "SpringerLean.Round1618EnergyMultiplierSpline": [
+    "SpringerLean.Round1617ActualLocalAffineRadialFlux"
+  ],
+  "SpringerLean.Round1697EnergyRampLipschitz": [
+    "SpringerLean.Round1696LipschitzFlatComposition",
+    "SpringerLean.Round1618EnergyMultiplierSpline"
+  ],
+  "SpringerLean.Round1698FiniteRampSumLipschitz": [
+    "SpringerLean.Round1697EnergyRampLipschitz"
+  ],
+  "SpringerLean.Round1619EnergyRampPieces": [
+    "SpringerLean.Round1618EnergyMultiplierSpline"
+  ],
+  "SpringerLean.Round1620EnergySplineCellIncrements": [
+    "SpringerLean.Round1619EnergyRampPieces"
+  ],
+  "SpringerLean.Round1621EnergyRampOnCell": [
+    "SpringerLean.Round1620EnergySplineCellIncrements"
+  ],
+  "SpringerLean.Round1623FiniteSplineTelescoping": [
+    "SpringerLean.Round1621EnergyRampOnCell"
+  ],
+  "SpringerLean.Round1624EnergySplineGenericCell": [
+    "SpringerLean.Round1623FiniteSplineTelescoping"
+  ],
+  "SpringerLean.Round1625EnergySplineCellValues": [
+    "SpringerLean.Round1624EnergySplineGenericCell"
+  ],
+  "SpringerLean.Round1715EnergyMultiplierLinearBoundary": [
+    "SpringerLean.Round1698FiniteRampSumLipschitz",
+    "SpringerLean.Round1625EnergySplineCellValues"
+  ],
+  "SpringerLean.Round1716ActualPhaseFieldPowerBound": [
+    "SpringerLean.Round1715EnergyMultiplierLinearBoundary",
+    "SpringerLean.Round11Energy"
+  ],
+  "SpringerLean.Round1662EnergyLocalCostLedger": [
+    "SpringerLean.Round1585EnergySegmentConvex"
+  ],
+  "SpringerLean.Round1667SignedFluxLedger": [
+    "SpringerLean.Round1662EnergyLocalCostLedger"
+  ],
+  "SpringerLean.Round1665SigmaGradientScalarCost": [
+    "SpringerLean.Round1585EnergySegmentConvex"
+  ],
+  "SpringerLean.Round1626EnergySplineCellDerivatives": [
+    "SpringerLean.Round1625EnergySplineCellValues"
+  ],
+  "SpringerLean.Round1627EnergySplineTail": [
+    "SpringerLean.Round1626EnergySplineCellDerivatives"
+  ],
+  "SpringerLean.Round1628EnergyMultiplierTailValues": [
+    "SpringerLean.Round1627EnergySplineTail"
+  ],
+  "SpringerLean.Round1629EnergyCellInterpolationData": [
+    "SpringerLean.Round1628EnergyMultiplierTailValues"
+  ],
+  "SpringerLean.Round1630EnergySplineCellBridge": [
+    "SpringerLean.Round1629EnergyCellInterpolationData"
+  ],
+  "SpringerLean.Round1631EnergySplineTailBridge": [
+    "SpringerLean.Round1630EnergySplineCellBridge"
+  ],
+  "SpringerLean.Round1632ExplicitEnergyProfile": [
+    "SpringerLean.Round1631EnergySplineTailBridge"
+  ],
+  "SpringerLean.Round1633ExplicitEnergyCertificate": [
+    "SpringerLean.Round1632ExplicitEnergyProfile"
+  ],
+  "SpringerLean.Round1634ActualExplicitRadialFlux": [
+    "SpringerLean.Round1633ExplicitEnergyCertificate"
+  ],
+  "SpringerLean.Round1635EnergySplineTailDerivatives": [
+    "SpringerLean.Round1634ActualExplicitRadialFlux"
+  ],
+  "SpringerLean.Round1636ActualSplineCompositions": [
+    "SpringerLean.Round1635EnergySplineTailDerivatives"
+  ],
+  "SpringerLean.Round1637ActualSplineDirectionalDerivatives": [
+    "SpringerLean.Round1636ActualSplineCompositions"
+  ],
+  "SpringerLean.Round1638ActualEnergyProfile": [
+    "SpringerLean.Round1637ActualSplineDirectionalDerivatives"
+  ],
+  "SpringerLean.Round1639ActualExplicitPFlux": [
+    "SpringerLean.Round1638ActualEnergyProfile"
+  ],
+  "SpringerLean.Round1640ActualExplicitSFlux": [
+    "SpringerLean.Round1639ActualExplicitPFlux"
+  ],
+  "SpringerLean.Round1641InverseConjugateDrift": [
+    "SpringerLean.Round1640ActualExplicitSFlux"
+  ],
+  "SpringerLean.Round1642ActualDividedDriftPDE": [
+    "SpringerLean.Round1641InverseConjugateDrift"
+  ],
+  "SpringerLean.Round1643ActualFluxDriftCancellation": [
+    "SpringerLean.Round1642ActualDividedDriftPDE"
+  ],
+  "SpringerLean.Round1644SourceRadiusCartesianDerivative": [
+    "SpringerLean.Round1643ActualFluxDriftCancellation"
+  ],
+  "SpringerLean.Round1645ActualChiGradientCancellation": [
+    "SpringerLean.Round1644SourceRadiusCartesianDerivative"
+  ],
+  "SpringerLean.Round1646ActualSigmaGradientIdentity": [
+    "SpringerLean.Round1645ActualChiGradientCancellation"
+  ],
+  "SpringerLean.Round1647ActualModulusGradientNorm": [
+    "SpringerLean.Round1646ActualSigmaGradientIdentity"
+  ],
+  "SpringerLean.Round1648ActualPhaseQuotientBound": [
+    "SpringerLean.Round1647ActualModulusGradientNorm"
+  ],
+  "SpringerLean.Round1649WeightedDerivativeTransfer": [
+    "SpringerLean.Round1648ActualPhaseQuotientBound"
+  ],
+  "SpringerLean.Round1650ActualPhaseModulusGradientBound": [
+    "SpringerLean.Round1649WeightedDerivativeTransfer"
+  ],
+  "SpringerLean.Round1651WeightedDerivativeTransferGeneral": [
+    "SpringerLean.Round1650ActualPhaseModulusGradientBound"
+  ],
+  "SpringerLean.Round1652ActualAntiholomorphicCost": [
+    "SpringerLean.Round1651WeightedDerivativeTransferGeneral"
+  ],
+  "SpringerLean.Round1663DriftTraceCost": [
+    "SpringerLean.Round1652ActualAntiholomorphicCost"
+  ],
+  "SpringerLean.Round1660EnergySplineNonnegative": [
+    "SpringerLean.Round1632ExplicitEnergyProfile"
+  ],
+  "SpringerLean.Round1664ActualSigmaTraceCost": [
+    "SpringerLean.Round1663DriftTraceCost",
+    "SpringerLean.Round1660EnergySplineNonnegative"
+  ],
+  "SpringerLean.Round1653ComplexGradientCauchy": [
+    "SpringerLean.Round1652ActualAntiholomorphicCost"
+  ],
+  "SpringerLean.Round1654InverseConjugateDriftBound": [
+    "SpringerLean.Round1653ComplexGradientCauchy"
+  ],
+  "SpringerLean.Round1655RadialPhaseDerivativeBound": [
+    "SpringerLean.Round1654InverseConjugateDriftBound"
+  ],
+  "SpringerLean.Round1656RadialScalarDerivativeBound": [
+    "SpringerLean.Round1655RadialPhaseDerivativeBound"
+  ],
+  "SpringerLean.Round1657ScalarGradientDotBound": [
+    "SpringerLean.Round1656RadialScalarDerivativeBound"
+  ],
+  "SpringerLean.Round1658ActualModulusGradientPairing": [
+    "SpringerLean.Round1657ScalarGradientDotBound"
+  ],
+  "SpringerLean.Round1659InverseDriftScalarProjection": [
+    "SpringerLean.Round1658ActualModulusGradientPairing"
+  ],
+  "SpringerLean.Round1666ActualSigmaGradientCost": [
+    "SpringerLean.Round1665SigmaGradientScalarCost",
+    "SpringerLean.Round1664ActualSigmaTraceCost",
+    "SpringerLean.Round1659InverseDriftScalarProjection"
+  ],
+  "SpringerLean.Round1668ActualCombinedFluxDefinitions": [
+    "SpringerLean.Round1667SignedFluxLedger",
+    "SpringerLean.Round1666ActualSigmaGradientCost"
+  ],
+  "SpringerLean.Round1717ActualEnergyFluxFields": [
+    "SpringerLean.Round1716ActualPhaseFieldPowerBound",
+    "SpringerLean.Round1668ActualCombinedFluxDefinitions"
+  ],
+  "SpringerLean.Round1712PhaseFieldAtFillingZero": [
+    "SpringerLean.Round11Energy"
+  ],
+  "SpringerLean.Round1718ActualFluxFieldAtZero": [
+    "SpringerLean.Round1717ActualEnergyFluxFields",
+    "SpringerLean.Round1712PhaseFieldAtFillingZero"
+  ],
+  "SpringerLean.Round1719EnergyMultipliersBounded": [
+    "SpringerLean.Round1718ActualFluxFieldAtZero",
+    "SpringerLean.Round1635EnergySplineTailDerivatives"
+  ],
+  "SpringerLean.Round1720FluxZeroPowerCriterion": [
+    "SpringerLean.Round1719EnergyMultipliersBounded"
+  ],
+  "SpringerLean.Round1721ActualFillingLocalLinearZero": [
+    "SpringerLean.Round1720FluxZeroPowerCriterion"
+  ],
+  "SpringerLean.Round1722ActualPhaseGradientPowerBound": [
+    "SpringerLean.Round1721ActualFillingLocalLinearZero"
+  ],
+  "SpringerLean.Round1723ActualGermDerivativeLocallyBounded": [
+    "SpringerLean.Round1722ActualPhaseGradientPowerBound"
+  ],
+  "SpringerLean.Round1724ActualPhaseGradientLocallyPowerBound": [
+    "SpringerLean.Round1723ActualGermDerivativeLocallyBounded"
+  ],
+  "SpringerLean.Round1725PhasePowerDivision": [
+    "SpringerLean.Round1724ActualPhaseGradientLocallyPowerBound"
+  ],
+  "SpringerLean.Round1726ActualRadialFluxPowerBound": [
+    "SpringerLean.Round1725PhasePowerDivision"
+  ],
+  "SpringerLean.Round1727ActualDriftFluxPowerBound": [
+    "SpringerLean.Round1726ActualRadialFluxPowerBound"
+  ],
+  "SpringerLean.Round1728ActualPFluxPowerBound": [
+    "SpringerLean.Round1727ActualDriftFluxPowerBound"
+  ],
+  "SpringerLean.Round1729ActualCombinedFluxPowerBound": [
+    "SpringerLean.Round1728ActualPFluxPowerBound"
+  ],
+  "SpringerLean.Round1730ActualCombinedFluxLocalVanishing": [
+    "SpringerLean.Round1729ActualCombinedFluxPowerBound"
+  ],
+  "SpringerLean.Round1731ActualFluxZeroDerivative": [
+    "SpringerLean.Round1730ActualCombinedFluxLocalVanishing"
+  ],
+  "SpringerLean.Round1732ActualFluxDivergenceAtZero": [
+    "SpringerLean.Round1731ActualFluxZeroDerivative"
+  ],
+  "SpringerLean.Round1733CartesianDivergenceLinear": [
+    "SpringerLean.Round1732ActualFluxDivergenceAtZero"
+  ],
+  "SpringerLean.Round1699ActualKnotMultiplierFlatAE": [
+    "SpringerLean.Round1698FiniteRampSumLipschitz"
+  ],
+  "SpringerLean.Round1700AllKnotMultiplierFlatAE": [
+    "SpringerLean.Round1699ActualKnotMultiplierFlatAE"
+  ],
+  "SpringerLean.Round1701ActualKnotMultiplierHasFDerivAE": [
+    "SpringerLean.Round1700AllKnotMultiplierFlatAE"
+  ],
+  "SpringerLean.Round1734ActualMultiplierDifferentiabilityAE": [
+    "SpringerLean.Round1733CartesianDivergenceLinear",
+    "SpringerLean.Round1636ActualSplineCompositions",
+    "SpringerLean.Round1701ActualKnotMultiplierHasFDerivAE"
+  ],
+  "SpringerLean.Round1735ActualPFluxDifferentiability": [
+    "SpringerLean.Round1734ActualMultiplierDifferentiabilityAE"
+  ],
+  "SpringerLean.Round1748VanishingSquareQuotientLipschitz": [
+    "SpringerLean.Round1735ActualPFluxDifferentiability"
+  ],
+  "SpringerLean.Round1746ActualTimeLocalLipschitz": [
+    "SpringerLean.Round1735ActualPFluxDifferentiability"
+  ],
+  "SpringerLean.Round1749ActualFluxAmplitudesLocalLipschitz": [
+    "SpringerLean.Round1748VanishingSquareQuotientLipschitz",
+    "SpringerLean.Round1746ActualTimeLocalLipschitz"
+  ],
+  "SpringerLean.Round1750LocalLipschitzOperations": [
+    "SpringerLean.Round1746ActualTimeLocalLipschitz"
+  ],
+  "SpringerLean.Round1751ActualPhaseGradientC1": [
+    "SpringerLean.Round1746ActualTimeLocalLipschitz"
+  ],
+  "SpringerLean.SingleRampFlux": [
+    "SpringerLean.SingleRamp",
+    "SpringerLean.ReviewChecks",
+    "SpringerLean.Round1696LipschitzFlatComposition",
+    "SpringerLean.Round1749ActualFluxAmplitudesLocalLipschitz",
+    "SpringerLean.Round1750LocalLipschitzOperations",
+    "SpringerLean.Round1751ActualPhaseGradientC1"
+  ],
+  "SpringerLean.Round1671ActualMixedCrossCosts": [
+    "SpringerLean.Round1655RadialPhaseDerivativeBound"
+  ],
+  "SpringerLean.Round1672ActualRadialModulusCost": [
+    "SpringerLean.Round1658ActualModulusGradientPairing"
+  ],
+  "SpringerLean.Round1673ActualChiGradientCost": [
+    "SpringerLean.Round1658ActualModulusGradientPairing"
+  ],
+  "SpringerLean.Round1661ActualRadialPositivePart": [
+    "SpringerLean.Round1659InverseDriftScalarProjection"
+  ],
+  "SpringerLean.SingleRampPointwise": [
+    "SpringerLean.SingleRampFlux",
+    "SpringerLean.Round1614ActualPhaseFluxR",
+    "SpringerLean.Round1644SourceRadiusCartesianDerivative",
+    "SpringerLean.Round1667SignedFluxLedger",
+    "SpringerLean.Round1671ActualMixedCrossCosts",
+    "SpringerLean.Round1672ActualRadialModulusCost",
+    "SpringerLean.Round1673ActualChiGradientCost",
+    "SpringerLean.Round1661ActualRadialPositivePart",
+    "SpringerLean.Round1733CartesianDivergenceLinear"
+  ],
+  "SpringerLean.SingleRampRegularity": [
+    "SpringerLean.SingleRampFlux",
+    "SpringerLean.Round1720FluxZeroPowerCriterion",
+    "SpringerLean.Round1721ActualFillingLocalLinearZero",
+    "SpringerLean.Round1722ActualPhaseGradientPowerBound",
+    "SpringerLean.Round1723ActualGermDerivativeLocallyBounded",
+    "SpringerLean.Round1725PhasePowerDivision"
+  ],
+  "SpringerLean.Round1752ActualFluxRegularLocalLipschitz": [
+    "SpringerLean.Round1749ActualFluxAmplitudesLocalLipschitz",
+    "SpringerLean.Round1750LocalLipschitzOperations",
+    "SpringerLean.Round1751ActualPhaseGradientC1"
+  ],
+  "SpringerLean.Round1753ActualFluxConstantTailNearZero": [
+    "SpringerLean.Round1746ActualTimeLocalLipschitz"
+  ],
+  "SpringerLean.Round1754ActualFluxZeroLocalLipschitz": [
+    "SpringerLean.Round1752ActualFluxRegularLocalLipschitz",
+    "SpringerLean.Round1753ActualFluxConstantTailNearZero"
+  ],
+  "SpringerLean.Round1755ActualCombinedFluxLocalLipschitz": [
+    "SpringerLean.Round1754ActualFluxZeroLocalLipschitz"
+  ],
+  "SpringerLean.Round1736ActualRSFluxDifferentiability": [
+    "SpringerLean.Round1735ActualPFluxDifferentiability"
+  ],
+  "SpringerLean.Round1737ActualCombinedDivergenceAE": [
+    "SpringerLean.Round1736ActualRSFluxDifferentiability"
+  ],
+  "SpringerLean.Round1702ActualKnotSlopeChainRuleAE": [
+    "SpringerLean.Round1701ActualKnotMultiplierHasFDerivAE"
+  ],
+  "SpringerLean.Round1703ActualKnotPFluxAE": [
+    "SpringerLean.Round1702ActualKnotSlopeChainRuleAE",
+    "SpringerLean.Round1668ActualCombinedFluxDefinitions"
+  ],
+  "SpringerLean.Round1704ActualKnotRFluxAE": [
+    "SpringerLean.Round1703ActualKnotPFluxAE",
+    "SpringerLean.Round1614ActualPhaseFluxR"
+  ],
+  "SpringerLean.Round1705ActualKnotSFluxAE": [
+    "SpringerLean.Round1704ActualKnotRFluxAE",
+    "SpringerLean.Round1605ActualPhaseFluxS"
+  ],
+  "SpringerLean.Round1706ActualKnotRFluxAnySlopeAE": [
+    "SpringerLean.Round1705ActualKnotSFluxAE"
+  ],
+  "SpringerLean.Round1707ActualKnotChiCancellationAE": [
+    "SpringerLean.Round1706ActualKnotRFluxAnySlopeAE",
+    "SpringerLean.Round1645ActualChiGradientCancellation"
+  ],
+  "SpringerLean.Round1669ActualSignedFluxLedger": [
+    "SpringerLean.Round1668ActualCombinedFluxDefinitions"
+  ],
+  "SpringerLean.Round1708ActualKnotSignedFluxAE": [
+    "SpringerLean.Round1707ActualKnotChiCancellationAE",
+    "SpringerLean.Round1669ActualSignedFluxLedger"
+  ],
+  "SpringerLean.Round1670LocalCostAssembly": [
+    "SpringerLean.Round1662EnergyLocalCostLedger"
+  ],
+  "SpringerLean.Round1674ActualFluxCost": [
+    "SpringerLean.Round1669ActualSignedFluxLedger",
+    "SpringerLean.Round1670LocalCostAssembly",
+    "SpringerLean.Round1671ActualMixedCrossCosts",
+    "SpringerLean.Round1672ActualRadialModulusCost",
+    "SpringerLean.Round1673ActualChiGradientCost",
+    "SpringerLean.Round1661ActualRadialPositivePart"
+  ],
+  "SpringerLean.Round1709ActualKnotFluxCostAE": [
+    "SpringerLean.Round1708ActualKnotSignedFluxAE",
+    "SpringerLean.Round1674ActualFluxCost"
+  ],
+  "SpringerLean.Round1675ActualCellEnergyPointwise": [
+    "SpringerLean.Round1674ActualFluxCost",
+    "SpringerLean.Round1599PhaseFluxCancellation"
+  ],
+  "SpringerLean.Round1710ActualKnotEnergyPointwiseAE": [
+    "SpringerLean.Round1709ActualKnotFluxCostAE",
+    "SpringerLean.Round1675ActualCellEnergyPointwise"
+  ],
+  "SpringerLean.Round1676ActualTailMultiplierDerivatives": [
+    "SpringerLean.Round1637ActualSplineDirectionalDerivatives"
+  ],
+  "SpringerLean.Round1677ActualTailFluxes": [
+    "SpringerLean.Round1676ActualTailMultiplierDerivatives",
+    "SpringerLean.Round1668ActualCombinedFluxDefinitions"
+  ],
+  "SpringerLean.Round1678ActualTailSignedFlux": [
+    "SpringerLean.Round1677ActualTailFluxes",
+    "SpringerLean.Round1667SignedFluxLedger"
+  ],
+  "SpringerLean.Round1679ActualTailFluxCost": [
+    "SpringerLean.Round1678ActualTailSignedFlux",
+    "SpringerLean.Round1674ActualFluxCost"
+  ],
+  "SpringerLean.Round1680ActualTailEnergyPointwise": [
+    "SpringerLean.Round1679ActualTailFluxCost",
+    "SpringerLean.Round1599PhaseFluxCancellation"
+  ],
+  "SpringerLean.Round1681ActualAwayKnotsPointwise": [
+    "SpringerLean.Round1680ActualTailEnergyPointwise",
+    "SpringerLean.Round1675ActualCellEnergyPointwise"
+  ],
+  "SpringerLean.Round1711ActualRegularEnergyPointwiseAE": [
+    "SpringerLean.Round1710ActualKnotEnergyPointwiseAE",
+    "SpringerLean.Round1681ActualAwayKnotsPointwise"
+  ],
+  "SpringerLean.Round1738ActualDiskPointwiseEnergyAE": [
+    "SpringerLean.Round1737ActualCombinedDivergenceAE",
+    "SpringerLean.Round1711ActualRegularEnergyPointwiseAE",
+    "SpringerLean.Round1712PhaseFieldAtFillingZero"
+  ],
+  "SpringerLean.Round1739LipschitzSliceFTC": [
+    "SpringerLean.Round1738ActualDiskPointwiseEnergyAE"
+  ],
+  "SpringerLean.Round1713ActualPhaseGradientSqIntegrable": [
+    "SpringerLean.Round1712PhaseFieldAtFillingZero"
+  ],
+  "SpringerLean.Round1740ActualEnergyIntegrationReduction": [
+    "SpringerLean.Round1739LipschitzSliceFTC",
+    "SpringerLean.Round1713ActualPhaseGradientSqIntegrable"
+  ],
+  "SpringerLean.Round1741ActualFluxBoundaryPower": [
+    "SpringerLean.Round1740ActualEnergyIntegrationReduction"
+  ],
+  "SpringerLean.Round1744ActualFluxMeasurable": [
+    "SpringerLean.Round1741ActualFluxBoundaryPower"
+  ],
+  "SpringerLean.Round1742RadialEnergyCutoff": [
+    "SpringerLean.Round1740ActualEnergyIntegrationReduction"
+  ],
+  "SpringerLean.Round1743CutoffEnergyLimit": [
+    "SpringerLean.Round1740ActualEnergyIntegrationReduction"
+  ],
+  "SpringerLean.Round1745ActualCollarErrorLimit": [
+    "SpringerLean.Round1744ActualFluxMeasurable",
+    "SpringerLean.Round1742RadialEnergyCutoff",
+    "SpringerLean.Round1743CutoffEnergyLimit"
+  ],
+  "SpringerLean.Round1756ActualCutoffFluxLocalLipschitz": [
+    "SpringerLean.Round1755ActualCombinedFluxLocalLipschitz",
+    "SpringerLean.Round1745ActualCollarErrorLimit"
+  ],
+  "SpringerLean.Round1760ActualCutoffDivergenceProduct": [
+    "SpringerLean.Round1756ActualCutoffFluxLocalLipschitz"
+  ],
+  "SpringerLean.Round1757LipschitzCoordinateIntegral": [
+    "SpringerLean.Round1739LipschitzSliceFTC"
+  ],
+  "SpringerLean.Round1758LipschitzPartialIntegral": [
+    "SpringerLean.Round1757LipschitzCoordinateIntegral"
+  ],
+  "SpringerLean.Round1759LipschitzCartesianDivergence": [
+    "SpringerLean.Round1758LipschitzPartialIntegral",
+    "SpringerLean.Round1692ActualHorizontalSliceDerivative",
+    "SpringerLean.Round1733CartesianDivergenceLinear"
+  ],
+  "SpringerLean.AnalyticFluxCutoff": [
+    "SpringerLean.Round1760ActualCutoffDivergenceProduct",
+    "SpringerLean.Round1759LipschitzCartesianDivergence",
+    "SpringerLean.Round1743CutoffEnergyLimit"
+  ],
+  "SpringerLean.ActualSignedBridge": [
+    "SpringerLean.Round11Energy"
+  ],
+  "SpringerLean.ActualSingleRampEnergy": [
+    "SpringerLean.SingleRampPointwise",
+    "SpringerLean.SingleRampRegularity",
+    "SpringerLean.AnalyticFluxCutoff",
+    "SpringerLean.ActualSignedBridge"
+  ],
+  "SpringerLean.Round1767TwoPowerPolynomial": [
+    "SpringerLean.Round1520ClippedPowerConvex"
+  ],
+  "SpringerLean.Round1777AlignedAngularScalar": [
+    "SpringerLean.Round1767TwoPowerPolynomial"
+  ],
+  "SpringerLean.Round1761ActualCutoffDivergenceIntegral": [
+    "SpringerLean.Round1759LipschitzCartesianDivergence",
+    "SpringerLean.Round1760ActualCutoffDivergenceProduct"
+  ],
+  "SpringerLean.Round1747ActualCutoffEnergyReduction": [
+    "SpringerLean.Round1745ActualCollarErrorLimit"
+  ],
+  "SpringerLean.Round1762ActualGlobalPhaseEnergy": [
+    "SpringerLean.Round1761ActualCutoffDivergenceIntegral",
+    "SpringerLean.Round1747ActualCutoffEnergyReduction"
+  ],
+  "SpringerLean.Round1763ActualSignedPhaseBound": [
+    "SpringerLean.Round1762ActualGlobalPhaseEnergy"
+  ],
+  "SpringerLean.Round1773ActualSignedPhaseIntegral": [
+    "SpringerLean.Round1763ActualSignedPhaseBound"
+  ],
+  "SpringerLean.Round1778AlignedComplexPhaseCost": [
+    "SpringerLean.Round1777AlignedAngularScalar",
+    "SpringerLean.Round1773ActualSignedPhaseIntegral"
+  ],
+  "SpringerLean.Round1801TrueAxisSineFloor": [
+    "SpringerLean.Round1777AlignedAngularScalar"
+  ],
+  "SpringerLean.Round1803TrueAxisLogScalar": [
+    "SpringerLean.Round1801TrueAxisSineFloor"
+  ],
+  "SpringerLean.Round1806TrueAxisSignedPower": [
+    "SpringerLean.Round1803TrueAxisLogScalar"
+  ],
+  "SpringerLean.SingleRampAngularComparison": [
+    "SpringerLean.ActualSingleRampEnergy",
+    "SpringerLean.Round1778AlignedComplexPhaseCost",
+    "SpringerLean.Round1806TrueAxisSignedPower"
+  ],
+  "SpringerLean.Round1780AlignedStripBudget": [
+    "SpringerLean.Round1777AlignedAngularScalar"
+  ],
+  "SpringerLean.Round1781AlignedRayTrigonometry": [
+    "SpringerLean.Round1780AlignedStripBudget"
+  ],
+  "SpringerLean.Round1783RotatedStripCoordinates": [
+    "SpringerLean.Round1781AlignedRayTrigonometry"
+  ],
+  "SpringerLean.Round1768TwoPowerConvexRetention": [
+    "SpringerLean.Round1767TwoPowerPolynomial"
+  ],
+  "SpringerLean.Round1764SelectedTiltedProjectionCap": [
+    "SpringerLean.Round1495SecondGlobalCap"
+  ],
+  "SpringerLean.Round1765ActualTiltedCapAndGain": [
+    "SpringerLean.Round1764SelectedTiltedProjectionCap",
+    "SpringerLean.Round1567ActualUnitDiskCubicGain"
+  ],
+  "SpringerLean.Round1766SelectedTiltedDiskSavings": [
+    "SpringerLean.Round1765ActualTiltedCapAndGain"
+  ],
+  "SpringerLean.Round749ActualDiskConvex": [
+    "SpringerLean.Round748UnitDiskLimit"
+  ],
+  "SpringerLean.Round1769ActualTwoPowerRetention": [
+    "SpringerLean.Round1768TwoPowerConvexRetention",
+    "SpringerLean.Round1766SelectedTiltedDiskSavings",
+    "SpringerLean.Round749ActualDiskConvex"
+  ],
+  "SpringerLean.Round1770SelectedTiltedTwoPowerSavings": [
+    "SpringerLean.Round1769ActualTwoPowerRetention"
+  ],
+  "SpringerLean.Round1771NearbyPhaseRay": [
+    "SpringerLean.Round1770SelectedTiltedTwoPowerSavings"
+  ],
+  "SpringerLean.Round1774ActualCandidatePhaseEndpoints": [
+    "SpringerLean.Round1771NearbyPhaseRay"
+  ],
+  "SpringerLean.Round1784ActualAlignedStripCoordinates": [
+    "SpringerLean.Round1783RotatedStripCoordinates",
+    "SpringerLean.Round1774ActualCandidatePhaseEndpoints"
+  ],
+  "SpringerLean.Round1785ActualAlignedNearPhaseCost": [
+    "SpringerLean.Round1784ActualAlignedStripCoordinates",
+    "SpringerLean.Round1778AlignedComplexPhaseCost"
+  ],
+  "SpringerLean.Round1802PowerExpAntitone": [
+    "SpringerLean.Round1785ActualAlignedNearPhaseCost"
+  ],
+  "SpringerLean.Round1832RatePowerExpMonotonicity": [
+    "SpringerLean.Round1802PowerExpAntitone"
+  ],
+  "SpringerLean.Round1790ActualOuterFirstProjection": [
+    "SpringerLean.Round1785ActualAlignedNearPhaseCost"
+  ],
+  "SpringerLean.Round1791OppositeOuterProjection": [
+    "SpringerLean.Round1790ActualOuterFirstProjection"
+  ],
+  "SpringerLean.Round1792SelectedOuterPhaseProjections": [
+    "SpringerLean.Round1791OppositeOuterProjection"
+  ],
+  "SpringerLean.Round1797ActualPhaseParameters": [
+    "SpringerLean.Round1792SelectedOuterPhaseProjections"
+  ],
+  "SpringerLean.Round1772CentralExponentialBudget": [
+    "SpringerLean.Round1767TwoPowerPolynomial"
+  ],
+  "SpringerLean.Round1779LogCutoffCentralBudget": [
+    "SpringerLean.Round1772CentralExponentialBudget"
+  ],
+  "SpringerLean.Round1782TruncatedModelBudget": [
+    "SpringerLean.Round1779LogCutoffCentralBudget"
+  ],
+  "SpringerLean.Round1813UntruncatedScalarBudget": [
+    "SpringerLean.Round1802PowerExpAntitone",
+    "SpringerLean.Round1782TruncatedModelBudget"
+  ],
+  "SpringerLean.Round1828ActualEndpointScalarRelations": [
+    "SpringerLean.Round1797ActualPhaseParameters",
+    "SpringerLean.Round1813UntruncatedScalarBudget"
+  ],
+  "SpringerLean.Round1837TinyLogProducts": [
+    "SpringerLean.Round1832RatePowerExpMonotonicity",
+    "SpringerLean.Round1828ActualEndpointScalarRelations"
+  ],
+  "SpringerLean.Round1838TinyCentralScalar": [
+    "SpringerLean.Round1837TinyLogProducts"
+  ],
+  "SpringerLean.Round1775ComparisonPositiveCatalan": [
+    "SpringerLean.Round1769ActualTwoPowerRetention",
+    "SpringerLean.Round12CompareMoments"
+  ],
+  "SpringerLean.Round1808PositiveDiskMomentStep": [
+    "SpringerLean.Round1775ComparisonPositiveCatalan",
+    "SpringerLean.Round661CatalanRadiusScalar"
+  ],
+  "SpringerLean.Round1798TrueAxisLambdaLog": [
+    "SpringerLean.Round1785ActualAlignedNearPhaseCost"
+  ],
+  "SpringerLean.Round1809TrueAxisReferenceMoment": [
+    "SpringerLean.Round1808PositiveDiskMomentStep",
+    "SpringerLean.Round1798TrueAxisLambdaLog"
+  ],
+  "SpringerLean.Round1805RelativePhasePower": [
+    "SpringerLean.Round1785ActualAlignedNearPhaseCost"
+  ],
+  "SpringerLean.Round1804ActualTrueAxisAngles": [
+    "SpringerLean.Round1785ActualAlignedNearPhaseCost"
+  ],
+  "SpringerLean.Round1807ActualTrueAxisPhaseCost": [
+    "SpringerLean.Round1806TrueAxisSignedPower",
+    "SpringerLean.Round1805RelativePhasePower",
+    "SpringerLean.Round1804ActualTrueAxisAngles",
+    "SpringerLean.Round1798TrueAxisLambdaLog"
+  ],
+  "SpringerLean.Round1786FarPowerRatio": [
+    "SpringerLean.Round1780AlignedStripBudget"
+  ],
+  "SpringerLean.Round1787FarComplexPower": [
+    "SpringerLean.Round1786FarPowerRatio"
+  ],
+  "SpringerLean.Round1788ActualAlignedFarPhaseCost": [
+    "SpringerLean.Round1787FarComplexPower",
+    "SpringerLean.Round1785ActualAlignedNearPhaseCost"
+  ],
+  "SpringerLean.Round1789ActualAlignedTwoPowerCost": [
+    "SpringerLean.Round1788ActualAlignedFarPhaseCost"
+  ],
+  "SpringerLean.Round1793ActualBothAlignedPointwise": [
+    "SpringerLean.Round1792SelectedOuterPhaseProjections",
+    "SpringerLean.Round1789ActualAlignedTwoPowerCost"
+  ],
+  "SpringerLean.Round1794ActualBothAlignedIntegral": [
+    "SpringerLean.Round1793ActualBothAlignedPointwise",
+    "SpringerLean.Round1775ComparisonPositiveCatalan"
+  ],
+  "SpringerLean.Round1795ActualAlignedSavingIdentity": [
+    "SpringerLean.Round1794ActualBothAlignedIntegral"
+  ],
+  "SpringerLean.Round1796ActualBothAlignedBudget": [
+    "SpringerLean.Round1795ActualAlignedSavingIdentity"
+  ],
+  "SpringerLean.Round1799ActualFixedAlignedBudget": [
+    "SpringerLean.Round1796ActualBothAlignedBudget",
+    "SpringerLean.Round1797ActualPhaseParameters"
+  ],
+  "SpringerLean.Round1776ActualCandidateSignedPhaseData": [
+    "SpringerLean.Round1774ActualCandidatePhaseEndpoints",
+    "SpringerLean.Round1773ActualSignedPhaseIntegral",
+    "SpringerLean.Round1775ComparisonPositiveCatalan"
+  ],
+  "SpringerLean.Round1800CandidateReferenceBudget": [
+    "SpringerLean.Round1799ActualFixedAlignedBudget",
+    "SpringerLean.Round1776ActualCandidateSignedPhaseData"
+  ],
+  "SpringerLean.Round1810ActualEndpointPhaseEnvelope": [
+    "SpringerLean.Round1807ActualTrueAxisPhaseCost",
+    "SpringerLean.Round1800CandidateReferenceBudget"
+  ],
+  "SpringerLean.Round1811ActualEndpointPhaseIntegral": [
+    "SpringerLean.Round1810ActualEndpointPhaseEnvelope"
+  ],
+  "SpringerLean.Round1812ActualTrueAxisIntegralCost": [
+    "SpringerLean.Round1809TrueAxisReferenceMoment",
+    "SpringerLean.Round1811ActualEndpointPhaseIntegral"
+  ],
+  "SpringerLean.Round1814ActualAllPhaseBudget": [
+    "SpringerLean.Round1812ActualTrueAxisIntegralCost"
+  ],
+  "SpringerLean.Round1816ReferenceDiskIntegral": [
+    "SpringerLean.Round13Semicircle",
+    "SpringerLean.Round1814ActualAllPhaseBudget"
+  ],
+  "SpringerLean.Round1815TruncatedTwelveBudget": [
+    "SpringerLean.Round1813UntruncatedScalarBudget"
+  ],
+  "SpringerLean.Round1817ReferenceTailCoefficient": [
+    "SpringerLean.Round1815TruncatedTwelveBudget"
+  ],
+  "SpringerLean.Round1818ReferenceTailPointwise": [
+    "SpringerLean.Round1817ReferenceTailCoefficient"
+  ],
+  "SpringerLean.Round1819NormalizedReferenceTest": [
+    "SpringerLean.Round1816ReferenceDiskIntegral",
+    "SpringerLean.Round1818ReferenceTailPointwise"
+  ],
+  "SpringerLean.Round1820ReferenceTailIdentity": [
+    "SpringerLean.Round1819NormalizedReferenceTest"
+  ],
+  "SpringerLean.Round1821ExponentialTailMoments": [
+    "SpringerLean.Round1818ReferenceTailPointwise"
+  ],
+  "SpringerLean.Round1823ReflectedTailMoments": [
+    "SpringerLean.Round1821ExponentialTailMoments"
+  ],
+  "SpringerLean.Round1824ReferenceTailMajorant": [
+    "SpringerLean.Round1820ReferenceTailIdentity",
+    "SpringerLean.Round1823ReflectedTailMoments"
+  ],
+  "SpringerLean.Round1825ReferenceTailIntegralMajorant": [
+    "SpringerLean.Round1824ReferenceTailMajorant"
+  ],
+  "SpringerLean.Round1826AlignedReferenceCost": [
+    "SpringerLean.Round1825ReferenceTailIntegralMajorant"
+  ],
+  "SpringerLean.Round1822ReferenceMomentCentralMargin": [
+    "SpringerLean.Round1808PositiveDiskMomentStep",
+    "SpringerLean.Round1772CentralExponentialBudget"
+  ],
+  "SpringerLean.Round1829ActualNonTinyPhaseBudget": [
+    "SpringerLean.Round1826AlignedReferenceCost",
+    "SpringerLean.Round1828ActualEndpointScalarRelations",
+    "SpringerLean.Round1822ReferenceMomentCentralMargin"
+  ],
+  "SpringerLean.Round1830CandidateHasTinyEnd": [
+    "SpringerLean.Round1829ActualNonTinyPhaseBudget"
+  ],
+  "SpringerLean.Round1831ActualTinyFirstEndpoint": [
+    "SpringerLean.Round1830CandidateHasTinyEnd"
+  ],
+  "SpringerLean.Round1833ActualDeficitTransverseBound": [
+    "SpringerLean.Round1831ActualTinyFirstEndpoint"
+  ],
+  "SpringerLean.Round1834TinyOuterPhaseCone": [
+    "SpringerLean.Round1833ActualDeficitTransverseBound"
+  ],
+  "SpringerLean.Round1835ActualAntipodalPointwise": [
+    "SpringerLean.Round1834TinyOuterPhaseCone"
+  ],
+  "SpringerLean.Round1836ActualAntipodalIntegral": [
+    "SpringerLean.Round1835ActualAntipodalPointwise"
+  ],
+  "SpringerLean.Round1839ActualTinyStrictComparison": [
+    "SpringerLean.Round1838TinyCentralScalar",
+    "SpringerLean.Round1836ActualAntipodalIntegral"
+  ],
+  "SpringerLean.Round1840ActualStrictSignedComparison": [
+    "SpringerLean.Round1839ActualTinyStrictComparison"
+  ],
+  "SpringerLean.Round91MatrixNormalization": [
+    "SpringerLean.Round90FaberCombination"
+  ],
+  "SpringerLean.Round92FaberFour": [
+    "SpringerLean.Round91MatrixNormalization"
+  ],
+  "SpringerLean.Round93FourthModes": [
+    "SpringerLean.Round92FaberFour"
+  ],
+  "SpringerLean.ActualSingleRampCatalan": [
+    "SpringerLean.SingleRampAngularComparison",
+    "SpringerLean.Round1840ActualStrictSignedComparison",
+    "SpringerLean.Round93FourthModes"
+  ],
+  "SpringerLean.Round1844RadialPrimitiveLimit": [],
+  "SpringerLean.Round1845PolarRadialIntegrability": [
+    "SpringerLean.Round55DiskPolar",
+    "SpringerLean.Round08Lp"
+  ],
+  "SpringerLean.Round1846ActualRadialTrace": [
+    "SpringerLean.Round1844RadialPrimitiveLimit",
+    "SpringerLean.Round1845PolarRadialIntegrability"
+  ],
+  "SpringerLean.Round1847ActualExteriorTrace": [
+    "SpringerLean.Round1846ActualRadialTrace",
+    "SpringerLean.Round39RotateExterior"
+  ],
+  "SpringerLean.Round1331FiniteExteriorParseval": [
+    "SpringerLean.Round14CircleParseval"
+  ],
+  "SpringerLean.Round1332ActualCirclePartial": [
+    "SpringerLean.Round1331FiniteExteriorParseval",
+    "SpringerLean.Round14ActualParseval",
+    "SpringerLean.CircleModeBridge"
+  ],
+  "SpringerLean.Round1315RadialTwoArea": [
+    "SpringerLean.AreaFinite",
+    "SpringerLean.GeneralArea"
+  ],
+  "SpringerLean.Round1317RadialTwoSummable": [
+    "SpringerLean.Round1315RadialTwoArea"
+  ],
+  "SpringerLean.Round1333ActualExteriorCircleParseval": [
+    "SpringerLean.Round1332ActualCirclePartial",
+    "SpringerLean.Round1317RadialTwoSummable"
+  ],
+  "SpringerLean.Round1334CoefficientRadialLimit": [
+    "SpringerLean.Round1333ActualExteriorCircleParseval"
+  ],
+  "SpringerLean.Round1848ActualBoundaryParseval": [
+    "SpringerLean.Round1847ActualExteriorTrace",
+    "SpringerLean.Round1334CoefficientRadialLimit"
+  ],
+  "SpringerLean.Round1849ActualRadialTwoSlit": [
+    "SpringerLean.Round1848ActualBoundaryParseval"
+  ],
+  "SpringerLean.PaperRadialTwoStatements": [
+    "SpringerLean.Round1849ActualRadialTwoSlit"
+  ],
+  "SpringerLean.Round1860ActualRealMomentLimit": [
+    "SpringerLean.Round1849ActualRadialTwoSlit"
+  ],
+  "SpringerLean.Round1861ActualTraceIntegrability": [
+    "SpringerLean.Round1860ActualRealMomentLimit"
+  ],
+  "SpringerLean.Round1862RealBetaIntegral": [],
+  "SpringerLean.Round1863CosineBetaIntegral": [
+    "SpringerLean.Round1862RealBetaIntegral"
+  ],
+  "SpringerLean.Round1864CosineGammaEvaluation": [
+    "SpringerLean.Round1863CosineBetaIntegral",
+    "SpringerLean.Round1849ActualRadialTwoSlit"
+  ],
+  "SpringerLean.Round1853TaggedIntegralError": [],
+  "SpringerLean.Round1854MidpointIntegralLimit": [
+    "SpringerLean.Round1853TaggedIntegralError"
+  ],
+  "SpringerLean.Round763ChebyshevZeroPrelude": [],
+  "SpringerLean.Round764ChebyshevInterlacing": [
+    "SpringerLean.Round763ChebyshevZeroPrelude"
+  ],
+  "SpringerLean.Round765PolynomialRolleLadder": [
+    "SpringerLean.Round764ChebyshevInterlacing"
+  ],
+  "SpringerLean.Round766InterlacedZeroCounts": [
+    "SpringerLean.Round765PolynomialRolleLadder"
+  ],
+  "SpringerLean.Round767IteratedInterlacingCounts": [
+    "SpringerLean.Round766InterlacedZeroCounts"
+  ],
+  "SpringerLean.Round768RolleGridConstruction": [
+    "SpringerLean.Round767IteratedInterlacingCounts"
+  ],
+  "SpringerLean.Round769RolleChain": [
+    "SpringerLean.Round768RolleGridConstruction"
+  ],
+  "SpringerLean.Round770ChebyshevRolleChain": [
+    "SpringerLean.Round769RolleChain"
+  ],
+  "SpringerLean.Round771ChebyshevDerivativeRoots": [
+    "SpringerLean.Round770ChebyshevRolleChain"
+  ],
+  "SpringerLean.Round772ChebyshevZeroDiscrepancy": [
+    "SpringerLean.Round771ChebyshevDerivativeRoots"
+  ],
+  "SpringerLean.Round1329ChebyshevNormalizedCounts": [
+    "SpringerLean.Round772ChebyshevZeroDiscrepancy"
+  ],
+  "SpringerLean.Round1850RolleMomentPrelude": [
+    "SpringerLean.Round1329ChebyshevNormalizedCounts"
+  ],
+  "SpringerLean.Round1851InterlacingTestMoments": [
+    "SpringerLean.Round1850RolleMomentPrelude"
+  ],
+  "SpringerLean.Round1852ChebyshevRealMomentTransfer": [
+    "SpringerLean.Round1851InterlacingTestMoments"
+  ],
+  "SpringerLean.Round773MonicChebyshevScale": [
+    "SpringerLean.Round772ChebyshevZeroDiscrepancy"
+  ],
+  "SpringerLean.Round774ChebyshevScaleLimit": [
+    "SpringerLean.Round773MonicChebyshevScale"
+  ],
+  "SpringerLean.Round1855ChebyshevMomentLimit": [
+    "SpringerLean.Round1854MidpointIntegralLimit",
+    "SpringerLean.Round1852ChebyshevRealMomentTransfer",
+    "SpringerLean.Round774ChebyshevScaleLimit"
+  ],
+  "SpringerLean.Round1856ChebyshevDerivativeScaling": [
+    "SpringerLean.Round774ChebyshevScaleLimit"
+  ],
+  "SpringerLean.Round1857ChebyshevDerivativeMomentLimit": [
+    "SpringerLean.Round1855ChebyshevMomentLimit",
+    "SpringerLean.Round1856ChebyshevDerivativeScaling"
+  ],
+  "SpringerLean.Round1865ArcsineGammaMoment": [
+    "SpringerLean.Round1864CosineGammaEvaluation",
+    "SpringerLean.Round1857ChebyshevDerivativeMomentLimit"
+  ],
+  "SpringerLean.Round1858OddForwardCoefficient": [
+    "SpringerLean.Round1849ActualRadialTwoSlit"
+  ],
+  "SpringerLean.Round1859OddBoundarySecondMoment": [
+    "SpringerLean.Round1858OddForwardCoefficient"
+  ],
+  "SpringerLean.Round246FormalLog": [],
+  "SpringerLean.Round247FormalFaberKernel": [
+    "SpringerLean.Round246FormalLog"
+  ],
+  "SpringerLean.Round248LinearFormalLog": [
+    "SpringerLean.Round247FormalFaberKernel"
+  ],
+  "SpringerLean.Round249FaberLogFactorization": [
+    "SpringerLean.Round248LinearFormalLog"
+  ],
+  "SpringerLean.Round250GeneralFaberPolynomial": [
+    "SpringerLean.Round249FaberLogFactorization"
+  ],
+  "SpringerLean.Round252FaberRecurrence": [
+    "SpringerLean.Round250GeneralFaberPolynomial"
+  ],
+  "SpringerLean.Round253FaberDegree": [
+    "SpringerLean.Round252FaberRecurrence"
+  ],
+  "SpringerLean.Round254PolynomialReciprocal": [
+    "SpringerLean.Round253FaberDegree"
+  ],
+  "SpringerLean.Round251ActualFormalFaber": [
+    "SpringerLean.Round250GeneralFaberPolynomial",
+    "SpringerLean.LowOrder"
+  ],
+  "SpringerLean.Round255ActualFaberNormalization": [
+    "SpringerLean.Round254PolynomialReciprocal",
+    "SpringerLean.Round251ActualFormalFaber"
+  ],
+  "SpringerLean.Round256ActualPolynomialFactor": [
+    "SpringerLean.Round255ActualFaberNormalization",
+    "SpringerLean.Round88FaberActual"
+  ],
+  "SpringerLean.Round257AllOrderActualFaber": [
+    "SpringerLean.Round256ActualPolynomialFactor"
+  ],
+  "SpringerLean.Round94FourthLimit": [
+    "SpringerLean.Round93FourthModes"
+  ],
+  "SpringerLean.Round95FourthRow": [
+    "SpringerLean.Round94FourthLimit"
+  ],
+  "SpringerLean.Round96FourCombination": [
+    "SpringerLean.Round95FourthRow"
+  ],
+  "SpringerLean.Round97FaberScaling": [
+    "SpringerLean.Round96FourCombination"
+  ],
+  "SpringerLean.Round98FaberMatrix": [
+    "SpringerLean.Round97FaberScaling"
+  ],
+  "SpringerLean.Round99KernelFour": [
+    "SpringerLean.Round98FaberMatrix"
+  ],
+  "SpringerLean.Round101KernelBridge": [
+    "SpringerLean.Round99KernelFour"
+  ],
+  "SpringerLean.Round102ThirdMode": [
+    "SpringerLean.Round101KernelBridge"
+  ],
+  "SpringerLean.Round104SeventhCoeff": [
+    "SpringerLean.Round102ThirdMode"
+  ],
+  "SpringerLean.Round103NormalizeFour": [
+    "SpringerLean.Round102ThirdMode"
+  ],
+  "SpringerLean.Round105FourthTensorEnergy": [
+    "SpringerLean.Round104SeventhCoeff",
+    "SpringerLean.Round103NormalizeFour"
+  ],
+  "SpringerLean.Round106FifthDiagonal": [
+    "SpringerLean.Round105FourthTensorEnergy"
+  ],
+  "SpringerLean.Round107NinthCoeff": [
+    "SpringerLean.Round106FifthDiagonal"
+  ],
+  "SpringerLean.Round108KernelFive": [
+    "SpringerLean.Round107NinthCoeff"
+  ],
+  "SpringerLean.Round109KernelFiveSecond": [
+    "SpringerLean.Round108KernelFive"
+  ],
+  "SpringerLean.Round110KernelFiveThird": [
+    "SpringerLean.Round109KernelFiveSecond"
+  ],
+  "SpringerLean.Round111KernelFiveThirdEntries": [
+    "SpringerLean.Round110KernelFiveThird"
+  ],
+  "SpringerLean.Round112KernelFiveFourth": [
+    "SpringerLean.Round111KernelFiveThirdEntries"
+  ],
+  "SpringerLean.Round113KernelFiveFifth": [
+    "SpringerLean.Round112KernelFiveFourth"
+  ],
+  "SpringerLean.Round114FaberFivePrelude": [
+    "SpringerLean.Round113KernelFiveFifth"
+  ],
+  "SpringerLean.Round140FaberSixPrelude": [
+    "SpringerLean.Round114FaberFivePrelude"
+  ],
+  "SpringerLean.Round115FiveCombination": [
+    "SpringerLean.Round114FaberFivePrelude"
+  ],
+  "SpringerLean.Round142SixCombination": [
+    "SpringerLean.Round140FaberSixPrelude",
+    "SpringerLean.Round115FiveCombination"
+  ],
+  "SpringerLean.Round143FaberFiniteFourier": [
+    "SpringerLean.Round142SixCombination"
+  ],
+  "SpringerLean.Round144SixFiniteEnergy": [
+    "SpringerLean.Round143FaberFiniteFourier"
+  ],
+  "SpringerLean.Round258GenericFaberEnergy": [
+    "SpringerLean.Round257AllOrderActualFaber",
+    "SpringerLean.Round144SixFiniteEnergy"
+  ],
+  "SpringerLean.Round259ActualPolynomialEnergy": [
+    "SpringerLean.Round258GenericFaberEnergy"
+  ],
+  "SpringerLean.Round353RadialEvenPrelude": [
+    "SpringerLean.Round259ActualPolynomialEnergy",
+    "SpringerLean.Round14CircleLimit",
+    "SpringerLean.Round13Mean"
+  ],
+  "SpringerLean.Round1866FourthMomentFiniteEnergy": [
+    "SpringerLean.Round353RadialEvenPrelude"
+  ],
+  "SpringerLean.Round1867ActualRescaledMomentLimit": [
+    "SpringerLean.Round1861ActualTraceIntegrability"
+  ],
+  "SpringerLean.Round1868ActualFourthMoment": [
+    "SpringerLean.Round1866FourthMomentFiniteEnergy",
+    "SpringerLean.Round1867ActualRescaledMomentLimit"
+  ],
+  "SpringerLean.Round1869SlitRadialTrace": [
+    "SpringerLean.Round1865ArcsineGammaMoment"
+  ],
+  "SpringerLean.Round1870SlitMomentRotation": [
+    "SpringerLean.Round1869SlitRadialTrace",
+    "SpringerLean.Round1860ActualRealMomentLimit"
+  ],
+  "SpringerLean.Round1871ActualFourthMomentSlit": [
+    "SpringerLean.Round1868ActualFourthMoment",
+    "SpringerLean.Round1870SlitMomentRotation"
+  ],
+  "SpringerLean.Round1892LocalConvexGrid": [
+    "SpringerLean.Round643ConvexUniformHinge"
+  ],
+  "SpringerLean.Round1893LocalConvexCircle": [
+    "SpringerLean.Round1892LocalConvexGrid",
+    "SpringerLean.Round18FiniteConvex"
+  ],
+  "SpringerLean.Round1894LocalConvexSmooth": [
+    "SpringerLean.Round1893LocalConvexCircle",
+    "SpringerLean.Round32SignApplications",
+    "SpringerLean.Round639RegularBoundaryOmitted"
+  ],
+  "SpringerLean.Round1895ActualLocalConvexTrace": [
+    "SpringerLean.Round1894LocalConvexSmooth",
+    "SpringerLean.Round1861ActualTraceIntegrability"
+  ],
+  "SpringerLean.Round1896LocalConvexTestTransfer": [
+    "SpringerLean.Round1895ActualLocalConvexTrace"
+  ],
+  "SpringerLean.Round1898InterpolationCurvatureBridge": [
+    "SpringerLean.Round1896LocalConvexTestTransfer"
+  ],
+  "SpringerLean.Round1900InterpolationPowerCurvature": [
+    "SpringerLean.Round1898InterpolationCurvatureBridge"
+  ],
+  "SpringerLean.Round1901ExponentialQuadraticLower": [
+    "SpringerLean.Round1900InterpolationPowerCurvature"
+  ],
+  "SpringerLean.Round1902ExponentialCurvatureBound": [
+    "SpringerLean.Round1901ExponentialQuadraticLower"
+  ],
+  "SpringerLean.Round1903ExponentialSquareBound": [
+    "SpringerLean.Round1902ExponentialCurvatureBound"
+  ],
+  "SpringerLean.Round1904InterpolationCurvatureUniform": [
+    "SpringerLean.Round1903ExponentialSquareBound"
+  ],
+  "SpringerLean.Round1905KernelSecantBound": [
+    "SpringerLean.Round1904InterpolationCurvatureUniform"
+  ],
+  "SpringerLean.Round1887InterpolationPowerAMGM": [],
+  "SpringerLean.Round1906PowerTestCurvature": [
+    "SpringerLean.Round1905KernelSecantBound",
+    "SpringerLean.Round1887InterpolationPowerAMGM"
+  ],
+  "SpringerLean.Round1907PowerTestCurvatureLower": [
+    "SpringerLean.Round1906PowerTestCurvature"
+  ],
+  "SpringerLean.Round1908EvenLocalConvexCriterion": [
+    "SpringerLean.Round1907PowerTestCurvatureLower"
+  ],
+  "SpringerLean.Round1909PowerTestLocalConvex": [
+    "SpringerLean.Round1908EvenLocalConvexCriterion"
+  ],
+  "SpringerLean.Round1910ProjectionFirstModeCircle": [
+    "SpringerLean.Round1909PowerTestLocalConvex",
+    "SpringerLean.Round14ActualParseval"
+  ],
+  "SpringerLean.Round1911ProjectionPhaseCircle": [
+    "SpringerLean.Round1910ProjectionFirstModeCircle",
+    "SpringerLean.Round11Energy"
+  ],
+  "SpringerLean.Round1912ProjectionTraceSquare": [
+    "SpringerLean.Round1911ProjectionPhaseCircle",
+    "SpringerLean.Round1848ActualBoundaryParseval"
+  ],
+  "SpringerLean.Round1913ActualProjectionFirstMode": [
+    "SpringerLean.Round1912ProjectionTraceSquare",
+    "SpringerLean.Round14Quadratic"
+  ],
+  "SpringerLean.Round1914ActualProjectionDeficit": [
+    "SpringerLean.Round1913ActualProjectionFirstMode",
+    "SpringerLean.Round1898InterpolationCurvatureBridge"
+  ],
+  "SpringerLean.Round1915ActualInterpolationTest": [
+    "SpringerLean.Round1914ActualProjectionDeficit"
+  ],
+  "SpringerLean.Round1916NormalizedRadialMoment": [
+    "SpringerLean.Round1915ActualInterpolationTest"
+  ],
+  "SpringerLean.Round1917CosineSlitNormalization": [
+    "SpringerLean.Round1916NormalizedRadialMoment",
+    "SpringerLean.Round1869SlitRadialTrace"
+  ],
+  "SpringerLean.Round260ReciprocalFactorLinear": [
+    "SpringerLean.Round255ActualFaberNormalization"
+  ],
+  "SpringerLean.Round261CommonFaberCombination": [
+    "SpringerLean.Round260ReciprocalFactorLinear",
+    "SpringerLean.Round257AllOrderActualFaber"
+  ],
+  "SpringerLean.Round262ActualFaberModes": [
+    "SpringerLean.Round261CommonFaberCombination"
+  ],
+  "SpringerLean.Round263RegularizedGrunsky": [
+    "SpringerLean.Round259ActualPolynomialEnergy",
+    "SpringerLean.Round262ActualFaberModes"
+  ],
+  "SpringerLean.Round264FaberKernelScaling": [
+    "SpringerLean.Round263RegularizedGrunsky"
+  ],
+  "SpringerLean.Round120FiniteNormalize": [
+    "SpringerLean.Round103NormalizeFour"
+  ],
+  "SpringerLean.Round265AllFiniteGrunsky": [
+    "SpringerLean.Round264FaberKernelScaling",
+    "SpringerLean.Round120FiniteNormalize"
+  ],
+  "SpringerLean.Round269AnalyticTaylorTail": [
+    "SpringerLean.Round257AllOrderActualFaber"
+  ],
+  "SpringerLean.Round266FiniteFormalLog": [
+    "SpringerLean.Round248LinearFormalLog"
+  ],
+  "SpringerLean.Round270ActualTaylorComposition": [
+    "SpringerLean.Round269AnalyticTaylorTail",
+    "SpringerLean.Round266FiniteFormalLog"
+  ],
+  "SpringerLean.Round275BivariateSubstitution": [
+    "SpringerLean.Round270ActualTaylorComposition"
+  ],
+  "SpringerLean.Round272ActualInverseLagrange": [
+    "SpringerLean.Round257AllOrderActualFaber",
+    "SpringerLean.Round75DiagonalRows"
+  ],
+  "SpringerLean.Round276ActualFormalInverse": [
+    "SpringerLean.Round270ActualTaylorComposition",
+    "SpringerLean.Round272ActualInverseLagrange"
+  ],
+  "SpringerLean.Round279InverseKernelAlgebra": [
+    "SpringerLean.Round275BivariateSubstitution",
+    "SpringerLean.Round276ActualFormalInverse"
+  ],
+  "SpringerLean.Round274FormalExpLog": [
+    "SpringerLean.Round266FiniteFormalLog"
+  ],
+  "SpringerLean.Round280ActualExponentialKernel": [
+    "SpringerLean.Round279InverseKernelAlgebra",
+    "SpringerLean.Round274FormalExpLog"
+  ],
+  "SpringerLean.Round145SixFactorSeries": [
+    "SpringerLean.Round144SixFiniteEnergy"
+  ],
+  "SpringerLean.Round116FiveLowModes": [
+    "SpringerLean.Round115FiveCombination"
+  ],
+  "SpringerLean.Round117FiveScaling": [
+    "SpringerLean.Round116FiveLowModes"
+  ],
+  "SpringerLean.Round118FiveActualArea": [
+    "SpringerLean.Round117FiveScaling"
+  ],
+  "SpringerLean.Round119FiveMatrix": [
+    "SpringerLean.Round118FiveActualArea"
+  ],
+  "SpringerLean.Round121FiveKernelConditional": [
+    "SpringerLean.Round120FiniteNormalize",
+    "SpringerLean.Round119FiveMatrix"
+  ],
+  "SpringerLean.Round122FiveKernelFirstRow": [
+    "SpringerLean.Round121FiveKernelConditional"
+  ],
+  "SpringerLean.Round123FiveKernelSecondColumn": [
+    "SpringerLean.Round122FiveKernelFirstRow"
+  ],
+  "SpringerLean.Round124FiveKernelThirdColumn": [
+    "SpringerLean.Round123FiveKernelSecondColumn"
+  ],
+  "SpringerLean.Round125FiveKernelFourthColumn": [
+    "SpringerLean.Round124FiveKernelThirdColumn"
+  ],
+  "SpringerLean.Round126FiveFaberFirstMode": [
+    "SpringerLean.Round125FiveKernelFourthColumn"
+  ],
+  "SpringerLean.Round127FiveFaberSecondMode": [
+    "SpringerLean.Round126FiveFaberFirstMode"
+  ],
+  "SpringerLean.Round128FiveFaberThirdMode": [
+    "SpringerLean.Round127FiveFaberSecondMode"
+  ],
+  "SpringerLean.Round129KernelFiveLowBlock": [
+    "SpringerLean.Round128FiveFaberThirdMode"
+  ],
+  "SpringerLean.Round130FiveFaberFourthMode": [
+    "SpringerLean.Round128FiveFaberThirdMode"
+  ],
+  "SpringerLean.Round131FiveFaberFifthMode": [
+    "SpringerLean.Round128FiveFaberThirdMode"
+  ],
+  "SpringerLean.Round132FiveKernelActualMatrix": [
+    "SpringerLean.Round129KernelFiveLowBlock",
+    "SpringerLean.Round130FiveFaberFourthMode",
+    "SpringerLean.Round131FiveFaberFifthMode"
+  ],
+  "SpringerLean.Round133FiveTensorContraction": [
+    "SpringerLean.Round132FiveKernelActualMatrix"
+  ],
+  "SpringerLean.Round134FifthVectorEnergy": [
+    "SpringerLean.Round132FiveKernelActualMatrix"
+  ],
+  "SpringerLean.Round135FiveTensorEnergy": [
+    "SpringerLean.Round133FiveTensorContraction",
+    "SpringerLean.Round134FifthVectorEnergy"
+  ],
+  "SpringerLean.Round136FifthTensorBound": [
+    "SpringerLean.Round135FiveTensorEnergy",
+    "SpringerLean.Round75DiagonalRows"
+  ],
+  "SpringerLean.Round137FifthTensorAlgebra": [
+    "SpringerLean.Round136FifthTensorBound"
+  ],
+  "SpringerLean.Round138SixthPrelude": [
+    "SpringerLean.Round137FifthTensorAlgebra"
+  ],
+  "SpringerLean.Round146SixLowModes": [
+    "SpringerLean.Round145SixFactorSeries",
+    "SpringerLean.Round138SixthPrelude"
+  ],
+  "SpringerLean.Round147SixLowCombination": [
+    "SpringerLean.Round146SixLowModes",
+    "SpringerLean.Round116FiveLowModes"
+  ],
+  "SpringerLean.Round148SixScaling": [
+    "SpringerLean.Round147SixLowCombination",
+    "SpringerLean.Round117FiveScaling"
+  ],
+  "SpringerLean.Round149SixActualArea": [
+    "SpringerLean.Round148SixScaling"
+  ],
+  "SpringerLean.Round150SixMatrix": [
+    "SpringerLean.Round149SixActualArea"
+  ],
+  "SpringerLean.Round151KernelSix": [
+    "SpringerLean.Round150SixMatrix",
+    "SpringerLean.Round108KernelFive"
+  ],
+  "SpringerLean.Round152KernelSixSecond": [
+    "SpringerLean.Round151KernelSix"
+  ],
+  "SpringerLean.Round153SixKernelSecondMode": [
+    "SpringerLean.Round152KernelSixSecond"
+  ],
+  "SpringerLean.Round154KernelSixThird": [
+    "SpringerLean.Round153SixKernelSecondMode"
+  ],
+  "SpringerLean.Round155SixKernelThirdEntry": [
+    "SpringerLean.Round154KernelSixThird"
+  ],
+  "SpringerLean.Round156SixKernelThirdMode": [
+    "SpringerLean.Round155SixKernelThirdEntry"
+  ],
+  "SpringerLean.Round157KernelSixFourth": [
+    "SpringerLean.Round156SixKernelThirdMode"
+  ],
+  "SpringerLean.Round158SixKernelFourthEntry": [
+    "SpringerLean.Round157KernelSixFourth"
+  ],
+  "SpringerLean.Round159SixKernelFourthMode": [
+    "SpringerLean.Round158SixKernelFourthEntry"
+  ],
+  "SpringerLean.Round160KernelSixFifth": [
+    "SpringerLean.Round159SixKernelFourthMode"
+  ],
+  "SpringerLean.Round161SixCoefficientPowers": [
+    "SpringerLean.Round160KernelSixFifth"
+  ],
+  "SpringerLean.Round162SixKernelFifthEntry": [
+    "SpringerLean.Round161SixCoefficientPowers"
+  ],
+  "SpringerLean.Round163SixKernelFifthMode": [
+    "SpringerLean.Round162SixKernelFifthEntry"
+  ],
+  "SpringerLean.Round164KernelSixDiagonalPrelude": [
+    "SpringerLean.Round163SixKernelFifthMode"
+  ],
+  "SpringerLean.Round165KernelLowCongruence": [
+    "SpringerLean.Round164KernelSixDiagonalPrelude"
+  ],
+  "SpringerLean.Round166KernelSixLowInput": [
+    "SpringerLean.Round165KernelLowCongruence"
+  ],
+  "SpringerLean.Round167KernelSixOldBlock": [
+    "SpringerLean.Round166KernelSixLowInput"
+  ],
+  "SpringerLean.Round168SixMatrixConditional": [
+    "SpringerLean.Round167KernelSixOldBlock",
+    "SpringerLean.Round132FiveKernelActualMatrix"
+  ],
+  "SpringerLean.Round169SixFaberFirstMode": [
+    "SpringerLean.Round168SixMatrixConditional",
+    "SpringerLean.Round146SixLowModes"
+  ],
+  "SpringerLean.Round170KernelSixInnerLinear": [
+    "SpringerLean.Round169SixFaberFirstMode"
+  ],
+  "SpringerLean.Round171SixFaberKernelFirst": [
+    "SpringerLean.Round170KernelSixInnerLinear"
+  ],
+  "SpringerLean.Round172SixFaberSecondMode": [
+    "SpringerLean.Round171SixFaberKernelFirst"
+  ],
+  "SpringerLean.Round173KernelSixInnerQuadratic": [
+    "SpringerLean.Round172SixFaberSecondMode"
+  ],
+  "SpringerLean.Round174KernelSixSecondReverse": [
+    "SpringerLean.Round173KernelSixInnerQuadratic"
+  ],
+  "SpringerLean.Round175SixFaberKernelSecond": [
+    "SpringerLean.Round174KernelSixSecondReverse"
+  ],
+  "SpringerLean.Round176KernelSixInnerCubic": [
+    "SpringerLean.Round175SixFaberKernelSecond"
+  ],
+  "SpringerLean.Round177SixFaberThirdMode": [
+    "SpringerLean.Round176KernelSixInnerCubic"
+  ],
+  "SpringerLean.Round178KernelSixFiniteInputTable": [
+    "SpringerLean.Round176KernelSixInnerCubic"
+  ],
+  "SpringerLean.Round179KernelSixCubicSquare": [
+    "SpringerLean.Round178KernelSixFiniteInputTable"
+  ],
+  "SpringerLean.Round180KernelSixCubicCube": [
+    "SpringerLean.Round179KernelSixCubicSquare"
+  ],
+  "SpringerLean.Round181KernelSixThirdReverse": [
+    "SpringerLean.Round180KernelSixCubicCube"
+  ],
+  "SpringerLean.Round182SixFaberKernelThird": [
+    "SpringerLean.Round177SixFaberThirdMode",
+    "SpringerLean.Round181KernelSixThirdReverse"
+  ],
+  "SpringerLean.Round183SixFaberFourthMode": [
+    "SpringerLean.Round182SixFaberKernelThird"
+  ],
+  "SpringerLean.Round184BivariateSymmetry": [
+    "SpringerLean.Round183SixFaberFourthMode"
+  ],
+  "SpringerLean.Round267FormalLogLowCoefficients": [
+    "SpringerLean.Round266FiniteFormalLog",
+    "SpringerLean.Round265AllFiniteGrunsky",
+    "SpringerLean.Round184BivariateSymmetry"
+  ],
+  "SpringerLean.Round281BivariateSubstitutionCoefficients": [
+    "SpringerLean.Round280ActualExponentialKernel",
+    "SpringerLean.Round267FormalLogLowCoefficients"
+  ],
+  "SpringerLean.Round271GenericTensorPowers": [
+    "SpringerLean.Round265AllFiniteGrunsky",
+    "SpringerLean.Round67TensorContraction"
+  ],
+  "SpringerLean.Round282TensorFunctional": [
+    "SpringerLean.Round271GenericTensorPowers"
+  ],
+  "SpringerLean.Round283FiniteKernelTruncation": [
+    "SpringerLean.Round281BivariateSubstitutionCoefficients",
+    "SpringerLean.Round282TensorFunctional"
+  ],
+  "SpringerLean.Round284FiniteTensorProducts": [
+    "SpringerLean.Round282TensorFunctional"
+  ],
+  "SpringerLean.Round285KernelTensorExpansion": [
+    "SpringerLean.Round283FiniteKernelTruncation",
+    "SpringerLean.Round284FiniteTensorProducts"
+  ],
+  "SpringerLean.Round286FiniteLogEnergy": [
+    "SpringerLean.Round274FormalExpLog",
+    "SpringerLean.Round284FiniteTensorProducts"
+  ],
+  "SpringerLean.Round287TensorEnergySum": [
+    "SpringerLean.Round286FiniteLogEnergy"
+  ],
+  "SpringerLean.Round141SixthArithmetic": [
+    "SpringerLean.Round138SixthPrelude"
+  ],
+  "SpringerLean.Round277SixthInverseCoefficient": [
+    "SpringerLean.Round141SixthArithmetic"
+  ],
+  "SpringerLean.Round273SeventhDiagonalArithmetic": [
+    "SpringerLean.Round141SixthArithmetic",
+    "SpringerLean.Round91MatrixNormalization"
+  ],
+  "SpringerLean.Round278EighthDiagonalArithmetic": [
+    "SpringerLean.Round277SixthInverseCoefficient",
+    "SpringerLean.Round273SeventhDiagonalArithmetic"
+  ],
+  "SpringerLean.Round288SchoberPrincipal": [
+    "SpringerLean.Round285KernelTensorExpansion",
+    "SpringerLean.Round287TensorEnergySum",
+    "SpringerLean.Round278EighthDiagonalArithmetic"
+  ],
+  "SpringerLean.Round290DiagonalForwardFormula": [
+    "SpringerLean.Round288SchoberPrincipal"
+  ],
+  "SpringerLean.Round291UniversalGrunsky": [
+    "SpringerLean.Round290DiagonalForwardFormula"
+  ],
+  "SpringerLean.Round292HermitianGramEnergy": [
+    "SpringerLean.Round291UniversalGrunsky"
+  ],
+  "SpringerLean.Round293ActualGramDeficits": [
+    "SpringerLean.Round292HermitianGramEnergy"
+  ],
+  "SpringerLean.Round296ActualCoefficientExpressions": [
+    "SpringerLean.Round295CoefficientExpressions",
+    "SpringerLean.Round293ActualGramDeficits"
+  ],
+  "SpringerLean.Round376ThirdQuantitative": [
+    "SpringerLean.Round265AllFiniteGrunsky",
+    "SpringerLean.Round296ActualCoefficientExpressions",
+    "SpringerLean.LowOrder"
+  ],
+  "SpringerLean.Round1877SixthMomentFiniteEnergy": [
+    "SpringerLean.Round1866FourthMomentFiniteEnergy",
+    "SpringerLean.Round376ThirdQuantitative",
+    "SpringerLean.Round1867ActualRescaledMomentLimit"
+  ],
+  "SpringerLean.Round1878ActualSixthMomentSlit": [
+    "SpringerLean.Round1877SixthMomentFiniteEnergy",
+    "SpringerLean.Round1870SlitMomentRotation"
+  ],
+  "SpringerLean.Round1888StrongSixthMoment": [
+    "SpringerLean.Round1878ActualSixthMomentSlit"
+  ],
+  "SpringerLean.Round1879EighthMomentFiniteEnergy": [
+    "SpringerLean.Round1877SixthMomentFiniteEnergy",
+    "SpringerLean.Round296ActualCoefficientExpressions"
+  ],
+  "SpringerLean.Round1880EighthWBlock": [
+    "SpringerLean.Round1879EighthMomentFiniteEnergy"
+  ],
+  "SpringerLean.Round1881EighthYBlock": [
+    "SpringerLean.Round1880EighthWBlock"
+  ],
+  "SpringerLean.Round1882ActualEighthMoment": [
+    "SpringerLean.Round1881EighthYBlock",
+    "SpringerLean.Round1867ActualRescaledMomentLimit"
+  ],
+  "SpringerLean.Round1883ActualEighthMomentSlit": [
+    "SpringerLean.Round1882ActualEighthMoment",
+    "SpringerLean.Round1870SlitMomentRotation"
+  ],
+  "SpringerLean.Round1889StrongEighthMoment": [
+    "SpringerLean.Round1883ActualEighthMomentSlit"
+  ],
+  "SpringerLean.Round1918NormalizedEvenDeficits": [
+    "SpringerLean.Round1917CosineSlitNormalization",
+    "SpringerLean.Round1868ActualFourthMoment",
+    "SpringerLean.Round1888StrongSixthMoment",
+    "SpringerLean.Round1889StrongEighthMoment"
+  ],
+  "SpringerLean.Round1919CosineMomentBound": [
+    "SpringerLean.Round1918NormalizedEvenDeficits"
+  ],
+  "SpringerLean.Round1920ActualInterpolationDeficit": [
+    "SpringerLean.Round1919CosineMomentBound"
+  ],
+  "SpringerLean.Round1890StrongInterpolationScalar": [
+    "SpringerLean.Round1887InterpolationPowerAMGM"
+  ],
+  "SpringerLean.Round1921ActualFourToSix": [
+    "SpringerLean.Round1920ActualInterpolationDeficit",
+    "SpringerLean.Round1890StrongInterpolationScalar"
+  ],
+  "SpringerLean.Round1922ActualSixToEight": [
+    "SpringerLean.Round1921ActualFourToSix"
+  ],
+  "SpringerLean.Round1923ActualFourToEight": [
+    "SpringerLean.Round1922ActualSixToEight"
+  ],
+  "SpringerLean.Round1924ActualContinuousMoment": [
+    "SpringerLean.Round1923ActualFourToEight",
+    "SpringerLean.Round1870SlitMomentRotation"
+  ],
+  "SpringerLean.Round1872ConnectedFiberBridge": [],
+  "SpringerLean.Round1873PolynomialLemniscateBridge": [
+    "SpringerLean.Round1872ConnectedFiberBridge"
+  ],
+  "SpringerLean.Round2061PolynomialExteriorTopology": [
+    "SpringerLean.Round1873PolynomialLemniscateBridge"
+  ],
+  "SpringerLean.Round2058ConnectedShortChains": [],
+  "SpringerLean.Round2059LemniscateLocalLog": [
+    "SpringerLean.Round2058ConnectedShortChains"
+  ],
+  "SpringerLean.Round2062ReciprocalLogExhaustion": [
+    "SpringerLean.Round2059LemniscateLocalLog"
+  ],
+  "SpringerLean.Round2063ReciprocalRootCoordinate": [
+    "SpringerLean.Round2061PolynomialExteriorTopology",
+    "SpringerLean.Round2062ReciprocalLogExhaustion"
+  ],
+  "SpringerLean.Round2064PolynomialAnalyticRoot": [
+    "SpringerLean.Round2063ReciprocalRootCoordinate"
+  ],
+  "SpringerLean.Round2045PolynomialExteriorFibers": [
+    "SpringerLean.Slit"
+  ],
+  "SpringerLean.Round1925OddStarSeedGeometry": [
+    "SpringerLean.Round1924ActualContinuousMoment"
+  ],
+  "SpringerLean.Round1926OddStarSeedTips": [
+    "SpringerLean.Round1925OddStarSeedGeometry"
+  ],
+  "SpringerLean.Round1927OddStarSeedExpansion": [
+    "SpringerLean.Round1926OddStarSeedTips"
+  ],
+  "SpringerLean.Round1928OddStarSeedHolomorphic": [
+    "SpringerLean.Round1927OddStarSeedExpansion"
+  ],
+  "SpringerLean.Round1929OddStarReciprocal": [
+    "SpringerLean.Round1928OddStarSeedHolomorphic"
+  ],
+  "SpringerLean.Round1930OddStarAnalyticRoot": [
+    "SpringerLean.Round1929OddStarReciprocal"
+  ],
+  "SpringerLean.Round1931OddStarPowerBridge": [
+    "SpringerLean.Round1930OddStarAnalyticRoot"
+  ],
+  "SpringerLean.Round1932OddStarPerturbationInjective": [
+    "SpringerLean.Round1931OddStarPowerBridge"
+  ],
+  "SpringerLean.Round1933OddStarRotation": [
+    "SpringerLean.Round1932OddStarPerturbationInjective"
+  ],
+  "SpringerLean.Round1934OddStarCenteredGerm": [
+    "SpringerLean.Round1933OddStarRotation"
+  ],
+  "SpringerLean.Round1935OddStarActualMap": [
+    "SpringerLean.Round1934OddStarCenteredGerm"
+  ],
+  "SpringerLean.Round1936OddStarOmittedPower": [
+    "SpringerLean.Round1935OddStarActualMap"
+  ],
+  "SpringerLean.Round1937OddStarOmittedTips": [
+    "SpringerLean.Round1936OddStarOmittedPower"
+  ],
+  "SpringerLean.Round1938OddStarOmittedBounds": [
+    "SpringerLean.Round1937OddStarOmittedTips",
+    "SpringerLean.Round480OmittedRadius",
+    "SpringerLean.Round12Compact"
+  ],
+  "SpringerLean.Round1939FactorConstantDefinitions": [
+    "SpringerLean.Round1938OddStarOmittedBounds"
+  ],
+  "SpringerLean.Round1940OddStarSeedBoundary": [
+    "SpringerLean.Round1939FactorConstantDefinitions"
+  ],
+  "SpringerLean.Round1941OddStarSeedSurjective": [
+    "SpringerLean.Round1940OddStarSeedBoundary"
+  ],
+  "SpringerLean.Round1942OddStarSeedBoundaryOmitted": [
+    "SpringerLean.Round1941OddStarSeedSurjective"
+  ],
+  "SpringerLean.Round1943OddStarSeedOmittedCurve": [
+    "SpringerLean.Round1942OddStarSeedBoundaryOmitted"
+  ],
+  "SpringerLean.Round1944OddStarOmittedConnected": [
+    "SpringerLean.Round1943OddStarSeedOmittedCurve",
+    "SpringerLean.Round1873PolynomialLemniscateBridge"
+  ],
+  "SpringerLean.Round1945OddStarActualContinuum": [
+    "SpringerLean.Round1944OddStarOmittedConnected"
+  ],
+  "SpringerLean.Round1946FarthestDistance": [
+    "SpringerLean.Round1945OddStarActualContinuum"
+  ],
+  "SpringerLean.Round1947FactorLinearFamilies": [
+    "SpringerLean.Round1946FarthestDistance"
+  ],
+  "SpringerLean.Round1948OddStarZeroSeedSegment": [
+    "SpringerLean.Round1947FactorLinearFamilies"
+  ],
+  "SpringerLean.Round1949OddStarBaseSet": [
+    "SpringerLean.Round1948OddStarZeroSeedSegment"
+  ],
+  "SpringerLean.Round1950RegularStarRays": [
+    "SpringerLean.Round1949OddStarBaseSet"
+  ],
+  "SpringerLean.Round1951FactorNormAlgebra": [
+    "SpringerLean.Round1950RegularStarRays"
+  ],
+  "SpringerLean.Round1952FactorTranslation": [
+    "SpringerLean.Round1951FactorNormAlgebra"
+  ],
+  "SpringerLean.Round1953FactorScaling": [
+    "SpringerLean.Round1952FactorTranslation"
+  ],
+  "SpringerLean.Round1954SeedContinuum": [
+    "SpringerLean.Round1953FactorScaling"
+  ],
+  "SpringerLean.Round1955OddStarBoundaryPower": [
+    "SpringerLean.Round1954SeedContinuum",
+    "SpringerLean.Round1847ActualExteriorTrace"
+  ],
+  "SpringerLean.Round1956OddStarBoundaryPushforward": [
+    "SpringerLean.Round1955OddStarBoundaryPower"
+  ],
+  "SpringerLean.Round1957PeriodicPowerAverage": [
+    "SpringerLean.Round1956OddStarBoundaryPushforward"
+  ],
+  "SpringerLean.Round1958UnitCirclePower": [
+    "SpringerLean.Round1957PeriodicPowerAverage"
+  ],
+  "SpringerLean.Round1959SeedAngleAverage": [
+    "SpringerLean.Round1958UnitCirclePower"
+  ],
+  "SpringerLean.Round1960CenteredAngleAverage": [
+    "SpringerLean.Round1959SeedAngleAverage"
+  ],
+  "SpringerLean.Round1961OddStarActualPushforward": [
+    "SpringerLean.Round1960CenteredAngleAverage"
+  ],
+  "SpringerLean.Round1962OddBoundaryMeasure": [
+    "SpringerLean.Round1961OddStarActualPushforward"
+  ],
+  "SpringerLean.Round1963OddBoundarySupport": [
+    "SpringerLean.Round1962OddBoundaryMeasure"
+  ],
+  "SpringerLean.Round1964OddBoundaryProbability": [
+    "SpringerLean.Round1963OddBoundarySupport"
+  ],
+  "SpringerLean.Round1977SeedProbabilityIntegral": [
+    "SpringerLean.Round1964OddBoundaryProbability"
+  ],
+  "SpringerLean.Round1965SeedPotentialFactor": [
+    "SpringerLean.Round1964OddBoundaryProbability"
+  ],
+  "SpringerLean.Round1966SeedJensenFactors": [
+    "SpringerLean.Round1965SeedPotentialFactor"
+  ],
+  "SpringerLean.Round1967SeedExteriorPotential": [
+    "SpringerLean.Round1966SeedJensenFactors"
+  ],
+  "SpringerLean.Round1978SeedMeasurePotential": [
+    "SpringerLean.Round1977SeedProbabilityIntegral",
+    "SpringerLean.Round1967SeedExteriorPotential"
+  ],
+  "SpringerLean.Round1980SeedGreenMeasure": [
+    "SpringerLean.Round1978SeedMeasurePotential"
+  ],
+  "SpringerLean.Round1986OddStarBoundaryProbabilitySupport": [
+    "SpringerLean.Round1980SeedGreenMeasure"
+  ],
+  "SpringerLean.Round1987OddStarPowerPotential": [
+    "SpringerLean.Round1986OddStarBoundaryProbabilitySupport"
+  ],
+  "SpringerLean.Round1988OddStarPowerGreenCoordinate": [
+    "SpringerLean.Round1987OddStarPowerPotential"
+  ],
+  "SpringerLean.Round1989CircleProbabilityRotation": [
+    "SpringerLean.Round1988OddStarPowerGreenCoordinate"
+  ],
+  "SpringerLean.Round1990OddStarOuterCircleRotation": [
+    "SpringerLean.Round1989CircleProbabilityRotation"
+  ],
+  "SpringerLean.Round1991OddStarOuterLawLimit": [
+    "SpringerLean.Round1990OddStarOuterCircleRotation"
+  ],
+  "SpringerLean.Round1992OddStarActualBoundaryRotation": [
+    "SpringerLean.Round1991OddStarOuterLawLimit"
+  ],
+  "SpringerLean.Round1993CyclicPowerDifference": [
+    "SpringerLean.Round1992OddStarActualBoundaryRotation"
+  ],
+  "SpringerLean.Round1994OddStarLogIntegrability": [
+    "SpringerLean.Round1993CyclicPowerDifference"
+  ],
+  "SpringerLean.Round1995OddStarRootRotation": [
+    "SpringerLean.Round1994OddStarLogIntegrability"
+  ],
+  "SpringerLean.Round1996OddStarOrdinaryPotential": [
+    "SpringerLean.Round1995OddStarRootRotation"
+  ],
+  "SpringerLean.Round1997OddStarTipGeometry": [
+    "SpringerLean.Round1996OddStarOrdinaryPotential"
+  ],
+  "SpringerLean.Round1998OddStarTipRadiusDerivative": [
+    "SpringerLean.Round1997OddStarTipGeometry"
+  ],
+  "SpringerLean.Round1999OddStarBoundaryFactorDerivative": [
+    "SpringerLean.Round1998OddStarTipRadiusDerivative"
+  ],
+  "SpringerLean.Round2000OddStarMovingBoundaryPoint": [
+    "SpringerLean.Round1999OddStarBoundaryFactorDerivative"
+  ],
+  "SpringerLean.Round2001OddStarOppositeTipLogDerivative": [
+    "SpringerLean.Round2000OddStarMovingBoundaryPoint"
+  ],
+  "SpringerLean.Round2002OddStarOppositeTipFormula": [
+    "SpringerLean.Round2001OddStarOppositeTipLogDerivative"
+  ],
+  "SpringerLean.Round2003OddStarVariationIntegral": [
+    "SpringerLean.Round2002OddStarOppositeTipFormula",
+    "SpringerLean.Round30AnglePair"
+  ],
+  "SpringerLean.Round2004OddStarActualDerivativeIntegral": [
+    "SpringerLean.Round2003OddStarVariationIntegral"
+  ],
+  "SpringerLean.Round2005OddStarUniformDistance": [
+    "SpringerLean.Round2004OddStarActualDerivativeIntegral"
+  ],
+  "SpringerLean.Round2006OddStarUniformRegularDomain": [
+    "SpringerLean.Round2005OddStarUniformDistance"
+  ],
+  "SpringerLean.Round2007OddStarUniformDifferentiability": [
+    "SpringerLean.Round2006OddStarUniformRegularDomain"
+  ],
+  "SpringerLean.Round2008OddStarGeneralParameterDerivative": [
+    "SpringerLean.Round2007OddStarUniformDifferentiability"
+  ],
+  "SpringerLean.Round2009OddStarUniformDerivativeBound": [
+    "SpringerLean.Round2008OddStarGeneralParameterDerivative"
+  ],
+  "SpringerLean.Round2010OddStarIntegratedVariation": [
+    "SpringerLean.Round2009OddStarUniformDerivativeBound"
+  ],
+  "SpringerLean.Round2011OddStarMovingPointMembership": [
+    "SpringerLean.Round2010OddStarIntegratedVariation"
+  ],
+  "SpringerLean.Round2012OddStarOppositeTipMembership": [
+    "SpringerLean.Round2011OddStarMovingPointMembership"
+  ],
+  "SpringerLean.Round2013OddStarStrictLogWitness": [
+    "SpringerLean.Round2012OddStarOppositeTipMembership"
+  ],
+  "SpringerLean.Round2014OddStarFarthestIntegral": [
+    "SpringerLean.Round2013OddStarStrictLogWitness"
+  ],
+  "SpringerLean.Round2015OddStarFarthestMeasureTransfer": [
+    "SpringerLean.Round2014OddStarFarthestIntegral"
+  ],
+  "SpringerLean.Round2016OddStarActualFarthestVariation": [
+    "SpringerLean.Round2015OddStarFarthestMeasureTransfer"
+  ],
+  "SpringerLean.Round2017OddStarRegularBaseline": [
+    "SpringerLean.Round2016OddStarActualFarthestVariation"
+  ],
+  "SpringerLean.Round2018OddStarConditionalFactorBridge": [
+    "SpringerLean.Round2017OddStarRegularBaseline"
+  ],
+  "SpringerLean.Round2019EvenExteriorPowerQuotient": [
+    "SpringerLean.Round2018OddStarConditionalFactorBridge"
+  ],
+  "SpringerLean.Round2020EvenPowerQuotientOdd": [
+    "SpringerLean.Round2019EvenExteriorPowerQuotient",
+    "SpringerLean.Round1859OddBoundarySecondMoment"
+  ],
+  "SpringerLean.Round2021EvenPowerQuotientImage": [
+    "SpringerLean.Round2020EvenPowerQuotientOdd"
+  ],
+  "SpringerLean.Round2022EvenPowerImageComplement": [
+    "SpringerLean.Round2021EvenPowerQuotientImage"
+  ],
+  "SpringerLean.Round2023EvenGeneratorSymmetry": [
+    "SpringerLean.Round2022EvenPowerImageComplement"
+  ],
+  "SpringerLean.Round2024RotatedExteriorClass": [
+    "SpringerLean.Round2023EvenGeneratorSymmetry"
+  ],
+  "SpringerLean.Round2025RotatedExteriorImage": [
+    "SpringerLean.Round2024RotatedExteriorClass"
+  ],
+  "SpringerLean.Round2026DiskSchwarzRigidity": [
+    "SpringerLean.Round2025RotatedExteriorImage"
+  ],
+  "SpringerLean.Round2027ExteriorTransitionDisk": [
+    "SpringerLean.Round2026DiskSchwarzRigidity"
+  ],
+  "SpringerLean.Round2028TransitionGerm": [
+    "SpringerLean.Round2027ExteriorTransitionDisk"
+  ],
+  "SpringerLean.Round2029ExteriorMapUniqueness": [
+    "SpringerLean.Round2028TransitionGerm"
+  ],
+  "SpringerLean.Round2065PolynomialRootBiholomorphism": [
+    "SpringerLean.Round2064PolynomialAnalyticRoot",
+    "SpringerLean.Round2045PolynomialExteriorFibers",
+    "SpringerLean.Round2029ExteriorMapUniqueness"
+  ],
+  "SpringerLean.Round2046ExteriorJensen": [
+    "SpringerLean.Round1847ActualExteriorTrace"
+  ],
+  "SpringerLean.Round2047PolynomialExteriorLogPotential": [
+    "SpringerLean.Round2045PolynomialExteriorFibers",
+    "SpringerLean.Round2046ExteriorJensen"
+  ],
+  "SpringerLean.Round2048AngularLogKernel": [],
+  "SpringerLean.Round2049ExteriorLogMomentComparison": [
+    "SpringerLean.Round2047PolynomialExteriorLogPotential",
+    "SpringerLean.Round2048AngularLogKernel"
+  ],
+  "SpringerLean.Round2050LogHingePower": [],
+  "SpringerLean.Round1968PolynomialLemniscateInterior": [
+    "SpringerLean.Round1967SeedExteriorPotential"
+  ],
+  "SpringerLean.Round1969PolynomialAffineMonic": [
+    "SpringerLean.Round1968PolynomialLemniscateInterior"
+  ],
+  "SpringerLean.Round1970PolynomialLemniscateNormalization": [
+    "SpringerLean.Round1969PolynomialAffineMonic"
+  ],
+  "SpringerLean.Round1971PolynomialCentroid": [
+    "SpringerLean.Round1970PolynomialLemniscateNormalization"
+  ],
+  "SpringerLean.Round1972GeneralLemniscateNormalization": [
+    "SpringerLean.Round1971PolynomialCentroid"
+  ],
+  "SpringerLean.Round1973AffineDerivativeRoots": [
+    "SpringerLean.Round1972GeneralLemniscateNormalization"
+  ],
+  "SpringerLean.Round1974DerivativeZeroMomentNormalization": [
+    "SpringerLean.Round1973AffineDerivativeRoots"
+  ],
+  "SpringerLean.Round1899PolynomialSlitObstruction": [],
+  "SpringerLean.Round1982ConditionalZeroUpper": [
+    "SpringerLean.Round1974DerivativeZeroMomentNormalization",
+    "SpringerLean.Round1899PolynomialSlitObstruction",
+    "SpringerLean.Round1924ActualContinuousMoment"
+  ],
+  "SpringerLean.Round2051PolynomialRootBoundaryComparison": [
+    "SpringerLean.Round2049ExteriorLogMomentComparison",
+    "SpringerLean.Round2050LogHingePower",
+    "SpringerLean.Round1860ActualRealMomentLimit",
+    "SpringerLean.Round1982ConditionalZeroUpper"
+  ],
+  "SpringerLean.Round2052CompressionDeterminant": [],
+  "SpringerLean.Round2053UnitaryFirstColumn": [],
+  "SpringerLean.Round2054SchurEigenvector": [
+    "SpringerLean.Round2053UnitaryFirstColumn"
+  ],
+  "SpringerLean.Round2055UnitarySchur": [
+    "SpringerLean.Round2054SchurEigenvector"
+  ],
+  "SpringerLean.Round2056CompressionJensen": [
+    "SpringerLean.Round2053UnitaryFirstColumn"
+  ],
+  "SpringerLean.Round2057DerivativeRootMoments": [
+    "SpringerLean.Round2052CompressionDeterminant",
+    "SpringerLean.Round2055UnitarySchur",
+    "SpringerLean.Round2056CompressionJensen"
+  ],
+  "SpringerLean.Round1874ChebyshevLemniscate": [
+    "SpringerLean.Round1873PolynomialLemniscateBridge",
+    "SpringerLean.Round773MonicChebyshevScale"
+  ],
+  "SpringerLean.Round787ChebyshevCandidateParity": [
+    "SpringerLean.Round774ChebyshevScaleLimit"
+  ],
+  "SpringerLean.Round790ChebyshevRootSymmetry": [
+    "SpringerLean.Round787ChebyshevCandidateParity"
+  ],
+  "SpringerLean.Round1875ChebyshevSharpnessWitness": [
+    "SpringerLean.Round1874ChebyshevLemniscate",
+    "SpringerLean.Round1865ArcsineGammaMoment",
+    "SpringerLean.Round790ChebyshevRootSymmetry"
+  ],
+  "SpringerLean.Round1983ChebyshevComplexMoment": [
+    "SpringerLean.Round1875ChebyshevSharpnessWitness"
+  ],
+  "SpringerLean.Round1984ComplexChebyshevWitness": [
+    "SpringerLean.Round1983ChebyshevComplexMoment"
+  ],
+  "SpringerLean.Round1985ZeroMomentSupremumReduction": [
+    "SpringerLean.Round1984ComplexChebyshevWitness"
+  ],
+  "SpringerLean.Round2060ZeroUpperExteriorReduction": [
+    "SpringerLean.Round2051PolynomialRootBoundaryComparison",
+    "SpringerLean.Round2057DerivativeRootMoments",
+    "SpringerLean.Round1985ZeroMomentSupremumReduction"
+  ],
+  "SpringerLean.Round2066ConnectedLemniscateExterior": [
+    "SpringerLean.Round2065PolynomialRootBiholomorphism",
+    "SpringerLean.Round2060ZeroUpperExteriorReduction"
+  ],
+  "SpringerLean.Round2067PolynomialActualSupremum": [
+    "SpringerLean.Round2066ConnectedLemniscateExterior"
+  ],
+  "SpringerLean.Round2030EvenActualQuotientGeometry": [
+    "SpringerLean.Round2029ExteriorMapUniqueness"
+  ],
+  "SpringerLean.Round2031EvenQuotientAnalytic": [
+    "SpringerLean.Round2030EvenActualQuotientGeometry"
+  ],
+  "SpringerLean.Round2032EvenQuotientCentered": [
+    "SpringerLean.Round2031EvenQuotientAnalytic"
+  ],
+  "SpringerLean.Round2033EvenQuotientCoefficientBridge": [
+    "SpringerLean.Round2032EvenQuotientCentered",
+    "SpringerLean.Round270ActualTaylorComposition"
+  ],
+  "SpringerLean.Round2034EvenQuotientCoefficientIdentity": [
+    "SpringerLean.Round2033EvenQuotientCoefficientBridge"
+  ],
+  "SpringerLean.Round2035EvenStarEqualityGeometry": [
+    "SpringerLean.Round2034EvenQuotientCoefficientIdentity"
+  ],
+  "SpringerLean.Round2036EvenStarPotentialReduction": [
+    "SpringerLean.Round2035EvenStarEqualityGeometry"
+  ],
+  "SpringerLean.Round2037EvenPowerImageBLPHypotheses": [
+    "SpringerLean.Round2036EvenStarPotentialReduction"
+  ],
+  "SpringerLean.Round1891EvenStarScalarBridge": [
+    "SpringerLean.Round1859OddBoundarySecondMoment"
+  ],
+  "SpringerLean.Round1976EvenStarCurvature": [
+    "SpringerLean.Round1891EvenStarScalarBridge"
+  ],
+  "SpringerLean.Round2038EvenBLPCurvatureOnSupport": [
+    "SpringerLean.Round2037EvenPowerImageBLPHypotheses",
+    "SpringerLean.Round1976EvenStarCurvature"
+  ],
+  "SpringerLean.Round2039EvenBLPConvexOnSupport": [
+    "SpringerLean.Round2038EvenBLPCurvatureOnSupport"
+  ],
+  "SpringerLean.Round2040EvenBLPTangentExtension": [
+    "SpringerLean.Round2039EvenBLPConvexOnSupport"
+  ],
+  "SpringerLean.Round2041EvenSmoothCirclePushforward": [
+    "SpringerLean.Round2040EvenBLPTangentExtension",
+    "SpringerLean.Round1960CenteredAngleAverage"
+  ],
+  "SpringerLean.Round2042EvenActualBoundaryPushforward": [
+    "SpringerLean.Round2041EvenSmoothCirclePushforward",
+    "SpringerLean.Round1861ActualTraceIntegrability"
+  ],
+  "SpringerLean.Round2068ExteriorBoundaryProbability": [
+    "SpringerLean.Round2042EvenActualBoundaryPushforward",
+    "SpringerLean.Round2029ExteriorMapUniqueness"
+  ],
+  "SpringerLean.Round2069ExteriorRadialGreenPotential": [
+    "SpringerLean.Round2068ExteriorBoundaryProbability",
+    "SpringerLean.Round2046ExteriorJensen",
+    "SpringerLean.Round12Compact"
+  ],
+  "SpringerLean.Round2070SmoothExteriorBoundaryLaw": [
+    "SpringerLean.Round2069ExteriorRadialGreenPotential",
+    "SpringerLean.Round1964OddBoundaryProbability"
+  ],
+  "SpringerLean.Round2071TruncatedExteriorPotential": [
+    "SpringerLean.Round2070SmoothExteriorBoundaryLaw",
+    "SpringerLean.Round480OmittedRadius"
+  ],
+  "SpringerLean.Round2072ExteriorCircleSmoothing": [
+    "SpringerLean.Round2071TruncatedExteriorPotential",
+    "SpringerLean.Round2048AngularLogKernel"
+  ],
+  "SpringerLean.Round2073LogPotentialDiagonal": [
+    "SpringerLean.Round2071TruncatedExteriorPotential"
+  ],
+  "SpringerLean.Round2074ExteriorPotentialOnOmitted": [
+    "SpringerLean.Round2072ExteriorCircleSmoothing",
+    "SpringerLean.Round2073LogPotentialDiagonal"
+  ],
+  "SpringerLean.Round2075ExteriorMutualEnergy": [
+    "SpringerLean.Round2074ExteriorPotentialOnOmitted"
+  ],
+  "SpringerLean.Round2076GaussianEnergyPositivity": [],
+  "SpringerLean.Round2077GaussianLogKernel": [],
+  "SpringerLean.Round2078ExteriorEnergyMinimization": [
+    "SpringerLean.Round2075ExteriorMutualEnergy",
+    "SpringerLean.Round2076GaussianEnergyPositivity",
+    "SpringerLean.Round2077GaussianLogKernel"
+  ],
+  "SpringerLean.Round2147RectilinearPrimitives": [],
+  "SpringerLean.Round2151RectilinearGridCoordinates": [
+    "SpringerLean.Round2147RectilinearPrimitives"
+  ],
+  "SpringerLean.Round2152GridWalkChain": [
+    "SpringerLean.Round2151RectilinearGridCoordinates"
+  ],
+  "SpringerLean.Round2093PolynomialNormFilling": [
+    "SpringerLean.Round1939FactorConstantDefinitions",
+    "SpringerLean.Round2065PolynomialRootBiholomorphism"
+  ],
+  "SpringerLean.Round2094FilledContinuumTopology": [
+    "SpringerLean.Round2093PolynomialNormFilling"
+  ],
+  "SpringerLean.Round2145CompactFillingInsideDomain": [
+    "SpringerLean.Round2094FilledContinuumTopology"
+  ],
+  "SpringerLean.Round2144GridCycleWeights": [],
+  "SpringerLean.Round2149GridCellFilling": [
+    "SpringerLean.Round2145CompactFillingInsideDomain",
+    "SpringerLean.Round2144GridCycleWeights"
+  ],
+  "SpringerLean.Round2153GridWalkSupport": [
+    "SpringerLean.Round2152GridWalkChain",
+    "SpringerLean.Round2149GridCellFilling"
+  ],
+  "SpringerLean.Round2146GridCycleSummation": [
+    "SpringerLean.Round2144GridCycleWeights"
+  ],
+  "SpringerLean.Round2150GridCauchy": [
+    "SpringerLean.Round2149GridCellFilling",
+    "SpringerLean.Round2146GridCycleSummation"
+  ],
+  "SpringerLean.Round2154GridSegmentIntegral": [
+    "SpringerLean.Round2153GridWalkSupport",
+    "SpringerLean.Round2150GridCauchy"
+  ],
+  "SpringerLean.Round2140DiskMobius": [],
+  "SpringerLean.Round2141DiskEmbeddingImprovement": [
+    "SpringerLean.Round2140DiskMobius",
+    "SpringerLean.Round16Univalent"
+  ],
+  "SpringerLean.Round2148SquareRootFromPrimitives": [
+    "SpringerLean.Round2141DiskEmbeddingImprovement"
+  ],
+  "SpringerLean.Round2138HolomorphicLimitInjectivity": [],
+  "SpringerLean.Round2139ExtremalDiskEmbedding": [
+    "SpringerLean.Round2138HolomorphicLimitInjectivity",
+    "SpringerLean.Round16Univalent"
+  ],
+  "SpringerLean.Round2142RiemannMapping": [
+    "SpringerLean.Round2141DiskEmbeddingImprovement",
+    "SpringerLean.Round2139ExtremalDiskEmbedding"
+  ],
+  "SpringerLean.Round2103FilledRotationalSymmetry": [
+    "SpringerLean.Round2094FilledContinuumTopology",
+    "SpringerLean.Round2023EvenGeneratorSymmetry"
+  ],
+  "SpringerLean.Round2130ReciprocalExteriorDomain": [
+    "SpringerLean.Round2103FilledRotationalSymmetry"
+  ],
+  "SpringerLean.Round2131ReciprocalDiskUniformization": [
+    "SpringerLean.Round2130ReciprocalExteriorDomain",
+    "SpringerLean.Round2029ExteriorMapUniqueness"
+  ],
+  "SpringerLean.Round2132ReciprocalRotation": [
+    "SpringerLean.Round2131ReciprocalDiskUniformization"
+  ],
+  "SpringerLean.Round2133ReciprocalDiskOddness": [
+    "SpringerLean.Round2132ReciprocalRotation"
+  ],
+  "SpringerLean.Round2134DiskToNormalizedExterior": [
+    "SpringerLean.Round2133ReciprocalDiskOddness",
+    "SpringerLean.Round1953FactorScaling"
+  ],
+  "SpringerLean.Round2123StripMaximumAtFlatTop": [
+    "SpringerLean.Round723ComplexRectangle"
+  ],
+  "SpringerLean.Round2081ActualBernsteinWalsh": [
+    "SpringerLean.Round2070SmoothExteriorBoundaryLaw",
+    "SpringerLean.Round1939FactorConstantDefinitions"
+  ],
+  "SpringerLean.Round2079UniformAngularSampling": [],
+  "SpringerLean.Round2080SmoothFactorLowerBound": [
+    "SpringerLean.Round2070SmoothExteriorBoundaryLaw",
+    "SpringerLean.Round2079UniformAngularSampling",
+    "SpringerLean.Round2014OddStarFarthestIntegral"
+  ],
+  "SpringerLean.Round2082ActualFactorLowerBound": [
+    "SpringerLean.Round2080SmoothFactorLowerBound",
+    "SpringerLean.Round480OmittedRadius"
+  ],
+  "SpringerLean.Round2083FactorRootFamilies": [
+    "SpringerLean.Round1951FactorNormAlgebra",
+    "SpringerLean.Round1947FactorLinearFamilies"
+  ],
+  "SpringerLean.Round2084FactorUpperPotentialReduction": [
+    "SpringerLean.Round2075ExteriorMutualEnergy",
+    "SpringerLean.Round2081ActualBernsteinWalsh",
+    "SpringerLean.Round2082ActualFactorLowerBound",
+    "SpringerLean.Round2083FactorRootFamilies"
+  ],
+  "SpringerLean.Round2087DeterministicFactorEstimate": [
+    "SpringerLean.Round2084FactorUpperPotentialReduction"
+  ],
+  "SpringerLean.Round2085GaussianPolynomialProjection": [],
+  "SpringerLean.Round2086GaussianLogMoment": [
+    "SpringerLean.Round2085GaussianPolynomialProjection"
+  ],
+  "SpringerLean.Round2088GaussianPolynomialLogEvaluation": [
+    "SpringerLean.Round2086GaussianLogMoment"
+  ],
+  "SpringerLean.Round2089AveragedFactorEstimate": [
+    "SpringerLean.Round2087DeterministicFactorEstimate",
+    "SpringerLean.Round2088GaussianPolynomialLogEvaluation"
+  ],
+  "SpringerLean.Round2090FiniteFarthestApproximation": [
+    "SpringerLean.Round2089AveragedFactorEstimate"
+  ],
+  "SpringerLean.Round2091ActualFactorFormula": [
+    "SpringerLean.Round2090FiniteFarthestApproximation"
+  ],
+  "SpringerLean.Round2095ExteriorGreenRegularity": [
+    "SpringerLean.Round2091ActualFactorFormula"
+  ],
+  "SpringerLean.Round2102GreenAngularLevels": [
+    "SpringerLean.Round2095ExteriorGreenRegularity"
+  ],
+  "SpringerLean.Round2043EvenStarSlitGeometry": [
+    "SpringerLean.Round2042EvenActualBoundaryPushforward",
+    "SpringerLean.Round1949OddStarBaseSet"
+  ],
+  "SpringerLean.Round2104SlitGreenEllipses": [
+    "SpringerLean.Round2102GreenAngularLevels",
+    "SpringerLean.Round2043EvenStarSlitGeometry"
+  ],
+  "SpringerLean.Round2105ClippedGreenSubmean": [
+    "SpringerLean.Round2102GreenAngularLevels"
+  ],
+  "SpringerLean.Round2096GreenRadialHinge": [
+    "SpringerLean.Round2095ExteriorGreenRegularity"
+  ],
+  "SpringerLean.Round2107OddGreenChart": [
+    "SpringerLean.Round2104SlitGreenEllipses",
+    "SpringerLean.Round2105ClippedGreenSubmean",
+    "SpringerLean.Round2096GreenRadialHinge"
+  ],
+  "SpringerLean.Round2106PeriodicTopIntegral": [
+    "SpringerLean.Round689PeriodicThreshold"
+  ],
+  "SpringerLean.Round2113SlitTopArc": [
+    "SpringerLean.Round2107OddGreenChart",
+    "SpringerLean.Round2106PeriodicTopIntegral"
+  ],
+  "SpringerLean.Round2119SlitAnalyticLog": [
+    "SpringerLean.Round2113SlitTopArc"
+  ],
+  "SpringerLean.Round2115PeriodicTopStability": [
+    "SpringerLean.Round2106PeriodicTopIntegral"
+  ],
+  "SpringerLean.Round2116VerticalTopContinuity": [
+    "SpringerLean.Round2115PeriodicTopStability",
+    "SpringerLean.Round723ComplexRectangle"
+  ],
+  "SpringerLean.Round2120SlitTopHarmonic": [
+    "SpringerLean.Round2119SlitAnalyticLog",
+    "SpringerLean.Round2116VerticalTopContinuity"
+  ],
+  "SpringerLean.Round2109AngularLevelSlice": [
+    "SpringerLean.Round2106PeriodicTopIntegral"
+  ],
+  "SpringerLean.Round2110PeriodicThresholdMass": [
+    "SpringerLean.Round2109AngularLevelSlice",
+    "SpringerLean.Round682FiniteQuantile"
+  ],
+  "SpringerLean.Round2111PeriodicPairedTop": [
+    "SpringerLean.Round2106PeriodicTopIntegral",
+    "SpringerLean.Round714AngularPairedCandidates"
+  ],
+  "SpringerLean.Round2112GappedPeriodicOptimizer": [
+    "SpringerLean.Round2110PeriodicThresholdMass",
+    "SpringerLean.Round2111PeriodicPairedTop"
+  ],
+  "SpringerLean.Round2108PositiveAnalyticLevels": [
+    "SpringerLean.Round678AnalyticLevelNull",
+    "SpringerLean.Round2107OddGreenChart"
+  ],
+  "SpringerLean.Round2114ClippedGappedOptimizer": [
+    "SpringerLean.Round2112GappedPeriodicOptimizer",
+    "SpringerLean.Round2108PositiveAnalyticLevels"
+  ],
+  "SpringerLean.Round2117VerticalCircleFubini": [
+    "SpringerLean.Round715AngularHarmonicSwap"
+  ],
+  "SpringerLean.Round2118ClippedGreenTopSubmean": [
+    "SpringerLean.Round2114ClippedGappedOptimizer",
+    "SpringerLean.Round2116VerticalTopContinuity",
+    "SpringerLean.Round2117VerticalCircleFubini",
+    "SpringerLean.Round31PairAverage"
+  ],
+  "SpringerLean.Round2121PeriodicTopEndpoints": [
+    "SpringerLean.Round2115PeriodicTopStability"
+  ],
+  "SpringerLean.Round2122OddGreenFullTurn": [
+    "SpringerLean.Round2118ClippedGreenTopSubmean",
+    "SpringerLean.Round2121PeriodicTopEndpoints"
+  ],
+  "SpringerLean.Round2124GreenAsymptotics": [
+    "SpringerLean.Round2122OddGreenFullTurn"
+  ],
+  "SpringerLean.Round2125OddGreenTopEdges": [
+    "SpringerLean.Round2120SlitTopHarmonic",
+    "SpringerLean.Round2124GreenAsymptotics"
+  ],
+  "SpringerLean.Round2126OddGreenCircularComparison": [
+    "SpringerLean.Round2123StripMaximumAtFlatTop",
+    "SpringerLean.Round2125OddGreenTopEdges"
+  ],
+  "SpringerLean.Round2097ProbabilityHingeComparison": [
+    "SpringerLean.Round1892LocalConvexGrid"
+  ],
+  "SpringerLean.Round2098CorrectedLogFromGreenComparison": [
+    "SpringerLean.Round2096GreenRadialHinge",
+    "SpringerLean.Round2097ProbabilityHingeComparison",
+    "SpringerLean.Round2040EvenBLPTangentExtension"
+  ],
+  "SpringerLean.Round2044EvenStarRotatedSimilarity": [
+    "SpringerLean.Round2043EvenStarSlitGeometry"
+  ],
+  "SpringerLean.Round2092OddActualFactorCounterexamples": [
+    "SpringerLean.Round2091ActualFactorFormula",
+    "SpringerLean.Round2018OddStarConditionalFactorBridge"
+  ],
+  "SpringerLean.Round2099EvenStarFarthestGeometry": [
+    "SpringerLean.Round2098CorrectedLogFromGreenComparison",
+    "SpringerLean.Round2044EvenStarRotatedSimilarity",
+    "SpringerLean.Round2092OddActualFactorCounterexamples"
+  ],
+  "SpringerLean.Round2100EvenStarRadialFactorBaseline": [
+    "SpringerLean.Round2099EvenStarFarthestGeometry"
+  ],
+  "SpringerLean.Round2101EvenStarFactorReduction": [
+    "SpringerLean.Round2100EvenStarRadialFactorBaseline",
+    "SpringerLean.Round1953FactorScaling"
+  ],
+  "SpringerLean.Round2127EvenActualNormalizedFactor": [
+    "SpringerLean.Round2126OddGreenCircularComparison",
+    "SpringerLean.Round2101EvenStarFactorReduction"
+  ],
+  "SpringerLean.Round2128RegularStarEmptyInterior": [
+    "SpringerLean.Round2103FilledRotationalSymmetry",
+    "SpringerLean.Round1950RegularStarRays"
+  ],
+  "SpringerLean.Round2129EvenFilledNormalizedFactor": [
+    "SpringerLean.Round2127EvenActualNormalizedFactor",
+    "SpringerLean.Round2128RegularStarEmptyInterior"
+  ],
+  "SpringerLean.Round2135EvenContinuumNormalization": [
+    "SpringerLean.Round2134DiskToNormalizedExterior",
+    "SpringerLean.Round2129EvenFilledNormalizedFactor"
+  ],
+  "SpringerLean.Round2136EvenContinuumFactorReduction": [
+    "SpringerLean.Round2135EvenContinuumNormalization"
+  ],
+  "SpringerLean.Round2137ReciprocalSphereComplement": [
+    "SpringerLean.Round2130ReciprocalExteriorDomain"
+  ],
+  "SpringerLean.Round2143ReciprocalRiemannMapping": [
+    "SpringerLean.Round2142RiemannMapping",
+    "SpringerLean.Round2136EvenContinuumFactorReduction",
+    "SpringerLean.Round2137ReciprocalSphereComplement"
+  ],
+  "SpringerLean.Round2155SphereComplementUniformization": [
+    "SpringerLean.Round2154GridSegmentIntegral",
+    "SpringerLean.Round2148SquareRootFromPrimitives",
+    "SpringerLean.Round2143ReciprocalRiemannMapping"
+  ],
+  "SpringerLean.Round2156EvenRegularStarActual": [
+    "SpringerLean.Round2155SphereComplementUniformization"
+  ],
+  "SpringerLean": [
+    "SpringerLean.ActualSingleRampCatalan",
+    "SpringerLean.PaperRadialTwoStatements",
+    "SpringerLean.Round1871ActualFourthMomentSlit",
+    "SpringerLean.Round1924ActualContinuousMoment",
+    "SpringerLean.Round2067PolynomialActualSupremum",
+    "SpringerLean.Round2078ExteriorEnergyMinimization",
+    "SpringerLean.Round2156EvenRegularStarActual",
+    "SpringerLean.Round1888StrongSixthMoment",
+    "SpringerLean.Round1889StrongEighthMoment"
+  ]
+}

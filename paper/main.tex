@@ -1,0 +1,2831 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{geometry,hyperref}
+\geometry{margin=1in}
+\setlength{\emergencystretch}{1em}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newcommand{\D}{\mathbb D}
+\newcommand{\C}{\mathbb C}
+\newcommand{\E}{\mathbb E}
+\newcommand{\Cat}{\operatorname{Cat}}
+\newcommand{\capc}{\operatorname{cap}}
+\title{Springer coefficients, boundary moments, polynomial zeros, and regular stars}
+\hypersetup{pdftitle={Springer coefficients, boundary moments, polynomial zeros, and regular stars},pdfauthor={Cheng Li}}
+\author{Cheng Li\\
+	\footnotesize School of Mathematical Sciences, Fudan University,\\
+	\footnotesize Shanghai 200433, China\\
+	\footnotesize E-mail: \texttt{24300180118@m.fudan.edu.cn}}
+\date{}
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		For centered exterior univalent maps we prove the Springer
+		inverse-coefficient bound in every order indexed by \(k\geq751\),
+		with equality precisely for unit slit maps. The energy estimate
+		uses an explicit multiplier that is linear up to one cutoff and
+		constant thereafter. We determine the sharp radial boundary-moment
+		maxima and give quantitative deficits for real exponents
+		\mbox{\(4\leq p\leq8\)}. In the same range, the normalized derivative-zero
+		moments of polynomials with connected lemniscates have a strict
+		upper bound equal to their supremum across degrees. The regular
+		\(m\)-arm star maximizes the polynomial factor constant among
+		\(m\)-fold rotationally symmetric plane continua precisely when \(m\)
+		is even. We give a quantitative even-order bound and classify
+		equality, and construct a strict counterexample in every odd
+		order \(m\geq3\).
+	\end{abstract}
+	
+	\section{Introduction}
+	The normalized exterior map links coefficient problems in univalent
+	function theory with equilibrium measures of plane continua.
+	Springer \cite{Springer} proposed that the modulus of the coefficient
+	of order $2k-1$ of the inverse at infinity is at most $\Cat_{k-1}$.
+	The area theorem gives the first order, and Springer proved the bound for $B_3$.
+	Earlier low-order bounds are due to Kubota and Schober
+	\cite{Kubota,Schober77}. Schober's corollary
+	\cite[p.~413]{Schober} gives the sharp bounds through $B_{15}$,
+	including the slit equality cases. With the sign convention below, Theorem~\ref{thm:large} treats
+	every odd index from $1501$ onward. Its proof uses signed area and energy
+	identities for the actual map, followed by a comparison near the two
+	slit endpoints. In the energy estimate two coefficients of a single
+	flux are chosen proportional to the same capped linear function.
+	This reduces the multiplier comparison to a quadratic inequality.
+	
+	Baernstein, Laugesen, and Pritsker proved a sharp comparison for
+	one-dimensional projections of equilibrium measure
+	\cite[Theorem~2]{BLP}. Section~6 of their paper proves the second
+	radial moment bound with its rotated-segment extremals and formulates
+	a broader radial comparison as Conjecture~2. Its hypotheses are that
+	the continuum has capacity one, contains zero, and has conformal
+	centroid zero. Its tests are $C^1$ functions $\phi$ for which both
+	$\phi$ and $\phi'$ are convex, applied to $\log|z|$. The test
+	$\phi(x)=e^{px}$ gives the conjectured comparison for $p>0$ under
+	those hypotheses. Corollary~6.3 proves the logarithmic comparison
+	for arbitrary convex tests when the capacity-one continuum contains
+	zero and is symmetric about it. We prove the bounds for $4\leq p\leq8$
+	for every centered exterior map, with a quantitative deficit.
+	The boundary argument extracts a second-moment deficit
+	from the area theorem at the second moment. A finite weighted area
+	inequality and low-order Grunsky estimates then give the fourth,
+	sixth and eighth moments. Interpolation retains a uniform deficit
+	throughout \([4,8]\). A comparison with the actual exterior map of
+	a polynomial lemniscate transfers this bound to the zero moments.
+	The comparison of the $p$th moments of polynomial zeros with those
+	of their derivatives is classical for $p\geq1$ \cite[Theorem~4]{DBS1947}.
+	Here the strict bound comes from excluding the slit as the exterior of
+	a polynomial sublevel set. Scaled Chebyshev polynomials show that
+	the bound is the supremum even after any fixed number of derivatives.
+	
+	The polynomial factor constant is governed by the equilibrium
+	average of the logarithmic farthest-point distance
+	\cite[Theorem~1.1]{PR2}. Pritsker and Ruscheweyh proved a regular-star
+	bound under inclusions and conjectured that the inclusions could be
+	dropped \cite[Theorem~2.2 and the discussion after Theorem~2.3]{PR2}.
+	For connected compact sets we obtain the comparison in every even
+	order and a counterexample in every odd order $m\geq3$. Their separate
+	question about regular polygons concerns convex sets. The even star
+	comparison uses the power map,
+	the symmetric logarithmic moment comparison, and the second-moment
+	deficit. In odd order, an explicit deformation gives a strictly
+	increasing integral lower bound for the factor constant. The
+	appendices give the exterior normalization and the analytic
+	comparisons used in the verification.
+	
+	\section{Large-order inverse coefficients}\label{sec:large}
+	Let $F(z)=z+b_1z^{-1}+b_2z^{-2}+\cdots$ be univalent on
+	$\{|z|>1\}$, with the constant Laurent coefficient zero.  Write its
+	inverse at infinity with the sign convention
+	\[
+	G(w)=w-\sum_{j\geq1}B_jw^{-j}.
+	\]
+	Set $\Cat_q=(q+1)^{-1}\binom{2q}{q}$.  A unit slit map means
+	$F_a(z)=z+a/z$, $|a|=1$; equality of maps below is on the whole open
+	exterior disk.
+	
+	\begin{theorem}[Large-order Springer statement]\label{thm:large}
+		For every centered exterior univalent $F$ and every integer $k\geq751$,
+		\[
+		|B_{2k-1}(F)|\leq\Cat_{k-1}.
+		\]
+		For each fixed $k\geq751$, equality holds if and only if
+		$F=F_a$ on $\{|z|>1\}$ for some $a\in\C$ with $|a|=1$.
+	\end{theorem}
+	
+	We use $n=2k-1\geq1501$, $m=n-1\geq1500$.  An endpoint deficit is denoted
+	$d\geq0$, with $t=nd$, $\Delta=md$, and
+	$L=\log(2/d)=\log(2m/\Delta)$.  The zero-deficit case must be handled
+	by geometric slit rigidity before the positive-deficit parameters are
+	introduced.
+	
+	\subsection{Actual-map analytic bridge}\label{sec:bridge}
+	Put $g(u)=\sum_{j\geq1}b_ju^j$, $H(z)=z+g(\bar z)$ on the unit disk,
+	and $d\sigma=dA/\pi$.  Let $K$ be the actual omitted continuum.
+	The following identities fix the sign and the normalization used by
+	every subsequent saving calculation.  Put
+	$\mathcal M_m=\int_{\D}|H|^m\,d\sigma$ and
+	$\mathcal A_m=\int_K|w|^m\,d\sigma$.
+	\begin{equation}\label{eq:signed-fill}
+		B_{2k-1}=\int_{\D}H^mg'(\bar z)\,d\sigma,
+		\qquad \mathcal M_m-\mathcal A_m
+		=\int_{\D}|H|^m|g'(\bar z)|^2\,d\sigma.
+	\end{equation}
+	For $0<s<1$ put $F_s(z)=sF(z/s)$. Its unit-circle image is a
+	smooth Jordan curve, with positive orientation around the bounded
+	complement. The filling $H_s(z)=z+s g(s\bar z)$ has this boundary
+	trace and Jacobian $1-|s^2 g'(s\bar z)|^2$. On the boundary the
+	residue formula for the inverse gives
+	\[
+	B_n(F_s)=\frac{1}{2\pi i n}\oint_{|z|=1}H_s^n\,dz .
+	\]
+	Cauchy--Green gives the first formula in \eqref{eq:signed-fill},
+	since $\partial_{\bar z}H_s=s^2g'(s\bar z)$. For the second, the form
+	$|w|^m(x\,dy-y\,dx)/(m+2)$ has exterior derivative $|w|^m\,dx\,dy$.
+	Apply Stokes' theorem both to its pullback by $H_s$ and to the
+	bounded domain with the same oriented boundary.
+	
+	To take $s\uparrow1$, set $E_s=\C\setminus F(\{|z|>1/s\})$.
+	These sets decrease to $K$, while the set omitted by $F_s$ is $sE_s$.
+	For any fixed $s_0>0$ with $s_0<1$, $E_{s_0}$ is bounded. Thus
+	\[
+	\int_{K(F_s)} |w|^m\,d\sigma(w)
+	=s^{m+2}\int_{E_s}|w|^m\,d\sigma(w)
+	\longrightarrow \int_K|w|^m\,d\sigma(w).
+	\]
+	The area theorem gives $\sum_{j\geq1}j|b_j|^2\leq1$, so the
+	orthogonality of disk monomials yields
+	$s^2g'(s\bar z)\to g'(\bar z)$ in $L^2(d\sigma)$.
+	Their squared moduli converge in $L^1$ by Cauchy--Schwarz.
+	Also $H_s\to H$ pointwise and $|H_s|\leq2$: the normalized
+	exterior omission bound gives $|w|\leq2$ on $K(F_s)$, and $H_s$
+	is the Poisson extension of its boundary values. The omission bound
+	itself follows by applying the area theorem to $\sqrt{F_s(z^2)-w}$,
+	whose first negative coefficient is $-w/2$. These uniform bounds and
+	dominated convergence pass the disk integrals to the limit. Finally
+	$G_s(w)=sG(w/s)$ gives $B_n(F_s)=s^{n+1}B_n(F)$.
+	
+	Choose $|\beta|=1$ with $\beta^2B_{2k-1}=|B_{2k-1}|$
+	(take $\beta=1$ if $B_{2k-1}=0$) and set
+	$U=\operatorname{Im}(\beta H^k)$.  Expanding the gradient square
+	and using \eqref{eq:signed-fill} yields the exact identity
+	\begin{equation}\label{eq:signed-energy}
+		\int_{\D}|H|^m\,d\sigma-|B_n|
+		=\frac12\int_K|w|^m\,d\sigma
+		+\frac1{2k^2}\int_{\D}|\nabla U|^2\,d\sigma.
+	\end{equation}
+	Lemma~\ref{lem:actual-phase-energy} proves
+	$k^2\int U^2/|H|^2\,d\sigma\leq
+	(7/3)\int|\nabla U|^2\,d\sigma$
+	and gives the signed integrand used below.  Its proof uses a drift
+	identity, one combined flux, and direct cutoff integration for the
+	actual filling.  The choice of multiplier and its scalar estimate are
+	given in Section~\ref{sec:energy-cert}.
+	With $C=7/3$ set
+	\[
+	S(w)=\left(\frac{|w|}{2}\right)^m
+	\left(1-\frac{\sin^2(\arg(\beta w^k))}{2C}\right),
+	\quad S(0)=0.
+	\]
+	Discarding the nonnegative omitted-area term from
+	\eqref{eq:signed-energy} then gives the signed comparison
+	\begin{equation}\label{eq:signed-criterion}
+		2^{-m}|B_n(F)|\leq\int_{\D}S(H)\,d\sigma.
+	\end{equation}
+	The one-sided reference moment is
+	\begin{equation}\label{eq:reference-moment}
+		M_m:=\int_{\D}(\operatorname{Re}z)_+^m\,d\sigma
+		=\frac{\binom{m}{m/2}}{2^m(m+2)},
+		\qquad 2^{m+1}M_m=\Cat_{k-1}.
+	\end{equation}
+	Consequently a candidate with $|B_n|\geq\Cat_{k-1}$ requires
+	$\int S(H)\,d\sigma\geq2M_m$.  Every strict comparison below
+	uses this dimensionless normalization.
+	
+	The radial trace $F^*$ of Lemma~\ref{lem:trace} takes values in $K$
+	almost everywhere. The trace of $H$ is the same, since
+	$H(se^{it})-F(s^{-1}e^{it})=(s-s^{-1})e^{it}$ for $0<s<1$.
+	The bounded harmonic filling is the Poisson extension of this trace.
+	The trace pushes normalized angular measure to the equilibrium measure
+	of $K$, or harmonic measure at infinity. The normalization gives
+	$K$ capacity one and conformal centroid zero. Thus the projection
+	theorem \cite[Theorem~2]{BLP} puts
+	$u(t)=\operatorname{Re}(\bar v F^*(e^{it}))$ below $2\cos t$ in convex
+	order for each fixed $|v|=1$.
+	
+	\paragraph{Poisson comparison for fixed projections.}
+	Write $d\mu=dt/(2\pi)$ and take convolution with respect to $\mu$.
+	If a bounded boundary function $u$ is below an even, decreasing
+	profile $q$ in convex order, then
+	\begin{equation}\label{eq:poisson-convex-order}
+		P_r*u\preceq_{\rm cx}P_r*q,\qquad 0<r<1 .
+	\end{equation}
+	For an angular set $E$ let $E^*$ be the centered arc of mass $\mu(E)$,
+	and let $u^*$ be the even decreasing rearrangement of $u$.
+	Circular rearrangement \cite{Circle} bounds $\int_E P_r*u\,d\mu$ by
+	$\int u^*(P_r*\mathbf 1_{E^*})\,d\mu$. A common additive constant
+	handles signed functions. The weight $P_r*\mathbf 1_{E^*}$ is even
+	and decreasing on $[0,\pi]$: for $E^*=[-b,b]$ its derivative has
+	the sign of $P_r(t+b)-P_r(t-b)$, which is nonpositive for
+	$0\leq t,b\leq\pi$. Its level sets are centered arcs.
+	For any arc mass $s$, the integral of $u^*$ on that arc is at
+	most that of $q$. Indeed the upper integral of $u$ over sets of
+	mass $s$ is the infimum of $as+\int(u-a)_+\,d\mu$ over
+	$a\in\mathbb R$, and the same holds for $q$. Integrating over
+	the levels of the weight gives
+	$\int_E P_r*u\,d\mu\leq\int_{E^*}P_r*q\,d\mu$.
+	The means are equal. Taking the supremum of
+	$\int_E(P_r*u-a)\,d\mu$ over $E$ compares the positive-part
+	tests at all $a$. These tests and equality of the means give
+	convex order by piecewise linear approximation on the bounded range.
+	
+	With $q(t)=2\cos t$, its Poisson extension is $2r\cos t$. Thus
+	\begin{equation}\label{eq:ordinary-convex}
+		\E_t\phi(\operatorname{Re}(\bar v H(re^{it})))
+		\leq\E_t\phi(2r\cos t)\quad(0<r<1)
+	\end{equation}
+	for every convex real $\phi$. The positive-part test at $2r$ and
+	continuity in the angle give $\operatorname{Re}(\bar vH(z))\leq2|z|$.
+	Using all unit directions yields $|H(z)|\leq2|z|$. The Poisson
+	formula also gives $H(\D)\subset\operatorname{conv}K$.
+	The two-point geometry is stronger than the one-point bound:
+	\begin{equation}\label{eq:two-point}
+		4|A-P|+|A+P|^2\leq16
+		\qquad(A,P\in\operatorname{conv}K).
+	\end{equation}
+	For $A,P\in K$, the normalized odd maps
+	$h_A(z)=\sqrt{F(z^2)-A}$ and $h_P$ are exterior univalent.
+	When $P=A$, \eqref{eq:two-point} is the omission bound $|P|\leq2$.
+	For $P\ne A$ put $q=(P-A)/4$ and $V=(h_A+h_P)/2$.
+	The identity $h_A^2-h_P^2=4q$ makes $V$ nonvanishing. Moreover
+	$h_A=V+q/V$ and $h_P=V-q/V$. Equal $V$-values force equal
+	$h_A$-values, so $V$ too is exterior univalent. The area theorem and the
+	parallelogram identity give
+	$|q|^2\mathcal E(1/V)\leq A_V$, where
+	$\mathcal E(f)=\sum_{j\geq1}j|[z^{-j}]f|^2$ and
+	$A_V=\operatorname{area}(K_V)/\pi=1-\mathcal E(V)$.
+	The first coefficient of $1/V$ is one, so $A_V\geq |q|^2>0$.
+	By the Laurent area integral and change of variables under $V$,
+	\[
+	\mathcal E(1/V)=\frac1\pi\int_{|z|>1}|(1/V)'(z)|^2\,dA(z)
+	=\frac1\pi\int_{\C\setminus K_V}|w|^{-4}\,dA(w).
+	\]
+	Let $D_V$ be the centered disk of area $\pi A_V$. The sets
+	$D_V\setminus K_V$ and $K_V\setminus D_V$ have equal area, and the
+	weight on the first is at least $A_V^{-2}$ and on the second at most
+	$A_V^{-2}$. The last integral is therefore at least the normalized
+	integral over $\C\setminus D_V$, which is $1/A_V$.
+	The first negative coefficient of $V$ gives
+	$A_V\leq1-|A+P|^2/16$.  These imply \eqref{eq:two-point}.
+	Joint convexity extends it to the whole ordinary convex hull.
+	If $P\in K$ has $|P|=2$, equality in the area theorem forces
+	$F(z)=z+P^2/(4z)$, establishing the zero-deficit slit case.
+	
+	For a selected endpoint $P=R\xi$, $|\xi|=1$ and $R=2-d$, put
+	$F_\xi(z)=\bar\xi F(\xi z)$ and $H_\xi(z)=\bar\xi H(\xi z)$.
+	The rotation sends $P$ to $R$ and $K$ to $\bar\xi K$.
+	The rotated real part of $w$ is $\operatorname{Re}(\bar\xi w)$.
+	Rotating the argument and value preserves univalence and
+	$F_\xi(z)=z+O(z^{-1})$. Its filling is
+	$H_\xi(z)=z+\bar\xi g(\bar\xi\bar z)$.
+	Let $A=R/2$, $E=1-A^2$ and, for $r>1$, set
+	\[
+	p_r=r-A/r,\quad
+	S_r=\tfrac12\log\frac{r^2+1}{r^2-1}-r^{-2},\quad
+	W=(p_r+\sqrt{E S_r})^2.
+	\]
+	The odd univalent root $\sqrt{F_\xi(z^2)-R}$ has first negative
+	coefficient $-A$ and a tail with area budget $E$. For $w\in K$,
+	each root of $\bar\xi w-R$ is omitted by this map. It therefore lies
+	in the closed bounded region enclosed by the image of $|z|=r$.
+	On that image the real part of $z-A/z$ has absolute value at most
+	$p_r$, and Cauchy--Schwarz bounds the tail by $\sqrt{ES_r}$.
+	The same bound $\sqrt W$ on the absolute real part holds in the
+	bounded region. Writing $x+iy=\bar\xi w$ and squaring the root gives
+	\begin{equation}\label{eq:whole-strip}
+		y^2\leq4W(W+R-x),
+		\qquad |w|^2\leq(x-2W)^2+4WR.
+	\end{equation}
+	The first sublevel region is convex, which justifies its extension
+	from $K$ to $\operatorname{conv}K$.
+	
+	For a projected boundary function $u$ with $u\leq2-d$, $0<d<2$,
+	let $h\in(0,\pi)$ satisfy $2\sin h/h=2-d$. Let $u_d$ equal
+	$2\cos t$ outside $[-h,h]$ and its average $2-d$ inside.
+	For any angular set of mass $s$, the $u$-integral is at most both
+	$(2-d)s$ and the centered-arc integral of $2\cos t$. Their minimum
+	is the centered-arc integral of $u_d$. For $s\leq h/\pi$ the arc lies
+	inside the plateau. For $s\geq h/\pi$ it contains the entire plateau,
+	whose integral is unchanged. Both boundary means are zero. The upper
+	partial-mean criterion gives $u\preceq_{\rm cx}u_d$, so
+	\eqref{eq:poisson-convex-order} gives the capped Poisson comparison.
+	The direction stays fixed on each source circle.
+	\subsection{The scalar cutoff}
+	The following precise input is derived from an \emph{actual} contender
+	in the boundary localization below:
+	\begin{equation}\label{eq:candidate-input}
+		\begin{gathered}
+			|B_n(F)|\geq\Cat_{k-1},\quad d>0
+			\quad\Longrightarrow\quad 0<t<1,\\
+			J_n(t):=0.067nt^{5/2}e^{-0.61t}-0.285z-0.275z^2<0.58,\\
+			z=0.34t\log(2n/t).
+		\end{gathered}
+	\end{equation}
+	The implication holds for \emph{each} positive endpoint deficit,
+	with the weak candidate inequality shown.  The boundary argument
+	obtains it from the joint estimate
+	$J_n(t_1)+J_n(t_2)<0.52$ and the following scalar floor.
+	
+	\paragraph{The scalar floor.}
+	For $n\geq1501$ and $0<t<1$, put
+	$L=\log(2n/t)$ and $z=0.34tL$.  The elementary envelope
+	$(c+u)^3\leq c^3e^{u/2}$ for $c\geq6$, $u\geq0$ follows from
+	$\log(1+u/c)\leq u/c$.  Apply it first with
+	$c=\log(2n)$, $u=-\log t$, and then with
+	$c=\log3002$, $u=\log(n/1501)$.  The resulting base check,
+	using $\log3002<8.1$, gives
+	\[
+	70z^3\leq nt^2\sqrt t.
+	\]
+	Since $e^{-0.61t}>8/15$, the positive term of $J_n$
+	strictly exceeds $(5/2)z^3$.  Finally
+	\[
+	\frac52z^3-\frac{11}{40}z^2-\frac{57}{200}z+\frac9{160}
+	=(z-\tfrac14)^2(\tfrac52z+\tfrac9{10})
+	+\tfrac3{40}z^2+\tfrac7{800}z\geq0.
+	\]
+	Thus $J_n(t)>-9/160$.  The joint bound makes each
+	$J_n(t_i)<0.52+9/160<0.58$, including a candidate at equality.
+	
+	\subsection{Two actual boundary ends and the scalar necessity}
+	This subsection proves the boundary input to the scalar cutoff
+	by explicit inequalities.  Assume $F$ is not a unit slit,
+	$k\geq751$, $n=2k-1$, and
+	$|B_n(F)|\geq\Cat_{k-1}$.  Put
+	$I_n=\E|2\cos t|^n$.  The inverse residue formula on an exterior
+	circle, followed by bounded radial convergence, gives
+	\begin{equation}\label{eq:boundary-candidate}
+		nB_n=\E[e^{it}F^*(e^{it})^n],\qquad
+		\E|F^*|^n\geq n\Cat_{k-1}=I_{n+1}/2
+		\geq(1-0.502/n)I_n.
+	\end{equation}
+	For the last estimate, under the $|\cos t|^n$ weight the first two
+	moments of $\sin^2t$ are $1/(n+2)$ and
+	$3/((n+2)(n+4))$.  Apply
+	$1-\sqrt{1-u}\leq(u+u^2)/2$ and check
+	$(n+7)/(2(n+2)(n+4))\leq0.502/n$ for $n\geq1501$.
+	Wallis' bound (or integration over $|t|\leq3/\sqrt n$) gives
+	\begin{equation}\label{eq:In-bounds}
+		0.785\frac{2^n}{\sqrt n}\leq I_n
+		\leq\sqrt{2/\pi}\frac{2^n}{\sqrt n}.
+	\end{equation}
+	
+	Choose $P_1\in K$ of maximal modulus, say
+	$R_1=|P_1|=2-d_1$ and $\xi_1=P_1/R_1$.  The following short
+	argument supplies both a stronger first radius and an actual second
+	endpoint before any fine two-sided moment comparison.
+	
+	\begin{lemma}[An explicit opposite endpoint]\label{lem:imaginary-opposite}
+		For every candidate above, $R_1>359/180$.  There is a point
+		$w\in\operatorname{conv}K$ with
+		$\operatorname{Re}(\bar\xi_1w)<-8/5$.  Consequently the maximum-modulus
+		point $P_2$ in the opposite closed half of $\operatorname{conv}K$
+		satisfies $|P_2|>8/5$ and belongs to $K$.  The ordinary-hull strip
+		applies to both $P_1$ and $P_2$; this does not yet assert the later
+		$nd_i<1$ deficit bounds.
+	\end{lemma}
+	\begin{proof}
+		The actual residue and omitted-radius bound gives
+		$n\Cat_{k-1}\leq R_1^n$.  Put $A=R_1/2$ and
+		$c_k=\binom{2k}{k}/4^k=n\Cat_{k-1}/2^n$.
+		Here $c_1=1/2$ and
+		$c_{k+1}/c_k=(2k+1)/(2k+2)$; squaring the recurrence and using
+		$(2k+1)^2\geq4k(k+1)$ proves $c_k\geq1/(2\sqrt{k})$.
+		For $a=359/360$, the binomial theorem gives
+		\[
+		a^{-1501}=(1+1/359)^{1501}
+		\geq\sum_{j=0}^{6}\binom{1501}{j}359^{-j}
+		>55>2\sqrt{751}.
+		\]
+		Thus $a^{1501}<c_{751}$.  The ratio
+		$(2k+1)/(2k+2)\geq1503/1504>a^2$ for $k\geq751$ propagates
+		$a^{2k-1}<c_k$ by induction.  Since $A^n\geq c_k$, we obtain
+		$A>a$, and hence $1-A^2<1/180$.
+		
+		Rotate by $\xi_1$, so $P_1=R_1>0$ on the real axis.  The actual odd
+		square-root map $h$ obeys
+		$h(z)^2=F_{\xi_1}(z^2)-R_1$,
+		$b_1(h)=-A$, and its remaining odd Laurent coefficients have
+		weighted square budget at most $1-A^2$.  Set
+		$q=25/24$, $r=\sqrt q$, $M=r+A/r$, and
+		$T=h(ir)-iM$.  The odd-mode Cauchy--Schwarz bound at this one point is
+		\[
+		|T|^2\leq(1-A^2)
+		\left\{\frac12\log\frac{1+24/25}{1-24/25}-\frac{24}{25}\right\}
+		=(1-A^2)(\log7-24/25)<\frac1{180}.
+		\]
+		The last logarithmic comparison follows from
+		$e^{49/25}\geq\sum_{j=0}^{6}(49/25)^j/j!>7$.
+		Thus $|T|<3/40$ and $M\leq49/24$.  The identities
+		$(ir)^2=-q$ and $F_{\xi_1}(-q)=R_1+(iM+T)^2$ give, directly from
+		the definition of the actual harmonic filling,
+		\begin{equation}\label{eq:imaginary-root-witness}
+			H_{\xi_1}(-1/q)=F_{\xi_1}(-q)+q-1/q
+			=-\frac{1+A^2}{q}+2iMT+T^2.
+		\end{equation}
+		The exact rational bounds
+		$(1+a^2)24/25>153/80$ and
+		$2(49/24)(3/40)+(3/40)^2<5/16$ imply
+		$\operatorname{Re}H_{\xi_1}(-1/q)<-8/5$.
+		As $1/q<1$, the actual filling lies in the ordinary convex hull;
+		rotating back gives the stated $w$.  The selected opposite-half
+		maximizer has $|P_2|\geq|w|>8/5$.
+		
+		The root tail bound holds on the entire source circle $|z|=r$.
+		The squared strip width therefore satisfies
+		\[
+		W\leq(r-A/r+3/40)^2<1/64,
+		\qquad r-A/r=(q-A)/r<2/45.
+		\]
+		At the cutting line $x=\operatorname{Re}(\bar\xi_1v)=0$ the full-hull
+		strip gives $|v|^2\leq4W(W+R_1)<1/4$.  Since $|P_2|>8/5$, it is
+		inside the negative half-plane, where the strict convexity of
+		$|\cdot|^2$ makes it an extreme point of $\operatorname{conv}K$.
+		Compactness of $K$ puts that extreme point in $K$.  Applying the
+		actual omitted-point strip to each $P_i$ proves the last assertion.
+	\end{proof}
+	
+	\begin{lemma}[A Gaussian single-end exclusion]\label{lem:second-radius-195}
+		For the same selected $P_2$ in Lemma~\ref{lem:imaginary-opposite},
+		$R_2=|P_2|>39/20$.
+	\end{lemma}
+	\begin{proof}
+		Put $c=39/20$, $q=39/40$ and $e=2-|w|$.  The two-point inequality
+		\eqref{eq:two-point} holds for $w,P_1$ throughout the ordinary convex
+		hull.  If $|w|\geq c$, then $0\leq e\leq1/20$ and
+		$u=|w-P_1|$ satisfies $u(4-u)\leq16e$.
+		The elementary quadratic alternative is
+		$u\leq17e/4$ or $4-u\leq17e/4$.  On the forward half-plane
+		$x=\operatorname{Re}(\bar\xi_1w)\geq0$, the latter alternative is
+		impossible because $u^2\leq|w|^2+|P_1|^2\leq8$.  The cosine rule
+		therefore gives
+		\[
+		2-x\leq e+5e^2\leq\frac54e,
+		\qquad |w|\leq\frac25+\frac45x.
+		\]
+		Suppose $R_2\leq c$.  On the opposite half-plane the selected
+		maximizer bounds $|w|$ by $c$; all points of radius below $c$ have the
+		same bound.  Consequently the single globally convex test
+		\[
+		\psi(x)=\max\!\left\{c,\frac25+\frac45x\right\}^{n}
+		\]
+		majorizes $|w|^n$ on the whole convex hull. By \eqref{eq:boundary-candidate} and the fact that
+		$F^*(e^{it})\in K$ for almost every $t$, we obtain
+		\begin{equation}\label{eq:gaussian-single-end-cost}
+			\begin{aligned}
+				n|B_n(F)|
+				&\leq \E_t |F^*(e^{it})|^n \\
+				&\leq \E_t
+				\psi\!\left(\operatorname{Re}(\bar\xi_1 F^*(e^{it}))\right) \\
+				&\leq \E_t \psi(2\cos t).
+			\end{aligned}
+		\end{equation}
+		The last inequality is the boundary projection comparison
+		in the fixed direction $\xi_1$, applied to the convex function $\psi$.
+		For $|\theta|\leq\pi$, the standard cosine parabola bound gives
+		$\cos\theta\leq1-2\theta^2/\pi^2$.  Using
+		$\max(0,1-v)^n\leq e^{-nv}$, the model integrand is bounded by
+		\[
+		\psi(2\cos\theta)
+		\leq c^n+2^n\exp\!\left(-\frac{8n}{5\pi^2}\theta^2\right).
+		\]
+		Its normalized circle average is at most
+		\[
+		c^n+\frac{2^n}{2\pi}
+		\sqrt{\frac{\pi}{8n/(5\pi^2)}}.
+		\]
+		Now $4n^2q^n\leq1$ for all $n\geq1501$: at $1501$ use
+		$q^{40}<1/2$ and $4(1501)^2<2^{37}$, and propagate by
+		$(1+1/n)^2q<1$.  Thus $q^n\leq1/(2000\sqrt n)$.
+		Also $\pi<3.15$ gives
+		$\sqrt{5\pi/(8n)}/2<141/(200\sqrt n)$.  The preceding cost,
+		divided by $2^n$, is therefore less than
+		$1411/(2000\sqrt n)$.  But
+		$1411^2k<1000^2(2k-1)$ for $k\geq751$, so this is below
+		$1/(2\sqrt k)\leq c_k=n\Cat_{k-1}/2^n$.
+		This contradicts the candidate condition in
+		\eqref{eq:gaussian-single-end-cost}.  The selected $P_2$ must have
+		$R_2>c$.
+	\end{proof}
+	
+	For the two-sided deficit argument, use the sharper
+	$\delta=1/20$ and $p_0=39/20$.  If $|w|=2-e\geq p_0$
+	and $|P_i|\geq|w|$, the two-point inequality and the
+	parallelogram law give
+	\[
+	u(4-u)\leq16e,\qquad u=|w-P_i|.
+	\]
+	Since $e\leq1/20$, either $u\leq17e/4$ or
+	$u\geq4-17e/4$.  In the forward half-plane of $P_1$
+	the second alternative contradicts $u^2\leq8$.
+	With $x=\operatorname{Re}(\bar\xi_1w)$, the cosine rule then gives
+	\begin{equation}\label{eq:coarse-radius}
+		2-x\leq e+5e^2.
+	\end{equation}
+	The opposite selected endpoint has $R_2>p_0$ by
+	Lemma~\ref{lem:second-radius-195}.  For a high-radius point $w$
+	in its assigned half-plane, the far alternatives relative to $P_1$
+	give $|w+P_1|^2\leq17e$ and
+	$|P_2+P_1|^2\leq17d_2\leq17e$.  Hence
+	$|w-P_2|\leq2\sqrt{17e}<4-17/80$.
+	The far alternative relative to $P_2$ is impossible, so
+	\eqref{eq:coarse-radius} holds in direction $\xi_2$ as well.
+	On each assigned half-plane, $R_i$ caps the radius of
+	$\operatorname{conv}K$; the cutting line itself has radius below
+	$1.9$ by the two-point inequality.  Thus the same convex test
+	applies to both assigned sides.
+	
+	Define, for $x\leq2$,
+	\[
+	h(x)=\max\left\{p_0,\,
+	2-\frac{\sqrt{1+20(2-x)}-1}{10}\right\},
+	\qquad f(x)=h(x)^n,
+	\]
+	and extend $h(x)=x$ for $x\geq2$.  The inverse in this
+	formula solves $s=e+5e^2$.  Consequently \eqref{eq:coarse-radius}
+	and the radius caps give $|w|^n\leq f(\operatorname{Re}
+	(\bar\xi_iw))$ on the assigned side.  Put
+	\[
+	V=\E f(2\cos\theta),\qquad
+	\alpha=\arccos(31/32),\qquad
+	\alpha_*=\arccos(39/40).
+	\]
+	The active part of the positive semicircle is $0\leq\theta\leq\alpha$;
+	the rest is charged at most $p_0^n$.  The substitution
+	\[
+	e(v)=2-2\cos v,\qquad
+	\Phi(v)=2\arcsin\!\left(\sin(v/2)\sqrt{1+5e(v)}\right),
+	\quad 0\leq v\leq\alpha_*
+	\]
+	has $\Phi(0)=0$, $\Phi(\alpha_*)=\alpha$, and
+	$h(2\cos\Phi(v))=2\cos v$.  Its derivative is
+	\[
+	\Phi'(v)=
+	\frac{1+10e(v)}
+	{\sqrt{(1+5e(v))(1-5e(v)^2/(4-e(v)))}}.
+	\]
+	The denominator is at least one: after clearing positive factors
+	this is $4-2e-5e^2\geq0$ for $0\leq e\leq1/20$.
+	Also $e(v)\leq(80/79)\sin^2v$.  With
+	$C_n=\int_0^{\pi/2}\cos^n v\,dv$,
+	integration by parts gives
+	$\int_0^{\pi/2}\cos^n v\sin^2v\,dv=C_n/(n+2)$
+	and $2^n C_n/\pi=I_n/2$.  Thus
+	\begin{equation}\label{eq:coarse-model}
+		V\leq p_0^n+\frac{I_n}{2}
+		\left(1+\frac{800}{79(n+2)}\right)
+		\leq p_0^n+\frac{I_n}{2}(1+11/n).
+	\end{equation}
+	The first integral is a regular angle-to-angle change of variables;
+	$\Phi'(0)=1$, so no endpoint density singularity is introduced.
+	
+	Suppose a selected side has $d_i\geq1/n$.  Set
+	$b=\sqrt{3/n}$, $x_0=2\cos b$, and
+	$\mu=2\sin b/b\geq2-1/n$.  Replace $f$ to the right of
+	$x_0$ by the affine line through $(x_0,f(x_0))$ and
+	$(\mu,f(\mu))$.  The resulting convex test still controls
+	the capped actual side; call its circle cost $T$.
+	Writing $E_b g=b^{-1}\int_0^b g(\theta)\,d\theta$ and
+	$X(\theta)=2\cos\theta$, affine averaging gives the exact identity
+	\begin{equation}\label{eq:chord-arc-exact}
+		V-T=\frac b\pi\bigl(E_b f(X)-f(E_bX)\bigr),
+		\qquad E_bX=\mu .
+	\end{equation}
+	The line and $f$ may cross inside the arc; the identity uses their
+	averages, not a pointwise saving.
+	
+	Here is a quantitative Jensen bound using only one-dimensional
+	integrals.  On $[0,b]$, put $S=2-X$.  The cosine Taylor bounds give
+	$(999/1000)\theta^2\leq S\leq\theta^2$.  Since
+	$E_b\theta^2=b^2/3$ and $E_b\theta^4=b^4/5$,
+	\[
+	E_bX^2-(E_bX)^2=E_bS^2-(E_bS)^2
+	\geq\frac{99}{100}\frac{4b^4}{45}.
+	\]
+	On $[x_0,2]$ the smooth branch of $h$ satisfies
+	$h\geq2-3/n$, $h''\geq0$, and
+	$(h')^2=(1+20(2-x))^{-1}$.  The logarithmic bound for
+	$(1-3/(2n))^{n-2}$ and $e^{3/2}<9/2$ then give
+	\[
+	f''(x)\geq m_n:=2^{n-2}n(n-1)/5.
+	\]
+	Thus $f(x)-m_nx^2/2$ is convex on the arc range.  Ordinary
+	integral Jensen and \eqref{eq:chord-arc-exact} yield
+	\[
+	V-T\geq\frac b\pi\frac{m_n}{2}
+	\frac{99}{100}\frac{4b^4}{45}.
+	\]
+	The odd cosine-moment recurrence gives $I_n\leq2^n/\sqrt n$.
+	After $b^2=3/n$, the last display exceeds
+	\[
+	I_n\,\frac{\sqrt3}{50\pi}\frac{99}{100}
+	(1-1/n)>I_n/100
+	\qquad(n\geq1501),
+	\]
+	where the final strict inequality follows from
+	$\sqrt3>17/10$, $\pi<22/7$, and $1-1/n>99/100$.
+	
+	The platform estimate $2p_0^n\leq I_n/n$ follows from
+	$(39/40)^{40}<1/2$ at $n=1501$ and the decreasing
+	adjacent-term ratio.  The two unchanged side costs total at most
+	$I_n(1+12/n)$ by \eqref{eq:coarse-model}.  If one side is bad,
+	the chord saves more than $I_n/100$; the resulting cost is strictly
+	below $(1-1/n)I_n$ because $13/n<1/100$.
+	This contradicts the candidate lower moment in
+	\eqref{eq:boundary-candidate}.  Both selected actual endpoints
+	therefore satisfy
+	\[
+	0\leq nd_1<1,\qquad 0\leq nd_2<1.
+	\]
+	For the following positive-deficit estimates, a zero deficit is
+	handled separately by slit rigidity following \eqref{eq:two-point}.
+	For $d_i>0$, the localization gives $d_i<1/n\leq1/1501$.
+	Apply the actual root strip \eqref{eq:whole-strip} at
+	$r=1+\sqrt{d_i}/10$.  Write $L_i=\log(2/d_i)$.
+	The principal width term is at most $(11/50)\sqrt{d_i}$.
+	For the odd-tail kernel $S_r$, put
+	$q=(r^2+1)/((r+1)/10)$.  Then
+	$S_r-L_i/4=(\log q)/2-(\log2)/4-r^{-2}$.
+	Here $r\leq1+1/380$, so $q/10-1<1/500$ and
+	$r^{-2}>99/100$.  The inequality
+	$\log(q/10)\leq q/10-1$, together with
+	$\log5<13/8$ and $\log2<7/10$,
+	shows $S_r\leq L_i/4$.
+	Also $2/d_i>2048=2^{11}$ and
+	$\log2>69/100$, whence $L_i>15/2$ and
+	$\sqrt{L_i}>27/10$.  Since the odd-root energy factor
+	$1-R_i^2/4$ is at most $d_i$, the squared strip width satisfies
+	$W_i\leq d_iL_i(11/135+1/2)^2<0.34d_iL_i$.
+	Thus
+	\begin{equation}\label{eq:actual-width-034}
+		W_i\leq0.34d_iL_i,
+		\qquad y_i:=nW_i\leq0.34t_i\log(2n/t_i).
+	\end{equation}
+	The inequality holds on the whole ordinary convex hull, not just at
+	its two selected endpoints.
+	For the sharper cost estimate, put $u=1501d_i\leq1$.  The elementary
+	bound $-\log u\leq2(u^{-1/2}-1)$ and
+	$2<\log3002<25/3$ give
+	\[
+	\sqrt{1501d_i}\,\log(2/d_i)<25/3.
+	\]
+	Consequently the unified upper width
+	$\widehat W_i=0.34d_i\log(2/d_i)$ satisfies
+	\[
+	0<W_i<\widehat W_i<1/500,\qquad
+	n\widehat W_i^2<3/500.
+	\]
+	Here the last inequality uses $nd_i<1$; it holds uniformly as
+	$n$ increases.  These two scalar bounds and their transfer to the
+	actual squared strip width follow from the same inequalities.
+	
+	The finer model below uses the lower plateau $1.9$.  To assign every
+	point above that plateau, repeat the two-point argument with
+	$0\leq e=2-|w|\leq0.1$ and
+	$C=16/(2+\sqrt{4-16/10})<4.51$.
+	The alternatives are $|w-P_i|\leq Ce$ and
+	$|w-P_i|\geq4-Ce$.  The forward half of $P_1$ permits only the
+	near alternative.  In the opposite half, $w$ and the selected $P_2$
+	are both far from $P_1$, so the two-point inequality gives
+	$|w+P_1|\leq2\sqrt{Ce}$ and
+	$|P_2+P_1|\leq2\sqrt{Cd_2}$.
+	As $d_2\leq e$, their difference has length at most
+	$4\sqrt{Ce}<4-Ce$; thus it is near $P_2$.
+	The cosine rule now shows that each assigned point above $1.9$
+	has positive projection in its own endpoint direction.
+	For a positive-deficit endpoint, $W_i<1/100$ follows already from
+	\eqref{eq:actual-width-034} and $d_i<1/1501$.
+	On a nonnegative projection $x\leq2$, the squared strip implies
+	$|w|\leq\max\{1.9,2-(1-1.07W_i)(2-x)+1.07W_i^2\}$:
+	for $x\leq949/500$ the strip square is below $1.9^2$;
+	above $949/500$, expanding the displayed affine square dominates
+	the strip square.  The latter comparison only uses
+	$(2.14)x>4$ and $W_i\geq0$.
+	
+	For the final model bound put $x=\operatorname{Re}(\bar\xi_iw)$,
+	$s=2-x$, and use
+	\[
+	h_i(2-s)=\max\{1.9,
+	2-(1-1.07W_i)s+1.07W_i^2\}.
+	\]
+	On its active arc $s<0.102$.  The squared strip
+	\eqref{eq:whole-strip} makes $h_i$ a radius majorant there;
+	outside, the plateau applies.  Set
+	$U=1+1.07W_i^2/2$, $v=1-1.07W_i$, and $\gamma=v/U$.
+	If $s=2-2\cos\theta$ is the original angular deficit, choose
+	$\phi$ by $2-2\cos\phi=\gamma s$.  The active branch is exactly
+	$2U\cos\phi$, and the angular Jacobian is
+	\[
+	\frac{d\theta}{d\phi}
+	=\gamma^{-1/2}
+	\sqrt{\frac{4-\gamma s}{4-s}}.
+	\]
+	Since $1-\gamma\leq1.07107W_i$ and $s\leq0.102$, the square-root
+	factor is at most $1+0.0142W_i$.  The remaining active model factor is
+	\[
+	(1+0.0142W_i)(1+1.07W_i^2/2)^{n+1/2}
+	(1-1.07W_i)^{-1/2}
+	\leq1+(0.57+0.55y_i)W_i.
+	\]
+	For this last inequality, take logarithms and use
+	$W_i<1/500$ and $nW_i^2<3/500$; the logarithm is at most
+	$0.555W_i+0.536nW_i^2<1/200$, and
+	$e^x\leq1+(200/199)x$ on $0\leq x\leq1/200$.
+	With the platform charged once, the resulting one-end cost is
+	\[
+	V_i\leq(1.9)^n+\frac{I_n}{2}
+	\bigl(1+0.57W_i+0.55nW_i^2\bigr).
+	\]
+	This bound has also been applied to both selected actual endpoints
+	in the candidate inverse-coefficient inequality.
+	For the refined affine $h_i$, use the same chord with
+	$b=\sqrt{3d_i}$ and $\mu=2\sin b/b\geq2-d_i$;
+	the resulting convex extension majorizes the assigned side because
+	$h_i(\mu)\geq\mu\geq2-d_i$.  Its top cap saves at least
+	$0.067I_nt_i^{5/2}e^{-0.61t_i}$ on side $i$.
+	To see the size of this saving, use the normalized average
+	$E_b$ on $[0,b]$ as in \eqref{eq:chord-arc-exact}. Set
+	\[
+	S=2-2\cos\theta,\qquad P(s)=(2U-vs)^n,\qquad
+	A=n(n-1)2^{n-2}v^2,\quad B=n/2,\quad s_0=2b^2/5 .
+	\]
+	The entire short arc lies on the affine branch: $S\leq b^2<3/n$
+	and $2U-vS\geq2-S>1.9$. The chord identity therefore gives
+	$V_i-T_i=(b/\pi)\{E_bP(S)-P(E_bS)\}$, where $T_i$ is the
+	cost after replacing the cap by its chord.
+	
+	For $0\leq s\leq b^2$, the inequality
+	$\log(1-s/2)\geq-s/(2-s)$ and $ns<4$ give
+	$(1-s/2)^{n-2}\geq e^{-ns/2}$. Thus $P''(s)\geq A e^{-Bs}$.
+	The tangent to this exponential at $s_0$ shows that
+	$P-Ae^{-Bs_0}Q$ is convex, where
+	\[
+	Q(s)=\tfrac12(1+Bs_0)s^2-\tfrac16Bs^3 .
+	\]
+	To apply Jensen, put $X=S/b^2$, $u=\theta/b$ and $c=999/1000$.
+	The cosine Taylor bounds give $cu^2\leq X\leq u^2$, since
+	$b^2<3/1501$. As $E_bu^j=1/(j+1)$, we have
+	\begin{align*}
+		\operatorname{Var}_b(S)/b^4
+		&\geq c^2/5-1/9> (199/200)(4/45),\\
+		\{E_b S^3-(E_b S)^3\}/b^6
+		&\leq 1/7-c^3/27<(6/5)(199/200)(4/45).
+	\end{align*}
+	Since $3s_0=6b^2/5$, the cubic difference is at most
+	$3s_0\operatorname{Var}_b(S)$. In particular
+	\[
+	E_bQ(S)-Q(E_b S)
+	=\tfrac12(1+Bs_0)\operatorname{Var}_b(S)
+	-\tfrac16B\{E_bS^3-(E_b S)^3\}
+	\geq\tfrac12\operatorname{Var}_b(S).
+	\]
+	Jensen now gives $V_i-T_i\geq (b/\pi)Ae^{-Bs_0}
+	\operatorname{Var}_b(S)/2$. Substituting $b^2=3t_i/n$ and using
+	$I_n<(4/5)2^n/\sqrt n$ (from the product of consecutive cosine
+	moments) gives
+	\[
+	\frac{V_i-T_i}{I_n t_i^{5/2}e^{-3t_i/5}}
+	>\frac{\sqrt3}{8\pi}\frac{199}{200}(1-1/n)v^2
+	>\frac{67}{1000}.
+	\]
+	For the last step one may substitute $\sqrt3>173/100$,
+	$\pi<22/7$, $n\geq1501$, and $v\geq1-1.07/500$.
+	This proves the stated saving since $e^{-3t_i/5}\geq e^{-0.61t_i}$.
+	Summing the two side costs and comparing with
+	\eqref{eq:boundary-candidate} yields
+	\begin{equation}\label{eq:actual-joint-J}
+		J_n(t_1)+J_n(t_2)
+		\leq0.502+\frac{2n(1.9)^n}{I_n}<0.52,
+	\end{equation}
+	where the definition of $J_n$ uses the upper $y_i$ in
+	\eqref{eq:actual-width-034}.  The preceding bound $J_n(t)>-9/160$ then gives $J_n(t_i)<0.58$ separately for both sides.
+	
+	\begin{lemma}[Cutoff from the scalar input]\label{lem:cutoff}
+		If $n\geq1501$, $0<t<1$, and $J_n(t)<0.58$, then
+		\[
+		t<\frac3{20},\qquad d<\frac1{10000},\qquad
+		tL<\frac32,\qquad \Delta L<\frac32.
+		\]
+	\end{lemma}
+	\begin{proof}
+		Write $t_0=3/20$, $n_0=1501$, $z_*=0.51$, and
+		$L_0=\log(2n_0/t_0)<10$.  A direct rational comparison gives
+		\[
+		0.067n_0t_0^{5/2}e^{-0.61t_0}
+		-0.285z_*-0.275z_*^2>0.58.
+		\]
+		For example, use $\sqrt{t_0}>12/31$ and
+		$e^{-0.61t_0}\geq(1-183/4000)^2$.
+		For $t_0\leq t\leq1$, the factor
+		$\sqrt t\,e^{-0.61t}$ is at least its value at $t_0$.
+		On $[t_0,3/5]$ this follows from
+		$\log(t/t_0)\geq1-t_0/t\geq(61/50)(t-t_0)$;
+		on $[3/5,1]$ the estimates
+		$\sqrt t>3/4$ and $e^{-0.61t}>1/2$ suffice,
+		because $\sqrt{t_0}<0.39$ and $e^{-0.61t_0}<0.94$.
+		Also $L/n\leq L_0/n_0$ and $L^2/n\leq L_0^2/n_0$:
+		first decrease $t$ to $t_0$, then use the decreasing functions
+		$\log x/x$ and $\log x/\sqrt x$ for
+		$x=2n/t_0>e^2$.  Divide $J_n(t)$ by $nt^2$ and
+		compare all three terms with the base point.  The base inequality
+		then gives $J_n(t)>0.58$ throughout $t\geq t_0$.
+		
+		For $0<t\leq t_0$, apply the cubic envelope from the preceding
+		paragraph with $t_0$ in place of $1$.  The base checks
+		$\sqrt{t_0}<0.39$ and
+		$L_0<9.91$ give
+		\[
+		100(0.34)^3\sqrt{t_0}L_0^3<1501,
+		\qquad 100z^3\leq nt^2\sqrt t.
+		\]
+		One may check $L_0<9.91$ from
+		$e^{9.91}=e^{10}e^{-0.09}>
+		(2.718)^{10}(0.91)>2n_0/t_0$.
+		Since $e^{-0.61t}\geq(1-183/4000)^2$, the positive
+		term of $J_n$ exceeds $6.1z^3$.  A polynomial expansion
+		about $z=0.51$ shows
+		\[
+		6.1z^3-0.285z-0.275z^2>0.58
+		\quad(z\geq0.51).
+		\]
+		Thus the candidate condition forces $z<0.51$.
+		As $z=0.34tL$, this gives $tL<1.5$; also
+		$t<t_0$ gives $d=t/n<1/10000$, and $m<n$
+		gives $\Delta L<tL<1.5$.
+	\end{proof}
+	
+	For the entire hull use the root strip at $r=1+(2/25)\sqrt d$.
+	Here $d\leq1/5000$ and $L>9$. Set $u=\sqrt d<1/70$ and
+	$q=(r^2+1)/((2/25)(r+1))$. The formulas in the root estimate give
+	\[
+	\frac{p_r}{u}
+	=\frac{4/25+(1/2+4/625)u}{1+2u/25}<\frac{17}{100},
+	\qquad
+	S_r-\frac L4=\frac12\log q-\frac14\log2-r^{-2}.
+	\]
+	For the second formula, $q/(25/2)-1=r(r-1)/(r+1)<1/875$
+	and $r^{-2}\geq1-2(r-1)>1-2/875$. Using $\log(1+x)\leq x$,
+	$\log5<161/100$ and $\log2>69/100$ shows
+	\[
+	S_r-\frac L4<
+	\frac{161}{100}-\frac34\frac{69}{100}+\frac1{1750}
+	-\left(1-\frac2{875}\right)<\frac1{10}.
+	\]
+	The logarithm bounds follow from the Taylor sum through degree
+	eight for $e^{161/100}$, which exceeds $5$, and
+	$\log2>2(1/3+1/81)$. By Lemma~\ref{lem:cutoff}, $d<1/10000$ and $2/d>2^{14}$,
+	so $L>9$. Since $E\leq d$ and $1/4+1/90<(13/25)^2$, we obtain
+	\begin{equation}\label{eq:width-input}
+		\frac{W}{dL}\leq
+		\left(\frac{17}{100\sqrt L}+\sqrt{\frac14+\frac1{10L}}\right)^2
+		<\left(\frac{173}{300}\right)^2<\frac13 .
+	\end{equation}
+	Define, only for $d>0$,
+	\begin{equation}\label{eq:new-a}
+		y=\Delta L/3,\qquad a=\min\{3/y,m/5\}.
+	\end{equation}
+	Then $mW<y<1/2$, $a>6$, and $ay\leq3$.
+	
+	We also need positive projection on each assigned outer half.
+	In first-axis coordinates write $p+iq=\bar\xi_1w$.
+	The first whole-hull strip has $W_1<1/3000$, because $mW_1<1/2$.
+	Together with $|w|\leq2$ and $R_1\leq2$ it gives $q^2<1/100$
+	on the entire hull, including its negative half.
+	If $|w|\geq46/25$, then $|p|>183/100$.
+	The selected second endpoint has $R_2>1999/1000$, negative first
+	projection, and the same transverse bound, so its first projection
+	is less than $-199/100$.
+	Consequently, on the negative assigned half,
+	\[
+	\operatorname{Re}(\bar\xi_2w)>
+	\frac{(199/100)(183/100)-1/100}{2}>\frac{181}{100}.
+	\]
+	On the positive half the first projection already exceeds $183/100$.
+	A change of unit direction by at most $1/200$ alters projection by
+	at most $1/100$.  The nearest phase ray has distance at most
+	$\pi/(2k)<1/200$, so both assigned outer projections exceed $9/5$.
+	The whole-hull cap under tilting is proved below; it uses the same
+	selected pair and applies on every source circle.
+	
+	\subsection{The saving from a capped projection}
+	Write $T_m=2^m m^{-3/2}$. We compare the projected filling on each
+	circle with the Poisson extension of the flattened cosine. Only the
+	outer annulus will be needed to obtain a strict gain after integration.
+	
+	\begin{lemma}[Short actual disk gain]\label{lem:actual-disk-gain}
+		Let $m\geq1500$, $d>0$, and $D=md\leq3/20$. Suppose $|\xi|=1$ and
+		$\sup_{w\in K}\operatorname{Re}(\bar\xi w)\leq 2-d$. Then
+		\[
+		\frac{m\sqrt m}{2^m}\int_{\D}
+		\left\{(2\operatorname{Re}z)_+^m
+		-\bigl(\operatorname{Re}(\bar\xi H(z))\bigr)_+^m\right\}d\sigma
+		>\frac{D^3}{30}.
+		\]
+		
+	\end{lemma}
+	\begin{proof}
+		The boundary projection $u(t)=\operatorname{Re}(\bar\xi F^*(e^{it}))$
+		satisfies $u\leq2-d$ almost everywhere since the trace lies in $K$.
+		Write $2\sin h/h=2-d$, $0<h<\pi$, and replace $2\cos t$ on $[-h,h]$
+		by its mean $2-d$ to obtain $u_d$. For $0<r<1$, write
+		$Y_r(t)=\operatorname{Re}(\bar\xi H(re^{it}))=(P_r*u)(t)$.
+		The boundary comparison for $u_d$ in Section~\ref{sec:bridge} and
+		\eqref{eq:poisson-convex-order} give
+		$Y_r\preceq_{\rm cx}P_r*u_d$ for normalized angular measure.
+		Put $M(r)=(P_r*u_d)(0)$. Each superlevel set of $u_d+2$ is a centered
+		arc, over which the even, decreasing Poisson kernel has its largest
+		integral when centered at zero. Integration over levels gives
+		$(P_r*u_d)(t)\leq M(r)$ for every $t$.
+		Now test the convex order with $x\mapsto(x-M(r))_+$:
+		\[
+		0\leq \E_t (Y_r(t)-M(r))_+
+		\leq \E_t\bigl((P_r*u_d)(t)-M(r)\bigr)_+=0 .
+		\]
+		Since $Y_r$ is continuous, $Y_r(t)\leq M(r)$ at every angle.
+		The cap angle obeys $\sqrt{3d}\leq h\leq(7/4)\sqrt d$.
+		For the first bound use $\sin h\geq h-h^3/6$. For the second,
+		$2-2\sin v/v$ increases on $(0,\pi)$, and at $v=(7/4)\sqrt d$
+		the sine Taylor bound gives $2-2\sin v/v\geq v^2/3-v^4/60>d$,
+		using $d\leq1/10000$.
+		Let $P_r(\theta)=(1-r^2)/(1-2r\cos\theta+r^2)$ and
+		$A_r=\pi^{-1}\int_0^hP_r(\theta)\,d\theta$.
+		On $[0,h]$ the cap difference times the kernel is
+		$(d+(1-r)^2/r)P_r(\theta)-(1-r^2)/r$. Integration yields
+		\[
+		2r-M(r)=\left(d+\frac{(1-r)^2}{r}\right)A_r
+		-\frac{(1-r^2)h}{\pi r}.
+		\]
+		The Poisson kernel has complementary mass
+		$1-A_r\leq(1-r^2)/(\pi r h)$: integrate its elementary
+		$\sin^{-2}(\theta/2)$ upper bound over $[h,\pi]$ and use
+		$\cot(h/2)\leq2/h$. Dropping the nonnegative term
+		$(1-r)^2A_r/r$ bounds the defect below by
+		$d-(1-r^2)(d/h+h)/(\pi r)$. For $1-\sqrt d/3\leq r<1$
+		we have $r\geq99/100$ and
+		$((1+r)/(\pi r))(d/h+h)\leq(3/2)\sqrt d$, using
+		$1/\sqrt3<7/12$, $h\leq(7/4)\sqrt d$, and $\pi>157/50$.
+		Thus
+		\begin{equation}\label{eq:short-peak-defect}
+			2r-M(r)\geq d-\tfrac32(1-r)\sqrt d>0.
+		\end{equation}
+		
+		Let $f(x)=x_+^m$ and let $\psi_M$ agree with $f$ below $M$ and
+		continue by its tangent above $M$. Taking $M=M(r)$ gives
+		$f(Y_r)=\psi_M(Y_r)$ pointwise. Since $\psi_M$ is convex,
+		\eqref{eq:ordinary-convex} yields
+		$\E_t f(Y_r(t))\leq\E_t\psi_M(2r\cos t)$ on each source circle.
+		Put $v=d-\tfrac32(1-r)\sqrt d$ and $q=2r-v$.  On
+		$|\theta|\leq\sqrt v$ one has $2r\cos\theta\geq q\geq M(r)$.
+		The binomial remainder above a tangent therefore gives
+		\[
+		f(2r\cos\theta)-\psi_M(2r\cos\theta)
+		\geq\frac{m(m-1)}2q^{m-2}(v-\theta^2)^2.
+		\]
+		As $\int_0^{\sqrt v}(v-\theta^2)^2d\theta
+		=(8/15)v^{5/2}$, the full normalized circle saves at least
+		$4m(m-1)q^{m-2}v^{5/2}/(15\pi)$.
+		
+		Only the outer annulus $a\leq r<1$, $a=1-\sqrt d/16$, is needed.
+		There $v\geq(9/10)d$, $r\geq99/100$, and
+		$(1-v/(2r))^{m-2}>9/10$.  Hence
+		$v^{5/2}\geq(3/4)d^{5/2}$ and the circle saving is at least
+		\[
+		\frac9{50\pi}m(m-1)(2r)^{m-2}d^{5/2}.
+		\]
+		The radial factor is $2r\,dr$, so its integral contributes exactly
+		$2^{m-1}(1-a^m)/m$.  After multiplication by $m\sqrt m/2^m$,
+		the saving is at least
+		\[
+		\frac9{100\pi}\left(1-\frac1m\right)
+		D^2\sqrt D\,(1-a^m).
+		\]
+		Writing $x=\sqrt D\leq2/5$ gives $a^m\leq
+		e^{-\sqrt m\,x/16}\leq e^{-12x/5}$. Concavity bounds
+		$1-e^{-12x/5}$ below by the chord from $0$ to $2/5$.
+		Its slope exceeds $4/3$ since
+		$e^{24/25}>1+24/25+(24/25)^2/2>15/7$.
+		Using $\pi<22/7$ and $1-1/m\geq99/100$, the last display is
+		at least $(189/5000)D^3>D^3/30$.  On every other source circle
+		the ordinary positive-power convex comparison makes the radial
+		increment nonnegative.  Integrability and exhaustion by interior
+		disks pass the strict inequality to the open unit disk.
+	\end{proof}
+	
+	\paragraph{Tilting the second cap.}
+	Write $P_i=R_i\xi_i$ for the same selected endpoints.  Since $P_1$
+	maximizes the modulus on the entire hull, every unit direction has
+	projection at most $R_1$.  For the second cap, split the hull by
+	$\operatorname{Re}(\bar\xi_1w)=0$.  On the negative half its
+	modulus is at most $R_2$.  On the positive half, the fact that
+	$\operatorname{Re}(\bar\xi_1\xi_2)\leq0$ gives
+	$\operatorname{Re}(\bar\xi_2w)\leq
+	|\operatorname{Im}(\bar\xi_1w)|<1/10$ by the first strip.
+	For $|v-\xi_2|\leq1/4$ and $|w|\leq2$, the perturbation of this
+	projection is at most $1/2$.  Hence it remains below $R_2>1$.
+	Thus the whole-hull cap, and the actual saving above, hold along
+	every such tilted unit direction.  All width and maximality data
+	refer to the original selected pair.
+	
+	For any unit coefficient phase $\beta$, the ray can be chosen
+	explicitly:
+	\[
+	v=\xi\exp\!\left(-\frac{i}{2k}
+	\operatorname{Arg}((\beta\xi^k)^2)\right).
+	\]
+	Then $(\beta v^k)^2=1$, so the signed angular loss vanishes on
+	this ray, and $|v-\xi|\leq\pi/(2k)<1/4$.  Squaring the phase
+	chooses either sign of a sine zero and includes the tie case.
+	
+	\begin{lemma}[Retaining a power saving]\label{lem:two-power-retention}
+		Let $m\geq1500$, $\ell=m-8$, $c\geq0$, and
+		$\kappa=\ell(\ell-1)/(m(m-1))$.  Put
+		$g(u)=\max\{u_+^m,c^8u_+^\ell\}$.
+		The function $g(u)-\kappa u_+^m$ is convex on the whole real line.
+		For every actual filling and unit direction $v$, therefore,
+		\[
+		\int_{\D}\!\left[g(\operatorname{Re}z)
+		-g\!\left(\tfrac12\operatorname{Re}(\bar vH)\right)\right]d\sigma
+		\geq\kappa\int_{\D}\!\left[(\operatorname{Re}z)_+^m
+		-\left(\tfrac12\operatorname{Re}(\bar vH)\right)_+^m\right]d\sigma.
+		\]
+		Under the cap of Lemma~\ref{lem:actual-disk-gain}, the left side,
+		multiplied by $m\sqrt m$, is strictly greater than $D^3/32$.
+	\end{lemma}
+	\begin{proof}
+		Below zero the residual is zero.  On $[0,c]$ its second
+		derivative is
+		$\ell(\ell-1)u^{\ell-2}(c^8-u^8)\geq0$; above $c$ the residual
+		is $(1-\kappa)u^m$.  The derivative jumps upward by
+		$8c^{m-1}$ at $c$, and the derivatives at zero agree.
+		This proves global convexity, including $c=0$.
+		Apply the actual disk convex comparison to this residual and
+		rearrange.  All tests are continuous on the bounded projection
+		range, so their integrals exist.  The final assertion follows
+		from $\kappa\geq49/50$ and
+		$(49/50)/30>1/32$, with the same direction in both integrals.
+	\end{proof}
+	
+	\paragraph{The extremely small deficit regime.}
+	The following comparison resolves the joint two-side cost once the
+	actual endpoint localization has supplied the width and cap hypotheses.
+	Let $d=2-\max_K|w|>0$, put $m=2k-2$ and $x=\log(100m)$, and assume
+	\begin{equation}\label{eq:tiny-cutoff}
+		d\leq d_0:=\frac{3}{100m^2x}.
+	\end{equation}
+	Since $d$ is the smallest endpoint deficit, every projection of
+	the boundary trace has the global cap $2-d$.  The strip formula
+	\eqref{eq:whole-strip} together with the endpoint width
+	$W\leq dL/3$ gives, on the whole hull,
+	\[
+	|\operatorname{Im}(\bar\xi w)|<2.5\sqrt{dL},
+	\qquad L=\log(2/d),
+	\]
+	where $\xi$ is the direction of a maximal-radius point.  Indeed
+	$|\operatorname{Im}(\bar\xi w)|^2\leq4W(W+4)$ and
+	$dL$ is tiny in \eqref{eq:tiny-cutoff}.
+	Choose the nearest pair of antipodal phase rays $v,-v$ to
+	$\xi,-\xi$, and set $b'=6k\sqrt{dL}$.  Assign $w$ by the sign
+	of its true-axis projection.  On $|w|>b'$ that positive projection
+	exceeds $|w|/2$, since the transverse square is at most
+	$(25/4)dL$.  The argument bound $|\arg u|\leq|\operatorname{Im}u|/
+	\operatorname{Re}u$ therefore gives a scaled true-axis angle at
+	most $5/6$.  The nearest phase ray adds at most $\pi/2$, giving
+	a scaled phase angle below $2.8$.
+	For $0\leq t\leq2.8$, concavity and the cubic sine bound at
+	$\pi-2.8$ give $\sin t\geq t/10$.  Together with Bernoulli's
+	inequality and $m/2=k-1\leq 3k^2/1400$ (since $k\geq751$), this gives
+	\[
+	1-\frac3{14}\sin^2(k\theta)\leq\cos^m\theta
+	\qquad(|k\theta|\leq2.8).
+	\]
+	Thus the angular penalty pays the projected-power loss outside
+	the central region $|w|\leq b'$.
+	Inside, a residual at most $(b'/2)^m$ remains in the dimensionless
+	signed integral.
+	
+	Each of the two projected rays has cap $2-d$, so the full convex
+	capped-Poisson comparison applies to its positive $m$th-power test.
+	In the dimensionless normalization of \eqref{eq:signed-criterion}, each
+	ray saves more than $\Delta^3/(30m^{3/2})$ from its reference
+	moment $M_m$, by Lemma~\ref{lem:actual-disk-gain}.  The two rays therefore save more than
+	$\Delta^3/(15m^{3/2})$.
+	It remains to pay the variable central residual.  This can be
+	done without differentiating a ratio.  Put $L_0=\log(2/d_0)$.
+	The bounds $1\leq x\leq m/20$ give $1\leq L_0\leq3x$.
+	For $d\leq d_0$, the logarithmic tangent inequality gives
+	\[
+	dL=dL_0+d\log(d_0/d)\leq dL_0+d_0-d\leq d_0L_0.
+	\]
+	Consequently $m^2dL\leq9/100$, and $m\geq9k/5$ implies
+	$9k^2dL\leq1/4$.  Also $dL^2\leq1$: the elementary Taylor
+	bound $e^L\geq L^4/24\geq2L^2$ for $L\geq9$, together with
+	$e^L=2/d$, proves this directly.
+	Writing $q=k-1$, retain six powers and bound all the others by
+	$1/4$:
+	\[
+	(b'/2)^m=(9k^2dL)^q
+	\leq4^{-(k-7)}(9k^2)^6d^3(dL^2)^3
+	\leq4^{-(k-7)}9^6k^{12}d^3.
+	\]
+	The sequence $15\cdot9^6 k^{12}4^{-(k-7)}$ is below one for
+	$k\geq751$.  At the first order use $751<2^{10}$ and
+	$15\cdot9^6<2^{24}$; successive ratios are at most
+	$(752/751)^{12}/4<1$.  Since $m\sqrt m\leq m^3$, we obtain
+	\begin{equation}\label{eq:tiny-ratio}
+		15m\sqrt m\,(b'/2)^m<(md)^3.
+	\end{equation}
+	The signed cost is therefore strictly below $2M_m$ in this
+	regime.  This is a joint estimate: no artificial lower cutoff on
+	the tiny endpoint deficit is needed.  Its only actual-map inputs are
+	the width and cap statements specified above.
+	
+	In the aligned phase-ray branch the desired final comparison is a
+	retained saving greater than $\Delta^3/32$ against model and central
+	errors totaling less than $13\Delta^3/500<\Delta^3/32$, in units of $T_m$.
+	Here is the pointwise check with the shorter $a$, conditional on the
+	actual endpoint and tilt estimates.  Put
+	$s=m(1-x/2)$, $u=x/2$, and
+	$h=|\operatorname{Im}(\bar v w)|/x$ on the outer region $x\geq1.8$.
+	For a phase ray within scaled angle $\gamma\leq\pi/3$ of the true
+	endpoint direction, write
+	$\theta=|\arg(v/\xi_i)|\leq\pi/(3k)$,
+	$q_\xi=\operatorname{Im}(\bar\xi_iw)$ and
+	$Q=m|q_\xi|$.  Rotation gives
+	$R_i-\operatorname{Re}(\bar\xi_iw)
+	\leq2s/m+|q_\xi|\tan\theta$.
+	With $mW\leq y<1/2$, the squared strip implies
+	\[
+	Q^2\leq4y(y+2s+Q\tan\theta),
+	\qquad 0\leq s\leq m/10,
+	\qquad m\tan\theta\leq21/10.
+	\]
+	Here $\cos\theta\geq999/1000$, so $x\cos\theta\geq7/4$.
+	Since $y\leq1/2$, $m\geq1500$, and
+	$h\leq\tan\theta+|q_\xi|/(x\cos\theta)$, we obtain the two
+	simple rational bounds
+	\[
+	Q^2\leq1+8ys+\frac7{2500}Q,
+	\qquad mh\leq\frac{21}{10}+\frac47Q.
+	\]
+	If $s\leq7a/5$, then $ys\leq21/5$ and the first inequality
+	forces $Q<6$.  Thus $mh<387/70$ and
+	$k|\arg(w/v)|\leq kh<14/5$.
+	To pay for the projection, it suffices to use
+	$\sin t\geq t/10$ on $[0,14/5]$.  Indeed, the cubic sine bound
+	at $\pi-14/5$, with $3.14<\pi<3.15$, gives
+	$\sin(14/5)\geq3/10$; concavity supplies the whole interval.
+	Bernoulli's inequality and $1-\cos\varphi\leq\varphi^2/2$
+	now give
+	\[
+	1-\cos^m\varphi\leq\frac m2\varphi^2
+	\leq\frac3{14}\frac{k^2\varphi^2}{100}
+	\leq\frac3{14}\sin^2(k\varphi),
+	\qquad |k\varphi|\leq14/5.
+	\]
+	Consequently the signed angular loss pays for the first test $u^m$.
+	
+	If $s\geq7a/5$, use $Q\leq1+Q^2/4$ to absorb the small linear
+	term, obtaining $Q^2\leq(51/50)(1+8ys)$.  Completing the square
+	with $(Q-49/10)^2\geq0$ then gives
+	\[
+	\frac{m^2h^2}{2}\leq\frac{11}{2}+\frac73ys
+	\leq\frac{11}{2}+\frac76s<8(s-a).
+	\]
+	The final strict inequality uses only $a\geq6$ and $s\geq7a/5$.
+	Taking logarithms shows that the
+	second test $(1-a/m)^8u^{m-8}$ dominates the entire unsigned
+	cost $(|w|/2)^m$; it uses no phase saving.
+	
+	The junction of the two tests is at $s=a$.  Their convexity and
+	retention of the actual saving are supplied by
+	Lemma~\ref{lem:two-power-retention}.
+	
+	\begin{lemma}[One disk budget for two aligned ends]\label{lem:aligned-disk-budget}
+		Suppose both selected rays belong to the aligned phase case and
+		choose their parameters by \eqref{eq:new-a}.  Write
+		$g_i(u)=\max\{u_+^m,(1-a_i/m)^8u_+^{m-8}\}$ and
+		\[
+		\mathcal R_i=\int_{\D}g_i(\operatorname{Re}z)\,d\sigma,
+		\qquad
+		\mathcal A_i=\int_{\D}g_i\!\left(\tfrac12
+		\operatorname{Re}(\bar v_iH)\right)d\sigma.
+		\]
+		Then, with $N=m\sqrt m$,
+		\[
+		N\left(\int_{\D}S(H)\,d\sigma-2M_m\right)
+		<N\left[(\mathcal R_1-M_m)+(\mathcal R_2-M_m)+(23/25)^m\right]
+		-\frac{\Delta_1^3+\Delta_2^3}{32}.
+		\]
+	\end{lemma}
+	\begin{proof}
+		On an assigned outer point the signed density is bounded by its
+		own test.  Both tests are nonnegative, so extending each test to
+		the entire source disk preserves an upper bound.  The central
+		region adds at most $(23/25)^m$, counted once.  Thus
+		$\int S(H)\leq\mathcal A_1+\mathcal A_2+(23/25)^m$.
+		The actual retained gains give
+		$N(\mathcal R_i-\mathcal A_i)>\Delta_i^3/32$ for the same
+		directions and parameters.  Adding and rearranging proves the
+		claim.  All integrals exist by the bounded projection range and
+		continuity of the tests; the signed density is integrable by the
+		actual energy construction.  No boundary trace identification or
+		assumption that a dividing level has measure zero is used here.
+	\end{proof}
+	
+	For the other phase branch $\gamma\geq\pi/3$, use the true endpoint
+	axis and $f_0(u)=\lambda(u_+)^{m-8}$, where
+	$\lambda=(1-1/m)M_m/M_{m-8}$.
+	The true axis keeps the geometric estimate simple.  Write $h$ for
+	the signed angle of $w$ from that axis and $s=m(1-x/2)$, where
+	$x=\operatorname{Re}(\bar\xi_iw)\geq9/5$.  The actual strip gives
+	\[
+	\tfrac12m^2\tan^2 h\leq\frac16+\frac58s,
+	\qquad s\leq2\ \Longrightarrow\ |kh|\leq\frac67.
+	\]
+	Indeed $R_i-x\leq2s/m$, so the squared strip and $mW\leq y<1/2$
+	give $m^2|\operatorname{Im}(\bar\xi_iw)|^2\leq 1+4s$.
+	Since $\tan h=\operatorname{Im}(\bar\xi_iw)/x$ and $x\geq9/5$,
+	the first bound follows from $(1+4s)/(2(9/5)^2)\leq1/6+5s/8$.
+	For the second, use $|h|\leq|\tan h|$ and $k/m\leq751/1500$;
+	at $s=2$ the resulting bound on $(kh)^2$ is below $(6/7)^2$.
+	The moment recurrence $(q+4)M_{q+2}=(q+1)M_q$ gives the exact ratio
+	\[
+	\lambda=\frac{m-1}{m}\prod_{j=0}^3
+	\frac{m-2j-1}{m-2j+2},\qquad
+	\lambda M_{m-8}=(1-1/m)M_m.
+	\]
+	Here the recurrence is used only at positive even exponents.
+	Applying $\log(1-v)\geq-v/(1-v)$ to the five factors gives
+	\[
+	-m\log\lambda\leq\frac{m}{m-1}+3m\sum_{j=0}^3\frac1{m-2j-1}
+	\leq\frac{m}{m-1}+\frac{12m}{m-7}<14,
+	\]
+	using the decreasing ratios at $m=1500$.  If $\gamma$ is the
+	signed phase displacement, then $\pi/3\leq|\gamma|\leq\pi/2$.
+	Indeed the logarithm of the signed density divided by
+	$\lambda(x/2)^{m-8}$, multiplied by $m$, is
+	\[
+	m\log\!\left(1-\tfrac3{14}\sin^2(\gamma-kh)\right)
+	+8m\log(x/2)+\tfrac12m^2\log(1+\tan^2 h)-m\log\lambda .
+	\]
+	Use $x/2=1-s/m$, $|w|^2/x^2=1+\tan^2h$, and $\log(1+v)\leq v$
+	for $v>-1$. The resulting upper bound is
+	\begin{equation}\label{eq:true-axis-corrected}
+		14+\frac16+\frac58s-8s-
+		\frac3{14}m\sin^2(\gamma-kh).
+	\end{equation}
+	For $s\geq2$ the first four terms already have negative sum.
+	For $0\leq s\leq1$, the strip estimate above gives
+	\[
+	|kh|^2\leq (k/m)^2(1/3+5s/4)
+	\leq (751/1500)^2(19/12)<4/9 .
+	\]
+	Thus $|\gamma-kh|$ lies between $\pi/3-2/3$ and $\pi/2+2/3$.
+	Its sine is greater than $1/4$, since the distance of this interval
+	from both $0$ and $\pi$ exceeds $1/3$ and $\sin(1/3)>1/4$.
+	The penalty in \eqref{eq:true-axis-corrected} is then larger than
+	$3m/(14\cdot16)>15$, whereas the other terms sum to at most $14+1/6$.
+	For $1\leq s\leq2$ use $|kh|\leq6/7$.
+	The minimum of the sine on $[\pi/3-6/7,\,\pi/2+6/7]$ is its
+	value at $\pi/3-6/7$, which exceeds $3/16$ by the cubic Taylor
+	bound. Consequently $\sin^2(\gamma-kh)>1/30$.
+	Here the penalty is greater than $3m/(14\cdot30)>10$,
+	while the other terms sum to at most $14+1/6+5/8-8<7$.
+	This proves the strict true-axis comparison.  Its actual disk
+	integral is at most $(1-1/m)M_m$ by convex projection comparison.
+	
+	Thus each assigned outer half has its own test: the two-power
+	test in the aligned case and the true-axis lower power in the
+	other case.  Both are nonnegative.  Extending both to the entire
+	source disk and adding the central allowance once gives
+	$\int S(H)\leq\mathcal A_1+\mathcal A_2+(23/25)^m$ for every
+	phase assignment.  This statement and the exact true-axis model
+	cost use the same actual filling throughout.
+	
+	Let $Z$ have probability law $d\sigma=dA/\pi$ on $\D$, and set
+	$X=2\operatorname{Re}Z$. The vertical slice at $\operatorname{Re}Z=x/2$
+	has length $2\sqrt{1-x^2/4}$. Rescaling the horizontal coordinate
+	gives $X$ the density $\sqrt{4-x^2}/(2\pi)$ on $[-2,2]$, zero elsewhere.
+	Equivalently the angle has probability measure $dt/(2\pi)$ and
+	the independent radius has measure $2r\,dr$.
+	For the normalized projection $u=X/2$, put
+	$g(u)=\max\{u_+^m,(1-a/m)^8u_+^{m-8}\}$.
+	Then $M_m=\E[(X/2)_+^m]$, and the extra reference cost is
+	\begin{equation}\label{eq:semicircle-test}
+		D_f=m^{3/2}\E[g(X/2)-(X/2)_+^m]
+		=\frac{m^{3/2}}{2\pi}\int_0^2
+		\bigl(g(x/2)-(x/2)^m\bigr)\sqrt{4-x^2}\,dx .
+	\end{equation}
+	This uses the dimensionless density in \eqref{eq:signed-criterion}.
+	Equivalently it is the extra unnormalized cost divided by
+	$T_m=2^m m^{-3/2}$. Only $X>0$ contributes.
+	With $s=m(1-x/2)$ the weighted measure $m^{3/2}\,d\mathbb P_X$
+	on this half becomes $(2/\pi)\sqrt{2s-s^2/m}\,ds$ on $[0,m]$.
+	The integrand difference is supported on $s\geq a$. Bounding
+	$\sqrt{2s-s^2/m}$ by $\sqrt{2s}$ and integrating an exponential tail gives
+	\[
+	D_f\leq\frac{16\sqrt2}{\pi m}(1-a/m)^{m-1}
+	\left(\frac{\sqrt a}{\sigma^2}
+	+\frac1{\sqrt a\,\sigma^3}\right),
+	\qquad \sigma=\frac{m-8}{m-a}.
+	\]
+	Indeed the two terms of $g$ cross at $s=a$; on $s\geq a$ use
+	$(1-a/m)^8-(1-s/m)^8\leq8(s-a)(1-a/m)^7/m$,
+	$(1-s/m)^{m-8}\leq(1-a/m)^{m-8}e^{-\sigma(s-a)}$,
+	and $\sqrt s\leq\sqrt a+(s-a)/(2\sqrt a)$.
+	For $m\geq1500$, $6\leq a\leq m/5$ we have
+	$\sigma>0.99$, $(1-a/m)^{m-1}e^a\leq e^{a/m}<5/4$ and
+	$16\sqrt2/\pi<8$.  Hence the coefficient after dividing by
+	$e^{-a}\sqrt a/m$ is below
+	$10((0.99)^{-2}+(6(0.99)^3)^{-1})<12$.
+	Therefore
+	\begin{equation}\label{eq:model-error}
+		D_f\leq12e^{-a}\sqrt a/m.
+	\end{equation}
+	Lemma~\ref{lem:two-power-retention} gives a saving greater than
+	$\Delta^3/32$ for the same test in the same direction, after
+	multiplication by $m^{3/2}$.
+	For the untruncated choice $a=3/y$, equation \eqref{eq:new-a} gives
+	$\Delta L=9/a$ and $m=\Delta e^L/2$, with $L>9$.  Therefore
+	\[
+	\frac{12e^{-a}\sqrt a}{m\Delta^3}
+	=\frac{24}{9^4}
+	(a^4\sqrt a\,e^{-a})(L^4e^{-L}).
+	\]
+	For $a\geq6$, $\sqrt a\leq a/\sqrt6$ and $a^5e^{-a}$ is
+	decreasing.  Also $L^4e^{-L}$ is decreasing for $L\geq9$.
+	The displayed ratio is consequently at most
+	$24\cdot6^4\sqrt6\,e^{-15}$.  The Taylor sum for $e^3$
+	through degree eight exceeds $20$, and $\sqrt6<5/2$; hence
+	this last quantity is below $243/10000<1/40$.
+	Combining this with the central estimate gives
+	$D_f+\text{central}<13\Delta^3/500<\Delta^3/32$.
+	
+	Outside the joint tiny-deficit regime, the exclusion
+	\eqref{eq:tiny-cutoff} gives
+	$\Delta>0.03/[m\log(100m)]$ for every remaining endpoint.
+	The central and truncated costs admit a short common estimate.
+	For $m\geq1500$,
+	\[
+	\log(100m)\leq\frac m{100}+13\leq\frac m{20},
+	\qquad \Delta\geq\frac1{2m^2}.
+	\]
+	For the logarithm use $10000<2^{14}$, $\log2\leq1$, and
+	$\log(m/100)\leq m/100-1$.
+	The sequence $m^8(23/25)^m$ decreases, since
+	$((m+1)/m)^8(23/25)\leq(1501/1500)^8(23/25)<1$.
+	At $m=1500$, use $(23/25)^{10}<1/2$ and $1500<2^{11}$
+	to obtain $m^8(23/25)^m<1/8000$.  As $\sqrt m\leq m$,
+	\[
+	m\sqrt m\,(23/25)^m<\frac1{8000m^6}
+	\leq\frac{\Delta^3}{1000}.
+	\]
+	For the truncated choice $a=m/5$, the model estimate is bounded by
+	this same quantity: $e^{-1/5}\leq23/25$ and
+	$12\sqrt{m/5}/m\leq m\sqrt m$.
+	Thus both the truncated model cost and central allowance are below
+	$\Delta^3/1000$, and their sum is below $\Delta^3/64$.
+	
+	The central allowance applies in either phase branch.  On
+	$|w|<1.84$, one has $S(w)\leq(0.92)^m$, so its contribution in
+	$T_m$ units is at most $m^{3/2}(0.92)^m$.
+	Outside the tiny-deficit joint regime, the lower bound for $\Delta$
+	in the preceding paragraph holds for every endpoint.  The same
+	rational induction therefore proves
+	$m^{3/2}(0.92)^m<\Delta^3/1000$ independently of which value of
+	$a$ is active.  In the true-axis branch the unscaled error
+	$(0.92)^m$ is below its free model margin $M_m/m$: the largest
+	binomial coefficient in \eqref{eq:reference-moment} is at least
+	$2^m/(m+1)$, so $M_m/m\geq1/[m(m+1)(m+2)]$, whereas
+	$m^8(23/25)^m<1/8000$.
+	
+	\begin{lemma}[Reduction to a tiny first endpoint]\label{lem:tiny-first}
+		For an actual nonslit weak Catalan candidate, the same selected first
+		endpoint satisfies
+		\[
+		0< m d_1 < \frac{3}{100m\log(100m)}.
+		\]
+		Every unit direction has the global cap $2-d_1$ and the actual
+		disk saving $>(md_1)^3/30$ in the normalization used above.
+	\end{lemma}
+	\begin{proof}
+		If both scaled deficits were at least the displayed threshold,
+		the aligned model estimate and the central estimate would make
+		each aligned endpoint budget strictly negative.  The true-axis
+		reference margin also pays this allowance, independently of the
+		deficit.  The full-disk comparison counts the center only once,
+		so the candidate lower bound is impossible.  At least one
+		endpoint is therefore tiny.  Global radius maximality gives
+		$d_1\leq d_2$, so it is the first endpoint that is tiny.  Its
+		global cap holds in every direction, and the actual capped-power
+		saving uses only that cap and the same radius.  This reduction
+		and the reference-tail estimate use the same endpoint. The preceding
+		antipodal comparison treats the remaining tiny range.
+	\end{proof}
+	
+	\begin{proof}[Proof of Theorem~\ref{thm:large}]
+		Suppose first that an actual nonslit map is a weak contender:
+		$|B_n(F)|\geq\Cat_{k-1}$.  The boundary localization gives two
+		actual assigned ends with $0<nd_i<1$, their whole-hull strips and
+		whole-boundary projection caps, and the joint strict scalar cutoff.
+		Lemma~\ref{lem:cutoff} then gives $d_i<1/10000$ and
+		$\Delta_iL_i<3/2$ on both sides.  The refined root estimate gives
+		$mW_i\leq y_i<1/2$, and the preceding angle argument gives the
+		cap for each chosen true axis or nearest phase ray.  The energy
+		multiplier in Section~\ref{sec:energy-cert} applies to this actual
+		map, so the signed comparison \eqref{eq:signed-criterion} holds.
+		
+		If the minimum deficit satisfies \eqref{eq:tiny-cutoff}, the two
+		opposite capped rays and the central estimate above give
+		$\int_{\D}S(H)\,d\sigma<2M_m$, contradicting the candidate
+		inequality.  Otherwise apply the outer-region comparisons to each
+		assigned side.  In the aligned branch choose the nearest phase ray
+		and the convex test $g(u)=\max\{u_+^m,(1-a/m)^8u_+^{m-8}\}$.
+		The root strip gives the displayed aligned tilt bound, so the
+		pointwise signed integrand is below $g$ on $|H|\geq1.84$.
+		The central remainder is at most $(0.92)^m$.
+		For this direction, Lemma~\ref{lem:two-power-retention} saves more
+		than $\Delta_i^3/(32m^{3/2})$ from the reference two-power integral.
+		That reference integral is $M_m+D_f/m^{3/2}$. Even charging the
+		whole central remainder to this side yields an upper bound strictly below
+		\[
+		M_m+\frac{D_f-\Delta_i^3/32}{m^{3/2}}+(0.92)^m .
+		\]
+		By the preceding estimates $D_f+m^{3/2}(0.92)^m
+		<13\Delta_i^3/500<\Delta_i^3/32$. This leaves the cost strictly
+		below $M_m$.
+		
+		In the other branch use the true endpoint axis and the convex test
+		$g_0(u)=\lambda u_+^{m-8}$.  The true-axis tilt bound and
+		\eqref{eq:true-axis-corrected} give strict pointwise domination
+		on the outer region.  The uncut model integral is
+		$(1-1/m)M_m$; the cap can only decrease it, and the central
+		remainder is less than $M_m/m$.  This side also costs strictly
+		below $M_m$.  The direction is fixed on every source circle in each
+		convex-order application.  Summing both assigned sides contradicts
+		$\int S(H)\geq2M_m$.  Thus every nonslit actual map has strict
+		inequality, while a zero endpoint deficit is already a slit by the
+		area rigidity following \eqref{eq:two-point}.
+		
+		Finally $F_a(z)=z+a/z$, $|a|=1$, has inverse expansion
+		$G_a(w)=w-\sum_{k\geq1}\Cat_{k-1}a^k w^{-(2k-1)}$.
+		It attains the bound in every listed order.  This proves both the
+		upper bound and the full equality classification.
+	\end{proof}
+	\subsection{The phase-energy inequality}\label{sec:energy-cert}
+	The energy estimate controls the phase selected by the inverse
+	coefficient.  Its proof uses a drift identity, one signed flux, and
+	integration with a radial cutoff. We choose a single capped linear
+	function to obtain a constant uniform in $k$.
+	
+	\begin{lemma}\label{lem:actual-phase-energy}
+		For every centered exterior univalent $F$, integer $k\geq751$, and
+		$|\beta|=1$, put $H(z)=z+g(\bar z)$ and
+		$U(z)=\operatorname{Im}(\beta H(z)^k)$.  Then
+		\[
+		k^2\int_\D \frac{U^2}{|H|^2}\,d\sigma
+		\leq\frac73\int_\D |\nabla U|^2\,d\sigma.
+		\]
+		The quotient is extended by zero at $H=0$.
+	\end{lemma}
+	\begin{proof}
+		Write $y=|H|$ and $c=g'(\bar z)$.  Real differentiation gives
+		\begin{equation}\label{eq:energy-drift}
+			y^2\Delta U+4k(k-1)U=4(k-1)H\cdot\nabla U.
+		\end{equation}
+		This identity extends across $H=0$. In fact,
+		$\Delta U=4k(k-1)\operatorname{Im}(\beta H^{k-2}c)$;
+		the terms containing $g''$ cancel.  
+		
+		For $y>0$ put $u=U/y$, $p=|\nabla U|$, $r=|z|$, $t=k(1-r)/y$
+		and $b=k/[4(k-1)]$. Choose
+		\[
+		\chi(t)=\min\{12t,9/5\},\qquad f(t)=\chi(t)/6,\qquad
+		J=\chi(t)U\nabla U+4(k-1)e_r f(t)\frac{U^2}{y}.
+		\]
+		Combine the two divergences first. The coefficient of $uU_r$
+		from differentiating $\chi$ and the radial flux is
+		$8(k-1)f-k\chi'$. For the radial term,
+		with $h=f+tf'$, the product rule reads
+		\begin{equation}\label{eq:energy-radial-identity}
+			\operatorname{div}\left(e_r f(t)U^2/y\right)
+			=\{(y/r)f-hy_r-kf'\}u^2+2fuU_r.
+		\end{equation}
+		Use \eqref{eq:energy-drift} together with
+		\[
+		\nabla t=-\frac{ke_r+t\nabla y}{y},\quad
+		|u||\nabla y|\leq2|u|+p/k,\quad
+		(y/r)f\leq2f.
+		\]
+		For the gradient bound, $|\nabla y|\leq1+|c|$ and $|u|\leq y^{k-1}$.
+		Differentiating the imaginary part gives
+		$p=k|\beta H^{k-1}-\overline{\beta H^{k-1}c}|
+		\geq k y^{k-1}\bigl||c|-1\bigr|$.
+		Define
+		\begin{align*}
+			A_k&=\chi+f'-(2f+2|h|)/k,\\
+			D_k&=(k\chi+t|\chi'|)/(4(k-1)),\\
+			B_k&=\chi+|2f-b\chi'|+t|\chi'|/(2(k-1))+|h|/k .
+		\end{align*}
+		Indeed, the drift and radial identities give
+		\begin{align*}
+			b\operatorname{div}J+k^2(\chi+f')u^2
+			&=b\chi p^2+k\chi u(H/y)\cdot\nabla U
+			+k(2f-b\chi')uU_r\\
+			&\quad-bt\chi' u\,\nabla y\cdot\nabla U
+			+k\bigl((y/r)f-hy_r\bigr)u^2 .
+		\end{align*}
+		Using the preceding bounds in this equality yields
+		\[
+		k^2A_k(t)u^2+b\operatorname{div}J
+		\leq D_k(t)p^2+kB_k(t)|u|p.
+		\]
+		The scalar multiplier bound below implies its homogeneous form
+		also when $p=0$, hence
+		\begin{equation}\label{eq:energy-pointwise-flux}
+			k^2u^2+b\operatorname{div}J\leq\frac73 p^2
+			\quad\hbox{almost everywhere on }\D.
+		\end{equation}
+		
+		At the single multiplier corner the differential of $t$ is zero almost
+		everywhere on that level set.  The Lipschitz multiplier compositions
+		therefore have zero differential there; either adjacent slope gives
+		the same product rule.  No nullity assumption on the level is needed.
+		At a filling zero, $|J|=O(y^{2k-1})$ and $y=O(|z-z_0|)$,
+		so its zero extension has derivative zero.
+		
+		For local Lipschitz continuity through the zero set, use the following
+		elementary estimate.  If $u,v$ are Lipschitz, with constants
+		$K_u,K_v$, and $|u|\leq C|v|$, the zero-extended quotient $u^2/v$
+		is Lipschitz with constant $2CK_u+C^2K_v$.  When $|b|\leq|a|$
+		and $ab\ne0$, use
+		\[
+		\frac{x^2}{a}-\frac{y^2}{b}
+		=\frac{(x-y)(x+y)}a+\frac{y^2(b-a)}{ab};
+		\]
+		if $b=0$, then $y=0$.  Apply this to the actual phase field and
+		$v=|H|$, using $|U|\leq2^{k-1}|H|$.
+		Near a noncentral filling zero the multipliers have constant tail
+		values wherever $H\ne0$, and the amplitudes vanish at the other
+		zeros.  Thus $J$ is locally Lipschitz on the punctured source disk.
+		
+		The area theorem gives $g'\in L^2(\D)$, hence $p^2,p\in L^1(\D)$;
+		also $u^2\leq2^{2k-2}$.  Bounded multipliers give
+		$|J|\leq C_k y^{2k-1}(1+|g'|)$, while their linear vanishing
+		at $t=0$ gives $|J|\leq C_k(1-r)y^{2k-2}(1+|g'|)$.
+		Using $y\leq2r$ and $y\leq2$, respectively, obtain
+		\begin{equation}\label{eq:energy-boundary-majorant}
+			|J(z)|\leq C_k\min\{r,1-r\}\bigl(1+|g'(\bar z)|\bigr).
+		\end{equation}
+		
+		Let $\eta_\varepsilon$ be the product of two unit linear ramps,
+		zero for $r\leq\varepsilon$ or $r\geq1-\varepsilon$, one for
+		$2\varepsilon\leq r\leq1-2\varepsilon$, with Lipschitz constant
+		at most $2/\varepsilon$.  The field $\eta_\varepsilon J$ is
+		globally Lipschitz with compact support.  Absolute continuity along
+		horizontal and vertical lines, the one-dimensional fundamental
+		theorem of calculus and Fubini give
+		\[
+		\int_\D\eta_\varepsilon\operatorname{div}J\,d\sigma
+		=-\int_\D\nabla\eta_\varepsilon\cdot J\,d\sigma.
+		\]
+		Both integrands are integrable.  By
+		\eqref{eq:energy-boundary-majorant},
+		$|\nabla\eta_\varepsilon\cdot J|
+		\leq4C_k(1+|g'(\bar z)|)$.
+		The derivative of the cutoff is eventually zero at each noncentral
+		interior point, so dominated convergence removes the boundary term.
+		Multiply \eqref{eq:energy-pointwise-flux} by the cutoff and pass to
+		the limit in the $L^1$ densities $u^2,p^2$.  No prior integrability
+		assumption on the unweighted divergence is required.
+	\end{proof}
+	
+	\paragraph{The scalar multiplier bound.}
+	On the increasing part write $x=12t\in[0,9/5]$. Use
+	$a=A_k-1$, $\mathcal B=B_k$, $\mathcal D=D_k$ within this calculation only.
+	Here $2f\leq3/5<3k/(k-1)$, so the absolute value in $B_k$ has a fixed
+	sign. The exact coefficients are
+	\[
+	\begin{aligned}
+		a&=1+(1-1/k)x,\\
+		\mathcal B&=3k/(k-1)+\bigl(2/3+1/(2(k-1))+1/(3k)\bigr)x,\\
+		\mathcal D&=\bigl(1+2/(k-1)\bigr)x/4 .
+	\end{aligned}
+	\]
+	On the constant part $\chi=9/5$, $f=3/10$, and these become
+	\[
+	a=4/5-6/(5k),\qquad \mathcal B=12/5+3/(10k),\qquad
+	\mathcal D=9k/(20(k-1)).
+	\]
+	Let $(a_0,b_0,d_0)$ be the limits of $(a,\mathcal B,\mathcal D)$
+	as $k\to\infty$ at fixed $t$.
+	To see the reason for the cap $9/5$, allow an arbitrary plateau
+	$\chi=c>1$ while retaining $f=\chi/6$. On the constant part the
+	limiting cost satisfies
+	\[
+	\frac c4+\frac{4c^2}{9(c-1)}-\frac94
+	=\frac{(5c-9)^2}{36(c-1)} .
+	\]
+	The cap $c=9/5$ therefore gives precisely the cost $9/4$ at the
+	origin of the increasing part as well as on the plateau.
+	Inside the increasing part one has
+	\[
+	4a_0(9/4-d_0)-b_0^2
+	=(1+x)(9-x)-(3+2x/3)^2
+	=x(4-13x/9)\geq0 .
+	\]
+	On the plateau $(a_0,b_0,d_0)=(4/5,12/5,9/20)$. Thus $d_0+b_0^2/(4a_0)\leq9/4$ throughout.
+	
+	For $k\geq751$ the two explicit formulas above give
+	\[
+	a\geq(99/100)a_0,\qquad
+	0\leq \mathcal B\leq(101/100)b_0,\qquad
+	0\leq \mathcal D\leq(101/100)d_0 .
+	\]
+	For example, on the increasing part the excess in $\mathcal B$ is at most
+	$(3+5x/6)/(k-1)\leq b_0/100$; on the plateau the relative loss
+	in $a$ is $3/(2k)$. The remaining bounds follow directly from
+	$2/(k-1)<1/100$. Completing the square now gives, for all $p$ and $u$
+	with $p\geq0$,
+	\[
+	kp \mathcal B |u|-k^2a u^2+\mathcal D p^2
+	\leq \left(\mathcal D+\frac{\mathcal B^2}{4a}\right)p^2
+	\leq \frac{101^2}{100\cdot99}\frac94\,p^2
+	< \frac73\,p^2\quad (p>0).
+	\]
+	For $p=0$ the left side is nonpositive. Either one-sided expression
+	at the corner has this bound, as required in the product rule.
+	
+	\section{Statement and boundary trace}
+	Let $\Sigma_0$ be the class of injective holomorphic functions on $|z|>1$ with expansion
+	\begin{equation}\label{eq:F}
+		F(z)=z+\sum_{j\ge1}b_jz^{-j}.
+	\end{equation}
+	The absence of a constant term fixes the center. For $p>0$, let
+	\[
+	R_p(F)=\frac1{2\pi}\int_{-\pi}^{\pi}|F^*(e^{it})|^p\,dt,
+	\qquad S(p)=\frac{\Gamma(p+1)}{\Gamma(1+p/2)^2},
+	\]
+	where $F^*$ is the almost-everywhere radial limit, constructed below. Write
+	$D=1-|b_1|^2$. The area theorem gives $D\ge0$.
+	
+	Baernstein, Laugesen, and Pritsker \cite[Section 6, pp.~78--79]{BLP}
+	already proved $R_2(F)\le2$ in this exterior normalization and showed
+	that equality is possible exactly for a rotation of $[-2,2]$. Their
+	argument uses Parseval and the area theorem. We retain the unused
+	area budget to obtain a quantitative second-moment deficit. For the
+	next three even exponents, the same area budget controls a finite
+	weighted sum after the signed-area identity below; low-order Grunsky
+	inequalities handle the remaining coefficient combinations.
+	
+	\begin{theorem}\label{thm:moments}
+		For every $F\in\Sigma_0$,
+		\begin{align}
+			R_2(F)&\le 2-\tfrac12D=S(2)(1-D/4),\label{eq:m2}\\
+			R_4(F)&\le 6-3D=S(4)(1-D/2),\label{eq:m4}\\
+			R_6(F)&\le 20-7D-\tfrac92D^2,\label{eq:m6}\\
+			R_8(F)&\le 70-\tfrac{51}{5}D.\label{eq:m8}
+		\end{align}
+		For each $p\in\{2,4,6,8\}$, $R_p(F)=S(p)$ if and only if
+		$F(z)=z+a/z$ for some $|a|=1$. Thus the four maximal values
+		$S(2)=2$, $S(4)=6$, $S(6)=20$, and $S(8)=70$ are sharp.
+	\end{theorem}
+	
+	The deficit coefficients in the four inequalities are explicit constants
+	from the proof. The sharpness statement concerns the four maximal values.
+	
+	\begin{lemma}\label{lem:trace}
+		The radial limit $F^*(e^{it})=\lim_{r\downarrow1}F(re^{it})$ exists for almost
+		every $t$, and for every fixed $p>0$ its $p$th power is integrable. Moreover,
+		\[
+		R_p(F)=\lim_{r\downarrow1}\frac1{2\pi}\int_{-\pi}^{\pi}
+		|F(re^{it})|^p\,dt.
+		\]
+	\end{lemma}
+	\begin{proof}
+		Set $g(u)=F(1/u)-1/u=\sum_{j\ge1}b_ju^j$. The area theorem gives
+		$\sum_{j\ge1}j|b_j|^2\le1$. Parseval on concentric disks and monotone
+		convergence therefore give
+		\[
+		\int_{\D}|g'(u)|^2\,dA(u)=\pi\sum_{j\ge1}j|b_j|^2\le\pi.
+		\]
+		Fubini implies that for almost every $t$ the radial integral of
+		$|g'(\rho e^{it})|^2$ on $1/2<\rho<1$ is finite. Since $\rho\ge1/2$,
+		Cauchy--Schwarz shows that $g(\rho e^{it})$ is Cauchy as $\rho\uparrow1$.
+		This constructs the asserted trace.
+		
+		For completeness, the omitted-point bound makes the boundary passage
+		dominated. If $w$ is omitted by a centered exterior map $H$, the function
+		$u\mapsto 1/(H(1/u)-w)=u+wu^2+\cdots$ is schlicht on $\D$.
+		The second-coefficient theorem gives $|w|\le2$. For each $r>1$, set
+		$F_r(z)=F(rz)/r$. This is a centered normalized univalent map on
+		$|z|>1/r$. In particular, for $|z|=1$ the point $F_r(z)$ is omitted
+		by the restriction of $F_r$ to $|z|>1$, by injectivity on the larger
+		domain. Hence $|F_r(e^{it})|\le2$, or
+		$|F(re^{it})|\le2r$. This uniform bound for $r$ in a fixed interval
+		$(1,r_0)$ gives dominated convergence on the circles as $r\downarrow1$.
+	\end{proof}
+	
+	\section{Weighted area and the first four even moments}
+	We use the classical area theorem and strong Grunsky inequality in their
+	usual exterior normalization \cite[Chapters 1 and 3]{Pom}. The complex
+	Grunsky coefficients used below are $c_{22}$, $c_{23}$, and $c_{33}$;
+	their Laurent expressions are displayed in the proof.
+	
+	\begin{lemma}[Finite radial area inequality]\label{lem:area}
+		Put $\phi(u)=1+\sum_{j\ge1}b_ju^{j+1}$ and
+		$c_d=[u^d]\phi(u)^m$. Then, for each positive integer $m$,
+		\begin{equation}\label{eq:rad-area}
+			R_{2m}(F)\le \sum_{d=0}^{2m-1}\left(2-\frac dm\right)|c_d|^2.
+		\end{equation}
+	\end{lemma}
+	\begin{proof}
+		First replace $F$ by $F_r(z)=F(rz)/r$, $r>1$. This map is univalent on
+		a neighborhood of the closed exterior disk. On the unit circle,
+		$F_r(z)^m=\sum_{d\ge0}c_d^{(r)}z^{m-d}$. Parseval gives its mean squared
+		modulus as $\sum_d|c_d^{(r)}|^2$. Let $K_r$ be the bounded region
+		enclosed by the smooth Jordan curve $F_r(\partial\D)$. Apply Green's
+		formula on $K_r$ to the analytic map $w\mapsto w^m$. The oriented image
+		contour, counted with its multiplicity, has signed area
+		$m^2\int_{K_r}|w|^{2m-2}\,dA(w)\ge0$. Fourier orthogonality writes the
+		same signed area as
+		$\pi\sum_d(m-d)|c_d^{(r)}|^2$. Adding this nonnegative sum to $m$ times
+		the Parseval sum gives
+		\[
+		m\sum_{d\ge0}|c_d^{(r)}|^2
+		\le\sum_{d\ge0}(2m-d)|c_d^{(r)}|^2
+		\le\sum_{d<2m}(2m-d)|c_d^{(r)}|^2.
+		\]
+		The last inequality discards only nonpositive terms. Divide by $m$,
+		then let $r\downarrow1$ using Lemma~\ref{lem:trace}; the sum on the
+		right is finite and each coefficient converges.
+	\end{proof}
+	
+	\begin{proof}[Proof of Theorem~\ref{thm:moments}]
+		Write $s=|b_1|^2$, so $0\le s\le1$ and $D=1-s$. Parseval and the area
+		theorem yield
+		\[
+		R_2(F)=1+\sum_{j\ge1}|b_j|^2
+		\le1+s+\frac12\sum_{j\ge2}j|b_j|^2
+		\le1+s+D/2=2-D/2.
+		\]
+		At $m=2$, equation~\eqref{eq:rad-area} expands to
+		\[
+		R_4(F)\le2+4s+2|b_2|^2\le2+4s+D=6-3D.
+		\]
+		
+		For $m=3$, the coefficients $c_0,\ldots,c_5$ of $\phi^3$ are
+		$1,0,3b_1,3b_2,3(b_3+b_1^2),3(b_4+2b_1b_2)$. Thus
+		\begin{equation}\label{eq:m6finite}
+			R_6(F)\le2+12s+9|b_2|^2+6|b_3+b_1^2|^2
+			+3|b_4+2b_1b_2|^2.
+		\end{equation}
+		Put $x=|b_1|$, $a=|b_2|$, and $b=|b_4|$. Then $0\le x\le1$,
+		$|b_4+2b_1b_2|\le b+2xa$, and the square completion is
+		\[
+		(5+6x^2)(2a^2+4b^2)-9a^2-3(2xa+b)^2
+		=(a-6xb)^2+(17-12x^2)b^2\ge0.
+		\]
+		The area theorem therefore bounds the two terms containing $b_2,b_4$
+		in \eqref{eq:m6finite} by $(5+6x^2)D$.
+		
+		For the remaining term, define the exterior Grunsky coefficients by
+		\[
+		-\log\frac{F(z)-F(w)}{z-w}
+		=\sum_{j,k\ge1}c_{jk}z^{-j}w^{-k}.
+		\]
+		Expansion gives $c_{22}=b_3+b_1^2/2$. The strong Grunsky inequality
+		applied to the vector supported at index two says
+		$\sum_{j\ge1}j|c_{2j}|^2\le1/2$; hence $|c_{22}|\le1/2$.
+		Consequently $|b_3+b_1^2|\le(1+s)/2$. Combining the estimates gives
+		\[
+		R_6(F)\le2+12s+(5+6s)D+\frac32(1+s)^2
+		=20-7D-\frac92D^2.
+		\]
+		For $m=4$ put
+		\[
+		u=b_4+b_1b_2,\quad v=b_1b_2,\quad g=b_3+b_1^2,
+		\quad A=4b_3+6b_1^2,
+		\]
+		\[
+		w=b_5+3b_1b_3+\tfrac32b_2^2+b_1^3,
+		\qquad y=b_6+3b_1b_4+3gb_2.
+		\]
+		Expanding the first eight coefficients in \eqref{eq:rad-area} gives
+		\begin{equation}\label{eq:m8finite}
+			R_8(F)\le2+24s+20|b_2|^2+|A|^2
+			+12|u+2v|^2+8|w|^2+4|y|^2.
+		\end{equation}
+		The Grunsky coefficients are $c_{23}=u$ and
+		$c_{33}=b_5+b_1b_3+b_2^2+b_1^3/3$.
+		Applying the strong inequality to vectors supported at indices two
+		and three gives
+		\begin{equation}\label{eq:grunsky8}
+			|b_2|^2+2|c_{22}|^2+3|u|^2\le\tfrac12,
+			\qquad |c_{33}|\le\tfrac13.
+		\end{equation}
+		
+		First,
+		\[
+		|A|^2=48|c_{22}|^2+24s^2-32|b_3|^2,
+		\qquad
+		12|u+2v|^2-72|u|^2\le\tfrac{288}{5}|v|^2.
+		\]
+		The second inequality follows on replacing $|u+2v|$ by
+		$|u|+2|v|$ and completing the square:
+		$\frac{288}{5}|v|^2-12(|u|+2|v|)^2+72|u|^2
+		=\frac{12}{5}(5|u|-2|v|)^2$.
+		Since $|v|^2=s|b_2|^2\le sD/2$, \eqref{eq:grunsky8} yields
+		\begin{equation}\label{eq:firstblock}
+			20|b_2|^2+|A|^2+12|u+2v|^2
+			\le12+24s^2+\tfrac{144}{5}sD.
+		\end{equation}
+		
+		Next, $w=c_{33}+(2b_1b_3+\frac23b_1^3)+\frac12b_2^2$.
+		Expansion of $|b_3+b_1^2/2|^2\le1/4$ gives
+		\[
+		|2b_1b_3+\tfrac23b_1^3|^2
+		\le\tfrac43s|b_3|^2+\tfrac23s-\tfrac29s^3
+		\le(\tfrac23+s|b_3|^2)^2.
+		\]
+		For the last inequality the difference of the right and left sides
+		is $\frac29(1-s)^2(s+2)+(s|b_3|^2)^2$.
+		Using \eqref{eq:grunsky8} and
+		$3|b_3|^2+2|b_2|^2\le D$ gives
+		$|w|\le1+s|b_3|^2+|b_2|^2/2\le1+D/3$.
+		As $0\le D\le1$,
+		\begin{equation}\label{eq:wblock}
+			8|w|^2\le8+\tfrac{16}{3}D+\tfrac89D^2
+			=8+\bigl(\tfrac{56}{9}-\tfrac89s\bigr)D.
+		\end{equation}
+		
+		Finally, weighted Cauchy--Schwarz and the area theorem give
+		\[
+		|y|^2\le
+		\left(\tfrac16+\tfrac94s+\tfrac92|g|^2\right)
+		(6|b_6|^2+4|b_4|^2+2|b_2|^2).
+		\]
+		The last factor is at most $D$, and the diagonal Grunsky estimate
+		above gives $|g|\le(1+s)/2$. Hence
+		\begin{equation}\label{eq:yblock}
+			4|y|^2\le
+			\left(\tfrac23+9s+\tfrac92(1+s)^2\right)D.
+		\end{equation}
+		Combining \eqref{eq:firstblock}--\eqref{eq:yblock} with
+		\eqref{eq:m8finite} gives $70-R_8(F)\ge D\widetilde P(s)$, where
+		\[
+		\widetilde P(s)=48+24s-\tfrac{144}{5}s-\tfrac{56}{9}
+		-\tfrac23-9s-\tfrac92(1+s)^2+\tfrac89s.
+		\]
+		Direct expansion gives
+		\[
+		\widetilde P(s)-\frac{51}{5}
+		=\frac{(1-s)(405s+2377)}{90}\ge0\qquad(0\le s\le1),
+		\]
+		which proves \eqref{eq:m8}.
+		
+		The values $S(2)=2$, $S(4)=6$, $S(6)=20$, and $S(8)=70$ follow from the gamma
+		recurrence. Equality with $S(p)$ in any displayed bound forces $D=0$.
+		Then the area theorem forces $b_j=0$ for every $j\ge2$, so
+		$F(z)=z+b_1/z$ with $|b_1|=1$. Conversely, that map has the rotated
+		segment $[-2,2]$ as its boundary image, and its even moments are
+		$\binom{2m}{m}$ for $m=1,2,3,4$ by the elementary cosine integral.
+	\end{proof}
+	
+	\section{Every real exponent from four to eight}\label{sec:continuous-moments}
+	The four endpoint estimates also control every exponent between four and
+	eight.  We use one published comparison in addition to the ingredients of
+	Theorem~\ref{thm:moments}.  For a centered capacity-one continuum, the
+	Baernstein--Laugesen--Pritsker projection theorem
+	\cite[Theorem~2]{BLP} says that every real projection of its equilibrium
+	measure is dominated, for convex tests, by the arcsine distribution on
+	$[-2,2]$.  Applied to the omitted continuum of $F$, rotated by a unit
+	complex number $c$, and using the harmonic-measure boundary
+	correspondence, this gives
+	\begin{equation}\label{eq:projection-order}
+		\E\,\psi\!\left(\frac{\operatorname{Re}(cF^*)}{2}\right)
+		\le \E\,\psi(\cos t)
+	\end{equation}
+	for every convex $\psi:\mathbb R\to\mathbb R$. Filling bounded complementary
+	components changes neither the exterior map nor its harmonic measure;
+	its capacity and conformal centroid are respectively one and zero by
+	the normalization in \eqref{eq:F}.  Thus the cited theorem has precisely
+	the hypotheses required here.  The boundary passage in
+	Lemma~\ref{lem:trace} gives the same comparison for the actual radial
+	trace.
+	
+	\begin{theorem}\label{thm:radial-continuous}
+		For every $F\in\Sigma_0$, every real $4\le p\le8$, and
+		$D=1-|b_1|^2$,
+		\begin{equation}\label{eq:continuous-deficit}
+			R_p(F)\le S(p)(1-D/80).
+		\end{equation}
+		For each fixed $p$ in this interval,
+		$R_p(F)=S(p)$ if and only if $F(z)=z+a/z$ on $|z|>1$ for some $|a|=1$.
+	\end{theorem}
+	
+	\begin{proof}
+		Normalize $T=|F^*|/2$, and write
+		$C_q=\E|\cos t|^q=2^{-q}S(q)$.  Theorem~\ref{thm:moments} gives
+		\begin{equation}\label{eq:three-normalized-deficits}
+			C_j-\E T^j\ge d_jD,\qquad
+			(d_4,d_6,d_8)=\left(\frac3{16},\frac7{64},\frac{51}{1280}\right).
+		\end{equation}
+		For $j=6$, division of $20-R_6\ge7D+\frac92D^2$ by $2^6$
+		gives a further nonnegative term; the other two values follow by
+		dividing the fourth- and eighth-moment deficits by $2^4$ and $2^8$.
+		
+		Choose the phase $c$ with $|c|=1$ so that the first Fourier mode of
+		$X=\operatorname{Re}(cF^*)/2$ has amplitude $(1+|b_1|)/2$.
+		Parseval, first on circles and then for the actual trace, yields
+		\[
+		\E X^2\ge\frac{(1+|b_1|)^2}{8},\qquad
+		\frac12-\E X^2\le\frac{3D}{8}.
+		\]
+		The last inequality is the elementary identity
+		$3(1-x^2)-(4-(1+x)^2)=2x(1-x)\ge0$ for $x=|b_1|\in[0,1]$.
+		
+		For $a=4$ or $6$, put $p=a+2\theta$ with $0\le\theta\le1$, and let
+		\[
+		h(u)=u^p-\frac{p(1-\theta)}{a}u^a
+		-\frac{p\theta}{a+2}u^{a+2},\qquad
+		L_a=\frac1{6(a-2)}+\frac4{7(a-2)^2}.
+		\]
+		Weighted arithmetic--geometric mean gives $h'(u)\le0$ on $[0,1]$.
+		The second derivative satisfies
+		\begin{equation}\label{eq:h-curvature}
+			h''(u)\ge-2p\theta(1-\theta)L_a\qquad(0\le u\le1).
+		\end{equation}
+		Here is the short calculus check of the constant.  If $u=e^{-v}$,
+		the secant error in $h''/p$ is that of
+		$f(k)=(k-1)e^{-(k-2)v}$ between $a$ and $a+2$.
+		With $w=(k-2)v$,
+		\[
+		f''(k)=e^{-w}\left(\frac{w^2-2w}{k-2}
+		+\frac{w^2}{(k-2)^2}\right)
+		\le L_a,
+		\]
+		because the two maxima for $w\ge0$ are respectively
+		$(2+2\sqrt2)e^{-2-\sqrt2}<1/6$ and $4e^{-2}<4/7$.
+		For the first comparison, \(7/5<\sqrt2<10/7\) and
+		\(\sum_{n=0}^7(17/5)^n/n!>204/7\) give
+		\(e^{2+\sqrt2}>12(1+\sqrt2)\).
+		For the second, the Taylor sum through degree four at \(2\) equals
+		\(7\), and every remaining term is positive.
+		The secant error over a length-two interval is at most
+		$2\theta(1-\theta)L_a$, proving \eqref{eq:h-curvature}.
+		As $h'(0)=0$, the even function
+		$u\mapsto h(|u|)+p\theta(1-\theta)L_a u^2$ is convex on $[-1,1]$.
+		Continue it by its endpoint tangent lines to obtain a convex test
+		on $\mathbb R$.
+		
+		Since $|X|\le T\le1$ and $h$ is decreasing, $h(T)\le h(|X|)$.
+		Apply \eqref{eq:projection-order} to the preceding convex test and
+		expand both averages.  Inserting \eqref{eq:three-normalized-deficits}
+		and the projection second-moment bound gives
+		\begin{equation}\label{eq:interpolation-bracket}
+			C_p-\E T^p\ge pD B_a(\theta),\qquad
+			B_a(\theta)=(1-\theta)A+\theta B-L\theta(1-\theta),
+		\end{equation}
+		where $A=d_a/a$, $B=d_{a+2}/(a+2)$ and $L=3L_a/8$.
+		The numerical data are
+		\[
+		\begin{array}{c|ccc}
+			a&A&B&L\\ \hline
+			4&3/64&7/384&19/224\\
+			6&7/384&51/10240&13/448
+		\end{array}
+		\]
+		and need only four fraction comparisons.  Indeed
+		\[
+		4-3\theta-9\theta(1-\theta)=(3\theta-2)^2\ge0
+		\]
+		implies
+		\[
+		B_a(\theta)\ge
+		(1-\theta)(A-4L/9)+\theta(B-L/9).
+		\]
+		For $a=4$ the two endpoint values are $37/4032$ and $71/8064$;
+		for $a=6$ they are $43/8064$ and $1133/645120$.
+		Each is strictly greater than $1/640$.  Hence
+		$C_p-\E T^p\ge pD/640\ge D/160$.
+		Finally $C_p\le C_2=1/2$ for $p\ge2$, so
+		$D/160\ge C_pD/80$.  Multiplication by $2^p$ proves
+		\eqref{eq:continuous-deficit}.
+		
+		If $R_p(F)=S(p)$, then \eqref{eq:continuous-deficit} and $S(p)>0$
+		force $D=0$.  The area theorem gives $b_j=0$ for $j\ge2$ and
+		$|b_1|=1$, so $F$ is a unit rotated slit on the entire open exterior
+		disk.  Conversely the slit boundary is a rotated $2\cos t$, and its
+		moment equals $S(p)$.
+	\end{proof}
+	\section{Zeros of polynomials with connected lemniscates}
+	\label{sec:polynomial-zero-comparison}
+	
+	\begin{proposition}\label{prop:zero-moments}
+		Let $P$ be a complex polynomial of degree $n\ge2$, with leading
+		coefficient $a$. Let $c$ be the mean of its zeros, counted with
+		multiplicity. Suppose that $t>0$ and that $\{|P|\le t\}$ is connected,
+		and put $R=(t/|a|)^{1/n}$. For every real $4\le p\le8$ and every
+		integer $0\le j<n$,
+		\[
+		\frac1{n-j}\sum_{P^{(j)}(z)=0}
+		\left|\frac{z-c}{R}\right|^p < S(p).
+		\]
+		The sum counts multiplicities. For each fixed $p$ and $j$, the
+		supremum of these means over all such polynomials and levels,
+		allowing $n$ to vary, is $S(p)$ and is never attained.
+	\end{proposition}
+	
+	\subsection{The normalized exterior map}
+	Put $Q(z)=P(c+Rz)/(aR^n)$. This polynomial is monic, its roots sum to
+	zero, and $K=\{|Q|\le1\}$ is connected. The chain rule gives
+	$Q^{(j)}(z)=R^j P^{(j)}(c+Rz)/(aR^n)$, so the affine change of
+	variables preserves derivative-root multiplicities and reduces the
+	mean to $(n-j)^{-1}\sum_{Q^{(j)}(z)=0}|z|^p$.
+	
+	We construct the normalized exterior map directly. First,
+	$\Omega=\{|Q|>1\}$ is connected. The polynomial is open and proper,
+	and its restriction to $\Omega$ maps into the exterior unit disk.
+	Each component of $\Omega$ is open and closed relative to $\Omega$.
+	Its image under the restriction is nonempty, open and closed
+	relative to the connected exterior unit disk. Consequently each
+	component maps onto that disk and is unbounded. Since $K$ is compact,
+	all these components meet the same connected region outside a
+	sufficiently large circle.
+	
+	Choose $b\in K$ and put $K_b=K-b$. In the coordinate $u=(z-b)^{-1}$,
+	the reciprocal exterior domain $U$ consists of zero and the inverses
+	of points of $\C\setminus K_b$. It is open and connected, since the
+	complement of $K_b$ is connected, omits zero, and contains all points
+	of sufficiently large modulus. For $\epsilon>0$, use the open region
+	\[
+	U_\epsilon=\{u: \epsilon |u|<|1-vu|\text{ for all }v\in K_b\}.
+	\]
+	It is open by compactness of $K_b$. Every point of $U$ is in the
+	component containing zero of some $U_\epsilon$: join it to zero
+	by a path in $U$ and take the minimum of $|1-vu|$ and a bound for
+	$|u|$ on the compact product of the two parameter sets.
+	
+	For $v\in K_b$, join $v$ to zero by a finite chain in $K_b$ of steps
+	shorter than $\epsilon$. Such chains exist because the set reachable
+	by short steps is both relatively open and relatively closed in
+	$K_b$. For consecutive points $v_i,v_{i+1}$ of the chain, the ratio
+	$(1-v_i u)/(1-v_{i+1}u)$ lies at distance less than one from $1$ on
+	$U_\epsilon$. Sum its principal logarithms along the chain to get
+	an analytic logarithm of $1-vu$ with value zero at $u=0$.
+	On the components containing zero the resulting logarithms agree
+	where both are defined. Indeed the smaller component lies in the
+	larger one, and the branches agree near zero by local injectivity of
+	the exponential. The identity theorem gives agreement on that
+	component. Thus there is a normalized analytic logarithm on $U$ for
+	every $v\in K_b$.
+	
+	Let $q_1,\ldots,q_n$ be the roots of $Q$, with multiplicities.
+	The exponential of the mean of the preceding logarithms for
+	$v=q_i-b$ is an analytic function $H$ on $U$ with
+	\[
+	H(0)=1,\qquad H(u)^n=\prod_i(1-(q_i-b)u),\qquad H'(0)=b.
+	\]
+	The last identity follows by differentiation and $\sum_i q_i=0$.
+	Hence
+	$B(z)=(z-b)H((z-b)^{-1})$ is analytic on $\Omega$ and $B(z)^n=Q(z)$.
+	It maps $\Omega$ into the exterior unit disk and is proper there.
+	For instance, a compact set of target points has compact image
+	under the $n$th power map, and its inverse image under $B$ is
+	closed in the compact inverse image under $Q$ of that image.
+	Since $B$ is nonconstant and analytic, its image is open. Properness
+	makes the image closed relative to the exterior unit disk, so it is
+	onto. To show injectivity, take any exterior value $w$ and pick a
+	preimage under $B$ of each of the $n$ distinct $n$th roots of $w^n$.
+	These yield $n$ distinct roots of $Q(z)-w^n$, which exhaust its
+	degree. Each chosen value has exactly one preimage.
+	
+	The inverse $F$ of $B$ therefore satisfies $Q(F(w))=w^n$ for $|w|>1$.
+	As $w\to\infty$, also $F(w)\to\infty$ by this identity. With
+	$u=(F(w)-b)^{-1}$ we have
+	$F(w)-w=b-(H(u)-1)/u\to b-H'(0)=0$.
+	The reciprocal correction thus extends holomorphically to zero
+	with value zero. This puts $F$ in the centered exterior class.
+	
+	\subsection{Original roots and the actual boundary trace}
+	\label{sec:smooth-exterior-potential}
+	For $\rho>1$ the angular logarithmic potential
+	$V_\rho(x)=(2\pi)^{-1}\int_0^{2\pi}
+	\log|F(\rho e^{i\theta})-x|\,d\theta$ is
+	\[
+	V_\rho(x)=\frac1n\log\max(\rho^n,|Q(x)|).
+	\]
+	Indeed if $F(1/u)=1/u+g(u)$, the reciprocal function
+	$1+u(g(u)-x)$ is analytic on the disk, has value $1$ at zero,
+	and has no zero except a simple one at $1/w$ if $x=F(w)$.
+	Apply Jensen's formula on radius $1/\rho$ and reverse the angular
+	orientation. The logarithm of the product can be expanded off the
+	single possible zero on the circle, an angular null set. The result
+	is $\log\rho$ on $K$ and $\log\max(\rho,|w|)$ at $F(w)$.
+	
+	In particular, $V_\rho(x)\ge n^{-1}\log|Q(x)|$. Average over
+	$x=s e^{i\alpha}$ for any $s>0$. The angular mean of
+	$\log|y-s e^{i\alpha}|$ is $\log s+\log^+(|y|/s)$.
+	Fubini applies to the double angular integral. The positive
+	part is bounded on the compact product, and the slice integral has
+	the lower bound $\log s$, which gives a uniform bound for the
+	integral of the negative part. Factorization of $Q$ gives
+	\[
+	\frac1n\sum_i\log^+(|q_i|/s)
+	\le \frac1{2\pi}\int_0^{2\pi}
+	\log^+(|F(\rho e^{i\theta})|/s)\,d\theta.
+	\]
+	Here $\log^+0$ denotes zero. For $p>0$ and $a\ge0$,
+	$a^p=p^2\int_{\mathbb R} e^{pt}\log^+(a e^{-t})\,dt$.
+	For positive $a$ this follows by substituting $v=\log a-t$ and
+	integrating $v e^{-pv}$ on $(0,\infty)$. For $a=0$ both sides
+	vanish. Tonelli gives the $p$-moment comparison on the smooth
+	circle. The actual radial trace and the bound
+	$|F(\rho e^{i\theta})|\le2\rho$ justify dominated convergence as
+	$\rho\downarrow1$. In particular
+	$n^{-1}\sum_i|q_i|^p\le R_p(F)$ for every $p>0$.
+	
+	\subsection{Derivative roots, strictness, and sharpness}
+	The de Bruijn--Springer comparison \cite[Theorem~4]{DBS1947}
+	holds for $p\ge1$. We give a proof using the differentiator compression of \cite{Pereira}.
+	For a degree $N$ polynomial with roots $\lambda_i$ listed with
+	multiplicity, let $D=\operatorname{diag}(\lambda_i)$ and let
+	$e=N^{-1/2}(1,\ldots,1)$. In an orthonormal basis with first vector
+	$e$, compress $D$ to the last $N-1$ coordinates to obtain $A$.
+	The determinant of $zI-A$ is the first diagonal cofactor of $zI-D$
+	in this basis. Transforming the adjugate under change of basis
+	gives the cofactor
+	\[
+	\frac1N\sum_i\prod_{\ell\ne i}(z-\lambda_\ell)
+	=\frac1N\frac{d}{dz}\prod_i(z-\lambda_i).
+	\]
+	Thus the diagonal of a unitary Schur triangularization of $A$ lists
+	the derivative roots $\mu_j$, with algebraic multiplicity. In
+	ambient coordinates their diagonal formulas are
+	$\mu_j=\sum_i|v_j(i)|^2\lambda_i$. The weights sum to one in each
+	column. Across the $N-1$ columns the total in row $i$ is
+	$1-|e(i)|^2=(N-1)/N$. The triangle inequality and Jensen for
+	$r\mapsto r^p$ give
+	$|\mu_j|^p\le\sum_i |v_j(i)|^2 |\lambda_i|^p$.
+	Sum and divide by $N-1$, then iterate while the remaining degree
+	is positive. This proves
+	\[
+	\frac{1}{n-j}\sum_{Q^{(j)}(z)=0}|z|^p
+	\le \frac1n\sum_i|q_i|^p
+	\le R_p(F) \le S(p).
+	\]
+	The last bound follows from Theorem~\ref{thm:radial-continuous}.
+	Equality there would give $F(w)=w+\lambda/w$ with $|\lambda|=1$
+	on $|w|>1$. Then the polynomial identity
+	$w^nQ(w+\lambda/w)=w^{2n}$ is impossible. The left side has
+	constant term $\lambda^n$ because $Q$ is monic and all lower
+	terms give strictly positive powers of $w$. The right side has
+	zero constant term. This proves strictness.
+	
+	For sharpness take $Q_n(z)=2T_n(z/2)$, where $T_n$ is the ordinary
+	Chebyshev polynomial. It is monic and centered and its
+	$2$-lemniscate contains the interval $[-2,2]$, which joins all its
+	zeros. If the sublevel set split into two nonempty relatively
+	open and closed sets, openness and properness of the restricted
+	polynomial would make both images equal the whole value disk.
+	Both sets would then meet the zero fiber, contradicting that the
+	interval joins all of it. The standard cosine
+	grid for the zeros of $T_n$ tends to the arcsine distribution.
+	For fixed $j$ the zeros of $T_n^{(j)}$ have the same limit by repeated
+	Rolle interlacing. The radius $R=2^{1/n}$ tends to one. The
+	$p$-moment therefore converges to
+	$\frac{1}{2\pi}\int_0^{2\pi}|2\cos\theta|^p\,d\theta=S(p)$.
+	Together with strictness this proves the exact supremum and
+	nonattainment.
+	\section{Factor norms and regular stars}\label{sec:stars}
+	For a nondegenerate plane continuum $K$ let $C(K)$ be the least
+	constant for which
+	\[
+	\prod_{i=1}^r\|p_i\|_K\leq C(K)^{\sum_i\deg p_i}
+	\Big\|\prod_{i=1}^rp_i\Big\|_K
+	\]
+	for every finite collection of nonzero polynomials.  Set
+	$S_m=\bigcup_{j=0}^{m-1}e^{2\pi ij/m}[0,4^{1/m}]$;
+	it has logarithmic capacity one.
+	The next theorem answers the regular-star question posed after
+	Theorem~2.3 of \cite{PR2} for plane continua.
+	
+	\begin{theorem}[Regular-star parity]\label{thm:parity}
+		For every integer $m\geq2$, the comparison
+		$C(K)\leq C(S_m)$ holds for every nondegenerate plane continuum
+		with $m$-fold rotational symmetry if and only if $m$ is even.
+		For $m=2k$, equality holds precisely for similarity images of
+		$S_{2k}$. Translate the symmetry center to zero, fill the bounded
+		complementary components, and scale to capacity one. If $b_{2k-1}$
+		is the \emph{forward} coefficient of $z^{-(2k-1)}$ in the
+		normalized exterior map of the filled set, then
+		\begin{equation}\label{eq:star-quant}
+			\log\frac{C(S_{2k})}{C(K)}
+			\geq\frac{1-k^2|b_{2k-1}|^2}{96k^2}.
+		\end{equation}
+		For every odd $m\geq3$ there is an $m$-fold rotationally symmetric continuum
+		$K_m$ with $C(K_m)>C(S_m)$.
+	\end{theorem}
+	\begin{proof}
+		Translate the rotation center to zero, fill the bounded complementary
+		components, and normalize the capacity to one as in
+		Section~\ref{sec:exterior-normalization}. Filling preserves polynomial
+		norms by the maximum modulus principle, and each similarity preserves
+		the factor constant by polynomial composition. The filled set contains
+		the rotation center. If equality forces the filled set to be a star,
+		the star's empty interior gives equality with the original continuum
+		in the same coordinates.
+		The farthest-point formula \eqref{eq:actual-factor-formula} (see also \cite[Theorem 1.1]{PR2})
+		reads
+		\[
+		\log C(K)=\int\log d_K(w)\,d\mu_K(w),\qquad
+		d_K(w)=\max_{v\in K}|w-v|.
+		\]
+		Suppose $m=2k$.  Rotational covariance of the normalized exterior
+		map gives $F(\eta z)=\eta F(z)$ for $\eta=e^{\pi i/k}$.  Put
+		$E=\{w^k:w\in K\}$.  It is compact, connected, contains zero,
+		has capacity one, and satisfies $E=-E$.  Thus every hypothesis of
+		the cited symmetric comparison holds.  Moreover,
+		$G(z^k)=F(z)^k$ is its normalized odd exterior map.  The power map
+		pushes $\mu_K$ to $\mu_E$.  It sends $S_{2k}$ to $[-2,2]$.
+		Writing $F(z)=z+b_{2k-1}z^{1-2k}+\cdots$ shows directly that
+		\[
+		G(\zeta)=\zeta+\beta\zeta^{-1}+\cdots,
+		\qquad\beta=k b_{2k-1}.
+		\]
+		The omitted-point coefficient bound applied to $G$ gives
+		$|v|\leq2$ for $v\in E$, hence $|w|\leq2^{1/k}$ for $w\in K$.
+		Let $a=2^{1/k}$.  The function
+		$\Phi(x)=\log(a+e^{x/k})-e^{2x}/(64k^2)$ is convex on
+		$(-\infty,\log2]$: with $y=e^{x/k}/a\leq1$, the second derivative
+		of the logarithm is
+		$y/[k^2(1+y)^2]\geq y^{2k}/(4k^2)=e^{2x}/(16k^2)$.
+		Extend $\Phi$ by its tangent at $\log2$ and apply the symmetric
+		logarithmic comparison from Section~\ref{sec:verified-green-comparison}.
+		This is the comparison of \cite[Corollary~6.3]{BLP} for the admissible
+		test used here. As
+		$d_K(w)\leq a+|w|$ and equality holds for the opposite tip on the
+		star, it yields
+		\[
+		\log\frac{C(S_{2k})}{C(K)}\geq
+		\frac{2-\int_E|v|^2\,d\mu_E(v)}{64k^2}.
+		\]
+		Oddness makes the remaining negative modes of $G$ start at index
+		three.  Parseval and the area theorem therefore give
+		$\int_E|v|^2\,d\mu_E(v)
+		\leq1+|\beta|^2+(1-|\beta|^2)/3$.
+		The corresponding actual odd exterior-map boundary estimate, including
+		the passage to its radial trace, is kernel checked independently of
+		the factor-norm formula and the all-order inverse-coefficient problem.
+		Substitution proves \eqref{eq:star-quant}.  If $C(K)=C(S_{2k})$,
+		then $|\beta|=1$; area rigidity gives $G(\zeta)=\zeta+\beta/\zeta$.
+		Its omitted set is a rotated segment, whose full power preimage is
+		a rotated $S_{2k}$.  The converse follows by similarity invariance.
+		
+		Now fix odd $m\geq3$, write $s=\sqrt{1-t^2}$, and for small real $t$
+		define
+		\[
+		G_t(z)=\frac{(z-it+s)^2}{z-it},\qquad
+		E_t=\C\setminus G_t(\{|z|>1\}),\qquad
+		K_t=\{w:w^m\in E_t\}.
+		\]
+		If $G_t(z_1)=G_t(z_2)$ with $z_1\ne z_2$, the preimages are paired by
+		$z\mapsto(1+itz)/(z-it)$, and
+		$|z-it|^2-|1+itz|^2=(1-t^2)(|z|^2-1)$.
+		Thus $G_t$ is exterior univalent.  The two critical points
+		$it\pm s$ lie on the unit circle and have values $0,4s$.
+		The pairing maps the circle to itself and identifies its two arcs
+		between these points.  Each arc maps injectively except at its
+		endpoints, so the omitted set $E_t$ is their common simple image arc.
+		In particular it contains zero; its full $m$th-root preimage $K_t$
+		is a continuum. The $m$ lifts of the arc with its zero endpoint
+		removed are pairwise disjoint, and their closures meet only at zero.
+		They have exactly $m$ outer endpoints. Any rotational symmetry
+		preserves the unique branch point $0$ and permutes those endpoints.
+		The normalized exterior map of $K_t$ is
+		$F_t(z)=z\exp((\log(G_t(z^m)/z^m))/m)$. In the coordinate
+		$u=1/z$ the argument of the logarithm is nonvanishing and analytic
+		on $\D$ with value $1$ at zero. Choose the analytic logarithm with
+		value zero at $u=0$. This gives $F_t(z)=z+O(z^{1-m})$. The identity $F_t(z)^m=G_t(z^m)$
+		and the covariance $F_t(\eta z)=\eta F_t(z)$ for $\eta^m=1$
+		show injectivity and surjectivity onto $\mathbb C\setminus K_t$.
+		It follows that $K_t$ is a
+		capacity-one continuum with all tips $R_t\eta$, $\eta^m=1$,
+		$R_t=(4s)^{1/m}$, and $K_0=S_m$.
+		With $\zeta=e^{i\theta}$ one has
+		\[
+		G_t((s-it)\zeta)=(2+2\cos\theta)L_t(\zeta),
+		\qquad L_t(\zeta)=\frac{s-it}{1-it/((s-it)\zeta)}.
+		\]
+		As $t\to0$, $L_t\to1$ uniformly on the unit circle.
+		For small $|t|$ take its logarithm in the right half-plane with
+		$\log 1=0$, so $\log L_0=0$ at every angle.
+		Set $r=(2+2\cos\theta)^{1/m}$,
+		$Z_t=r\exp((\log L_t)/m)$ (zero at $\theta=\pi$), and
+		$\delta=\pi-\pi/m$. The source-circle map $z\mapsto z^m$ followed
+		by rotation by $(s-it)^{-1}$ preserves normalized angular measure.
+		The radial boundary value of $F_t$ is a root of
+		$G_t((s-it)e^{i\theta})$, so is a rotation of $Z_t$ by an $m$th
+		root of unity. The farthest distance to $K_t$ is invariant under
+		such rotations. Using the tip $R_te^{i\delta}$ gives
+		\[
+		\log C(K_t)\geq A(t)=\frac1{2\pi}\int_0^{2\pi}
+		\log|Z_t-R_te^{i\delta}|\,d\theta.
+		\]
+		At $t=0$, $Z_0=r$ and there is equality. The squared distance on
+		each radial segment is convex, and the tips at angles $\pm\delta$
+		are farther than the other tips and the origin.
+		Moreover $D=r^2+R_0^2-2rR_0\cos\delta\geq R_0^2$.
+		Uniform continuity keeps the distance away from zero for small
+		$|t|$, and the $t$-derivative of the integrand is bounded there.
+		This justifies differentiation under the integral. Since $R'_0=0$ and
+		$\partial_t\log L_t|_{t=0}=\sin\theta+i(\cos\theta-1)$,
+		the radial term integrates to zero and
+		\[
+		A'(0)=\frac{R_0\sin\delta}{2\pi m}
+		\int_0^{2\pi}\frac{r(1-\cos\theta)}{D}\,d\theta>0.
+		\]
+		Thus $C(K_t)>C(S_m)$ for sufficiently small positive $t$.
+	\end{proof}
+	
+	
+	\appendix
+	\section{Exterior normalization and equilibrium estimates}
+	\subsection{Exterior normalization of a plane continuum}
+	\label{sec:exterior-normalization}
+	
+	Let \(L\) be a nondegenerate compact connected set after filling
+	its bounded complementary components. For \(a\in L\), the reciprocal
+	coordinate \(u=(z-a)^{-1}\) carries the exterior, including infinity,
+	to an open connected set \(U\) containing zero. Its spherical
+	complement is the image of \(L\) under the same M\"obius
+	transformation, with \(a\) mapped to infinity. It is connected and
+	contains at least one finite point.
+	
+	Here is a direct primitive argument for this domain. If \(P\subset U\)
+	is compact, its filling is contained in \(U\). Indeed, the open
+	unbounded component of \(\C\setminus P\), together with infinity, and
+	the union of the bounded components separate the complement of \(P\)
+	on the sphere. The connected spherical complement of \(U\) lies in
+	the first set because it contains infinity.
+	
+	Any two points of an open connected plane domain can be joined by a
+	finite horizontal and vertical walk. The points reachable from a
+	fixed point form a relatively open and relatively closed subset,
+	since a small rectangle contained in the domain can be crossed in two
+	axis-parallel segments. Let \(P\) be the trace of a closed walk in
+	\(U\). Subdivide its edges at the real and imaginary coordinates of
+	all vertices. Add an outer row and column on each side of the
+	resulting rectangular grid. Write \(H_{ij},V_{ij}\) for the signed
+	counts of rightward and upward traversals. At each vertex the total
+	incoming count equals the total outgoing count. Thus with
+	\[
+	W_{ij}=\sum_{t=0}^j H_{it}
+	\]
+	we have \(H_{ij}=W_{ij}-W_{i,j-1}\) and
+	\(V_{ij}=W_{i-1,j}-W_{ij}\). These identities use zero weights outside
+	the grid. The horizontal identity follows by subtraction and the
+	vertical identity follows by summing the vertex balance up the
+	column. Along the top row the vertical counts vanish, so the top
+	weights coincide with the zero weight of the left outer column.
+	
+	The union of closed cells with \(W_{ij}\ne0\) is compact and has
+	boundary contained in \(P\). At a point off \(P\), two incident
+	cells sharing an edge have the same weight, because their shared
+	edge has zero traversal count. The same holds for cells meeting at
+	a vertex by passing through the other incident cells. Each such
+	point is therefore interior to the union whenever it lies in it.
+	Each complementary component of \(P\) meeting this union stays in
+	the union and is bounded. All the cells with nonzero weight lie in
+	the filling of \(P\) and hence in \(U\).
+	
+	An integral along the walk is now the sum of the rectangle integrals
+	with weights \(W_{ij}\), by cancellation of the two contributions
+	to each internal edge. The Cauchy theorem for rectangles makes this
+	sum zero for a holomorphic integrand. Integrals from a base point
+	are consequently independent of the walk. On a small disk they
+	differ from the usual local primitive by a constant, which gives
+	a global primitive. For a nonvanishing holomorphic \(q\), integrate
+	\(q'/q\) and choose the constant of integration so that \(e^P=q\)
+	at the base point. Since \((qe^{-P})'=0\), the identity holds on
+	the domain and \(e^{P/2}\) is a square root.
+	
+	For completeness, this square-root property yields a disk
+	uniformization as follows. For any omitted finite point \(a_0\),
+	take a branch of \(\sqrt{z-a_0}\). It is injective and its open
+	image is disjoint from the negative of the image. A small closed
+	disk in the negative image is therefore omitted. Inversion at its
+	center followed by scaling gives an embedding into the unit disk.
+	A disk automorphism sends the image of the base point to zero.
+	Maximize the derivative magnitude there over these normalized
+	embeddings. Cauchy estimates and compact exhaustion give local
+	uniform convergence of a maximizing subsequence. The limit is
+	holomorphic, maps into the disk by the maximum principle, and has
+	nonzero derivative at the base point. It is injective by the
+	zero-free limit principle applied locally to differences of the
+	embeddings. For that principle, a nonconstant limit with an
+	isolated zero is bounded away from zero on a small surrounding
+	circle. The maximum modulus principle bounds the reciprocals of
+	the approximating functions on the disk, contradicting convergence
+	to zero at the center.
+	
+	If the extremal embedding \(f\) omits \(b\) in the unit disk, put
+	\(\varphi_b(w)=(w-b)/(1-\overline b w)\) and take
+	\(g^2=\varphi_b\circ f\). The function \(g\) is an embedding into
+	the disk. If \(d\) is its value at the base point,
+	\(G=\varphi_d\circ g\) is normalized. Then \(f=\psi\circ G\) with
+	\(\psi=\varphi_{-b}\circ(w\mapsto w^2)\circ\varphi_{-d}\).
+	This disk self-map fixes zero and fails to be injective, so the
+	strict Schwarz inequality gives \(|\psi'(0)|<1\). The chain rule
+	contradicts extremality. The inverse of \(f\) uniformizes \(U\)
+	by the disk and fixes zero when the base point is zero.
+	
+	Return to the filled continuum with an even rotational order and
+	center zero. If zero were in the exterior, the rotation would
+	induce a nontrivial disk automorphism with distinct fixed points
+	corresponding to zero and infinity. Schwarz rules this out. We can
+	therefore use the reciprocal coordinate at \(a=0\). Write its
+	disk uniformization as \(u=f(t)\), with \(f(0)=0\). Conjugating
+	central reflection by \(f\) gives a disk involution fixing zero.
+	Its multiplier is \(-1\) by Schwarz and the fact that the
+	involution is nontrivial. Thus \(f\) is odd. With
+	\(a_1=f'(0)\ne0\), the formula
+	\[
+	F(w)=a_1/f(1/w)
+	\]
+	gives an exterior univalent map with expansion \(w+O(w^{-1})\).
+	Its omitted set is \(a_1 L\). A rotation of the normalized map
+	and its argument replaces \(a_1 L\) by \(|a_1|L\).
+	Section~\ref{sec:radial-equilibrium} identifies the capacity of
+	this normalized omitted set as one.
+	\subsection{Logarithmic potential of the actual radial law}\label{sec:radial-potential}
+	
+	Let $F$ be centered exterior univalent, let $K=\mathbb C\setminus
+	F(\{|z|>1\})$, and let $\nu_F$ be the image of normalized angular
+	measure under its actual radial trace. For $0<s<1$, put
+	\[
+	K_s=\mathbb C\setminus F(\{|z|>s^{-1}\}),\qquad
+	\nu_s=(\theta\mapsto F(s^{-1}e^{i\theta}))_\#\frac{d\theta}{2\pi}.
+	\]
+	The radial limit gives weak convergence of $\nu_s$ to $\nu_F$. The
+	probability $\nu_F$ is carried by $K$. Indeed, if a radial limit were
+	an exterior image point, the local inverse would force its source
+	coordinate to be both in the open exterior and on the unit circle.
+	
+	Write $U_s(x)=\int\log|z-x|\,d\nu_s(z)$. Jensen's formula for the
+	reciprocal germ $u(F(1/u)-x)$ gives $U_s(x)=-\log s$ on $K_s$.
+	More generally $U_s(F(w))=\log\max(s^{-1},|w|)$ when $|w|>1$.
+	At such an exterior image point the near-boundary circles are
+	uniformly separated from the point. Dominated convergence gives
+	$\int\log|z-F(w)|\,d\nu_F(z)=\log|w|$.
+	
+	For a point $x\in K$, fix $0<\varepsilon\le 1$ and use
+	$\log\max(\varepsilon,|z-x|)$ as a test function. The supports are
+	uniformly bounded near $s=1$, so we may cap the distance at $5$ to
+	make the test bounded on the plane. Its $\nu_s$ integral is at
+	least $-\log s$. Passing to $\nu_F$ shows that the truncated
+	potential is nonnegative. For $\varepsilon=e^{-n}$, subtract
+	the test from $\log 5$ and apply monotone convergence. The resulting
+	nonnegative kernel is infinite at $z=x$, and its integral is at
+	most $\log 5$. Thus $\nu_F\{x\}=0$, the logarithmic potential at
+	$x$ is integrable, and its integral is nonnegative.
+	
+	To bound that integral from above, fix $0<s_0<1$. The point $x$ is
+	interior to $K_{s_0}$. The images of bounded closed source annuli
+	are compact, while $F(w)=w+o(1)$ at infinity. Together these facts
+	separate $x$ from the image of $\{|w|\ge s_0^{-1}\}$. Choose
+	$\varepsilon>0$ small enough that the circle of radius $\varepsilon$
+	centered at $x$ lies in $K_{s_0}$. For $s_0<s<1$, the mean over
+	that circle of $U_s$ is at most $-\log s_0$, by the two Jensen
+	formulas above. The same mean equals
+	$\int\log\max(\varepsilon,|z-x|)\,d\nu_s(z)$, by the elementary
+	logarithmic circle average and Fubini's theorem. The logarithmic
+	angular kernel is integrable on the product of the two circles.
+	Its positive part is bounded on their compact images, and its
+	negative part is controlled by the explicit logarithmic circle
+	averages. Clipping at $5$ preserves the upper bound. Passing to
+	$\nu_F$ and then letting $s_0$ tend to $1$ gives
+	\begin{equation}\label{eq:radial-zero-potential}
+		\int\log|z-x|\,d\nu_F(z)=0\qquad (x\in K).
+	\end{equation}
+	The same bounded-positive-part argument and \eqref{eq:radial-zero-potential}
+	give an integrable mutual kernel with integral zero against
+	$\lambda\otimes\nu_F$ for every probability $\lambda$ carried by $K$.
+	The diagonal has zero mass for this product.
+	\subsection{The energy minimizing property}\label{sec:radial-equilibrium}
+	
+	On $K\times K$, distances are at most $4$. For finite distances
+	$0<d\le 4$, use the shifted logarithmic kernel
+	\[
+	W(d)=\log(25/d^2)=\int_0^\infty
+	\frac{e^{-t d^2}-e^{-25t}}{t}\,dt.
+	\]
+	The identity is Frullani's integral. Its integrand is nonnegative
+	and the integral is infinite at $d=0$, as follows by letting $d$
+	decrease to zero. This shift keeps every energy integral in the
+	extended nonnegative reals. Subtracting $2\log 5$ and dividing by
+	$2$ recovers the usual negative logarithmic energy for probabilities.
+	
+	For probabilities $\alpha,\beta$ carried by $K$, put
+	$H_t(\alpha,\beta)=\iint e^{-t|z-w|^2}\,d\alpha(z)d\beta(w)$.
+	If $\gamma$ is the standard Gaussian law on $\mathbb R^2$, its
+	characteristic function gives, for $t>0$,
+	\begin{align*}
+		&H_t(\alpha,\alpha)+H_t(\beta,\beta)
+		-H_t(\alpha,\beta)-H_t(\beta,\alpha)\\
+		&\qquad=\int_{\mathbb R^2}
+		\left|\widehat\alpha(\sqrt{2t}\,v)-
+		\widehat\beta(\sqrt{2t}\,v)\right|^2\,d\gamma(v)\ge0.
+	\end{align*}
+	The expectation of $\exp(i\sqrt{2t}\langle v,z-w\rangle)$ under
+	$\gamma$ is $e^{-t|z-w|^2}$. Fubini's theorem for this bounded
+	kernel gives the displayed identity. Its right-hand side vanishes
+	only if the continuous characteristic functions agree everywhere,
+	since every nonempty open set has positive Gaussian measure.
+	The uniqueness theorem for characteristic functions then gives
+	$\alpha=\beta$.
+	
+	Apply Tonelli's theorem to $W$. The mutual energy statement following
+	\eqref{eq:radial-zero-potential} makes the two mixed $W$ energies
+	of $\nu_F$ and any probability $\lambda$ on $K$ equal to $2\log 5$.
+	The self $W$ energy of $\nu_F$ also equals $2\log 5$. Integrating the
+	nonnegative Gaussian difference with weight $dt/t$ shows that the
+	self $W$ energy of $\lambda$ is at least $2\log 5$, allowing the
+	value $+\infty$. In the equality case all four energies are finite
+	and the Gaussian difference vanishes for almost every positive $t$.
+	Taking one such scale proves $\lambda=\nu_F$. Hence $\nu_F$ is the
+	unique logarithmic equilibrium probability of the actual omitted set
+	and $\operatorname{cap}(K)=1$.
+	
+	\subsection{The lower bound for admissible factor constants}
+	
+	Let $d_K(z)=\max_{w\in K}|z-w|$ and suppose $K$ has two distinct
+	points. Fix $0<s<1$. For $N$ equally spaced angles $\theta_i$, set
+	$a_i=F(s^{-1}e^{i\theta_i})$ and $Q_N(z)=\prod_i(z-a_i)$. These
+	points lie outside $K$. On the compact set $K$ times the angle
+	interval, the function
+	\[
+	(x,\theta)\longmapsto
+	\log d_K(F(s^{-1}e^{i\theta}))-\log|F(s^{-1}e^{i\theta})-x|
+	\]
+	is continuous. Its equally spaced Riemann sums converge uniformly
+	in $x$. The angular mean is independent of $x\in K$, by the smooth
+	Jensen potential, and equals
+	$\int\log d_K\,d\nu_s+\log s$. Evaluate the sum at a point of $K$
+	maximizing $|Q_N|$. The defining factor inequality applied to the
+	$N$ linear factors bounds that normalized sum by $\log c$ for
+	each admissible constant $c$. Passing to the limit proves
+	\[
+	\int\log d_K\,d\nu_s+\log s\le \log c.
+	\]
+	The near-boundary outer laws are carried by a common compact disk,
+	and $d_K$ is bounded below by half the distance between the two
+	distinct points. Consequently bounded continuous tests give
+	$\int\log d_K\,d\nu_F\le\log c$ as $s\uparrow1$.
+	The reverse inequality follows from auxiliary polynomials and the
+	Bernstein--Walsh bound.
+	
+	\subsection{The factor constant on an actual exterior omitted set}
+	\label{sec:actual-factor-formula}
+	
+	Let $K$ be the nondegenerate omitted set of a normalized centered
+	exterior map $F$, and let $\nu_F$ be its actual radial probability.
+	The normalized farthest-point formula of Pritsker and Ruscheweyh
+	\cite[Theorem~1.1]{PR2} is
+	\begin{equation}\label{eq:actual-factor-formula}
+		C(K)=\exp\left(\int\log d_K(z)\,d\nu_F(z)\right).
+	\end{equation}
+	The lower bound for every admissible constant was proved above.
+	For the reverse bound, set
+	$g_K(b)=\int\log|z-b|\,d\nu_F(z)$. In the exterior image this is
+	$\log |F^{-1}(b)|$, and on $K$ it is zero. For a monic polynomial $P$
+	of degree $n$, the maximum principle applied to
+	$w^{-n}P(F(w))$ on $|w|\ge s^{-1}>1$, including infinity, gives
+	\[
+	\log|P(b)|\le\log\|P\|_K+n g_K(b).
+	\]
+	To see the limiting boundary bound, the curves $F(|w|=s^{-1})$ lie in
+	a fixed compact disk for $s$ near one. Every cluster point as
+	$s\uparrow1$ is in $K$, since an exterior limit would have an inverse
+	of modulus greater than one. The displayed inequality is also valid
+	at zeros with the convention $\log0=-\infty$.
+	
+	Write $P(z)=\prod_{i=1}^n(z-a_i)$. For an auxiliary polynomial $Q$
+	of degree $m$, with nonzero leading coefficient and $Q(a_i)\ne0$,
+	apply the preceding estimate to $P$ at the roots of $Q$, counting
+	multiplicities. The leading coefficient of $Q$ cancels after writing
+	the pairwise distances in the two orders. This gives
+	\begin{equation}\label{eq:factor-auxiliary-polynomial}
+		\sum_{i=1}^n\log|Q(a_i)|\le m\log\|P\|_K
+		+n\int\log|Q(z)|\,d\nu_F(z).
+	\end{equation}
+	Each integral is finite by the pointwise logarithmic integrability of
+	$\nu_F$ established in \S\ref{sec:radial-equilibrium} and its
+	preceding potential calculation.
+	
+	Choose a finite $\delta$-net $b_1,\ldots,b_N$ in $K$, including two
+	distinct points, and let $Q(z)=\sum_{j=1}^N\xi_j(z-b_j)^m$, where
+	the $\xi_j$ are independent standard complex Gaussians with real and
+	imaginary variances one. The leading coefficient is nonzero almost
+	surely. For fixed $z$, $Q(z)$ has the law of a standard complex
+	Gaussian multiplied by
+	$\sigma(z)=(\sum_j |z-b_j|^{2m})^{1/2}>0$. Thus the expectation of
+	$\log|Q(z)|$ is $\log\sigma(z)+c_0$, with the same $c_0$ at every $z$.
+	The expectation of its absolute value is at most
+	$|\log\sigma(z)|+\mathbb E|\log|\xi_1||$. The last expectation is
+	finite by the Gaussian density in polar coordinates, and
+	$\log\sigma$ is bounded on $K$. Fubini therefore applies to the
+	right side of \eqref{eq:factor-auxiliary-polynomial}. The two Gaussian
+	constants cancel after taking expectations. Dividing by $m$ yields
+	the same inequality with $\log|Q|$ replaced by
+	$m^{-1}\log\sigma$ and the coefficient of $\log\|P\|_K$ reduced to one.
+	
+	If $d_B(z)=\max_j|z-b_j|$, then $d_B\le d_K\le d_B+\delta$ and
+	\[
+	\log d_B(z)\le m^{-1}\log\sigma(z)\le
+	\log d_B(z)+\frac{\log N}{2m}.
+	\]
+	Half the distance between the two fixed points of the net bounds
+	$d_B$ below everywhere. First taking $\delta$ small with those two
+	points fixed, then taking $m$ large, gives arbitrarily small uniform
+	error relative to $\log d_K$. Exponentiation proves the factor
+	inequality for all finite linear families with the constant in
+	\eqref{eq:actual-factor-formula}. Factoring each nonzero polynomial
+	over $\mathbb C$ and applying submultiplicativity of the uniform norm
+	proves admissibility for arbitrary families. A zero factor makes both
+	sides zero. This proves \eqref{eq:actual-factor-formula}.
+	\subsection{A direct Green comparison for the even power quotient}
+	\label{sec:verified-green-comparison}
+	
+	For an actual odd normalized exterior map $G$ with connected omitted
+	set $E$, write $g(z)=\log|G^{-1}(z)|$ on the exterior image and $g=0$
+	on $E$. Oddness makes $g(-z)=g(z)$ and places $0$ in $E$: a preimage of
+	zero in the open exterior disk would have a distinct negative
+	preimage. The zero extension is continuous by the outer collars and
+	is harmonic wherever it is positive. Let $g_L$ be the corresponding
+	Green function for the segment $L=[-2,2]$. We show that the circular
+	mean of $g$ on every centered circle is at most that of $g_L$.
+	This is the symmetric case of the comparison used in
+	\cite[Section~6]{BLP}.
+	
+	Work in the logarithmic chart $z\mapsto i\exp(z/2)$ and set
+	$u_\tau(x,t)=(g(i\exp((x+it)/2))-\tau)_+$ for $\tau>0$.
+	For $0\le h\le\pi$, let $U_\tau(x,h)$ be the supremum of the
+	integral of $u_\tau(x,\cdot)$ over measurable angular sets of length
+	$2h$ in one turn. This supremum is independent of the turn by
+	periodicity. It is attained by taking the strict superlevel at a
+	quantile and a subset of its level of the required remaining length.
+	Equivalently, it is the infimum over real $a$ of
+	\[
+	2ha+\int_{-\pi}^{\pi}(u_\tau(x,t)-a)_+\,dt.
+	\]
+	The two formulas give continuity in $(x,h)$ up to the angular edges.
+	For instance, a uniform change of size $\delta$ in the angular
+	profile changes a top integral by at most $2\pi\delta$, and changing
+	the length changes the integral by at most the length difference
+	times a common uniform bound for the profiles.
+	
+	For $0<h<\pi$ one can choose a maximizing set containing a short
+	interval and avoiding margins around the angular cut. Indeed positive
+	levels of the untruncated profile are null unless that angular
+	profile is constant. The profile is real analytic at positive
+	values, and a positive level that is locally constant propagates
+	through its positive component by analyticity and continuity. A
+	positive-level quantile therefore leaves a strict lower interval
+	for the cut and includes a strict upper interval. At a zero-level
+	quantile of $u_\tau$, the set where $g(i\exp((x+it)/2))<\tau$ has
+	positive length. Choose the cut there and take the missing mass from
+	the zero plateau, keeping short margins at the cut. A constant
+	clipped profile admits an interval of the prescribed length.
+	
+	These sets give the local submean for $U_\tau$. For a small circular
+	increment $(\rho\cos\theta,\pm\rho\sin\theta)$ with
+	$0\le\theta\le\pi$, put $d=\rho\sin\theta$ and translate the
+	maximizing set $A$ to $A-d$ and $A+d$. Split each translated set at a
+	point $p$ inside the included interval. Join the left piece of $A-d$
+	to the right piece of $A+d$, and join the two remaining pieces.
+	Since $[p-d,p+d]\subset A$, the new masses are $2(h+d)$ and $2(h-d)$.
+	Their combined indicators equal those of the two translates. The
+	margins keep both candidates in one turn. At the original vertical
+	centers where $u_\tau>0$, the
+	unclipped profile is harmonic in a common neighborhood, since the
+	positive cutoff keeps those centers in a compact subset of the
+	positive domain. Thus $u_\tau$, the maximum with zero, satisfies the
+	circle submean there. At a zero center the submean is immediate from
+	nonnegativity. Integrating over the maximizing set and pairing
+	opposite angular increments proves the claimed submean.
+	
+	Let $V(x,h)$ be the analogous top integral of the unclipped slit
+	profile. The confocal ellipse formula
+	\[
+	\cosh g_L(z)=\frac{|z-2|+|z+2|}{4}
+	\]
+	shows that its angular top sets are the centered arcs $[-h,h]$ in
+	this chart. On the open upper strip the arc integral is harmonic.
+	In fact the holomorphic function
+	$\log(-iG_L^{-1}(i\exp(z/2)))$ on $|\Im z|<\pi$ has real part
+	equal to the slit Green profile and is real on the center line.
+	The argument of this logarithm has positive real part. Integrating
+	its real part on a vertical half-arc gives the difference of the
+	imaginary parts of a local holomorphic primitive at the endpoints.
+	The primitive's imaginary part is constant on the center line.
+	
+	At $h=0$ both top integrals vanish. At $h=\pi$, if the physical
+	radius is at least the maximum radius of $E$, the full mean of $g$
+	equals the logarithm of that radius. The full slit mean is at least
+	this logarithm by Jensen's formula for the circular log kernel.
+	Otherwise the circle meets $E$, by connectedness and $0\in E$.
+	The clipped profile vanishes on a short arc there, so its full top
+	integral stays constant on moving a short distance inward from
+	$h=\pi$. The slit top integral is nondecreasing in $h$.
+	As $x\to-\infty$ the profiles tend uniformly to zero. As
+	$x\to+\infty$ each unclipped Green profile differs uniformly from
+	$x/2$ by a quantity tending to zero, since the normalized exterior
+	maps are $w+O(1/w)$ at infinity.
+	
+	On a wide compact strip rectangle compare $U_\tau-V$ after adding
+	$-\epsilon h+\epsilon h^2/(4\pi)$. The quadratic gives a strict
+	submean at interior points. At a top-edge point controlled by a
+	zero arc, moving inward increases the perturbed difference. All
+	other boundary values are at most $\epsilon$ once the rectangle
+	is wide enough. The maximum principle gives
+	$U_\tau-V\le\epsilon(1+\pi)$. Let $\epsilon\downarrow0$ and then
+	$\tau\downarrow0$, using the uniform bound $2\pi\tau$ for the change
+	in a top integral. At $h=\pi$ the chart covers a half-turn of the
+	physical circle with twice the angular parameter. Odd symmetry gives
+	the desired full-circle comparison.
+	
+	To pass from this comparison to the test in the even-order proof,
+	let $\mu_E$ be the equilibrium probability measure. Capacity one gives
+	$g(z)=\int\log|z-v|\,d\mu_E(v)$, and $g(0)=0$ gives
+	$\int\log|v|\,d\mu_E(v)=0$. The same holds for $L$. The circular
+	average of $\log|z-v|$ on $|z|=r>0$ equals
+	$\max\{\log r,\log|v|\}$. Averaging the potential therefore gives,
+	for every $a=\log r$, a comparison of the integrals of
+	$(\log|v|-a)_+$ for $E$ and $L$. These tests, together with the
+	equal means, give the convex comparison for the logarithmic radii
+	by piecewise linear approximation. The test used above is convex
+	on $(-\infty,\log 2]$; its tangent line continues it to the right.
+	\section*{Verification}
+	The proofs use the stated analytic comparisons and the displayed
+	scalar estimates. The single multiplier reduces the energy bound
+	to two explicit quadratic bounds. The final phase budgets use
+	the rational bounds and elementary series estimates in
+	Section~\ref{sec:large}. These calculations and the finite
+	low-order coefficient expansions can be checked from the
+	formulas in the text. The main statements also have an independent
+	Lean~4 verification.
+	
+	\section*{Declaration of AI use}
+	OpenAI's ChatGPT and Codex assisted with proof exploration, Lean~4
+	formalization, and revision of the exposition.
+	
+	\begingroup\small
+	\begin{thebibliography}{99}
+		\bibitem{Springer} G. Springer,
+		The coefficient problem for schlicht mappings of the exterior of the unit circle,
+		\emph{Trans. Amer. Math. Soc.} \textbf{70} (1951), 421--450.
+		\href{https://doi.org/10.1090/S0002-9947-1951-0041935-5}{doi:10.1090/S0002-9947-1951-0041935-5}.
+		\bibitem{Kubota} Y. Kubota, Coefficients of meromorphic univalent functions,
+		\emph{K\=odai Math. Sem. Rep.} \textbf{28} (1977), 253--261.
+		\bibitem{Schober77} G. Schober, Coefficients of inverses of meromorphic
+		univalent functions, \emph{Proc. Amer. Math. Soc.} \textbf{67} (1977), 111--116.
+		\bibitem{Schober} G. Schober,
+		Coefficients of inverses of univalent functions with quasiconformal extensions,
+		\emph{Kodai Math. J.} \textbf{2} (1979), 411--419.
+		\bibitem{BLP} A. Baernstein II, R. S. Laugesen, and I. E. Pritsker,
+		Moment inequalities for equilibrium measures in the plane,
+		\emph{Pure Appl. Math. Q.} \textbf{7} (2011), 47--82.
+		\href{https://doi.org/10.4310/PAMQ.2011.v7.n1.a4}{doi:10.4310/PAMQ.2011.v7.n1.a4}.
+		\bibitem{Circle} A. Baernstein II, Convolution and rearrangement on circle,
+		\emph{Complex Variables Theory Appl.} \textbf{12} (1989), 33--37.
+		Correction, \emph{ibid.} \textbf{26} (1995), 381--382.
+		\bibitem{PR2} I. E. Pritsker and S. Ruscheweyh,
+		Inequalities for products of polynomials II,
+		\emph{Aequationes Math.} \textbf{77} (2009), 119--132.
+		\bibitem{Pom} Ch. Pommerenke, \emph{Univalent Functions},
+		Vandenhoeck \& Ruprecht, G\"ottingen, 1975.
+		\bibitem{Pereira} R. Pereira, Differentiators and the geometry of
+		polynomials, \emph{J. Math. Anal. Appl.} \textbf{285} (2003), 336--348.
+		\href{https://doi.org/10.1016/S0022-247X(03)00465-7}{doi:10.1016/S0022-247X(03)00465-7}.
+		\bibitem{DBS1947} N. G. de Bruijn and T. A. Springer,
+		On the zeros of a polynomial and of its derivative II,
+		\emph{Proc. K. Ned. Akad. Wet. Amsterdam} \textbf{50} (1947), 264--270,
+		Theorem~4.
+	\end{thebibliography}
+	\endgroup
+	
+\end{document}

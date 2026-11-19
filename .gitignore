@@ -1,0 +1,12 @@
+/.audit-local/
+/lean/.lake/
+*.olean
+*.olean.private
+*.olean.server
+*.ilean
+*.pyc
+__pycache__/
+/paper/*.aux
+/paper/*.log
+/paper/*.out
+/paper/*.synctex.gz
