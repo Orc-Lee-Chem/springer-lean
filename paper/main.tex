@@ -1080,9 +1080,9 @@
 	\paragraph{The extremely small deficit regime.}
 	The following comparison resolves the joint two-side cost once the
 	actual endpoint localization has supplied the width and cap hypotheses.
-	Let $d=2-\max_K|w|>0$, put $m=2k-2$ and $x=\log(100m)$, and assume
+	Let $d=d_1=2-\max_K|w|>0$, put $m=2k-2$ and $x=\log(100m)$, and assume
 	\begin{equation}\label{eq:tiny-cutoff}
-		d\leq d_0:=\frac{3}{100m^2x}.
+		d_1<d_0:=\frac{3}{100m^2\log(100m)}.
 	\end{equation}
 	Since $d$ is the smallest endpoint deficit, every projection of
 	the boundary trace has the global cap $2-d$.  The strip formula
@@ -1124,7 +1124,7 @@
 	It remains to pay the variable central residual.  This can be
 	done without differentiating a ratio.  Put $L_0=\log(2/d_0)$.
 	The bounds $1\leq x\leq m/20$ give $1\leq L_0\leq3x$.
-	For $d\leq d_0$, the logarithmic tangent inequality gives
+	For $d<d_0$, the logarithmic tangent inequality gives
 	\[
 	dL=dL_0+d\log(d_0/d)\leq dL_0+d_0-d\leq d_0L_0.
 	\]
@@ -1373,14 +1373,17 @@
 	Combining this with the central estimate gives
 	$D_f+\text{central}<13\Delta^3/500<\Delta^3/32$.
 	
-	Outside the joint tiny-deficit regime, the exclusion
-	\eqref{eq:tiny-cutoff} gives
-	$\Delta>0.03/[m\log(100m)]$ for every remaining endpoint.
+	In the complementary regime $d_1\geq d_0$, global radius maximality
+	of $P_1$ gives $d_2\geq d_1$.  Hence each endpoint satisfies
+	$\Delta_i=md_i\geq 3/[100m\log(100m)]$.
+	In the following estimates, $\Delta$ denotes either $\Delta_i$.
 	The central and truncated costs admit a short common estimate.
 	For $m\geq1500$,
 	\[
 	\log(100m)\leq\frac m{100}+13\leq\frac m{20},
-	\qquad \Delta\geq\frac1{2m^2}.
+	\qquad \Delta_i\geq\frac{3}{100m\log(100m)}
+	\geq\frac{3}{5m^2}>\frac1{2m^2}
+	\quad(i=1,2).
 	\]
 	For the logarithm use $10000<2^{14}$, $\log2\leq1$, and
 	$\log(m/100)\leq m/100-1$.
@@ -1401,8 +1404,8 @@
 	The central allowance applies in either phase branch.  On
 	$|w|<1.84$, one has $S(w)\leq(0.92)^m$, so its contribution in
 	$T_m$ units is at most $m^{3/2}(0.92)^m$.
-	Outside the tiny-deficit joint regime, the lower bound for $\Delta$
-	in the preceding paragraph holds for every endpoint.  The same
+	In this complementary regime, the lower bound for $\Delta_i$
+	in the preceding paragraph holds for both endpoints.  The same
 	rational induction therefore proves
 	$m^{3/2}(0.92)^m<\Delta^3/1000$ independently of which value of
 	$a$ is active.  In the true-axis branch the unscaled error
@@ -1410,30 +1413,6 @@
 	binomial coefficient in \eqref{eq:reference-moment} is at least
 	$2^m/(m+1)$, so $M_m/m\geq1/[m(m+1)(m+2)]$, whereas
 	$m^8(23/25)^m<1/8000$.
-	
-	\begin{lemma}[Reduction to a tiny first endpoint]\label{lem:tiny-first}
-		For an actual nonslit weak Catalan candidate, the same selected first
-		endpoint satisfies
-		\[
-		0< m d_1 < \frac{3}{100m\log(100m)}.
-		\]
-		Every unit direction has the global cap $2-d_1$ and the actual
-		disk saving $>(md_1)^3/30$ in the normalization used above.
-	\end{lemma}
-	\begin{proof}
-		If both scaled deficits were at least the displayed threshold,
-		the aligned model estimate and the central estimate would make
-		each aligned endpoint budget strictly negative.  The true-axis
-		reference margin also pays this allowance, independently of the
-		deficit.  The full-disk comparison counts the center only once,
-		so the candidate lower bound is impossible.  At least one
-		endpoint is therefore tiny.  Global radius maximality gives
-		$d_1\leq d_2$, so it is the first endpoint that is tiny.  Its
-		global cap holds in every direction, and the actual capped-power
-		saving uses only that cap and the same radius.  This reduction
-		and the reference-tail estimate use the same endpoint. The preceding
-		antipodal comparison treats the remaining tiny range.
-	\end{proof}
 	
 	\begin{proof}[Proof of Theorem~\ref{thm:large}]
 		Suppose first that an actual nonslit map is a weak contender:
@@ -1447,34 +1426,37 @@
 		multiplier in Section~\ref{sec:energy-cert} applies to this actual
 		map, so the signed comparison \eqref{eq:signed-criterion} holds.
 		
-		If the minimum deficit satisfies \eqref{eq:tiny-cutoff}, the two
+		Write $d_1=2-|P_1|\leq d_2=2-|P_2|$ and
+		$d_0=3/[100m^2\log(100m)]$.  If $d_1<d_0$, the two
 		opposite capped rays and the central estimate above give
 		$\int_{\D}S(H)\,d\sigma<2M_m$, contradicting the candidate
-		inequality.  Otherwise apply the outer-region comparisons to each
+		inequality.  If $d_1\geq d_0$, global radius maximality of $P_1$
+		gives $d_2\geq d_1\geq d_0$.  Thus both endpoints satisfy
+		$\Delta_i\geq3/[100m\log(100m)]>1/(2m^2)$, including the
+		case $d_1=d_0$.  Apply the outer-region comparisons to each
 		assigned side.  In the aligned branch choose the nearest phase ray
 		and the convex test $g(u)=\max\{u_+^m,(1-a/m)^8u_+^{m-8}\}$.
 		The root strip gives the displayed aligned tilt bound, so the
 		pointwise signed integrand is below $g$ on $|H|\geq1.84$.
-		The central remainder is at most $(0.92)^m$.
 		For this direction, Lemma~\ref{lem:two-power-retention} saves more
 		than $\Delta_i^3/(32m^{3/2})$ from the reference two-power integral.
-		That reference integral is $M_m+D_f/m^{3/2}$. Even charging the
-		whole central remainder to this side yields an upper bound strictly below
-		\[
-		M_m+\frac{D_f-\Delta_i^3/32}{m^{3/2}}+(0.92)^m .
-		\]
-		By the preceding estimates $D_f+m^{3/2}(0.92)^m
-		<13\Delta_i^3/500<\Delta_i^3/32$. This leaves the cost strictly
-		below $M_m$.
+		That reference integral is $M_m+D_f/m^{3/2}$.  By the preceding
+		estimates $D_f+m^{3/2}(0.92)^m
+		<13\Delta_i^3/500<\Delta_i^3/32$.  Thus the aligned outer
+		budget plus even the whole central allowance is strictly below $M_m$.
 		
 		In the other branch use the true endpoint axis and the convex test
 		$g_0(u)=\lambda u_+^{m-8}$.  The true-axis tilt bound and
 		\eqref{eq:true-axis-corrected} give strict pointwise domination
 		on the outer region.  The uncut model integral is
-		$(1-1/m)M_m$; the cap can only decrease it, and the central
-		remainder is less than $M_m/m$.  This side also costs strictly
-		below $M_m$.  The direction is fixed on every source circle in each
-		convex-order application.  Summing both assigned sides contradicts
+		$(1-1/m)M_m$; the cap can only decrease it, and the whole central
+		allowance is less than $M_m/m$.  This outer budget plus the
+		allowance is also strictly below $M_m$.  The direction is fixed on
+		every source circle in each convex-order application.  Extend the
+		two nonnegative outer tests to the full disk and add the central
+		allowance $(0.92)^m$ once.  Charge that single allowance to either
+		endpoint budget as above; the other budget is at most $M_m$.
+		The resulting strict upper bound contradicts
 		$\int S(H)\geq2M_m$.  Thus every nonslit actual map has strict
 		inequality, while a zero endpoint deficit is already a slit by the
 		area rigidity following \eqref{eq:two-point}.

@@ -46,4 +46,4 @@ The replay starts with no project `.olean` files, verifies the source manifest, 
 
 ## Manuscript source
 
-The TeX file is self-contained. From `paper/`, run `xelatex -interaction=nonstopmode -halt-on-error main.tex` until references stabilize. The [PDF hash](paper/SHA256SUMS.txt) identifies the author-supplied 37-page manuscript. The paper’s AI-use statement is included in that manuscript.
+The TeX file is self-contained. From `paper/`, run `xelatex -interaction=nonstopmode -halt-on-error main.tex` until references stabilize. The [paper hashes](paper/SHA256SUMS.txt) identify the current 36-page XeLaTeX build. Its Theorem 1 proof branches at the strict first-endpoint cutoff `d₁ < 3/[100m² log(100m)]`; the complementary branch includes equality and charges the central remainder once. The paper’s AI-use statement is included in the manuscript. The [`single-ramp-v1` tag](https://github.com/Orc-Lee-Chem/springer-lean/tree/single-ramp-v1) retains the earlier publication version; this manuscript revision leaves the Lean sources unchanged.

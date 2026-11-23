@@ -1,6 +1,6 @@
 # Paper-to-Lean crosswalk
 
-This crosswalk uses the 37-page manuscript in [`paper/main.pdf`](../paper/main.pdf) and the [complete TeX](../paper/main.tex). The paper and the historical Lean freeze have separate provenance. The [paper statements](../lean/PaperStatementsAudit.lean) are byte-identical to the single-ramp freeze. The release retains every project module in the frozen theorem-dependency graph and their source import closure. The root omits the independent `PaperMomentLimitStatements` wrapper. The full Lean output for all 15 public declarations is in [`frozen-paper-statements.txt`](frozen-paper-statements.txt).
+This crosswalk uses the current 36-page manuscript in [`paper/main.pdf`](../paper/main.pdf) and the [complete TeX](../paper/main.tex). The manuscript revises the Theorem 1 proof and numbering from the [`single-ramp-v1` publication version](https://github.com/Orc-Lee-Chem/springer-lean/tree/single-ramp-v1); the Lean sources remain unchanged. The [paper statements](../lean/PaperStatementsAudit.lean) are byte-identical to the single-ramp freeze. The release retains every project module in the frozen theorem-dependency graph and their source import closure. The root omits the independent `PaperMomentLimitStatements` wrapper. The full Lean output for all 15 public declarations is in [`frozen-paper-statements.txt`](frozen-paper-statements.txt).
 
 ## Large-order inverse coefficients
 
@@ -12,15 +12,15 @@ Theorem 1 (p. 2, `thm:large`) is [`SpringerLean.PaperStatementsAudit.theorem_1_1
 | Lemmas 2–3, especially p. 7, (13), `eq:gaussian-single-end-cost` | The paper first bounds `n |B_n|` by the actual radial boundary moment using the residue identity and the radial limit. The trace lies in the omitted set almost everywhere. The pointwise affine-platform majorant on its convex hull gives the middle inequality. The fixed-direction convex projection theorem applied to the same trace gives the last line. In Lean, `SpringerLean.exteriorOmitted_candidate_second_radius_gt_39_20` uses `SpringerLean.exteriorInverseCoeff_le_affinePlatform_cost`, whose singleton case of `SpringerLean.exteriorInverseCoeff_mul_norm_le_of_finite_convex_caps` applies the convex comparison on smooth dilates. The omitted-set cap transfers with an arbitrarily small error, and the scaled actual inverse coefficient tends to the original one. This is an equivalent route to the first-to-last inequality of (13). Both routes use the same selected endpoint, affine test and normalized circle average. |
 | `eq:chord-arc-exact`, `eq:actual-joint-J` and `lem:cutoff` | `SpringerLean.refinedAffineSmoothPower_moving_Jensen` bounds the Jensen term using the difference of third moments, `E[S³] − (E[S])³`. The conclusions are used on the same selected pair by `SpringerLean.exteriorInverseCoeff_candidate_selected_joint_J` and `SpringerLean.exteriorInverseCoeff_candidate_selected_two_fine_widths`. |
 | Lemma 5, pp. 12–13, `lem:actual-disk-gain` | The manuscript passes the boundary capped convex order through Poisson smoothing and uses the test `(x − M(r))₊` to obtain a cap at each angle. `SpringerLean.actualHarmonic_flattened_peak_cap` instead applies the regularized Poisson-weighted inequality and rotates the resulting central cap to each angle. The peak and normalization agree. `SpringerLean.actualHarmonic_inner_positivePower_le_clippedModel` and `SpringerLean.actualHarmonic_positivePower_unitDisk_cubic_gain_of_radius` then yield the strict disk gain used by the final proof. |
-| `eq:tiny-cutoff`, `eq:model-error` and `eq:true-axis-corrected` | `SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_tiny_first_strict` treats tiny deficit. `SpringerLean.AnalyticRevision.actualSignedPhaseDensity_aligned_le_twoPower` and `SpringerLean.AnalyticRevision.actualSignedPhaseDensity_trueAxis_lt_lower_power` compare the actual signed densities pointwise. `SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_lt_two_reference` combines the branches. The disk expectation in the paper uses the semicircle law of `2 Re Z` for normalized area in the unit disk. |
-| Lemma 9, p. 19, `lem:actual-phase-energy` | `SpringerLean.AnalyticRevision.rampFlux` uses the capped linear function and `SingleRamp.clippedLinearFlux` handles both scalar branches, with a rescaling of the quadratic test in Lean. `SpringerLean.AnalyticRevision.cutFlux_integral_le` integrates the a.e. pointwise inequality using the cutoff. The full-disk conclusion has only the original exterior-class, order, and unit-phase hypotheses. |
+| `eq:tiny-cutoff` (p. 14), `eq:model-error` (p. 17), `eq:true-axis-corrected` (p. 16), and Theorem 1 proof (p. 18) | `SpringerLean.AnalyticRevision.actualSignedPhaseIntegral_lt_two_reference` uses the same `3/14` signed comparison and splits at the first deficit: `d₁ < d₀` invokes `actualSignedPhaseIntegral_tiny_first_strict`; its antipodal cubic saving comes from `ActualCandidatePhaseEndpoints.first_all_direction_gains`. In the `d₁ ≥ d₀` branch, `first_max` gives `d₂ ≥ d₁`, so both endpoints meet the non-tiny threshold, including equality. `actualSignedPhaseDensity_aligned_le_twoPower` and `actualSignedPhaseDensity_trueAxis_lt_lower_power` provide the outer comparisons, while the full-disk endpoint budget counts the central remainder once. The disk expectation in the paper uses the semicircle law of `2 Re Z` for normalized area in the unit disk. |
+| Lemma 8, p. 19, `lem:actual-phase-energy` | `SpringerLean.AnalyticRevision.rampFlux` uses the capped linear function and `SingleRamp.clippedLinearFlux` handles both scalar branches, with a rescaling of the quadratic test in Lean. `SpringerLean.AnalyticRevision.cutFlux_integral_le` integrates the a.e. pointwise inequality using the cutoff. The full-disk conclusion has only the original exterior-class, order, and unit-phase hypotheses. |
 | Theorem 1, equality | `SpringerLean.AnalyticRevision.exteriorInverseCoeff_large_lt_catalan_of_nonslit` excludes all nonslits, and `SpringerLean.exteriorInverseCoeff_sharp_of_eqOn_slit_all_orders` gives the converse for every unit slit. |
 
 The energy and large-order proof-body paths are covered by the included declaration checker. The transitive project graph excludes the historical endpoint table and energy theorem. The manuscript’s explicit quadratic and scalar estimates supply the paper-side comparisons.
 
 ## Actual radial boundary moments
 
-Theorems 10 and 13 (pp. 22 and 25, `thm:moments` and `thm:radial-continuous`). The Lean statements integrate the a.e. limit of the actual map against `dt/(2π)`, use `D = 1 − |b₁|²` for the forward coefficient, and use `Γ(p+1)/Γ(1+p/2)²` for the slit constant.
+Theorems 9 and 12 (pp. 21 and 24, `thm:moments` and `thm:radial-continuous`). The Lean statements integrate the a.e. limit of the actual map against `dt/(2π)`, use `D = 1 − |b₁|²` for the forward coefficient, and use `Γ(p+1)/Γ(1+p/2)²` for the slit constant.
 
 | Manuscript location | Formal proof and correspondence |
 | --- | --- |
@@ -30,7 +30,7 @@ Theorems 10 and 13 (pp. 22 and 25, `thm:moments` and `thm:radial-continuous`). T
 
 ## Polynomial derivative-root moments
 
-Proposition 14 (p. 26, `prop:zero-moments`) uses the centroid of the original polynomial and the scale `(t/|a|)^(1/n)`. Roots are multisets. The theorem covers arbitrary `n ≥ 2`, positive `t` with connected sublevel set, `0 ≤ j < n`, and real `4 ≤ p ≤ 8`.
+Proposition 13 (p. 26, `prop:zero-moments`) uses the centroid of the original polynomial and the scale `(t/|a|)^(1/n)`. Roots are multisets. The theorem covers arbitrary `n ≥ 2`, positive `t` with connected sublevel set, `0 ≤ j < n`, and real `4 ≤ p ≤ 8`.
 
 | Manuscript step | Formal proof and correspondence |
 | --- | --- |
@@ -40,7 +40,7 @@ Proposition 14 (p. 26, `prop:zero-moments`) uses the centroid of the original po
 
 ## Regular stars
 
-Theorem 15 (pp. 28–29, `thm:parity` and `eq:star-quant`) covers actual nondegenerate plane continua. Rotation is about a specified center. The even-order quantitative coefficient is the forward Laurent coefficient of the capacity-normalized, centered filled continuum.
+Theorem 14 (p. 28; proof pp. 28–29, `thm:parity` and `eq:star-quant`) covers actual nondegenerate plane continua. Rotation is about a specified center. The even-order quantitative coefficient is the forward Laurent coefficient of the capacity-normalized, centered filled continuum.
 
 | Manuscript step | Formal proof and correspondence |
 | --- | --- |
